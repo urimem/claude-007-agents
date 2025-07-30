@@ -1,0 +1,928 @@
+{
+  "version": "1.4.0",
+  "description": "Unified Agent System for Claude Code with resilience engineering and structured logging capabilities",
+  "agents": [
+    {
+      "name": "resilience-engineer",
+      "file": ".claude/agents/universal/resilience-engineer.md",
+      "description": "Language-agnostic resilience engineering agent for fault-tolerant, self-healing systems",
+      "category": "universal",
+      "proactive": false,
+      "triggers": ["resilience", "fault-tolerance", "circuit breaker", "retry", "timeout", "bulkhead"],
+      "dependencies": []
+    },
+    {
+      "name": "logging-concepts-engineer", 
+      "file": ".claude/agents/universal/logging-concepts-engineer.md",
+      "description": "Language-agnostic logging specialist for structured, contextual, performance-conscious logging",
+      "category": "universal",
+      "proactive": false,
+      "triggers": ["logging", "structured logging", "observability", "monitoring", "tracing"],
+      "dependencies": []
+    },
+    {
+      "name": "api-architect",
+      "file": ".claude/agents/universal/api-architect.md",
+      "description": "Universal API design and architecture specialist",
+      "category": "universal",
+      "proactive": false,
+      "triggers": ["api", "rest", "graphql", "api design", "architecture"],
+      "dependencies": []
+    },
+    {
+      "name": "backend-developer",
+      "file": ".claude/agents/universal/backend-developer.md",
+      "description": "General backend development specialist",
+      "category": "universal",
+      "proactive": false,
+      "triggers": ["backend", "server", "database"],
+      "dependencies": []
+    },
+    {
+      "name": "frontend-developer",
+      "file": ".claude/agents/universal/frontend-developer.md",
+      "description": "General frontend development specialist",
+      "category": "universal",
+      "proactive": false,
+      "triggers": ["frontend", "ui", "client"],
+      "dependencies": []
+    },
+    {
+      "name": "tailwind-css-expert",
+      "file": ".claude/agents/universal/tailwind-css-expert.md",
+      "description": "Tailwind CSS styling specialist",
+      "category": "universal",
+      "proactive": false,
+      "triggers": ["tailwind", "css", "styling"],
+      "dependencies": []
+    },
+    {
+      "name": "software-engineering-expert",
+      "file": ".claude/agents/universal/software-engineering-expert.md",
+      "description": "Comprehensive software engineering specialist with Evil Corp motivation framework, focusing on code quality, architecture, and maintainability across all languages",
+      "category": "universal",
+      "proactive": true,
+      "triggers": ["code", "implement", "build", "create", "develop", "refactor", "clean code", "best practices", "architecture", "maintainable", "quality", "engineering"],
+      "dependencies": []
+    },
+    {
+      "name": "rails-backend-expert",
+      "file": ".claude/agents/specialized/rails/rails-backend-expert.md",
+      "description": "Ruby on Rails backend specialist with ActiveRecord, API development, resilience, and logging",
+      "category": "backend",
+      "proactive": false,
+      "triggers": ["rails", "ruby", "rails backend", "ruby backend"],
+      "dependencies": ["resilience-engineer", "logging-concepts-engineer"]
+    },
+    {
+      "name": "rails-api-developer",
+      "file": ".claude/agents/specialized/rails/rails-api-developer.md",
+      "description": "Rails API development specialist",
+      "category": "backend",
+      "proactive": false,
+      "triggers": ["rails api", "ruby api"],
+      "dependencies": ["rails-backend-expert"]
+    },
+    {
+      "name": "rails-activerecord-expert",
+      "file": ".claude/agents/specialized/rails/rails-activerecord-expert.md",
+      "description": "ActiveRecord ORM specialist for Rails",
+      "category": "backend",
+      "proactive": false,
+      "triggers": ["activerecord", "rails orm", "rails database"],
+      "dependencies": ["rails-backend-expert"]
+    },
+    {
+      "name": "django-backend-expert", 
+      "file": ".claude/agents/specialized/django/django-backend-expert.md",
+      "description": "Django backend specialist with Django ORM, REST APIs, resilience, and structured logging",
+      "category": "backend",
+      "proactive": false,
+      "triggers": ["django", "python backend", "django backend"],
+      "dependencies": ["resilience-engineer", "logging-concepts-engineer", "python-hyx-resilience"]
+    },
+    {
+      "name": "django-api-developer",
+      "file": ".claude/agents/specialized/django/django-api-developer.md",
+      "description": "Django API development specialist",
+      "category": "backend",
+      "proactive": false,
+      "triggers": ["django api", "django rest"],
+      "dependencies": ["django-backend-expert"]
+    },
+    {
+      "name": "django-orm-expert",
+      "file": ".claude/agents/specialized/django/django-orm-expert.md",
+      "description": "Django ORM specialist",
+      "category": "backend",
+      "proactive": false,
+      "triggers": ["django orm", "django database", "django models"],
+      "dependencies": ["django-backend-expert"]
+    },
+    {
+      "name": "laravel-backend-expert",
+      "file": ".claude/agents/specialized/laravel/laravel-backend-expert.md",
+      "description": "Laravel backend development specialist",
+      "category": "backend",
+      "proactive": false,
+      "triggers": ["laravel", "php", "laravel backend"],
+      "dependencies": ["resilience-engineer", "logging-concepts-engineer"]
+    },
+    {
+      "name": "laravel-eloquent-expert",
+      "file": ".claude/agents/specialized/laravel/laravel-eloquent-expert.md",
+      "description": "Laravel Eloquent ORM specialist",
+      "category": "backend",
+      "proactive": false,
+      "triggers": ["eloquent", "laravel orm", "laravel database"],
+      "dependencies": ["laravel-backend-expert"]
+    },
+    {
+      "name": "go-resilience-engineer",
+      "file": ".claude/agents/specialized/go/go-resilience-engineer.md", 
+      "description": "Go resilience engineering specialist using Sony GoBreaker and native concurrency patterns",
+      "category": "backend",
+      "proactive": false,
+      "triggers": ["go resilience", "gobreaker", "go circuit breaker", "go retry", "go concurrency"],
+      "dependencies": ["resilience-engineer"]
+    },
+    {
+      "name": "go-zap-logging",
+      "file": ".claude/agents/specialized/go/go-zap-logging.md",
+      "description": "Go logging specialist using Zap with Google Cloud integration and structured patterns", 
+      "category": "backend",
+      "proactive": false,
+      "triggers": ["go logging", "zap", "go structured logging", "google cloud logging"],
+      "dependencies": ["logging-concepts-engineer"]
+    },
+    {
+      "name": "python-hyx-resilience",
+      "file": ".claude/agents/specialized/python/python-hyx-resilience.md",
+      "description": "Python resilience engineering specialist using Hyx for async fault-tolerant systems",
+      "category": "backend",
+      "proactive": false,
+      "triggers": ["python resilience", "hyx", "python circuit breaker", "async resilience"],
+      "dependencies": ["resilience-engineer"]
+    },
+    {
+      "name": "typescript-cockatiel-resilience",
+      "file": ".claude/agents/specialized/typescript/typescript-cockatiel-resilience.md",
+      "description": "TypeScript resilience engineering specialist using Cockatiel for fault-tolerant applications",
+      "category": "backend",
+      "proactive": false,
+      "triggers": ["typescript resilience", "cockatiel", "ts circuit breaker", "node resilience"],
+      "dependencies": ["resilience-engineer"]
+    },
+    {
+      "name": "typescript-pino-logging",
+      "file": ".claude/agents/specialized/typescript/typescript-pino-logging.md",
+      "description": "TypeScript logging specialist using Pino with Fastify integration and cloud compatibility",
+      "category": "backend", 
+      "proactive": false,
+      "triggers": ["typescript logging", "pino", "fastify logging", "ts structured logging"],
+      "dependencies": ["logging-concepts-engineer"]
+    },
+    {
+      "name": "react-component-architect",
+      "file": ".claude/agents/specialized/react/react-component-architect.md",
+      "description": "React component architecture specialist",
+      "category": "frontend",
+      "proactive": false,
+      "triggers": ["react", "react components", "jsx"],
+      "dependencies": []
+    },
+    {
+      "name": "react-state-manager",
+      "file": ".claude/agents/specialized/react/react-state-manager.md",
+      "description": "React state management specialist",
+      "category": "frontend",
+      "proactive": false,
+      "triggers": ["react state", "redux", "context", "hooks"],
+      "dependencies": ["react-component-architect"]
+    },
+    {
+      "name": "react-nextjs-expert",
+      "file": ".claude/agents/specialized/react/react-nextjs-expert.md",
+      "description": "Next.js framework specialist",
+      "category": "frontend",
+      "proactive": false,
+      "triggers": ["nextjs", "next.js", "react framework"],
+      "dependencies": ["react-component-architect"]
+    },
+    {
+      "name": "vue-component-architect",
+      "file": ".claude/agents/specialized/vue/vue-component-architect.md",
+      "description": "Vue.js component architecture specialist",
+      "category": "frontend",
+      "proactive": false,
+      "triggers": ["vue", "vue components", "vue.js"],
+      "dependencies": []
+    },
+    {
+      "name": "vue-state-manager",
+      "file": ".claude/agents/specialized/vue/vue-state-manager.md",
+      "description": "Vue.js state management specialist",
+      "category": "frontend",
+      "proactive": false,
+      "triggers": ["vue state", "vuex", "pinia"],
+      "dependencies": ["vue-component-architect"]
+    },
+    {
+      "name": "vue-nuxt-expert",
+      "file": ".claude/agents/specialized/vue/vue-nuxt-expert.md",
+      "description": "Nuxt.js framework specialist",
+      "category": "frontend",
+      "proactive": false,
+      "triggers": ["nuxt", "nuxt.js", "vue framework"],
+      "dependencies": ["vue-component-architect"]
+    },
+    {
+      "name": "tech-lead-orchestrator",
+      "file": ".claude/agents/orchestrators/tech-lead-orchestrator.md",
+      "description": "Technical leadership and team orchestration specialist",
+      "category": "orchestrator",
+      "proactive": true,
+      "triggers": ["architecture", "team", "leadership", "planning"],
+      "dependencies": []
+    },
+    {
+      "name": "team-configurator",
+      "file": ".claude/agents/orchestrators/team-configurator.md",
+      "description": "Team setup and configuration specialist",
+      "category": "orchestrator",
+      "proactive": false,
+      "triggers": ["team setup", "configuration", "workflow"],
+      "dependencies": []
+    },
+    {
+      "name": "project-analyst",
+      "file": ".claude/agents/orchestrators/project-analyst.md",
+      "description": "Project analysis and requirements specialist",
+      "category": "orchestrator",
+      "proactive": false,
+      "triggers": ["analysis", "requirements", "project planning"],
+      "dependencies": []
+    },
+    {
+      "name": "code-archaeologist",
+      "file": ".claude/agents/core/code-archaeologist.md",
+      "description": "Code exploration and legacy system specialist",
+      "category": "core",
+      "proactive": false,
+      "triggers": ["explore", "legacy", "codebase analysis"],
+      "dependencies": []
+    },
+    {
+      "name": "code-reviewer",
+      "file": ".claude/agents/core/code-reviewer.md",
+      "description": "Code review and quality assurance specialist",
+      "category": "core",
+      "proactive": true,
+      "triggers": ["review", "quality", "best practices"],
+      "dependencies": []
+    },
+    {
+      "name": "documentation-specialist",
+      "file": ".claude/agents/core/documentation-specialist.md",
+      "description": "Documentation creation and maintenance specialist",
+      "category": "core",
+      "proactive": false,
+      "triggers": ["docs", "documentation", "readme"],
+      "dependencies": []
+    },
+    {
+      "name": "performance-optimizer",
+      "file": ".claude/agents/core/performance-optimizer.md",
+      "description": "Performance analysis and optimization specialist",
+      "category": "core",
+      "proactive": false,
+      "triggers": ["performance", "optimization", "speed", "memory"],
+      "dependencies": []
+    },
+    {
+      "name": "graphql-architect",
+      "file": ".claude/agents/ai-analysis/graphql-architect.md",
+      "description": "GraphQL schema design, resolvers, federation, subscriptions",
+      "category": "universal",
+      "proactive": false,
+      "triggers": ["graphql", "schema", "federation", "subscriptions", "resolvers"],
+      "dependencies": ["api-architect"]
+    },
+    {
+      "name": "product-manager",
+      "file": ".claude/agents/business/product-manager.md",
+      "description": "Feature prioritization, user requirements, roadmap planning, stakeholder alignment",
+      "category": "business",
+      "proactive": false,
+      "triggers": ["product", "roadmap", "features", "requirements", "stakeholder"],
+      "dependencies": []
+    },
+    {
+      "name": "business-analyst",
+      "file": ".claude/agents/business/business-analyst.md",
+      "description": "Requirements gathering, stakeholder management, process analysis, business logic design",
+      "category": "business",
+      "proactive": false,
+      "triggers": ["business analysis", "requirements", "stakeholder", "process", "business logic"],
+      "dependencies": []
+    },
+    {
+      "name": "ux-designer",
+      "file": ".claude/agents/business/ux-designer.md",
+      "description": "User research, wireframing, usability testing, design systems",
+      "category": "business",
+      "proactive": false,
+      "triggers": ["ux", "design", "wireframe", "usability", "user research"],
+      "dependencies": []
+    },
+    {
+      "name": "devops-troubleshooter",
+      "file": ".claude/agents/infrastructure/devops-troubleshooter.md",
+      "description": "Production debugging, incident response, system diagnostics",
+      "category": "infrastructure",
+      "proactive": false,
+      "triggers": ["production", "debugging", "incident", "outage", "system issues"],
+      "dependencies": []
+    },
+    {
+      "name": "cloud-architect",
+      "file": ".claude/agents/infrastructure/cloud-architect.md",
+      "description": "AWS/GCP/Azure infrastructure design, serverless, container orchestration",
+      "category": "infrastructure",
+      "proactive": false,
+      "triggers": ["cloud", "aws", "gcp", "azure", "serverless", "kubernetes"],
+      "dependencies": []
+    },
+    {
+      "name": "database-admin",
+      "file": ".claude/agents/infrastructure/database-admin.md",
+      "description": "Database operations, optimization, maintenance, backup strategies",
+      "category": "infrastructure",
+      "proactive": false,
+      "triggers": ["database", "db", "optimization", "backup", "performance"],
+      "dependencies": []
+    },
+    {
+      "name": "incident-responder",
+      "file": ".claude/agents/infrastructure/incident-responder.md",
+      "description": "Production incident handling, post-mortem analysis, crisis management",
+      "category": "infrastructure",
+      "proactive": false,
+      "triggers": ["incident", "outage", "crisis", "post-mortem", "emergency"],
+      "dependencies": ["devops-troubleshooter"]
+    },
+    {
+      "name": "prompt-engineer",
+      "file": ".claude/agents/ai-analysis/prompt-engineer.md",
+      "description": "AI prompt optimization, LLM integration, model fine-tuning strategies",
+      "category": "ai-analysis",
+      "proactive": false,
+      "triggers": ["prompt", "ai", "llm", "gpt", "claude", "optimization"],
+      "dependencies": []
+    },
+    {
+      "name": "error-detective",
+      "file": ".claude/agents/ai-analysis/error-detective.md",
+      "description": "Log analysis, error pattern detection, debugging complex issues",
+      "category": "ai-analysis",
+      "proactive": false,
+      "triggers": ["error", "logs", "debugging", "analysis", "patterns"],
+      "dependencies": []
+    },
+    {
+      "name": "security-auditor",
+      "file": ".claude/agents/security/security-auditor.md",
+      "description": "Penetration testing, vulnerability scanning, compliance auditing",
+      "category": "security",
+      "proactive": false,
+      "triggers": ["security", "audit", "penetration", "vulnerability", "compliance", "pentest"],
+      "dependencies": []
+    },
+    {
+      "name": "network-engineer",
+      "file": ".claude/agents/infrastructure/network-engineer.md",
+      "description": "DNS, load balancing, network troubleshooting, connectivity issues",
+      "category": "infrastructure",
+      "proactive": false,
+      "triggers": ["network", "dns", "load balancer", "connectivity", "routing", "firewall"],
+      "dependencies": []
+    },
+    {
+      "name": "mobile-developer",
+      "file": ".claude/agents/frontend/mobile-developer.md",
+      "description": "React Native, Flutter, iOS/Android development",
+      "category": "frontend",
+      "proactive": false,
+      "triggers": ["mobile", "react native", "flutter", "ios", "android", "app"],
+      "dependencies": []
+    },
+    {
+      "name": "terraform-specialist",
+      "file": ".claude/agents/infrastructure/terraform-specialist.md",
+      "description": "Infrastructure as Code, multi-cloud provisioning",
+      "category": "infrastructure",
+      "proactive": false,
+      "triggers": ["terraform", "infrastructure as code", "iac", "provisioning", "cloud infrastructure"],
+      "dependencies": ["cloud-architect"]
+    },
+    {
+      "name": "payment-integration-agent",
+      "file": ".claude/agents/business/payment-integration-agent.md",
+      "description": "Stripe, PayPal, financial systems, PCI compliance",
+      "category": "business",
+      "proactive": false,
+      "triggers": ["payment", "stripe", "paypal", "billing", "pci", "financial"],
+      "dependencies": ["security-auditor"]
+    },
+    {
+      "name": "code-refactoring-specialist",
+      "file": ".claude/agents/core/code-refactoring-specialist.md",
+      "description": "Large-scale refactoring, legacy modernization, technical debt",
+      "category": "core",
+      "proactive": false,
+      "triggers": ["refactor", "legacy", "technical debt", "modernization", "code quality"],
+      "dependencies": ["software-engineering-expert"]
+    },
+    {
+      "name": "healthcare-compliance-agent",
+      "file": ".claude/agents/business/healthcare-compliance-agent.md",
+      "description": "HIPAA compliance, medical data security, healthcare interoperability",
+      "category": "business",
+      "proactive": false,
+      "triggers": ["hipaa", "healthcare", "medical", "phi", "fhir", "compliance"],
+      "dependencies": ["security-auditor"]
+    },
+    {
+      "name": "joker",
+      "file": ".claude/agents/bonus/joker.md",
+      "description": "Humor and morale specialist for lightening the mood",
+      "category": "bonus",
+      "proactive": false,
+      "triggers": ["joke", "humor", "morale", "fun"],
+      "dependencies": []
+    },
+    {
+      "name": "cicd-pipeline-engineer",
+      "file": ".claude/agents/automation/cicd-pipeline-engineer.md",
+      "description": "CI/CD pipeline specialist for automated testing, deployment, and release management",
+      "category": "automation",
+      "proactive": false,
+      "triggers": ["cicd", "pipeline", "deployment", "automation", "jenkins", "github actions", "gitlab ci"],
+      "dependencies": ["devops-troubleshooter", "security-auditor"]
+    },
+    {
+      "name": "qa-automation-engineer",
+      "file": ".claude/agents/automation/qa-automation-engineer.md",
+      "description": "Quality assurance and test automation specialist for comprehensive testing strategies",
+      "category": "automation",
+      "proactive": false,
+      "triggers": ["qa", "testing", "automation", "quality", "test framework", "cypress", "selenium"],
+      "dependencies": ["cicd-pipeline-engineer", "security-auditor"]
+    },
+    {
+      "name": "release-manager",
+      "file": ".claude/agents/automation/release-manager.md",
+      "description": "Release management and deployment orchestration specialist",
+      "category": "automation",
+      "proactive": false,
+      "triggers": ["release", "deployment", "orchestration", "go-live", "rollback", "version"],
+      "dependencies": ["cicd-pipeline-engineer", "qa-automation-engineer"]
+    },
+    {
+      "name": "webassembly-specialist",
+      "file": ".claude/agents/frontend/webassembly-specialist.md",
+      "description": "WebAssembly development and optimization specialist for high-performance web applications",
+      "category": "frontend",
+      "proactive": false,
+      "triggers": ["webassembly", "wasm", "performance", "rust", "c++", "assemblyscript"],
+      "dependencies": ["performance-optimizer", "frontend-developer"]
+    },
+    {
+      "name": "micro-frontend-architect",
+      "file": ".claude/agents/frontend/micro-frontend-architect.md",
+      "description": "Micro-frontend architecture specialist for scalable, maintainable frontend applications",
+      "category": "frontend",
+      "proactive": false,
+      "triggers": ["micro-frontend", "module federation", "architecture", "scalability", "independent deployment"],
+      "dependencies": ["frontend-developer", "react-component-architect"]
+    },
+    {
+      "name": "pwa-specialist",
+      "file": ".claude/agents/frontend/pwa-specialist.md",
+      "description": "Progressive Web Application specialist for app-like web experiences and offline functionality",
+      "category": "frontend",
+      "proactive": false,
+      "triggers": ["pwa", "progressive web app", "service worker", "offline", "push notifications"],
+      "dependencies": ["frontend-developer", "performance-optimizer"]
+    },
+    {
+      "name": "data-engineer",
+      "file": ".claude/agents/data/data-engineer.md",
+      "description": "Data engineering specialist for scalable data pipelines, warehousing, and ETL processes",
+      "category": "data",
+      "proactive": false,
+      "triggers": ["data pipeline", "etl", "data warehouse", "big data", "spark", "kafka"],
+      "dependencies": ["database-admin", "cloud-architect"]
+    },
+    {
+      "name": "analytics-implementation-specialist",
+      "file": ".claude/agents/data/analytics-implementation-specialist.md",
+      "description": "Analytics implementation specialist for comprehensive measurement and business insights",
+      "category": "data",
+      "proactive": false,
+      "triggers": ["analytics", "tracking", "measurement", "google analytics", "conversion", "metrics"],
+      "dependencies": ["data-engineer", "privacy-engineer"]
+    },
+    {
+      "name": "business-intelligence-developer",
+      "file": ".claude/agents/data/business-intelligence-developer.md",
+      "description": "Business Intelligence specialist for data visualization and self-service analytics",
+      "category": "data",
+      "proactive": false,
+      "triggers": ["business intelligence", "bi", "dashboard", "tableau", "power bi", "data visualization"],
+      "dependencies": ["data-engineer", "analytics-implementation-specialist"]
+    },
+    {
+      "name": "machine-learning-engineer",
+      "file": ".claude/agents/ai/machine-learning-engineer.md",
+      "description": "Machine Learning engineering specialist for scalable ML systems and MLOps pipelines",
+      "category": "ai",
+      "proactive": false,
+      "triggers": ["machine learning", "ml", "mlops", "tensorflow", "pytorch", "model deployment"],
+      "dependencies": ["data-engineer", "cloud-architect"]
+    },
+    {
+      "name": "serverless-architect",
+      "file": ".claude/agents/infrastructure/serverless-architect.md",
+      "description": "Serverless architecture specialist for event-driven, cloud-native applications",
+      "category": "infrastructure",
+      "proactive": false,
+      "triggers": ["serverless", "lambda", "faas", "event-driven", "cloud functions"],
+      "dependencies": ["cloud-architect", "api-architect"]
+    },
+    {
+      "name": "site-reliability-engineer",
+      "file": ".claude/agents/infrastructure/site-reliability-engineer.md",
+      "description": "Site Reliability Engineering specialist for highly reliable, scalable systems",
+      "category": "infrastructure",
+      "proactive": false,
+      "triggers": ["sre", "reliability", "slo", "sla", "incident", "monitoring", "automation"],
+      "dependencies": ["observability-engineer", "devops-troubleshooter"]
+    },
+    {
+      "name": "observability-engineer",
+      "file": ".claude/agents/infrastructure/observability-engineer.md",
+      "description": "Observability engineering specialist for comprehensive monitoring, logging, and tracing",
+      "category": "infrastructure",
+      "proactive": false,
+      "triggers": ["observability", "monitoring", "logging", "tracing", "metrics", "prometheus", "grafana"],
+      "dependencies": ["site-reliability-engineer", "performance-optimizer"]
+    },
+    {
+      "name": "devsecops-engineer",
+      "file": ".claude/agents/security/devsecops-engineer.md",
+      "description": "DevSecOps specialist for integrating security practices throughout the development lifecycle",
+      "category": "security",
+      "proactive": false,
+      "triggers": ["devsecops", "security", "sast", "dast", "vulnerability", "compliance", "shift-left"],
+      "dependencies": ["security-auditor", "cicd-pipeline-engineer"]
+    },
+    {
+      "name": "pulumi-typescript-specialist",
+      "file": ".claude/agents/infrastructure/pulumi-typescript-specialist.md",
+      "description": "Pulumi Infrastructure as Code specialist using TypeScript for multi-cloud deployments",
+      "category": "infrastructure",
+      "proactive": false,
+      "triggers": ["pulumi", "infrastructure as code", "iac", "typescript", "multi-cloud", "component"],
+      "dependencies": ["cloud-architect", "terraform-specialist"]
+    },
+    {
+      "name": "privacy-engineer",
+      "file": ".claude/agents/security/privacy-engineer.md",
+      "description": "Privacy engineering specialist for privacy-by-design implementation, GDPR/CCPA compliance, and privacy-preserving technologies",
+      "category": "security",
+      "proactive": false,
+      "triggers": ["privacy", "gdpr", "ccpa", "data protection", "consent", "pii", "anonymization", "differential privacy"],
+      "dependencies": ["security-auditor", "devsecops-engineer"]
+    },
+    {
+      "name": "git-expert",
+      "file": ".claude/agents/core/git-expert.md",
+      "description": "Git workflow specialist for merge/rebase conflict resolution, pull request management, and advanced Git operations",
+      "category": "core",
+      "proactive": false,
+      "triggers": ["git", "merge conflict", "rebase", "pull request", "pr", "branch", "git workflow", "version control"],
+      "dependencies": ["cicd-pipeline-engineer", "code-reviewer"]
+    }
+  ],
+  "categories": {
+    "universal": {
+      "description": "Cross-cutting agents that apply to all languages and frameworks",
+      "agents": [
+        "resilience-engineer",
+        "logging-concepts-engineer", 
+        "api-architect",
+        "graphql-architect",
+        "backend-developer",
+        "frontend-developer",
+        "tailwind-css-expert",
+        "software-engineering-expert"
+      ]
+    },
+    "business": {
+      "description": "Business strategy, product management, and user experience specialists",
+      "agents": [
+        "product-manager",
+        "business-analyst",
+        "ux-designer",
+        "payment-integration-agent",
+        "healthcare-compliance-agent"
+      ]
+    },
+    "infrastructure": {
+      "description": "Infrastructure, operations, and production system specialists",
+      "agents": [
+        "devops-troubleshooter",
+        "cloud-architect",
+        "database-admin",
+        "incident-responder",
+        "network-engineer",
+        "terraform-specialist",
+        "serverless-architect",
+        "site-reliability-engineer",
+        "observability-engineer",
+        "pulumi-typescript-specialist"
+      ]
+    },
+    "ai-analysis": {
+      "description": "AI integration and specialized analysis specialists",
+      "agents": [
+        "prompt-engineer",
+        "error-detective"
+      ]
+    },
+    "security": {
+      "description": "Security assessment and compliance specialists",
+      "agents": [
+        "security-auditor",
+        "devsecops-engineer",
+        "privacy-engineer"
+      ]
+    },
+    "backend": {
+      "description": "Backend development specialists across multiple frameworks",
+      "agents": [
+        "rails-backend-expert",
+        "rails-api-developer", 
+        "rails-activerecord-expert",
+        "django-backend-expert",
+        "django-api-developer",
+        "django-orm-expert", 
+        "laravel-backend-expert",
+        "laravel-eloquent-expert",
+        "go-resilience-engineer",
+        "go-zap-logging", 
+        "python-hyx-resilience",
+        "typescript-cockatiel-resilience",
+        "typescript-pino-logging"
+      ]
+    },
+    "frontend": {
+      "description": "Frontend development specialists for modern web applications",
+      "agents": [
+        "react-component-architect",
+        "react-state-manager",
+        "react-nextjs-expert",
+        "vue-component-architect", 
+        "vue-state-manager",
+        "vue-nuxt-expert",
+        "mobile-developer",
+        "webassembly-specialist",
+        "micro-frontend-architect",
+        "pwa-specialist"
+      ]
+    },
+    "orchestrator": {
+      "description": "High-level coordination and project management agents",
+      "agents": [
+        "tech-lead-orchestrator",
+        "team-configurator",
+        "project-analyst"
+      ]
+    },
+    "core": {
+      "description": "Essential development tools and quality assurance agents",
+      "agents": [
+        "code-archaeologist",
+        "code-reviewer",
+        "documentation-specialist", 
+        "performance-optimizer",
+        "code-refactoring-specialist",
+        "git-expert"
+      ]
+    },
+    "bonus": {
+      "description": "Special purpose agents for team morale and engagement",
+      "agents": [
+        "joker"
+      ]
+    },
+    "automation": {
+      "description": "CI/CD, testing, and deployment automation specialists",
+      "agents": [
+        "cicd-pipeline-engineer",
+        "qa-automation-engineer",
+        "release-manager"
+      ]
+    },
+    "data": {
+      "description": "Data engineering, analytics, and business intelligence specialists",
+      "agents": [
+        "data-engineer",
+        "analytics-implementation-specialist",
+        "business-intelligence-developer"
+      ]
+    },
+    "ai": {
+      "description": "Artificial intelligence and machine learning specialists",
+      "agents": [
+        "machine-learning-engineer",
+        "computer-vision-specialist",
+        "nlp-llm-integration-expert"
+      ]
+    }
+  },
+  "workflows": {
+    "backend-resilience": {
+      "description": "Comprehensive backend resilience implementation",
+      "phases": [
+        {
+          "name": "analysis",
+          "agents": ["resilience-engineer"],
+          "description": "Analyze current architecture for resilience gaps"
+        },
+        {
+          "name": "logging-setup", 
+          "agents": ["logging-concepts-engineer"],
+          "description": "Design structured logging architecture"
+        },
+        {
+          "name": "implementation",
+          "agents": ["rails-backend-expert", "django-backend-expert", "laravel-backend-expert", "go-resilience-engineer", "python-hyx-resilience", "typescript-cockatiel-resilience"],
+          "description": "Implement language-specific resilience patterns"
+        },
+        {
+          "name": "logging-integration",
+          "agents": ["go-zap-logging", "typescript-pino-logging"],
+          "description": "Integrate structured logging with language-specific tools"
+        }
+      ]
+    },
+    "new-backend-service": {
+      "description": "Build a new backend service with resilience and logging from the start",
+      "phases": [
+        {
+          "name": "architecture",
+          "agents": ["resilience-engineer", "logging-concepts-engineer"],
+          "description": "Design resilient architecture with observability"
+        },
+        {
+          "name": "implementation",
+          "agents": ["rails-backend-expert", "django-backend-expert", "laravel-backend-expert"],
+          "description": "Implement service with chosen backend framework"
+        },
+        {
+          "name": "specialization",
+          "agents": ["go-resilience-engineer", "go-zap-logging", "python-hyx-resilience", "typescript-cockatiel-resilience", "typescript-pino-logging"],
+          "description": "Apply language-specific optimizations and patterns"
+        }
+      ]
+    },
+    "frontend-development": {
+      "description": "Modern frontend application development workflow",
+      "phases": [
+        {
+          "name": "planning",
+          "agents": ["project-analyst", "frontend-developer"],
+          "description": "Plan frontend architecture and requirements"
+        },
+        {
+          "name": "component-design",
+          "agents": ["react-component-architect", "vue-component-architect"],
+          "description": "Design component architecture"
+        },
+        {
+          "name": "state-management",
+          "agents": ["react-state-manager", "vue-state-manager"],
+          "description": "Implement state management patterns"
+        },
+        {
+          "name": "framework-integration",
+          "agents": ["react-nextjs-expert", "vue-nuxt-expert"],
+          "description": "Integrate with framework-specific features"
+        }
+      ]
+    },
+    "product-led-development": {
+      "description": "Complete product development workflow from requirements to launch",
+      "phases": [
+        {
+          "name": "requirements",
+          "agents": ["product-manager"],
+          "description": "Define features and priorities based on user needs"
+        },
+        {
+          "name": "analysis", 
+          "agents": ["business-analyst"],
+          "description": "Gather stakeholder requirements and define business logic"
+        },
+        {
+          "name": "design",
+          "agents": ["ux-designer"],
+          "description": "Create user flows, wireframes, and design systems"
+        },
+        {
+          "name": "architecture",
+          "agents": ["tech-lead-orchestrator", "software-engineering-expert"],
+          "description": "Implement technical architecture based on business needs"
+        }
+      ]
+    },
+    "infrastructure-deployment": {
+      "description": "End-to-end infrastructure deployment and operations workflow",
+      "phases": [
+        {
+          "name": "architecture",
+          "agents": ["cloud-architect"],
+          "description": "Design scalable cloud infrastructure"
+        },
+        {
+          "name": "implementation",
+          "agents": ["devops-troubleshooter"],
+          "description": "Configure deployment pipelines and automation"
+        },
+        {
+          "name": "monitoring",
+          "agents": ["database-admin", "devops-troubleshooter"],
+          "description": "Set up observability and monitoring systems"
+        },
+        {
+          "name": "response",
+          "agents": ["incident-responder"],
+          "description": "Handle production issues and maintain uptime"
+        }
+      ]
+    }
+  },
+  "configuration": {
+    "default_agent_timeout": 300,
+    "max_concurrent_agents": 3,
+    "enable_agent_chaining": true,
+    "logging": {
+      "level": "info",
+      "structured": true,
+      "include_agent_context": true
+    },
+    "resilience": {
+      "default_retry_attempts": 3,
+      "default_circuit_breaker_threshold": 5,
+      "default_timeout_ms": 30000
+    }
+  },
+  "metadata": {
+    "created": "2024-01-15",
+    "last_updated": "2025-01-30",
+    "version_history": [
+      {
+        "version": "1.4.0",
+        "date": "2025-01-30", 
+        "changes": "Added Privacy Engineer for GDPR/CCPA compliance and privacy-by-design, Git Expert for advanced Git operations and workflow management, plus Computer Vision and NLP/LLM Integration specialists"
+      },
+      {
+        "version": "1.3.0",
+        "date": "2025-01-30", 
+        "changes": "Added comprehensive automation, data engineering, AI/ML, infrastructure, and security specialists including CI/CD, QA automation, serverless architecture, SRE, observability, DevSecOps, and Pulumi TypeScript specialists"
+      },
+      {
+        "version": "1.2.0",
+        "date": "2025-01-30", 
+        "changes": "Added security, mobile development, infrastructure automation, payment integration, healthcare compliance, and code refactoring specialists"
+      },
+      {
+        "version": "1.1.0",
+        "date": "2025-01-30", 
+        "changes": "Added business strategy, infrastructure operations, and AI analysis agents with new workflows"
+      },
+      {
+        "version": "1.0.0",
+        "date": "2025-01-29", 
+        "changes": "Complete unified agent system with resilience and logging integration across all frameworks"
+      }
+    ],
+    "compatibility": {
+      "claude_code_version": ">=2.0.0",
+      "node_version": ">=16.0.0",
+      "python_version": ">=3.8.0"
+    }
+  }
+}
