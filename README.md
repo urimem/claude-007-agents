@@ -199,13 +199,32 @@ git pull
 
 ### Auto-Configuration (Recommended)
 ```bash
-claude "Use team-configurator to set up my AI development team"
+# Analyze your project and get team configuration recommendations
+claude "Use @team-configurator to analyze my project structure"
 ```
 This will automatically:
 - 🔍 **Detect your stack** (Rails, Django, React, TypeScript, etc.)
 - 🤖 **Configure specialists** with resilience and logging integration  
-- 📝 **Create/update CLAUDE.md** with your personalized team setup
+- 📋 **Generate team recommendations** with optimal agent configurations
 - 🎯 **Provide usage examples** tailored to your project
+
+### Creating Your CLAUDE.md File
+After running the team configurator analysis, create your personalized CLAUDE.md:
+
+```bash
+# Option 1: Ask Claude to create CLAUDE.md based on the analysis
+claude "Based on the team configuration analysis, create a CLAUDE.md file for my project"
+
+# Option 2: Copy and customize the template
+cp CLAUDE.md /path/to/your/project/CLAUDE.md
+# Then edit to match your project's specific needs
+```
+
+The CLAUDE.md file will contain:
+- 📝 **Your personalized agent team** optimized for your technology stack
+- 🎯 **Usage examples** specific to your project architecture  
+- 🔧 **Workflow configurations** tailored to your development process
+- 📊 **Agent relationships** and collaboration patterns
 
 ### Manual Setup
 1. **Use agents directly**: `"Use rails-backend-expert to build authentication with circuit breakers"`
