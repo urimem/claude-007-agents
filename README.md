@@ -6,8 +6,8 @@ A comprehensive AI agent system with **75+ specialized agents** designed for mod
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-org/unified-agent-system.git
-cd unified-agent-system
+git clone https://github.com/avivl/claude-007-agents.git
+cd claude-007-agents
 ```
 
 ### 2. Choose Your Installation Method
@@ -18,11 +18,11 @@ Install the agent system globally and configure Claude Code to use it automatica
 ```bash
 # Install globally (choose a permanent location)
 sudo mkdir -p /usr/local/share/claude-agents
-sudo cp -r /path/to/unified-agent-system/.claude/agents /usr/local/share/claude-agents/
+sudo cp -r /path/to/claude-007-agents/.claude/agents /usr/local/share/claude-agents/
 
 # Or install to your home directory (no sudo required)
 mkdir -p ~/.local/share/claude-agents
-cp -r /path/to/unified-agent-system/.claude/agents ~/.local/share/claude-agents/
+cp -r /path/to/claude-007-agents/.claude/agents ~/.local/share/claude-agents/
 
 # Configure Claude Code globally (create/edit ~/.claude/config.json)
 mkdir -p ~/.claude
@@ -49,20 +49,20 @@ EOF
 **Alternative: Global Symlink (Best for Development)**
 ```bash
 # Clone to a permanent location
-git clone https://github.com/your-org/unified-agent-system.git ~/.local/share/unified-agent-system
+git clone https://github.com/avivl/claude-007-agents.git ~/.local/share/claude-007-agents
 
 # Configure Claude Code to use the repository directly
 cat > ~/.claude/config.json << 'EOF'
 {
   "agents": {
-    "globalPath": "~/.local/share/unified-agent-system/.claude/agents",
+    "globalPath": "~/.local/share/claude-007-agents/.claude/agents",
     "fallbackToLocal": true
   }
 }
 EOF
 
 # Update anytime with:
-cd ~/.local/share/unified-agent-system && git pull
+cd ~/.local/share/claude-007-agents && git pull
 ```
 
 **Pros:**
@@ -88,7 +88,7 @@ cd /path/to/your/project
 mkdir -p .claude
 
 # Copy all agent files
-cp -r /path/to/unified-agent-system/.claude/agents .claude/
+cp -r /path/to/claude-007-agents/.claude/agents .claude/
 
 # Verify installation
 ls .claude/agents/
@@ -116,11 +116,11 @@ cd /path/to/your/project
 mkdir -p .claude
 
 # Create symlink to the agents directory
-ln -s /path/to/unified-agent-system/.claude/agents .claude/agents
+ln -s /path/to/claude-007-agents/.claude/agents .claude/agents
 
 # Verify symlink
 ls -la .claude/
-# Should show: agents -> /path/to/unified-agent-system/.claude/agents
+# Should show: agents -> /path/to/claude-007-agents/.claude/agents
 ```
 
 **Pros:**
@@ -171,13 +171,13 @@ claude "Use @team-configurator to analyze my project structure"
 #### Global Installation Updates:
 ```bash
 # For copied global installation
-cd /path/to/unified-agent-system
+cd /path/to/claude-007-agents
 git pull
 sudo cp -r .claude/agents/* /usr/local/share/claude-agents/agents/
 # Or for home directory: cp -r .claude/agents/* ~/.local/share/claude-agents/agents/
 
 # For global symlink installation
-cd ~/.local/share/unified-agent-system
+cd ~/.local/share/claude-007-agents
 git pull
 # Updates are automatic due to symlink
 ```
@@ -185,12 +185,12 @@ git pull
 #### Project-Specific Updates:
 ```bash
 # For copied files
-cd /path/to/unified-agent-system
+cd /path/to/claude-007-agents
 git pull
 cp -r .claude/agents/* /path/to/your/project/.claude/agents/
 
 # For project symlinks
-cd /path/to/unified-agent-system
+cd /path/to/claude-007-agents
 git pull
 # Updates are automatic due to symlink
 ```
