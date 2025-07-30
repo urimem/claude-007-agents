@@ -499,6 +499,18 @@ Specialized agents build upon universal foundations:
 - Documentation and development agents utilize Context7 MCP for current library information
 - All agents can utilize MCP servers for enhanced capabilities when available
 
+### Commit Message Guidelines
+
+When creating commits, ALWAYS include which agent(s) worked on the changes:
+- **Format**: `type(scope): description - @agent1 @agent2`
+- **Examples**: 
+  - `feat(auth): implement OAuth integration - @rails-backend-expert @security-specialist`
+  - `fix(ui): resolve responsive layout issues - @react-component-architect @tailwind-frontend-expert`
+  - `docs: update API documentation - @documentation-specialist @api-architect`
+  - `refactor: improve database queries - @database-architect @performance-optimizer`
+
+This provides clear traceability of which agents contributed to each change.
+
 ---
 
 **Your AI development team is ready to build resilient, well-logged, high-quality software! 🚀**

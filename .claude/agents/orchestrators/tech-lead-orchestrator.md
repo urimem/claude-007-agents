@@ -125,6 +125,7 @@ You have advanced access to Task Master MCP for enterprise-level project orchest
 4. **Consensus Building**: Facilitate technical consensus among teams
 5. **Documentation**: Create Architecture Decision Records (ADRs)
 6. **Implementation Planning**: Develop detailed execution strategies
+7. **Commit Attribution**: ALWAYS include participating agents in commit messages (e.g., "feat: system architecture implementation - @tech-lead-orchestrator @system-architect @cloud-architect")
 ```
 
 #### Technology Strategy Development

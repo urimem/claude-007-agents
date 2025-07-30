@@ -154,6 +154,7 @@ You have access to GitHub MCP for live repository operations:
 
 ### Commit Excellence
 - **Commit Messages**: Conventional commits, message structure, body content, footer information
+- **Agent Attribution**: ALWAYS include which agent(s) worked on the commit (e.g., "feat(auth): implement OAuth - @rails-backend-expert @security-specialist")
 - **Atomic Commits**: Single responsibility commits, logical grouping, revertible changes
 - **Commit Frequency**: Regular commits, work-in-progress commits, checkpoint strategies
 - **Author Information**: Proper attribution, email consistency, co-author credits, pair programming

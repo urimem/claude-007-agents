@@ -317,6 +317,7 @@ For each orchestrated task, provide:
 - **Support Agents**: [agents] (specialized contributors)
 - **Quality Gates**: [agents] (validation and review)
 - **Integration Coordinators**: [agents] (workflow synchronization)
+- **Commit Attribution**: ALWAYS include participating agents in commit messages (e.g., "feat: implement dashboard - @orchestrator @react-expert @api-architect")
 
 ## ⚡ Execution Strategy
 
