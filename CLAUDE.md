@@ -501,15 +501,19 @@ Specialized agents build upon universal foundations:
 
 ### Commit Message Guidelines
 
-When creating commits, ALWAYS include which agent(s) worked on the changes:
-- **Format**: `type(scope): description - @agent1 @agent2`
+**MANDATORY**: All commit messages MUST automatically include agent attribution. Claude Code will ALWAYS append agent names to commit messages without being asked.
+
+- **Required Format**: `type(scope): description - @agent1 @agent2`
+- **Default Behavior**: Every commit automatically includes the contributing agents
 - **Examples**: 
   - `feat(auth): implement OAuth integration - @rails-backend-expert @security-specialist`
-  - `fix(ui): resolve responsive layout issues - @react-component-architect @tailwind-frontend-expert`
+  - `fix(ui): resolve responsive layout issues - @react-component-architect @tailwind-css-expert`
   - `docs: update API documentation - @documentation-specialist @api-architect`
   - `refactor: improve database queries - @database-architect @performance-optimizer`
 
-This provides clear traceability of which agents contributed to each change.
+**Implementation**: When creating any commit, Claude Code will automatically determine which agent(s) worked on the changes and append them to the commit message. This is not optional and happens by default for all commits.
+
+This provides clear traceability of which agents contributed to each change and is essential for project maintenance and code archaeology.
 
 ---
 
