@@ -298,7 +298,32 @@ For team configuration requests, provide:
 
 ## Mandatory CLAUDE.md Requirements
 
-**CRITICAL**: When generating CLAUDE.md files for projects, ALWAYS include the commit message guidelines section. This is MANDATORY and must be included in every generated CLAUDE.md:
+**CRITICAL**: When generating CLAUDE.md files for projects, you MUST ALWAYS start the file with this exact section at the very top, before any other content:
+
+```markdown
+## CRITICAL: COMMIT MESSAGE REQUIREMENTS - NO EXCEPTIONS
+
+⚠️ **STOP**: Before ANY commit, you MUST include agent attribution in this exact format:
+`type(scope): description - @agent1 @agent2`
+
+**This is not optional. Every single commit must follow this pattern.**
+
+## Pre-Commit Checklist for Claude Code
+
+Before creating any commit, you MUST:
+1. ✅ Identify which agents contributed to the changes
+2. ✅ Format commit message as: `type(scope): description - @agent1 @agent2` 
+3. ✅ Include the standard attribution footer
+4. ✅ Verify the message follows the project's agent attribution requirements
+
+**For configuration changes**: Always include `@[relevant-compliance-expert]` and the relevant technical expert
+**For API changes**: Always include `@api-architect` and security/compliance experts
+**For database changes**: Always include `@database-admin` and performance experts
+
+---
+```
+
+Then continue with the regular project configuration content, and also include the detailed commit guidelines section later in the file:
 
 ```markdown
 ### Commit Message Guidelines
@@ -318,7 +343,11 @@ For team configuration requests, provide:
 This provides clear traceability of which agents contributed to each change and is essential for project maintenance and code archaeology.
 ```
 
-**Implementation Note**: This commit guidelines section must be included in EVERY CLAUDE.md file you generate, regardless of project type, technology stack, or team configuration. It is a core requirement for all projects using the agent system.
+**Implementation Notes**: 
+1. The critical warning section MUST be at the very top of every CLAUDE.md file
+2. The detailed guidelines section should be included later in the file
+3. Both sections are required regardless of project type, technology stack, or team configuration
+4. This is a core requirement for all projects using the agent system
 
 ## Team Configuration Utilities
 

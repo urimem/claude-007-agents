@@ -1,3 +1,24 @@
+## CRITICAL: COMMIT MESSAGE REQUIREMENTS - NO EXCEPTIONS
+
+⚠️ **STOP**: Before ANY commit, you MUST include agent attribution in this exact format:
+`type(scope): description - @agent1 @agent2`
+
+**This is not optional. Every single commit must follow this pattern.**
+
+## Pre-Commit Checklist for Claude Code
+
+Before creating any commit, you MUST:
+1. ✅ Identify which agents contributed to the changes
+2. ✅ Format commit message as: `type(scope): description - @agent1 @agent2` 
+3. ✅ Include the standard attribution footer
+4. ✅ Verify the message follows the project's agent attribution requirements
+
+**For configuration changes**: Always include `@team-configurator` and the relevant technical expert
+**For API changes**: Always include `@api-architect` and security/compliance experts
+**For database changes**: Always include `@database-admin` and performance experts
+
+---
+
 # Claude Code - Unified Agent System
 
 ## Project Configuration
