@@ -253,6 +253,26 @@ cp CLAUDE.md /path/to/your/project/CLAUDE.md
 - At least 4 different commit examples with agent attribution
 - Implementation notes about automatic agent name appending
 
+### 📝 Automatic Agent Attribution in Commits
+
+Once you have a CLAUDE.md file in your project, **all commit messages will automatically include the agents that contributed to the code**:
+
+```bash
+# Your commits will automatically look like this:
+feat(auth): implement user authentication system - @rails-backend-expert @security-auditor
+fix(api): resolve connection timeout issues - @go-resilience-engineer @performance-optimizer
+docs(readme): update installation instructions - @documentation-specialist
+refactor(db): optimize query performance - @database-admin @performance-optimizer
+```
+
+**How it works:**
+- 🤖 Claude Code automatically detects which agents worked on your changes
+- ✅ Agent names are appended to every commit message without you asking
+- 🔍 Provides complete traceability of which agents contributed to each change
+- 📊 Essential for project maintenance and code archaeology
+
+**This happens automatically** - you don't need to remember to add agent names manually!
+
 ### Manual Setup
 1. **Use agents directly**: `"Use rails-backend-expert to build authentication with circuit breakers"`
 2. **Leverage orchestration**: `"Use @orchestrator to build a scalable e-commerce platform"`
