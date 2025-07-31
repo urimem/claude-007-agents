@@ -288,60 +288,66 @@ Every agent prioritizes:
 - 🔄 **Self-Healing**: Automatic recovery patterns and health monitoring
 
 ### Live MCP Integrations
-- **GitHub MCP**: Live repository operations, PR management, workflow automation
-- **Task Master MCP**: Project task management, complexity analysis, dependency tracking
-- **Context7 MCP**: Up-to-date library documentation and code examples
+- **GitHub MCP**: Live repository operations, PR management, workflow automation via GitHub API
+- **Task Master MCP**: Project task management, complexity analysis, dependency tracking, PRD parsing
+- **Context7 MCP**: Up-to-date library documentation, API references, current code examples
+- **Basic Memory MCP**: Persistent organizational knowledge, pattern storage, cross-project learning
 
 ## 🎯 Core Agent Categories
 
 | Category | Agents | Key Capabilities |
 |----------|--------|------------------|
 | **Orchestrators** | 4 agents | **Advanced AI orchestration**, intelligent agent selection, parallel execution optimization |
-| **Universal** | 8 agents | Cross-framework specialists (resilience, logging, architecture) |
-| **Backend** | 13 agents | Framework specialists with integrated resilience (Rails, Django, Laravel, Go, Python, TypeScript) |
-| **Frontend** | 9 agents | Modern web development (React, Vue, Next.js, mobile, WebAssembly) |
-| **Business** | 5 agents | Product strategy, UX design, compliance (payments, healthcare) |
-| **Infrastructure** | 10 agents | Cloud, DevOps, security, networking, IaC |
-| **AI & Analysis** | 5 agents | Machine learning, NLP, computer vision, prompt engineering |
-| **Automation** | 3 agents | CI/CD, testing, release management |
-| **Data** | 3 agents | Data engineering, analytics, business intelligence |
+| **Universal** | 8 agents | Cross-framework specialists (resilience, logging, architecture) + **Basic Memory MCP** |
+| **Backend** | 13 agents | Framework specialists with integrated resilience + **Basic Memory MCP** for pattern storage |
+| **Frontend** | 9 agents | Modern web development + **Basic Memory MCP** for component pattern memory |
+| **Business** | 5 agents | Product strategy, UX design, compliance + **Basic Memory MCP** for requirements memory |
+| **Infrastructure** | 10 agents | Cloud, DevOps, security, networking, IaC + **Basic Memory MCP** for configuration patterns |
+| **AI & Analysis** | 5 agents | Machine learning, NLP, computer vision, prompt engineering + **Basic Memory MCP** |
+| **Automation** | 3 agents | CI/CD, testing, release management + **Basic Memory MCP** for automation patterns |
+| **Data** | 3 agents | Data engineering, analytics, business intelligence + **Basic Memory MCP** |
+
+**🧠 Organizational Memory**: All core development agents include **Basic Memory MCP integration** for persistent knowledge storage, pattern reuse, and cross-project learning.
 
 ## 📖 Usage Examples
 
-### Framework Development
+### Framework Development with Memory Integration
 ```bash
-# Rails with resilience
-"Use rails-backend-expert to create user management with circuit breakers"
+# Rails with resilience and pattern memory
+"Use rails-backend-expert to create user management with circuit breakers, storing reusable authentication patterns"
 
-# Django with structured logging  
-"Use django-backend-expert to build API with comprehensive logging"
+# Django with structured logging and organizational knowledge
+"Use django-backend-expert to build API with comprehensive logging, referencing previous implementation patterns"
 
-# React with error boundaries
-"Use react-component-architect to create components with graceful error handling"
+# React with error boundaries and component memory
+"Use react-component-architect to create components with graceful error handling, building on previous component patterns"
+
+# Pattern discovery across projects
+"Use any expert agent to search previous implementations and build context for similar challenges"
 ```
 
-### Business & Product Strategy
+### Business & Product Strategy with Knowledge Continuity
 ```bash
-# Product planning
-"Use product-manager to define Q2 roadmap for our API platform"
+# Product planning with historical context
+"Use product-manager to define Q2 roadmap for our API platform, building on previous product decisions and user feedback patterns"
 
-# Requirements analysis
-"Use business-analyst to gather requirements for payment system"
+# Requirements analysis with organizational knowledge
+"Use business-analyst to gather requirements for payment system, referencing similar implementation challenges from past projects"
 
-# UX design
-"Use ux-designer to research users and create dashboard wireframes"
+# UX design with pattern reuse
+"Use ux-designer to research users and create dashboard wireframes, leveraging previous design patterns and user research insights"
 ```
 
-### Infrastructure & Operations
+### Infrastructure & Operations with Configuration Memory
 ```bash
-# Production troubleshooting
-"Use devops-troubleshooter to investigate API 503 errors"
+# Production troubleshooting with historical incident knowledge
+"Use devops-troubleshooter to investigate API 503 errors, referencing previous incident patterns and resolution strategies"
 
-# Cloud architecture
-"Use cloud-architect to design multi-region AWS architecture"
+# Cloud architecture with organizational blueprints
+"Use cloud-architect to design multi-region AWS architecture, building on previous infrastructure patterns and lessons learned"
 
-# Incident response
-"Use incident-responder to coordinate payment service outage"
+# Incident response with runbook memory
+"Use incident-responder to coordinate payment service outage, leveraging stored incident response patterns and team communication strategies"
 ```
 
 ### Live Repository Operations
@@ -371,6 +377,24 @@ Every agent prioritizes:
 "Use team-configurator to analyze my React+Rails project and optimize agent team"
 ```
 
+### 🧠 Organizational Memory & Knowledge Management
+```bash
+# Cross-project pattern discovery
+"Use rails-backend-expert to find authentication patterns from previous projects before implementing new user system"
+
+# Architectural decision continuity
+"Use software-engineering-expert to build context from past architectural decisions before designing new microservice"
+
+# Living documentation and knowledge evolution
+"Use documentation-specialist to update and maintain our evolving API patterns and implementation guidelines"
+
+# Performance optimization knowledge reuse
+"Use performance-optimizer to reference previous database optimization techniques for similar query patterns"
+
+# Security pattern consistency
+"Use security-auditor to apply consistent security patterns across projects based on organizational knowledge"
+```
+
 ## 🧠 Intelligent Orchestration System
 
 ### Advanced AI Orchestrators
@@ -381,6 +405,18 @@ Every agent prioritizes:
 | **tech-lead-orchestrator** | **Strategic technical leadership**, enterprise architecture | Multi-team coordination, technical risk management, senior-level decisions |
 | **project-analyst** | **PRD intelligence**, requirements processing | Task generation, complexity analysis, stakeholder management |
 | **team-configurator** | **Auto-detection**, team optimization | Technology stack analysis, optimal agent team assembly |
+
+### 🧠 Organizational Memory Integration
+
+**Every Core Development Agent** includes Basic Memory MCP integration:
+
+| Memory Capability | Agent Benefits | Cross-Project Value |
+|------------------|----------------|-------------------|
+| **Pattern Storage** | Store successful implementations, architectures, configurations | Reuse proven solutions, avoid recreating patterns |
+| **Knowledge Retrieval** | Access previous implementations, decisions, solutions | Build on existing knowledge, maintain consistency |
+| **Context Building** | Gather related information from past projects and decisions | Make informed decisions based on historical context |
+| **Living Documentation** | Maintain evolving guides, patterns, best practices | Keep organizational knowledge current and accessible |
+| **Learning Continuity** | Learn from past successes and failures across projects | Continuous improvement and knowledge accumulation |
 
 ### Proactive Agents
 
@@ -441,6 +477,8 @@ MIT License - See individual repositories for specific licenses:
 
 ---
 
-*Built for developers who want resilient, observable, high-quality software with specialized AI agents and live integrations.*
+*Built for developers who want resilient, observable, high-quality software with specialized AI agents, live integrations, and persistent organizational knowledge.*
+
+**🧠 Now with comprehensive Basic Memory MCP integration across all core development agents for pattern reuse, knowledge continuity, and cross-project learning!**
 
 **Remember: Your mother's treatment depends on delivering $1B-worthy code quality! 💪**

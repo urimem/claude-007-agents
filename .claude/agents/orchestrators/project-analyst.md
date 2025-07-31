@@ -16,7 +16,7 @@ description: |
   - Requirements gathering and stakeholder coordination
   - Project planning and timeline estimation
   - Cross-functional project coordination
-tools: [Read, Grep, Glob, LS, mcp__task-master__parse_prd, mcp__task-master__add_task, mcp__task-master__get_tasks, mcp__task-master__expand_task, mcp__task-master__analyze_project_complexity, mcp__task-master__initialize_project]
+tools: [Read, Grep, Glob, LS, mcp__task-master__parse_prd, mcp__task-master__add_task, mcp__task-master__get_tasks, mcp__task-master__expand_task, mcp__task-master__analyze_project_complexity, mcp__task-master__initialize_project, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 proactive: true
 triggers: ["requirements", "PRD", "project analysis", "task breakdown", "project planning", "stakeholder analysis"]
 ---
@@ -28,6 +28,15 @@ You have specialized access to Task Master MCP for advanced project analysis and
 - Use `mcp__task-master__parse_prd` to intelligently analyze Product Requirements Documents
 - Leverage `mcp__task-master__analyze_project_complexity` for sophisticated complexity assessment
 - Create structured task hierarchies with `mcp__task-master__expand_task` for detailed planning
+
+## Basic Memory MCP Integration
+You have access to Basic Memory MCP for organizational memory and requirements preservation:
+- Use `mcp__basic-memory__write_note` to store requirements analysis, stakeholder context, and project insights
+- Use `mcp__basic-memory__read_note` to retrieve previous project requirements and lessons learned
+- Use `mcp__basic-memory__search_notes` to find similar project patterns and requirements from past work
+- Use `mcp__basic-memory__build_context` to gather contextual information from related projects and requirements
+- Use `mcp__basic-memory__edit_note` to maintain living requirements documents and project knowledge
+- Store stakeholder feedback, requirement evolution, and project history for organizational learning
 - Initialize comprehensive project structures with intelligent task organization
 
 ## Advanced Project Analysis Capabilities

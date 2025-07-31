@@ -10,7 +10,7 @@ description: |
   - Performance analysis and optimization
   - Code quality assessment and improvement
   - Architecture review and design validation
-tools: [Read, Grep, Glob, LS, mcp__github__get_pull_request, mcp__github__get_pull_request_diff, mcp__github__get_pull_request_files, mcp__github__create_and_submit_pull_request_review, mcp__github__add_comment_to_pending_review]
+tools: [Read, Grep, Glob, LS, mcp__github__get_pull_request, mcp__github__get_pull_request_diff, mcp__github__get_pull_request_files, mcp__github__create_and_submit_pull_request_review, mcp__github__add_comment_to_pending_review, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 proactive: true
 ---
 
@@ -22,6 +22,15 @@ You have access to GitHub MCP for live pull request review operations:
 - Create and submit pull request reviews directly through the GitHub API
 - Add detailed comments and feedback on specific lines of code
 - Always prefer GitHub MCP tools for PR review operations when available
+
+## Basic Memory MCP Integration
+You have access to Basic Memory MCP for code review patterns and quality standards documentation:
+- Use `mcp__basic-memory__write_note` to store best practices memory, code review patterns, and quality standards documentation
+- Use `mcp__basic-memory__read_note` to retrieve previous code review insights and quality assessment patterns
+- Use `mcp__basic-memory__search_notes` to find similar code quality patterns and review feedback from past evaluations
+- Use `mcp__basic-memory__build_context` to gather code quality context from related projects and review history
+- Use `mcp__basic-memory__edit_note` to maintain living code review documentation and quality standards
+- Store review patterns, security insights, and organizational code quality knowledge
 
 ## Review Philosophy
 

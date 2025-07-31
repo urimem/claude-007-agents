@@ -2,7 +2,7 @@
 
 ## Overview
 
-Model Context Protocol (MCP) servers provide live integrations with external services and tools. The Unified Agent System integrates with three core MCP servers to enhance agent capabilities with real-time data and operations.
+Model Context Protocol (MCP) servers provide live integrations with external services and tools. The Unified Agent System integrates with four core MCP servers to enhance agent capabilities with real-time data, operations, and persistent organizational knowledge.
 
 ## Available MCP Servers
 
@@ -56,6 +56,24 @@ Live library documentation and code examples
 **Key Tools:**
 - `mcp__context7__resolve-library-id`
 - `mcp__context7__get-library-docs`
+
+### Basic Memory MCP (`mcp__basic-memory__*`)
+Persistent knowledge management and organizational memory
+
+**Capabilities:**
+- Note creation, editing, and management for persistent knowledge storage  
+- Context building from historical projects and implementations
+- Pattern search and knowledge retrieval across organizational memory
+- Living documentation maintenance and evolution tracking
+- Project memory and architectural decision recording
+- Cross-project learning and pattern reuse
+
+**Key Tools:**
+- `mcp__basic-memory__write_note`
+- `mcp__basic-memory__read_note`
+- `mcp__basic-memory__search_notes`
+- `mcp__basic-memory__build_context`
+- `mcp__basic-memory__edit_note`
 
 ## Agent Integration Patterns
 
@@ -192,6 +210,96 @@ You have access to Context7 MCP for retrieving up-to-date Rails documentation an
 - Use `mcp__context7__get-library-docs` to fetch current Rails API references, gem usage patterns, and best practices
 - Always verify gem compatibility and current Rails versions before making recommendations
 - Integrate the latest Rails patterns and gem examples from Context7 into your solutions
+```
+
+### Basic Memory MCP Integration
+
+#### All Core Development Agents
+**Comprehensive Integration Pattern:**
+```yaml
+# Example: performance-optimizer agent tools
+tools: [
+  Read, Write, Edit, MultiEdit, Bash, Grep, Glob, LS,
+  mcp__basic-memory__write_note,
+  mcp__basic-memory__read_note,
+  mcp__basic-memory__search_notes,
+  mcp__basic-memory__build_context,
+  mcp__basic-memory__edit_note
+]
+```
+
+**Universal Integration Pattern:**
+```markdown
+## Basic Memory MCP Integration
+You have access to Basic Memory MCP for [domain] patterns and [technology] knowledge:
+- Use `mcp__basic-memory__write_note` to store [domain] patterns, [specific techniques], and [expertise] insights
+- Use `mcp__basic-memory__read_note` to retrieve previous [domain] implementations and solutions
+- Use `mcp__basic-memory__search_notes` to find similar [domain] challenges and approaches from past projects
+- Use `mcp__basic-memory__build_context` to gather [domain] context from related systems and decisions
+- Use `mcp__basic-memory__edit_note` to maintain living [domain] documentation and evolution guides
+- Store [specific configurations], [pattern types], and organizational [domain] knowledge
+```
+
+#### Agent-Specific Memory Categories
+
+**Universal Specialists & Quality:**
+```yaml
+# documentation-specialist
+Basic Memory Focus: Architectural decision tracking, project memory, documentation patterns
+
+# code-reviewer  
+Basic Memory Focus: Code review patterns, quality standards, best practices documentation
+
+# performance-optimizer
+Basic Memory Focus: Performance analysis memory, optimization patterns, benchmark tracking
+
+# resilience-engineer
+Basic Memory Focus: Fault tolerance patterns, circuit breaker configurations, resilience strategies
+```
+
+**Backend Framework Specialists:**
+```yaml
+# rails-expert, django-expert, laravel-expert, etc.
+Basic Memory Focus: Framework patterns, ORM optimizations, language best practices
+
+# nodejs-expert, fastify-expert
+Basic Memory Focus: Async implementations, JavaScript/TypeScript patterns, performance optimizations
+
+# gin-expert, fiber-expert  
+Basic Memory Focus: Go patterns, middleware configurations, performance strategies
+
+# prisma-expert
+Basic Memory Focus: Schema designs, migration strategies, database optimization patterns
+```
+
+**Frontend Framework Specialists:**
+```yaml
+# angular-expert, nextjs-expert, vue-expert
+Basic Memory Focus: Component architectures, framework patterns, performance optimizations
+
+# react-component-architect
+Basic Memory Focus: Component patterns, hooks patterns, React best practices
+```
+
+**Development Operations:**
+```yaml
+# git-expert
+Basic Memory Focus: Git workflow patterns, conflict resolution strategies, branching models
+
+# cicd-pipeline-engineer
+Basic Memory Focus: Pipeline configurations, deployment strategies, automation patterns
+
+# test-automation-expert, qa-automation-engineer
+Basic Memory Focus: Testing strategies, automation patterns, QA insights and frameworks
+```
+
+**Project & Team Management:**
+```yaml
+# project-analyst, tech-lead-orchestrator
+Basic Memory Focus: Requirements memory, architectural decisions, strategic planning
+
+# business-analyst, product-manager
+Basic Memory Focus: Business logic, stakeholder requirements, feature evolution tracking
 ```
 
 ## MCP Workflow Patterns

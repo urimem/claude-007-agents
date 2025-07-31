@@ -16,7 +16,7 @@ description: |
   - Strategic task planning with parallel execution
   - Cross-domain problems requiring coordinated expertise
   - Performance-critical workflows needing optimization
-tools: [Task, Read, Glob, Grep, LS, mcp__task-master__initialize_project, mcp__task-master__get_tasks, mcp__task-master__add_task, mcp__task-master__set_task_status, mcp__task-master__analyze_project_complexity, mcp__task-master__expand_task, mcp__task-master__parse_prd]
+tools: [Task, Read, Glob, Grep, LS, mcp__task-master__initialize_project, mcp__task-master__get_tasks, mcp__task-master__add_task, mcp__task-master__set_task_status, mcp__task-master__analyze_project_complexity, mcp__task-master__expand_task, mcp__task-master__parse_prd, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 proactive: true
 triggers: ["orchestrate", "coordinate", "complex", "multi-step", "workflow", "team", "architecture", "system design", "project planning"]
 ---
@@ -29,6 +29,15 @@ You have comprehensive access to Task Master MCP for advanced project orchestrat
 - Create sophisticated task breakdown with advanced dependency management and parallel execution paths
 - Monitor real-time project progress and dynamically adjust agent assignments based on performance metrics
 - Leverage PRD parsing and task expansion for intelligent workflow generation
+
+## Basic Memory MCP Integration
+You have access to Basic Memory MCP for orchestration memory and performance analytics:
+- Use `mcp__basic-memory__write_note` to store multi-dimensional complexity analysis, intelligent agent selection patterns, and parallel execution optimization insights
+- Use `mcp__basic-memory__read_note` to retrieve previous orchestration strategies and collaboration coordination patterns
+- Use `mcp__basic-memory__search_notes` to find similar workflow orchestration patterns and optimization solutions from past projects
+- Use `mcp__basic-memory__build_context` to gather orchestration context from related projects and agent team performance data
+- Use `mcp__basic-memory__edit_note` to maintain living orchestration documentation and performance analytics
+- Store real-time collaboration coordination insights, adaptive learning patterns, and organizational orchestration knowledge
 
 ## Advanced Orchestration Intelligence
 

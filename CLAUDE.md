@@ -23,7 +23,7 @@ Before creating any commit, you MUST:
 
 ## Project Configuration
 
-This project features a comprehensive unified agent system with **advanced AI orchestration intelligence**, integrated **resilience engineering** and **structured logging** capabilities across all backend frameworks. The system includes 75+ specialized agents organized into 14 categories, providing expert guidance for modern software development practices with intelligent coordination and optimization.
+This project features a comprehensive unified agent system with **advanced AI orchestration intelligence**, integrated **resilience engineering** and **structured logging** capabilities across all backend frameworks. The system includes 75+ specialized agents organized into 14 categories, with **comprehensive Basic Memory MCP integration** across all core development agents, providing expert guidance for modern software development practices with intelligent coordination, optimization, and persistent organizational knowledge.
 
 ## AI Development Team Configuration
 
@@ -33,7 +33,7 @@ This project features a comprehensive unified agent system with **advanced AI or
 - **Resilience Libraries**: Cockatiel, Hyx, GoBreaker, CircuitBox
 - **Logging Libraries**: Pino, Zap, structured logging patterns
 - **Databases**: ActiveRecord, Django ORM, Eloquent, Prisma
-- **MCP Integrations**: GitHub Operations, Task Master Project Management, Context7 Documentation
+- **MCP Integrations**: GitHub Operations, Task Master Project Management, Context7 Documentation, Basic Memory Knowledge Management
 
 ### Specialist Agent Assignments
 
@@ -243,55 +243,71 @@ This project features a comprehensive unified agent system with **advanced AI or
 
 #### For Resilient Backend Development:
 ```
-"Build a user authentication service with circuit breakers and structured logging"
-"Implement retry mechanisms for our payment API"
-"Add resilience patterns to our Django microservice"
+"Build a user authentication service with circuit breakers and structured logging" → @resilience-engineer + @rails-expert + Basic Memory MCP
+"Implement retry mechanisms for our payment API" → @resilience-engineer + @fastapi-expert + Basic Memory MCP
+"Add resilience patterns to our Django microservice" → @resilience-engineer + @django-expert + Basic Memory MCP
+"Create high-performance Go API with Gin framework" → @gin-expert + @resilience-engineer + Basic Memory MCP
+"Build Node.js microservice with Fastify and observability" → @fastify-expert + @nodejs-expert + Basic Memory MCP
+"Implement Laravel API with robust error handling" → @laravel-expert + @resilience-engineer + Basic Memory MCP
+"Store backend patterns and resilience configurations" → Backend specialists + Basic Memory MCP
 ```
 
 #### For API Development:
 ```
-"Design a REST API for user management" → @api-architect + @rails-backend-expert
-"Create GraphQL endpoints with error handling" → @graphql-architect + framework specialist
-"Build GraphQL federation architecture" → @graphql-architect + @cloud-architect
-"Build API rate limiting with proper logging" → framework specialist + @resilience-engineer
+"Design a REST API for user management" → @api-architect + @rails-backend-expert + Basic Memory MCP
+"Create GraphQL endpoints with error handling" → @graphql-architect + framework specialist + Basic Memory MCP
+"Build GraphQL federation architecture" → @graphql-architect + @cloud-architect + Basic Memory MCP
+"Build API rate limiting with proper logging" → framework specialist + @resilience-engineer + Basic Memory MCP
+"Create type-safe Prisma database layer" → @prisma-expert + @nodejs-expert + Basic Memory MCP
+"Store API design patterns and implementation strategies" → API specialists + Basic Memory MCP
 ```
 
 #### For Frontend Development:
 ```
-"Create a responsive dashboard component" → @react-component-architect + Context7 MCP
-"Implement state management for user preferences" → @react-state-manager + Context7 MCP
-"Build a Vue.js component library" → @vue-component-architect + Context7 MCP
-"Get latest React hooks patterns and examples" → @react-component-architect + Context7 MCP
-"Find current Next.js routing best practices" → @nextjs-expert + Context7 MCP
+"Create a responsive dashboard component" → @react-component-architect + Context7 MCP + Basic Memory MCP
+"Implement state management for user preferences" → @react-state-manager + Context7 MCP + Basic Memory MCP
+"Build a Vue.js component library" → @vue-component-architect + Context7 MCP + Basic Memory MCP
+"Get latest React hooks patterns and examples" → @react-component-architect + Context7 MCP + Basic Memory MCP
+"Find current Next.js routing best practices" → @nextjs-expert + Context7 MCP + Basic Memory MCP
+"Build Angular enterprise application with best practices" → @angular-expert + Basic Memory MCP
+"Store component patterns and frontend architecture decisions" → Frontend specialists + Basic Memory MCP
 ```
 
 #### For Code Quality & Engineering Excellence:
 ```
-"Implement a user authentication system with clean architecture" → @software-engineering-expert + Context7 MCP
-"Refactor this messy code following best practices" → @software-engineering-expert + Context7 MCP
-"Review my authentication implementation" → @code-reviewer + GitHub MCP
-"Optimize database queries in this service" → @performance-optimizer + ORM specialist + Context7 MCP
-"Explore this legacy Rails application" → @code-archaeologist
-"Resolve complex merge conflict between feature branches" → @git-expert + GitHub MCP
-"Create PR with automated review and merge workflow" → @git-expert + GitHub MCP
-"Generate API documentation with current examples" → @documentation-specialist + Context7 MCP
+"Implement a user authentication system with clean architecture" → @software-engineering-expert + Context7 MCP + Basic Memory MCP
+"Refactor this messy code following best practices" → @software-engineering-expert + Context7 MCP + Basic Memory MCP
+"Review my authentication implementation" → @code-reviewer + GitHub MCP + Basic Memory MCP
+"Optimize database queries in this service" → @performance-optimizer + ORM specialist + Context7 MCP + Basic Memory MCP
+"Explore this legacy Rails application" → @code-archaeologist + Basic Memory MCP
+"Resolve complex merge conflict between feature branches" → @git-expert + GitHub MCP + Basic Memory MCP
+"Create PR with automated review and merge workflow" → @git-expert + GitHub MCP + Basic Memory MCP
+"Generate API documentation with current examples" → @documentation-specialist + Context7 MCP + Basic Memory MCP
+"Document architectural decisions for future reference" → @documentation-specialist + Basic Memory MCP
+"Store code review patterns and quality insights" → @code-reviewer + Basic Memory MCP
+"Implement comprehensive testing strategy" → @test-automation-expert + Basic Memory MCP
+"Set up CI/CD pipeline with best practices" → @cicd-pipeline-engineer + GitHub MCP + Basic Memory MCP
 ```
 
 #### For Project Planning:
 ```
-"Analyze requirements for our new microservice" → @project-analyst + Task Master MCP
-"Plan architecture for a resilient e-commerce system" → @tech-lead-orchestrator + Task Master MCP
+"Analyze requirements for our new microservice" → @project-analyst + Task Master MCP + Basic Memory MCP
+"Plan architecture for a resilient e-commerce system" → @tech-lead-orchestrator + Task Master MCP + Basic Memory MCP
 "Set up development workflow for the team" → @team-configurator
 "Parse PRD and generate initial tasks" → @project-analyst + Task Master MCP
 "Initialize project with complexity analysis" → @tech-lead-orchestrator + Task Master MCP
+"Build context from previous project implementations" → @project-analyst + Basic Memory MCP
+"Store architectural decisions and lessons learned" → @tech-lead-orchestrator + Basic Memory MCP
 ```
 
 #### For Business & Product Strategy:
 ```
-"Define product roadmap for Q2" → @product-manager
-"Analyze user requirements for new feature" → @business-analyst + @ux-designer
+"Define product roadmap for Q2" → @product-manager + Basic Memory MCP
+"Analyze user requirements for new feature" → @business-analyst + @ux-designer + Basic Memory MCP
 "Research competitor features and user needs" → @product-manager + @business-analyst
 "Design user flows for checkout process" → @ux-designer
+"Track feature evolution and user feedback patterns" → @product-manager + Basic Memory MCP
+"Document business logic and stakeholder requirements" → @business-analyst + Basic Memory MCP
 ```
 
 #### For Infrastructure & Operations:
@@ -305,21 +321,25 @@ This project features a comprehensive unified agent system with **advanced AI or
 #### For AI & Specialized Analysis:
 ```
 "Optimize prompts for our AI chatbot" → @prompt-engineer
-"Analyze error patterns in production logs" → @error-detective
-"Debug complex multi-service failures" → @error-detective + @incident-responder
+"Analyze error patterns in production logs" → @error-detective + Basic Memory MCP
+"Debug complex multi-service failures" → @error-detective + @incident-responder + Basic Memory MCP
 "Build computer vision system for quality control" → @computer-vision-specialist
 "Implement document processing with NLP" → @nlp-llm-integration-expert
 "Create ML pipeline for recommendation system" → @machine-learning-engineer
+"Store debugging insights and error resolution patterns" → @error-detective + Basic Memory MCP
+"Document incident response patterns and post-mortems" → @incident-responder + Basic Memory MCP
 ```
 
 #### For Security & Compliance:
 ```
-"Conduct security audit of our web application" → @security-auditor
+"Conduct security audit of our web application" → @security-auditor + Basic Memory MCP
 "Perform penetration testing on API endpoints" → @security-auditor
 "Review infrastructure for compliance gaps" → @security-auditor + @cloud-architect
 "Implement GDPR compliance for user data processing" → @privacy-engineer
 "Design privacy-preserving analytics system" → @privacy-engineer + @data-engineer
 "Integrate security scanning into CI/CD pipeline" → @devsecops-engineer
+"Store security assessment patterns and vulnerability tracking" → @security-auditor + Basic Memory MCP
+"Document compliance requirements and validation procedures" → @security-auditor + Basic Memory MCP
 ```
 
 #### For Mobile Development:
@@ -449,6 +469,7 @@ This project features a comprehensive unified agent system with **advanced AI or
 - **GitHub MCP** (`mcp__github__*`) - Live repository operations and GitHub API integration
 - **Task Master MCP** (`mcp__task-master__*`) - Project task management and complexity analysis
 - **Context7 MCP** (`mcp__context7__*`) - Live library documentation and code examples
+- **Basic Memory MCP** (`mcp__basic-memory__*`) - Persistent knowledge management and memory operations
 
 #### MCP-Enhanced Agent Capabilities
 
@@ -477,6 +498,55 @@ This project features a comprehensive unified agent system with **advanced AI or
 - `@api-architect` → API design patterns, framework-specific implementations
 - `@frontend-developer` → Frontend library documentation, framework comparisons
 
+**Basic Memory MCP Integration (All Core Development Agents):**
+
+*Universal Specialists & Quality:*
+- `@documentation-specialist` → Persistent knowledge storage, project memory, architectural decision tracking
+- `@code-reviewer` → Code review patterns, quality standards, best practices documentation
+- `@performance-optimizer` → Performance analysis memory, optimization patterns, benchmark tracking
+- `@resilience-engineer` → Fault tolerance patterns, circuit breaker configurations, resilience strategies
+- `@software-engineering-expert` → Engineering excellence patterns, architecture decisions, quality insights
+
+*Project & Team Management:*
+- `@project-analyst` → Requirements memory, stakeholder context, project history preservation
+- `@tech-lead-orchestrator` → Architecture decision records, strategic planning memory, team knowledge base
+- `@business-analyst` → Business logic memory, stakeholder requirements, process documentation
+- `@product-manager` → Feature evolution tracking, user feedback memory, product decision history
+
+*Development Operations:*
+- `@git-expert` → Git workflow patterns, conflict resolution strategies, branching model knowledge
+- `@cicd-pipeline-engineer` → Pipeline configurations, deployment strategies, automation patterns
+- `@deployment-specialist` → DevOps patterns, infrastructure configurations, deployment knowledge
+- `@test-automation-expert` → Testing strategies, automation patterns, QA insights
+- `@qa-automation-engineer` → Quality assurance patterns, testing frameworks, validation strategies
+
+*Backend Framework Specialists:*
+- `@rails-expert` → Rails patterns, ActiveRecord optimizations, Ruby best practices
+- `@django-expert` → Django patterns, ORM optimizations, Python web development
+- `@laravel-expert` → Laravel patterns, Eloquent optimizations, PHP best practices
+- `@fastapi-expert` → FastAPI patterns, async implementations, Python performance
+- `@nodejs-expert` → Node.js patterns, async implementations, JavaScript best practices
+- `@fastify-expert` → Fastify patterns, plugin configurations, Node.js optimizations
+- `@gin-expert` → Gin patterns, middleware configurations, Go performance
+- `@fiber-expert` → Fiber patterns, Go web development, performance optimizations
+- `@prisma-expert` → Schema designs, migration strategies, database optimization
+
+*Frontend Framework Specialists:*
+- `@angular-expert` → Angular patterns, TypeScript solutions, component architectures
+- `@nextjs-expert` → SSR/SSG strategies, performance optimizations, full-stack patterns
+- `@vue-expert` → Vue patterns, Composition API solutions, reactive programming
+
+*Security & Infrastructure:*
+- `@security-specialist` → Security patterns, vulnerability assessments, threat models
+- `@security-auditor` → Security assessment memory, vulnerability tracking, compliance documentation
+- `@incident-responder` → Post-mortem analysis, incident knowledge base, response patterns
+- `@error-detective` → Error pattern memory, debugging insights, solution knowledge base
+
+*Specialized Development:*
+- `@code-refactoring-specialist` → Legacy system analysis, technical debt tracking, modernization patterns
+- `@machine-learning-engineer` → MLOps pipelines, model optimization, deployment patterns
+- `@rapid-prototyper` → MVP strategies, rapid development patterns, validation approaches
+
 #### MCP Workflow Patterns
 
 **Repository Operations Workflow:**
@@ -494,13 +564,22 @@ This project features a comprehensive unified agent system with **advanced AI or
 2. Framework specialists + Context7 MCP → Access current patterns and best practices
 3. `@software-engineering-expert` + Context7 MCP → Validate implementation approaches
 
+**Knowledge-Driven Development Workflow:**
+1. `@project-analyst` + Basic Memory MCP → Build context from previous projects and requirements
+2. `@documentation-specialist` + Basic Memory MCP → Access stored architectural patterns and decisions
+3. Framework specialists + Basic Memory MCP → Leverage historical implementation knowledge
+4. `@code-archaeologist` + Basic Memory MCP → Reference legacy system analysis and migration patterns
+5. Basic Memory MCP → Continuous knowledge capture and organizational learning
+
 **Integrated Development Workflow:**
 1. **Planning** → Task Master MCP generates structured tasks from requirements
 2. **Research** → Context7 MCP provides current documentation and examples
-3. **Development** → Framework specialists implement with GitHub MCP for live repo operations
-4. **Review** → `@code-reviewer` + GitHub MCP for automated quality assurance
-5. **Deployment** → `@release-manager` + GitHub MCP for orchestrated releases
-6. **Tracking** → Task Master MCP maintains project progress visibility
+3. **Knowledge Context** → Basic Memory MCP provides historical context and lessons learned
+4. **Development** → Framework specialists implement with GitHub MCP for live repo operations
+5. **Review** → `@code-reviewer` + GitHub MCP for automated quality assurance
+6. **Memory Capture** → Basic Memory MCP stores key decisions and patterns for future reference
+7. **Deployment** → `@release-manager` + GitHub MCP for orchestrated releases
+8. **Tracking** → Task Master MCP maintains project progress visibility
 
 ### Agent Dependencies & Relationships
 
@@ -518,6 +597,7 @@ Specialized agents build upon universal foundations:
 - Repository-related agents leverage GitHub MCP for live operations
 - Project management agents integrate with Task Master MCP for structured tracking
 - Documentation and development agents utilize Context7 MCP for current library information
+- **ALL core development agents** leverage Basic Memory MCP for persistent organizational learning and pattern reuse
 - All agents can utilize MCP servers for enhanced capabilities when available
 
 ### Commit Message Guidelines
@@ -538,6 +618,6 @@ This provides clear traceability of which agents contributed to each change and 
 
 ---
 
-**Your AI development team is ready to build resilient, well-logged, high-quality software! 🚀**
+**Your AI development team is ready to build resilient, well-logged, high-quality software with comprehensive organizational memory! 🚀**
 
-*Last updated: 2025-01-30 | Agents: 72+ | Categories: 13 | Workflows: 11 | MCP Servers: 3*
+*Last updated: 2025-01-31 | Agents: 75+ | Categories: 14 | Workflows: 12 | MCP Servers: 4 | Basic Memory Integration: ALL Core Development Agents*
