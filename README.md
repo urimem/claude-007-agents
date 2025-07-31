@@ -198,33 +198,60 @@ git pull
 ## 🚀 Quick Start
 
 ### Auto-Configuration (Recommended)
+
+**Step 1: Analyze Your Project**
 ```bash
 # Analyze your project and get team configuration recommendations
 claude "Use @team-configurator to analyze my project structure"
 ```
-This will automatically:
-- 🔍 **Detect your stack** (Rails, Django, React, TypeScript, etc.)
+
+**Step 2: Generate CLAUDE.md File**
+```bash
+# Create your personalized CLAUDE.md based on the analysis (RECOMMENDED)
+claude "Use @team-configurator to analyze my project structure. Based on the team configuration analysis, create a CLAUDE.md file for my project"
+```
+
+This two-step process will automatically:
+- 🔍 **Detect your stack** (Rails, Django, React, TypeScript, Go, etc.)
 - 🤖 **Configure specialists** with resilience and logging integration  
 - 📋 **Generate team recommendations** with optimal agent configurations
 - 🎯 **Provide usage examples** tailored to your project
+- ⚠️ **Include critical commit requirements** at the top of CLAUDE.md
+- ✅ **Add pre-commit checklist** with project-specific guidance
+- 📚 **Include commit examples** with proper agent attribution
 
-### Creating Your CLAUDE.md File
-After running the team configurator analysis, create your personalized CLAUDE.md:
+### Alternative CLAUDE.md Creation Methods
 
 ```bash
-# Option 1: Ask Claude to create CLAUDE.md based on the analysis
+# Option A: Single command (recommended for new projects)
+claude "Use @team-configurator to analyze my project structure. Based on the team configuration analysis, create a CLAUDE.md file for my project"
+
+# Option B: Two separate commands
+claude "Use @team-configurator to analyze my project structure"
 claude "Based on the team configuration analysis, create a CLAUDE.md file for my project"
 
-# Option 2: Copy and customize the template
+# Option C: Copy and customize the template (manual approach)
 cp CLAUDE.md /path/to/your/project/CLAUDE.md
 # Then edit to match your project's specific needs
 ```
 
-The CLAUDE.md file will contain:
+### What Your Generated CLAUDE.md Will Include:
+
+✅ **Critical Requirements Section** (at the very top):
+- Prominent commit message requirements warning
+- Pre-commit checklist with 4 mandatory steps
+- Project-specific guidance for different change types
+
+✅ **Project-Optimized Content**:
 - 📝 **Your personalized agent team** optimized for your technology stack
 - 🎯 **Usage examples** specific to your project architecture  
 - 🔧 **Workflow configurations** tailored to your development process
 - 📊 **Agent relationships** and collaboration patterns
+
+✅ **Detailed Guidelines Section**:
+- Complete commit message format requirements
+- At least 4 different commit examples with agent attribution
+- Implementation notes about automatic agent name appending
 
 ### Manual Setup
 1. **Use agents directly**: `"Use rails-backend-expert to build authentication with circuit breakers"`

@@ -296,9 +296,15 @@ For team configuration requests, provide:
 - **Workflow Improvement**: Continuous workflow optimization and enhancement
 ```
 
-## Mandatory CLAUDE.md Requirements
+## 🚨 MANDATORY CLAUDE.md REQUIREMENTS - CRITICAL FAILURE IF NOT FOLLOWED 🚨
 
-**CRITICAL**: When generating CLAUDE.md files for projects, you MUST ALWAYS start the file with this exact section at the very top, before any other content:
+**STOP! READ THIS BEFORE GENERATING ANY CLAUDE.md FILE:**
+
+You MUST NEVER generate a CLAUDE.md file without following these exact requirements. FAILURE TO FOLLOW THESE REQUIREMENTS IS A CRITICAL ERROR.
+
+### STEP 1: ALWAYS START WITH CRITICAL SECTION (FIRST LINES OF FILE)
+
+Every single CLAUDE.md file MUST begin with this EXACT text as the very first content:
 
 ```markdown
 ## CRITICAL: COMMIT MESSAGE REQUIREMENTS - NO EXCEPTIONS
@@ -316,14 +322,20 @@ Before creating any commit, you MUST:
 3. ✅ Include the standard attribution footer
 4. ✅ Verify the message follows the project's agent attribution requirements
 
-**For configuration changes**: Always include `@[relevant-compliance-expert]` and the relevant technical expert
+**For configuration changes**: Always include `@team-configurator` and the relevant technical expert
 **For API changes**: Always include `@api-architect` and security/compliance experts
 **For database changes**: Always include `@database-admin` and performance experts
 
 ---
 ```
 
-Then continue with the regular project configuration content, and also include the detailed commit guidelines section later in the file:
+### STEP 2: THEN ADD PROJECT CONTENT
+
+After the critical section above, add your project-specific content (# Project Title, ## Project Configuration, agents, etc.)
+
+### STEP 3: ALWAYS INCLUDE DETAILED GUIDELINES SECTION
+
+Every CLAUDE.md file MUST also include this detailed section somewhere in the file:
 
 ```markdown
 ### Commit Message Guidelines
@@ -343,11 +355,28 @@ Then continue with the regular project configuration content, and also include t
 This provides clear traceability of which agents contributed to each change and is essential for project maintenance and code archaeology.
 ```
 
-**Implementation Notes**: 
-1. The critical warning section MUST be at the very top of every CLAUDE.md file
-2. The detailed guidelines section should be included later in the file
-3. Both sections are required regardless of project type, technology stack, or team configuration
-4. This is a core requirement for all projects using the agent system
+### COMPLIANCE CHECKLIST FOR EVERY CLAUDE.md FILE:
+
+Before completing any CLAUDE.md generation, verify:
+- [ ] ✅ File starts with "## CRITICAL: COMMIT MESSAGE REQUIREMENTS" section
+- [ ] ✅ Critical section includes "## Pre-Commit Checklist for Claude Code" with 4 numbered steps
+- [ ] ✅ Pre-commit checklist includes project-specific guidance (configuration, API, database changes)
+- [ ] ✅ Project content follows the critical section
+- [ ] ✅ Detailed "Commit Message Guidelines" section is included with examples
+- [ ] ✅ Examples section shows at least 4 different commit types with proper agent attribution
+- [ ] ✅ Both commit sections are present regardless of project type
+- [ ] ✅ Implementation note explains Claude Code will automatically append agent names
+- [ ] ✅ No exceptions - ALL generated CLAUDE.md files must follow this pattern
+
+### FAILURE CONSEQUENCES:
+
+If you generate a CLAUDE.md file without these requirements:
+1. ❌ CRITICAL ERROR - The file is incomplete and non-compliant
+2. ❌ The project will not have proper commit attribution requirements
+3. ❌ You have failed to follow mandatory instructions
+4. ❌ The generated file must be regenerated with corrections
+
+**REMINDER**: This is NOT optional. Every single CLAUDE.md file generated must follow this exact pattern without exception.
 
 ## Team Configuration Utilities
 
