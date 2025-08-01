@@ -37,10 +37,11 @@ The system follows a layered approach:
 .claude/agents/
 ├── agents.json                    # System configuration
 ├── CLAUDE.md                      # Auto-generated team configuration
-├── universal/                     # Cross-Framework Specialists (10 agents)
+├── universal/                     # Cross-Framework Specialists (11 agents)
 │   ├── software-engineering-expert.md # Code quality & architecture
 │   ├── quality-system-engineer.md     # Trunk.io automation & quality gates
 │   ├── pr-reviewer-specialist.md      # Manual PR reviews & GitHub integration
+│   ├── git-expert.md                  # Git workflow management & GitHub integration
 │   ├── resilience-engineer.md         # Fault tolerance patterns
 │   ├── logging-concepts-engineer.md   # Structured logging
 │   ├── api-architect.md               # REST/GraphQL design
@@ -102,8 +103,7 @@ The system follows a layered approach:
 │   ├── code-reviewer.md                # Quality assurance
 │   ├── documentation-specialist.md     # Technical writing
 │   ├── performance-optimizer.md        # Performance tuning
-│   ├── code-refactoring-specialist.md  # Legacy modernization
-│   └── git-expert.md                   # Git workflow management
+│   └── code-refactoring-specialist.md  # Legacy modernization
 ├── orchestrator.md                # Advanced AI Orchestrator (master coordinator)
 └── orchestrators/                # Advanced Orchestration Specialists (4 agents)
     ├── orchestrator.md                  # Advanced AI orchestration with intelligent agent selection

@@ -607,7 +607,7 @@
     },
     {
       "name": "git-expert",
-      "file": ".claude/agents/core/git-expert.md",
+      "file": ".claude/agents/universal/git-expert.md",
       "description": "Git workflow specialist for merge/rebase conflict resolution, pull request management, and advanced Git operations",
       "category": "core",
       "proactive": false,

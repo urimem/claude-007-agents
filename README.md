@@ -299,7 +299,7 @@ Every agent prioritizes:
 | Category | Agents | Key Capabilities |
 |----------|--------|------------------|
 | **Orchestrators** | 4 agents | **Advanced AI orchestration**, intelligent agent selection, parallel execution optimization |
-| **Universal** | 9 agents | Cross-framework specialists (resilience, logging, architecture, **quality system**) + **Basic Memory MCP** |
+| **Universal** | 11 agents | Cross-framework specialists (resilience, logging, architecture, **quality system**, **Git workflows**) + **Basic Memory MCP** |
 | **Backend** | 13 agents | Framework specialists with integrated resilience + **Basic Memory MCP** for pattern storage |
 | **Frontend** | 9 agents | Modern web development + **Basic Memory MCP** for component pattern memory |
 | **Business** | 5 agents | Product strategy, UX design, compliance + **Basic Memory MCP** for requirements memory |
