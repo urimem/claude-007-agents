@@ -39,112 +39,66 @@ This project features a comprehensive unified agent system with **advanced AI or
 
 #### Advanced AI Orchestrators (Intelligent Coordination)
 - **Master Orchestrator** → `@orchestrator`
-  - **AUTO-ENABLED**: Intelligent agent auto-selection and dynamic orchestration
-  - Multi-dimensional complexity analysis, real-time collaboration coordination
-  - Parallel execution optimization with conflict resolution and shared context streams
-  - Performance analytics with continuous learning and adaptation patterns
+  - Multi-dimensional complexity analysis, intelligent agent selection, parallel execution optimization
+  - Real-time collaboration coordination, adaptive learning, performance analytics
 - **Strategic Technical Leadership** → `@tech-lead-orchestrator`
-  - **AUTO-ENABLED**: Predictive development intelligence with technical debt forecasting
-  - Enterprise architecture decisions, scalability impact analysis, security risk modeling
-  - Strategic technology planning with proactive problem prevention and early warning systems
-  - Crisis leadership, Architecture Decision Records (ADRs) with visual development intelligence
+  - Enterprise architecture decisions, multi-team coordination, technical risk management
+  - Strategic technology planning, crisis leadership, Architecture Decision Records (ADRs)
 - **Project Analysis Intelligence** → `@project-analyst`
-  - **AUTO-ENABLED**: Cross-project knowledge synthesis with pattern recognition
-  - PRD processing, AI-powered task decomposition, best practice distillation
-  - Multi-dimensional complexity analysis with anti-pattern detection and prevention
-  - Stakeholder management with contextual learning and cultural adaptation
+  - PRD processing, AI-powered task decomposition, multi-dimensional complexity analysis
+  - Stakeholder management, requirements intelligence, cross-functional coordination
 - **Team Configuration Optimization** → `@team-configurator`
-  - **AUTO-ENABLED**: Advanced testing and quality orchestration with multi-agent reviews
-  - Technology stack detection, optimal agent team assembly with cultural code adaptation
-  - Dynamic team adjustment, performance-based optimization with expertise evolution
-  - Custom agent configuration with project DNA analysis and team preference learning
+  - Technology stack detection, optimal agent team assembly, performance-based optimization
+  - Dynamic team adjustment, custom agent configuration, success pattern analysis
 
 #### Universal Specialists (Cross-Framework)
 - **Software Engineering Excellence** → `@software-engineering-expert`
-  - **AUTO-ENABLED**: Contextual learning and adaptation with project DNA analysis
-  - Code quality, architecture, maintainability with cultural code adaptation
-  - Evil Corp motivation framework with domain expertise evolution
-  - Cross-project knowledge synthesis and best practice distillation
+  - Code quality, architecture, maintainability across all languages
+  - Evil Corp motivation framework for maximum quality delivery
 - **Resilience Engineering** → `@resilience-engineer`
-  - **AUTO-ENABLED**: Proactive problem prevention with early warning systems
   - Circuit breakers, retry mechanisms, fault tolerance patterns
-  - Performance bottleneck prevention and dependency conflict prediction
 - **Structured Logging** → `@logging-concepts-engineer` 
-  - **AUTO-ENABLED**: Advanced testing and quality orchestration integration
-  - JSON logging, contextual information, observability with quality score fusion
-  - Multi-agent code review system with automated integration testing
+  - JSON logging, contextual information, observability
 - **API Architecture** → `@api-architect`
-  - **AUTO-ENABLED**: Visual development intelligence with auto-generated diagrams
-  - REST/GraphQL design, API patterns with decision tree mapping
-  - Architecture visualization and agent interaction flow analysis
+  - REST/GraphQL design, API patterns
 - **GraphQL Architecture** → `@graphql-architect`
-  - **AUTO-ENABLED**: Real-time collaboration intelligence for GraphQL federation
   - GraphQL schema design, resolvers, federation, subscriptions
-  - Parallel agent coordination with conflict detection and shared context streams
 - **Backend Development** → `@backend-developer`
-  - **AUTO-ENABLED**: Predictive development intelligence with scalability analysis
-  - General backend architecture and patterns with technical debt forecasting
-  - Security risk modeling and performance bottleneck prevention
+  - General backend architecture and patterns
 - **Frontend Development** → `@frontend-developer`
-  - **AUTO-ENABLED**: Visual development intelligence with component diagrams
-  - UI/UX implementation and client-side logic with cultural adaptation
-  - Real-time collaboration for frontend-backend coordination
+  - UI/UX implementation and client-side logic
 - **Styling** → `@tailwind-css-expert`
-  - **AUTO-ENABLED**: Contextual learning for team-specific design patterns
-  - Tailwind CSS, responsive design with project DNA analysis
-  - Cultural code adaptation for design system consistency
+  - Tailwind CSS, responsive design
 
 #### Backend Framework Specialists
 - **Ruby on Rails** → `@rails-backend-expert`
-  - **AUTO-ENABLED**: Cross-project knowledge synthesis for Rails patterns
-  - ActiveRecord, Rails APIs, MVC patterns with predictive debt analysis
-  - Resilience integration with proactive problem prevention
+  - ActiveRecord, Rails APIs, MVC patterns, resilience integration
 - **Django** → `@django-backend-expert` 
-  - **AUTO-ENABLED**: Performance bottleneck prediction and cultural adaptation
-  - Django ORM, REST APIs, middleware with contextual learning
-  - Python resilience patterns with early warning systems
+  - Django ORM, REST APIs, middleware, Python resilience patterns
 - **Laravel** → `@laravel-backend-expert`
-  - **AUTO-ENABLED**: Visual development intelligence for Laravel architecture
-  - Eloquent ORM, PHP patterns with quality score fusion
-  - Laravel ecosystem with dependency conflict prediction
+  - Eloquent ORM, PHP patterns, Laravel ecosystem
 - **Node.js/TypeScript** → Specialized by technology:
-  - **AUTO-ENABLED**: Real-time collaboration intelligence and adaptive learning
-  - Resilience: `@typescript-cockatiel-resilience` with predictive bottleneck prevention
-  - Logging: `@typescript-pino-logging` with advanced testing orchestration
+  - Resilience: `@typescript-cockatiel-resilience`
+  - Logging: `@typescript-pino-logging`
 - **Go** → Specialized by domain:
-  - **AUTO-ENABLED**: Multi-agent coordination and project DNA analysis
-  - Resilience: `@go-resilience-engineer` with proactive problem prevention
-  - Logging: `@go-zap-logging` with contextual learning patterns
+  - Resilience: `@go-resilience-engineer` 
+  - Logging: `@go-zap-logging`
 - **Python** → `@python-hyx-resilience`
-  - **AUTO-ENABLED**: Intelligent orchestration and expertise evolution
-  - Async resilience patterns with cross-project knowledge synthesis
-  - Hyx library integration with cultural code adaptation
+  - Async resilience patterns, Hyx library integration
 
 #### Frontend Framework Specialists  
 - **React** → `@react-component-architect`
-  - **AUTO-ENABLED**: Visual development intelligence with component diagrams
-  - Component design, JSX patterns with cultural adaptation
-  - React best practices with contextual learning and expertise evolution
+  - Component design, JSX patterns, React best practices
 - **React State** → `@react-state-manager`
-  - **AUTO-ENABLED**: Real-time collaboration intelligence for state management
-  - Redux, Context API, custom hooks with predictive problem prevention
-  - Advanced testing orchestration with multi-agent review coordination
+  - Redux, Context API, custom hooks
 - **Next.js** → `@react-nextjs-expert`
-  - **AUTO-ENABLED**: Performance bottleneck prediction and scalability analysis
-  - SSR, routing, Next.js optimizations with proactive early warning systems
-  - Cross-project knowledge synthesis for Next.js patterns
+  - SSR, routing, Next.js optimizations
 - **Vue.js** → `@vue-component-architect`
-  - **AUTO-ENABLED**: Cultural code adaptation and project DNA analysis
-  - Vue components, composition API with intelligent orchestration
-  - SFC patterns with quality score fusion and testing coordination
+  - Vue components, composition API, SFC patterns
 - **Vue State** → `@vue-state-manager` 
-  - **AUTO-ENABLED**: Predictive development intelligence for state patterns
-  - Vuex, Pinia, reactive state management with dependency conflict prediction
-  - Advanced testing orchestration with contextual learning
+  - Vuex, Pinia, reactive state management
 - **Nuxt.js** → `@vue-nuxt-expert`
-  - **AUTO-ENABLED**: Visual development intelligence and architecture diagrams
-  - Server-side rendering, Nuxt modules with performance bottleneck prevention
-  - Real-time collaboration intelligence for full-stack coordination
+  - Server-side rendering, Nuxt modules
 
 #### Project Orchestration
 - **Technical Leadership** → `@tech-lead-orchestrator` + **Task Master MCP**
@@ -158,25 +112,16 @@ This project features a comprehensive unified agent system with **advanced AI or
 
 #### Core Development Tools
 - **Code Exploration** → `@code-archaeologist`
-  - **AUTO-ENABLED**: Cross-project knowledge synthesis with pattern recognition
-  - Legacy code analysis with contextual learning and cultural adaptation
-  - Technical debt assessment with predictive development intelligence
+  - Legacy code analysis, codebase exploration, technical debt assessment
 - **Code Quality** → `@code-reviewer`
-  - **AUTO-ENABLED**: Advanced testing and quality orchestration with multi-agent reviews
-  - Code reviews with quality score fusion and automated integration testing
-  - Best practices enforcement with real-time collaboration intelligence
+  - Code reviews, best practices enforcement, quality assurance
 - **Documentation** → `@documentation-specialist` + **Context7 MCP**
-  - **AUTO-ENABLED**: Visual development intelligence with auto-generated diagrams
-  - Technical writing with Mermaid architecture visualization and decision trees
-  - API docs with contextual learning and cultural adaptation patterns
+  - Technical writing, API docs, README creation, live library documentation
 - **Performance** → `@performance-optimizer`
-  - **AUTO-ENABLED**: Proactive problem prevention with bottleneck prediction
-  - Performance analysis with early warning systems and scalability impact analysis
-  - Optimization strategies with dependency conflict prediction and prevention
+  - Performance analysis, optimization strategies, profiling
 - **Git Operations** → `@git-expert` + **GitHub MCP**
-  - **AUTO-ENABLED**: Real-time collaboration intelligence with automated agent attribution
-  - Merge/rebase conflict resolution with intelligent orchestration and coordination
-  - Advanced Git workflows with predictive conflict prevention and resolution
+  - Merge/rebase conflict resolution, PR management, advanced Git workflows
+  - Live repository operations via GitHub API integration
 
 #### Specialized Database/ORM Experts
 - **ActiveRecord** → `@rails-activerecord-expert`
@@ -655,74 +600,6 @@ Specialized agents build upon universal foundations:
 - **ALL core development agents** leverage Basic Memory MCP for persistent organizational learning and pattern reuse
 - All agents can utilize MCP servers for enhanced capabilities when available
 
-## 🚀 AUTO-ENABLED Advanced Intelligence Features
-
-**IMPORTANT**: All agents marked with **AUTO-ENABLED** automatically include advanced intelligence capabilities without explicit invocation. These enhancements work seamlessly in the background.
-
-### 1. Intelligent Agent Auto-Selection & Dynamic Orchestration
-- **Automatically Active**: When you request any development task
-- **What It Does**: Analyzes context and automatically suggests optimal agent combinations
-- **Benefits**: Perfect agent selection, dynamic specialized agent creation, performance learning
-
-### 2. Cross-Project Knowledge Synthesis
-- **Automatically Active**: During code analysis and pattern recognition
-- **What It Does**: Identifies recurring patterns, distills best practices, detects anti-patterns
-- **Benefits**: Learns from previous projects, prevents repeated mistakes, accelerates development
-
-### 3. Real-Time Collaboration Intelligence
-- **Automatically Active**: When multiple agents work simultaneously
-- **What It Does**: Coordinates parallel work, resolves conflicts, shares context in real-time
-- **Benefits**: Seamless multi-agent coordination, conflict prevention, shared learning
-
-### 4. Predictive Development Intelligence
-- **Automatically Active**: During architecture and design decisions
-- **What It Does**: Forecasts technical debt, predicts bottlenecks, models security risks
-- **Benefits**: Proactive problem prevention, early warnings, impact prediction
-
-### 5. Visual Development Intelligence
-- **Automatically Active**: When explaining architecture or complex systems
-- **What It Does**: Auto-generates Mermaid diagrams, decision trees, system visualizations
-- **Benefits**: Clear visual communication, better understanding, documentation automation
-
-### 6. Advanced Testing & Quality Orchestration
-- **Automatically Active**: During code reviews and quality assessment
-- **What It Does**: Multi-agent reviews, automated testing, quality score fusion
-- **Benefits**: Comprehensive quality assurance, multiple perspectives, automated excellence
-
-### 7. Contextual Learning & Adaptation
-- **Automatically Active**: Throughout all interactions
-- **What It Does**: Learns project DNA, evolves expertise, adapts to team culture
-- **Benefits**: Personalized recommendations, cultural fit, continuous improvement
-
-### 8. Proactive Problem Prevention
-- **Automatically Active**: During system analysis and planning
-- **What It Does**: Early warning systems, dependency conflict prediction, bottleneck prevention
-- **Benefits**: Prevents issues before they occur, reduces reactive work, maintains quality
-
-### How AUTO-ENABLED Features Work:
-1. **Seamless Integration**: No special commands needed - features activate automatically
-2. **Context Awareness**: Agents understand your project, team, and preferences
-3. **Background Intelligence**: Advanced analysis happens transparently
-4. **Proactive Assistance**: Problems are prevented before they manifest
-5. **Continuous Learning**: Every interaction improves future performance
-
-### Usage Examples with AUTO-ENABLED Features:
-
-```markdown
-# Standard Request
-"Build a user authentication system"
-
-# What Happens Automatically:
-✅ @orchestrator analyzes context and selects optimal agents
-✅ @security-specialist provides proactive security risk modeling
-✅ @software-engineering-expert applies cultural code adaptation
-✅ @performance-optimizer prevents performance bottlenecks
-✅ @documentation-specialist generates visual architecture diagrams
-✅ All agents collaborate with real-time coordination
-✅ System learns patterns for future authentication projects
-```
-
-**Result: Superior development outcomes with zero additional effort!** 🎯
 
 ### Commit Message Guidelines
 
