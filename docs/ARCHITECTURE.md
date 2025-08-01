@@ -37,9 +37,10 @@ The system follows a layered approach:
 .claude/agents/
 ├── agents.json                    # System configuration
 ├── CLAUDE.md                      # Auto-generated team configuration
-├── universal/                     # Cross-Framework Specialists (9 agents)
+├── universal/                     # Cross-Framework Specialists (10 agents)
 │   ├── software-engineering-expert.md # Code quality & architecture
 │   ├── quality-system-engineer.md     # Trunk.io automation & quality gates
+│   ├── pr-reviewer-specialist.md      # Manual PR reviews & GitHub integration
 │   ├── resilience-engineer.md         # Fault tolerance patterns
 │   ├── logging-concepts-engineer.md   # Structured logging
 │   ├── api-architect.md               # REST/GraphQL design
@@ -192,6 +193,29 @@ All backend framework agents depend on and follow guidelines from:
 - **Cross-Agent Coordination**: Integrates with `@code-reviewer` for enhanced quality analysis
 - **CI/CD Integration**: Works with `@cicd-pipeline-engineer` for pipeline quality gates
 - **Basic Memory Integration**: Stores quality configurations, patterns, and organizational standards
+
+### Manual/On-Demand Agent Architecture
+
+#### User-Controlled Workflow Agents (`@pr-reviewer-specialist`)
+**Manual Activation Pattern:**
+- **Non-Proactive**: Only activates when explicitly invoked by user
+- **GitHub Repository Detection**: Automatically extracts repository URL from `git config --get remote.origin.url`
+- **Interactive Workflow**: Multi-phase process requiring user approval before actions
+- **External System Integration**: Direct GitHub API operations via GitHub MCP
+- **Knowledge Persistence**: Stores interaction patterns and preferences in Basic Memory MCP
+
+#### Manual Agent Integration Patterns
+- **Explicit Invocation**: User must specifically request agent by name with parameters
+- **Interactive Approval Gates**: All external actions require user confirmation
+- **GitHub MCP Dependency**: Heavy reliance on GitHub MCP for repository operations
+- **Context Building**: Gathers comprehensive information before presenting findings
+- **User Experience Focus**: Optimized for human oversight and decision-making
+
+#### Planned Manual Agent Categories
+- **External System Integrations**: Agents requiring third-party API interactions
+- **Security & Compliance**: Agents requiring human judgment for sensitive operations
+- **Analysis & Reporting**: Deep-dive investigations requiring user input and approval
+- **Workflow Orchestration**: Complex multi-step processes needing human oversight
 
 ### Hierarchical Dependencies
 Specialized agents build upon universal foundations:

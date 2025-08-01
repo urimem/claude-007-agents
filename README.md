@@ -307,6 +307,7 @@ Every agent prioritizes:
 | **AI & Analysis** | 5 agents | Machine learning, NLP, computer vision, prompt engineering + **Basic Memory MCP** |
 | **Automation** | 3 agents | CI/CD, testing, release management + **Basic Memory MCP** for automation patterns |
 | **Data** | 3 agents | Data engineering, analytics, business intelligence + **Basic Memory MCP** |
+| **Manual/On-Demand** | 1+ agents | **User-invoked specialists** for specific workflows (PR reviews, audits, analysis) |
 
 **🧠 Organizational Memory**: All core development agents include **Basic Memory MCP integration** for persistent knowledge storage, pattern reuse, and cross-project learning.
 
@@ -368,6 +369,54 @@ Every commit automatically runs:
 "Use @python-expert to build data processing pipeline"
 # → Runs black, flake8, mypy validation before commit
 ```
+
+## 🎯 Manual/On-Demand Agents
+
+### Specialized Workflow Agents
+
+These agents are **not proactive** and only activate when explicitly invoked by the user for specific workflows:
+
+#### **Pull Request Reviewer** → `@pr-reviewer-specialist`
+**Purpose**: Deep, comprehensive PR analysis with interactive approval workflow
+
+**Capabilities**:
+- 🔍 **Repository Detection**: Automatically gets GitHub URL from git config
+- 📊 **4-Dimensional Analysis**: Security, Performance, Architecture, Code Quality
+- 🎯 **Classification System**: Comments vs Request Changes with severity levels
+- 👥 **Interactive Approval**: User reviews findings before posting to GitHub
+- 🔗 **GitHub Integration**: Direct PR comment posting with agent attribution
+- 🧠 **Knowledge Building**: Stores review patterns in Basic Memory MCP
+
+**Usage Examples**:
+```bash
+# Basic PR review
+"Use @pr-reviewer-specialist to review PR #123"
+
+# Focused security review
+"Use @pr-reviewer-specialist to analyze PR #456 focusing on security"
+
+# Architecture-focused review
+"Use @pr-reviewer-specialist to review PR #789 with emphasis on architecture"
+```
+
+**Workflow**:
+1. **Discovery**: Fetches PR details, files, and diff from GitHub
+2. **Analysis**: Comprehensive multi-dimensional code review
+3. **Classification**: Organizes findings by severity and type
+4. **User Approval**: Interactive selection of comments to post
+5. **GitHub Integration**: Posts approved comments with proper attribution
+
+#### **When to Use Manual Agents**
+- **Specific Workflows**: PR reviews, security audits, compliance checks
+- **External Integrations**: GitHub operations, third-party platform analysis
+- **User Control Required**: When human oversight is essential before actions
+- **Specialized Analysis**: Deep-dive investigations requiring user input
+
+#### **Planned Manual Agents**
+- 🔒 **Security Auditor**: Comprehensive security analysis and vulnerability assessment
+- 📊 **Compliance Checker**: Regulatory compliance validation (GDPR, HIPAA, SOX)
+- 🔍 **Code Archaeologist**: Legacy system analysis and technical debt assessment
+- 📈 **Performance Analyzer**: Detailed performance profiling and optimization recommendations
 
 ## 📖 Usage Examples
 
