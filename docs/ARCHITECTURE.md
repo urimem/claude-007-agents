@@ -236,12 +236,164 @@ Specialized agents build upon universal foundations:
 - Documentation and development agents utilize Context7 MCP for current library information
 - Orchestration agents utilize all MCP servers for enhanced coordination capabilities
 
+### Coding Rules Integration Dependencies
+- **All development agents** automatically reference coding rules stored in Basic Memory MCP
+- **Rule enforcement** happens before code generation across all language specialists
+- **Cross-language consistency** through universal security and performance rules
+- **Language-specific validation** through targeted rule sets (Python, TypeScript, Go, JavaScript)
+
+## Coding Rules & Quality Standards Architecture
+
+### Comprehensive Coding Rules System
+
+The unified agent system includes a comprehensive coding rules and best practices system stored in Basic Memory MCP, providing automatic quality enforcement across all development agents.
+
+#### Rule Categories
+
+**🔒 Security Rules (SEC###)**
+- `SEC001` - Never Hard-Code Secrets *(Critical)*
+- `SEC002` - SQL Injection Prevention *(Critical)*
+- `SEC003` - Input Sanitization Required *(High)*
+
+**⚡ Performance Rules (PERF###)**
+- `PERF001` - Avoid N+1 Query Problems *(High)*
+- `PERF002` - Implement Caching Strategies *(Medium)*
+- `PERF003` - Optimize Database Queries *(High)*
+- `PERF004` - Use Connection Pooling *(Medium)*
+- `PERF005` - Minimize API Calls *(Medium)*
+
+**🔧 Maintainability Rules (MAINT###)**
+- Future expansion for code organization and maintainability standards
+
+#### Language-Specific Rules
+
+**🐍 Python Rules (python:S####)**
+- `python:S1244` - Floating Point Comparison *(High)*
+- `python:S1481` - Unused Local Variables *(Medium)*
+- `python:S5445` - Insecure Temporary File Creation *(Critical)*
+
+**📘 TypeScript Rules (typescript:S####)**
+- `typescript:S1481` - Unused Variables *(Medium)*
+- `typescript:S2589` - Boolean Expression Always True/False *(High)*
+- `typescript:S3776` - Cognitive Complexity *(High)*
+- `typescript:S4138` - Functions Should Not Have Too Many Parameters *(Medium)*
+
+**🔵 Go Rules (go:S####)**
+- `go:S1005` - Error Handling *(Critical)*
+- `go:S1006` - Package Naming Convention *(Medium)*
+- `go:S1021` - Goroutine and Channel Safety *(High)*
+- `go:S1030` - Interface Design *(Medium)*
+
+**🟨 JavaScript Rules (javascript:S####)**
+- `javascript:S1481` - Unused Variables *(Medium)*
+
+### Rule Integration Architecture
+
+#### Agent-Level Integration
+```
+Development Agent → Check Rules → Apply Standards → Reference Rules → Generate Code
+                   ↓
+              Basic Memory MCP
+              ├── General Rules (SEC, PERF, MAINT)
+              └── Language Rules (python:S, typescript:S, go:S, javascript:S)
+```
+
+#### Integration Levels
+
+**Level 1: Rule-Aware Agents**
+- Query applicable rules before code generation
+- Reference rule IDs in code comments and feedback
+- Examples: All backend/frontend specialists
+
+**Level 2: Rule-Contributing Agents**
+- Create new rules based on discovered patterns
+- Update existing rules with new examples
+- Examples: @software-engineering-expert, @code-reviewer
+
+**Level 3: Rule-Enforcing Agents**
+- Validate code against all applicable rules
+- Block or flag rule violations
+- Examples: @code-reviewer, @quality-system-engineer
+
+#### Workflow Integration
+
+**Pre-Implementation Check:**
+1. Agent identifies target language/framework
+2. Searches `coding-rules/languages/{language}/` for applicable rules
+3. Searches `coding-rules/general/` for universal rules
+4. Applies rule standards during code generation
+
+**Post-Implementation Validation:**
+1. @code-reviewer validates against all applicable rules
+2. Rule violations are flagged with specific rule IDs
+3. Feedback includes rule references and correction guidance
+
+**Knowledge Evolution:**
+1. New patterns discovered during development
+2. Rules updated with real-world examples
+3. Agent integration notes maintained
+4. Cross-project pattern sharing
+
+### Rule Management Operations
+
+#### Adding New Rules
+```bash
+# Language-specific rules
+"Add rule python:S1500 - Use context managers for file operations"
+"Add rule typescript:S5000 - Use strict type checking"
+
+# General rules
+"Add rule SEC004 - Use HTTPS for all external API calls"
+"Add rule PERF006 - Implement connection pooling"
+```
+
+#### Updating Existing Rules
+```bash
+# Content updates
+"Update rule python:S1244 to include Django DecimalField examples"
+"Add TypeScript testing patterns to rule typescript:S3776"
+
+# Metadata updates
+"Change severity of rule PERF001 from High to Critical"
+```
+
+#### Rule Discovery
+```bash
+# List all rules
+"List rules"
+
+# Category-specific searches
+"Show me all Python rules"
+"List security rules"
+"Find performance-related rules"
+```
+
+### Quality System Integration
+
+The coding rules system integrates seamlessly with the automated quality system:
+
+**Trunk.io Integration:**
+- Rules complement automated linting and formatting
+- Custom rule validation beyond standard linters
+- Consistent standards across all supported languages
+
+**Pre-Commit Hooks:**
+- Rule validation during quality gate process
+- Automatic rule application where possible
+- Developer feedback with rule references
+
+**Agent Coordination:**
+- @quality-system-engineer applies automated quality checks
+- Development agents apply coding rules during implementation
+- @code-reviewer validates against both systems
+
 ## MCP Integration Architecture
 
 ### Available MCP Servers
 - **GitHub MCP** (`mcp__github__*`) - Live repository operations and GitHub API integration
 - **Task Master MCP** (`mcp__task-master__*`) - Project task management and complexity analysis
 - **Context7 MCP** (`mcp__context7__*`) - Live library documentation and code examples
+- **Basic Memory MCP** (`mcp__basic-memory__*`) - Persistent knowledge management and coding rules storage
 
 ### MCP-Enhanced Agent Capabilities
 
