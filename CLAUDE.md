@@ -23,7 +23,7 @@ Before creating any commit, you MUST:
 
 ## Project Configuration
 
-This project features a comprehensive unified agent system with **ACTIVE AI orchestration intelligence**, **automated collaboration choreography**, and **adaptive agent personalities** that evolve through continuous learning. The system includes 75+ specialized agents organized into 14 categories, with **comprehensive Basic Memory MCP integration** across all core development agents, providing expert guidance for modern software development practices with intelligent coordination, optimization, and persistent organizational knowledge.
+This project features a comprehensive unified agent system with **ACTIVE AI orchestration intelligence**, **automated collaboration choreography**, and **adaptive agent personalities** that evolve through continuous learning. The system includes 68 specialized agents organized into 13 categories, with **comprehensive Basic Memory MCP integration** across all core development agents, providing expert guidance for modern software development practices with intelligent coordination, optimization, and persistent organizational knowledge.
 
 🎭 **AUTO-ACTIVE FEATURES**:
 - **Choreography Engine**: Automatically detects and triggers multi-agent collaboration patterns
@@ -719,4 +719,4 @@ This provides clear traceability of which agents contributed to each change and 
 
 **The system transforms from individual agent specialists into a coordinated intelligence network that automatically applies proven collaboration patterns while continuously learning and improving!**
 
-*Last updated: 2025-08-01 | Agents: 75+ | Categories: 14 | Active Choreographies: 3 | MCP Servers: 4 | Learning Intelligence: ACTIVE | Auto-Orchestration: ENABLED*
+*Last updated: 2025-08-01 | Agents: 68 | Categories: 13 | Active Choreographies: 3 | MCP Servers: 4 | Learning Intelligence: ACTIVE | Auto-Orchestration: ENABLED*

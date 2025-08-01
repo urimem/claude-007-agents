@@ -1,6 +1,6 @@
 # Unified Agent System for Claude Code
 
-A comprehensive AI agent system with **75+ specialized agents** designed for modern software development. Features **advanced AI orchestration**, integrated resilience engineering, structured logging, and live MCP integrations across all frameworks.
+A comprehensive AI agent system with **68 specialized agents** designed for modern software development. Features **advanced AI orchestration**, integrated resilience engineering, structured logging, and live MCP integrations across all frameworks.
 
 ## 📦 Installation
 
@@ -298,16 +298,19 @@ Every agent prioritizes:
 
 | Category | Agents | Key Capabilities |
 |----------|--------|------------------|
-| **Orchestrators** | 4 agents | **Advanced AI orchestration**, intelligent agent selection, parallel execution optimization |
-| **Universal** | 11 agents | Cross-framework specialists (resilience, logging, architecture, **quality system**, **Git workflows**) + **Basic Memory MCP** |
-| **Backend** | 13 agents | Framework specialists with integrated resilience + **Basic Memory MCP** for pattern storage |
-| **Frontend** | 9 agents | Modern web development + **Basic Memory MCP** for component pattern memory |
-| **Business** | 5 agents | Product strategy, UX design, compliance + **Basic Memory MCP** for requirements memory |
-| **Infrastructure** | 10 agents | Cloud, DevOps, security, networking, IaC + **Basic Memory MCP** for configuration patterns |
-| **AI & Analysis** | 5 agents | Machine learning, NLP, computer vision, prompt engineering + **Basic Memory MCP** |
+| **Backend** | 13 agents | Framework specialists (Rails, Django, Laravel, Go, Python, TypeScript) with integrated resilience + **Basic Memory MCP** |
+| **Frontend** | 10 agents | Modern web development (React, Vue, Next.js, mobile, WebAssembly, PWA) + **Basic Memory MCP** |
+| **Infrastructure** | 10 agents | Cloud, DevOps, security, networking, SRE, serverless + **Basic Memory MCP** for configuration patterns |
+| **Universal** | 8 agents | Cross-framework specialists (resilience, logging, architecture, **quality system**, **Git workflows**) + **Basic Memory MCP** |
+| **Core** | 6 agents | Code review, documentation, performance, refactoring, archaeology + **Basic Memory MCP** |
+| **Business** | 5 agents | Product strategy, UX design, compliance, payments + **Basic Memory MCP** for requirements memory |
+| **Orchestrators** | 3 agents | **Advanced AI orchestration**, intelligent agent selection, parallel execution optimization |
+| **Security** | 3 agents | Security audit, DevSecOps, privacy engineering + **Basic Memory MCP** |
 | **Automation** | 3 agents | CI/CD, testing, release management + **Basic Memory MCP** for automation patterns |
 | **Data** | 3 agents | Data engineering, analytics, business intelligence + **Basic Memory MCP** |
-| **Manual/On-Demand** | 1+ agents | **User-invoked specialists** for specific workflows (PR reviews, audits, analysis) |
+| **AI** | 3 agents | Machine learning, computer vision, NLP/LLM integration + **Basic Memory MCP** |
+| **AI Analysis** | 2 agents | Prompt engineering, error detection + **Basic Memory MCP** |
+| **Bonus** | 1 agent | Humor specialist for team morale |
 
 **🧠 Organizational Memory**: All core development agents include **Basic Memory MCP integration** for persistent knowledge storage, pattern reuse, and cross-project learning.
 

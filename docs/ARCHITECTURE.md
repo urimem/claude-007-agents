@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Unified Agent System is a comprehensive AI agent framework designed for modern software development. It combines 75+ specialized agents with **advanced AI orchestration intelligence**, integrated resilience engineering, structured logging, and live MCP (Model Context Protocol) integrations.
+The Unified Agent System is a comprehensive AI agent framework designed for modern software development. It combines 68 specialized agents with **advanced AI orchestration intelligence**, integrated resilience engineering, structured logging, and live MCP (Model Context Protocol) integrations.
 
 ## Core Architecture Principles
 
