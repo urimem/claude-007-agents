@@ -286,6 +286,7 @@ Every agent prioritizes:
 - ⚡ **Fault Tolerance**: Circuit breakers, retry mechanisms, graceful degradation
 - 📊 **Structured Logging**: JSON logging, contextual information, observability
 - 🔄 **Self-Healing**: Automatic recovery patterns and health monitoring
+- 🛡️ **Automated Quality**: Trunk.io integration for linting, formatting, and security scanning
 
 ### Live MCP Integrations
 - **GitHub MCP**: Live repository operations, PR management, workflow automation via GitHub API
@@ -298,7 +299,7 @@ Every agent prioritizes:
 | Category | Agents | Key Capabilities |
 |----------|--------|------------------|
 | **Orchestrators** | 4 agents | **Advanced AI orchestration**, intelligent agent selection, parallel execution optimization |
-| **Universal** | 8 agents | Cross-framework specialists (resilience, logging, architecture) + **Basic Memory MCP** |
+| **Universal** | 9 agents | Cross-framework specialists (resilience, logging, architecture, **quality system**) + **Basic Memory MCP** |
 | **Backend** | 13 agents | Framework specialists with integrated resilience + **Basic Memory MCP** for pattern storage |
 | **Frontend** | 9 agents | Modern web development + **Basic Memory MCP** for component pattern memory |
 | **Business** | 5 agents | Product strategy, UX design, compliance + **Basic Memory MCP** for requirements memory |
@@ -308,6 +309,65 @@ Every agent prioritizes:
 | **Data** | 3 agents | Data engineering, analytics, business intelligence + **Basic Memory MCP** |
 
 **🧠 Organizational Memory**: All core development agents include **Basic Memory MCP integration** for persistent knowledge storage, pattern reuse, and cross-project learning.
+
+## 🛡️ Automated Quality System
+
+### Trunk.io Integration
+
+The system includes **@quality-system-engineer** that automatically implements comprehensive code quality infrastructure:
+
+#### **Automatic Setup**
+- 🔍 **Auto-detects** repositories without quality systems
+- 📦 **Initializes trunk.io** with appropriate linters for detected languages
+- ⚙️ **Configures pre-commit hooks** for quality gates
+- 📊 **Provides transparent notifications** about all configuration changes
+
+#### **Multi-Language Support**
+```bash
+# Python Quality Stack
+black, isort, flake8, mypy, bandit, pylint
+
+# JavaScript/TypeScript Quality Stack  
+eslint, prettier, tsc
+
+# Go Quality Stack
+gofmt, golangci-lint, gosec
+
+# Universal Tools
+markdownlint, yamllint, shellcheck, osv-scanner, gitleaks
+```
+
+#### **Pre-Commit Quality Pipeline**
+Every commit automatically runs:
+1. **🎨 Code formatting** (`trunk fmt --all`)
+2. **🔧 Auto-fix issues** (`trunk check --fix --all`)
+3. **✅ Quality validation** (`trunk check --ci`)
+4. **🚫 Block commit** if critical issues remain
+
+#### **User Notifications**
+```bash
+📦 Initializing trunk.io quality system...
+🔧 Trunk.io initialized with quality system for this repository
+📋 Enabled linters: black isort flake8 mypy eslint prettier
+🎨 Formatting code...
+✨ Code formatting applied to files
+🔧 Auto-fixing quality issues...
+🔨 Auto-fixed quality issues in codebase
+✅ All quality checks passed - ready to commit
+```
+
+#### **Integration Examples**
+```bash
+# Quality system works automatically with all agents:
+"Use @rails-expert to build authentication API"
+# → Automatically runs quality checks before commit
+
+"Use @react-expert to create dashboard components"  
+# → Auto-formats JSX and runs ESLint before commit
+
+"Use @python-expert to build data processing pipeline"
+# → Runs black, flake8, mypy validation before commit
+```
 
 ## 📖 Usage Examples
 

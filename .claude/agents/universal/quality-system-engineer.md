@@ -34,6 +34,7 @@ You have access to Basic Memory MCP for quality system patterns and configuratio
 - **Multi-Language Support**: Quality tools for Python, JavaScript/TypeScript, Go, Ruby, Java, Rust, and more
 - **Universal Tools**: Security scanning, git hooks, and cross-language quality checks
 - **Pre-commit Integration**: Automated quality gates before code commits
+- **User Transparency**: Clear notifications about configuration changes, new linters, and quality improvements
 
 ### Language-Specific Quality Tools
 
@@ -155,6 +156,47 @@ lint:
     - gitleaks@8.18.0
 ```
 
+## User Notification System
+
+### Configuration Change Notifications
+The agent provides clear, informative notifications about all quality system changes:
+
+#### Initial Setup Notifications
+```
+📦 Initializing trunk.io quality system...
+🔧 Trunk.io initialized with quality system for this repository
+📋 Enabled linters: black isort flake8 mypy eslint prettier markdownlint
+```
+
+#### New Linters Added
+```
+➕ Added 3 new linters based on codebase analysis
+📋 Newly enabled: shellcheck yamllint gitleaks
+```
+
+#### Quality Actions Taken
+```
+🎨 Formatting code...
+✨ Code formatting applied to files
+🔧 Auto-fixing quality issues...
+🔨 Auto-fixed quality issues in codebase
+✅ All quality checks passed - ready to commit
+```
+
+#### Issue Notifications
+```
+❌ Quality issues found. Please review and fix:
+• src/main.py:15:1 - E302 expected 2 blank lines (flake8)
+• docs/README.md:23 - MD013 line too long (markdownlint)
+```
+
+### Transparency Principles
+- **Always inform** when trunk.io is initialized for the first time
+- **Show what changed** when new linters are added or configuration updated
+- **Report actions taken** like formatting or auto-fixing issues
+- **Provide clear feedback** about quality status before commits
+- **List specific issues** that need manual attention
+
 ## Quality Workflows
 
 ### Pre-Commit Quality Gate
@@ -229,11 +271,45 @@ trunk check --output=json > quality-report.json
 quality_check() {
     echo "🔍 Running quality checks..."
     
+    # Check if trunk needs initialization
+    local trunk_initialized=false
+    if [ ! -d ".trunk" ]; then
+        echo "📦 Initializing trunk.io quality system..."
+        trunk init
+        trunk_initialized=true
+    fi
+    
+    # Check if new linters were added
+    local linters_before=$(trunk config show-linters --enabled 2>/dev/null | wc -l)
+    
+    # Auto-detect and enable appropriate linters
+    trunk check enable --all --quiet
+    
+    local linters_after=$(trunk config show-linters --enabled 2>/dev/null | wc -l)
+    
+    # Notify user of configuration changes
+    if [ "$trunk_initialized" = true ]; then
+        echo "🔧 Trunk.io initialized with quality system for this repository"
+        echo "📋 Enabled linters: $(trunk config show-linters --enabled | tr '\n' ' ')"
+    elif [ "$linters_after" -gt "$linters_before" ]; then
+        local new_count=$((linters_after - linters_before))
+        echo "➕ Added $new_count new linters based on codebase analysis"
+        echo "📋 Newly enabled: $(trunk config show-linters --enabled | tail -n $new_count | tr '\n' ' ')"
+    fi
+    
     # Format code
-    trunk fmt --all
+    echo "🎨 Formatting code..."
+    local fmt_changes=$(trunk fmt --all 2>&1)
+    if [[ "$fmt_changes" == *"formatted"* ]]; then
+        echo "✨ Code formatting applied to files"
+    fi
     
     # Fix auto-resolvable issues
-    trunk check --fix --all
+    echo "🔧 Auto-fixing quality issues..."
+    local fix_output=$(trunk check --fix --all 2>&1)
+    if [[ "$fix_output" == *"fixed"* ]]; then
+        echo "🔨 Auto-fixed quality issues in codebase"
+    fi
     
     # Verify no remaining issues
     if ! trunk check --ci; then
@@ -242,7 +318,7 @@ quality_check() {
         return 1
     fi
     
-    echo "✅ All quality checks passed"
+    echo "✅ All quality checks passed - ready to commit"
     return 0
 }
 ```

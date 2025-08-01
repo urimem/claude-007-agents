@@ -16,6 +16,7 @@ The system follows an **intelligent conductor model** where advanced AI orchestr
 4. **Real-Time Collaboration**: Inter-agent communication protocols with context sharing and conflict resolution
 5. **Adaptive Learning**: Continuous improvement based on success patterns and performance analytics
 6. **Quality Coordination**: Strategic quality gates with automated validation and integration checkpoints
+7. **Automated Quality Systems**: Trunk.io integration for pre-commit quality gates and continuous code quality
 
 ## Three-Phase Orchestration Model
 
@@ -749,8 +750,108 @@ fi
 echo "Integration validation complete!"
 ```
 
+## Quality System Workflows
+
+### Automated Quality Pipeline
+The `@quality-system-engineer` provides comprehensive quality automation that integrates seamlessly with all development workflows.
+
+#### Pre-Commit Quality Gate
+**Triggered**: Automatically before any commit by any agent
+**Duration**: 30-60 seconds
+**Actions**:
+1. Repository analysis and trunk.io initialization (if needed)
+2. Language-specific linter installation and configuration
+3. Code formatting (`trunk fmt --all`)
+4. Automated issue resolution (`trunk check --fix --all`)
+5. Final quality validation (`trunk check --ci`)
+6. Commit block if critical issues remain
+
+```bash
+# Example automatic workflow:
+claude "Use @rails-expert to build user authentication"
+# → Quality system automatically runs:
+# 📦 Initializing trunk.io quality system...
+# 📋 Enabled linters: rubocop standardrb reek bundler-audit brakeman
+# 🎨 Formatting code...
+# 🔧 Auto-fixing quality issues...
+# ✅ All quality checks passed - ready to commit
+```
+
+#### Repository Setup Workflow
+**Triggered**: When working in repositories without `.trunk` directory
+**Duration**: 2-3 minutes
+**Actions**:
+1. Analyze codebase for programming languages and file types
+2. Initialize trunk.io with `trunk init`
+3. Auto-detect and enable appropriate linters
+4. Configure pre-commit hooks
+5. Provide transparent notifications about changes
+
+```bash
+# Multi-language project setup:
+"Use @quality-system-engineer to set up quality system"
+# → Automatic detection and configuration:
+# 🔍 Detected: Python, TypeScript, Markdown, Shell, YAML
+# 📦 Installing: black, flake8, mypy, eslint, prettier, markdownlint, shellcheck, yamllint
+# ⚙️ Configuring pre-commit hooks
+# 🔧 Quality system ready for all detected languages
+```
+
+#### Quality Issue Resolution Workflow
+**Triggered**: When quality issues are detected
+**Duration**: 1-5 minutes depending on issue complexity
+**Actions**:
+1. Classify issues by severity (critical, important, minor, informational)
+2. Auto-fix resolvable issues (formatting, import sorting, simple linting)
+3. Provide detailed issue reports for manual resolution
+4. Block commits until critical issues are resolved
+5. Update quality metrics and reporting
+
+```bash
+# Quality issue resolution example:
+# ❌ Quality issues found. Please review and fix:
+# • src/main.py:15:1 - E302 expected 2 blank lines (flake8)
+# • docs/README.md:23 - MD013 line too long (markdownlint)  
+# • scripts/deploy.sh:8 - SC2086 double quote to prevent globbing (shellcheck)
+# 
+# Auto-fixing 2 of 3 issues...
+# 🔨 Fixed: formatting and import sorting
+# ⚠️ 1 manual fix required: line length in README.md
+```
+
+#### Integration with Development Workflows
+Quality system seamlessly integrates with all agent workflows:
+
+**Backend Development**:
+```bash
+"Use @django-expert to create API endpoints"
+# → Includes Python quality stack (black, flake8, mypy, bandit)
+```
+
+**Frontend Development**:
+```bash  
+"Use @react-expert to build dashboard components"
+# → Includes JS/TS quality stack (eslint, prettier, tsc)
+```
+
+**Full-Stack Development**:
+```bash
+"Use @orchestrator for full-stack e-commerce platform"
+# → Comprehensive quality coverage across all languages and frameworks
+```
+
+### Quality Metrics and Reporting
+The quality system provides comprehensive metrics and reporting:
+
+- **Issue Density**: Quality issues per lines of code
+- **Fix Rate**: Percentage of automatically resolved issues  
+- **Coverage**: Percentage of files covered by quality tools
+- **Security Score**: Vulnerability detection and resolution metrics
+- **Compliance**: Adherence to organizational coding standards
+
 ### Optimization Techniques
 1. **Workflow Profiling**: Profile workflow execution to identify optimization opportunities
 2. **Agent Tuning**: Optimize individual agent performance within workflows
 3. **Parallel Optimization**: Optimize parallel workflow execution for better resource utilization
-4. **Caching Strategy**: Implement intelligent caching for frequently used workflow components
+4. **Quality Optimization**: Leverage trunk.io caching and incremental checking for faster quality validation
+5. **Caching Strategy**: Implement intelligent caching for frequently used workflow components

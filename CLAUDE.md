@@ -39,6 +39,7 @@ This project features a comprehensive unified agent system with **ACTIVE AI orch
 - **Resilience Libraries**: Cockatiel, Hyx, GoBreaker, CircuitBox
 - **Logging Libraries**: Pino, Zap, structured logging patterns
 - **Databases**: ActiveRecord, Django ORM, Eloquent, Prisma
+- **Quality Systems**: Trunk.io automated linting, formatting, and security scanning
 - **MCP Integrations**: GitHub Operations, Task Master Project Management, Context7 Documentation, Basic Memory Knowledge Management
 
 ### Specialist Agent Assignments
@@ -61,6 +62,9 @@ This project features a comprehensive unified agent system with **ACTIVE AI orch
 - **Software Engineering Excellence** → `@software-engineering-expert`
   - Code quality, architecture, maintainability across all languages
   - Evil Corp motivation framework for maximum quality delivery
+- **Quality System Engineering** → `@quality-system-engineer`
+  - Automated trunk.io integration, multi-language linting, pre-commit quality gates
+  - Transparent quality notifications, security scanning, code formatting
 - **Resilience Engineering** → `@resilience-engineer`
   - Circuit breakers, retry mechanisms, fault tolerance patterns
 - **Structured Logging** → `@logging-concepts-engineer` 
@@ -260,6 +264,14 @@ The system now **automatically detects** when to trigger collaboration patterns:
 "Start bug hunting tango for the payment processing issue"
 "Skip choreography, just implement directly"
 "Use quick waltz for this small PR review"
+```
+
+#### For Automated Quality Systems:
+```
+"Use @quality-system-engineer to set up comprehensive quality checks for this repository"
+"Use @quality-system-engineer to initialize trunk.io with appropriate linters for our tech stack"
+"Use @quality-system-engineer to analyze and fix all quality issues before deployment"
+"Use @quality-system-engineer to configure pre-commit hooks with security scanning"
 ```
 
 #### For Resilient Backend Development:

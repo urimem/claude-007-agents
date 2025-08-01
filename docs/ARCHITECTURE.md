@@ -17,6 +17,7 @@ The system features sophisticated orchestration capabilities:
 ### Engineering Excellence First
 Every agent in the system prioritizes:
 - **Code Quality**: Evil Corp standards for maintainable, readable, extensible code
+- **Automated Quality**: Trunk.io integration for linting, formatting, and security scanning
 - **Fault Tolerance**: Circuit breakers, retry mechanisms, graceful degradation
 - **Structured Logging**: JSON logging, contextual information, observability
 - **Self-Healing**: Automatic recovery patterns and health monitoring
@@ -36,8 +37,9 @@ The system follows a layered approach:
 .claude/agents/
 ├── agents.json                    # System configuration
 ├── CLAUDE.md                      # Auto-generated team configuration
-├── universal/                     # Cross-Framework Specialists (8 agents)
+├── universal/                     # Cross-Framework Specialists (9 agents)
 │   ├── software-engineering-expert.md # Code quality & architecture
+│   ├── quality-system-engineer.md     # Trunk.io automation & quality gates
 │   ├── resilience-engineer.md         # Fault tolerance patterns
 │   ├── logging-concepts-engineer.md   # Structured logging
 │   ├── api-architect.md               # REST/GraphQL design
@@ -171,8 +173,25 @@ All complex workflows are coordinated by the orchestration tier:
 
 ### Universal Foundations
 All backend framework agents depend on and follow guidelines from:
+- `@quality-system-engineer` for automated code quality, linting, and security scanning
 - `@resilience-engineer` for fault tolerance patterns
 - `@logging-concepts-engineer` for structured logging practices
+
+### Quality System Architecture
+
+#### Automated Quality Infrastructure (`@quality-system-engineer`)
+**Universal Quality Automation:**
+- **Repository Analysis**: Automatic detection of `.trunk` directory, file type analysis, language-specific linter selection
+- **Trunk.io Integration**: Multi-language linter configuration (Python: black, flake8, mypy; JS/TS: eslint, prettier; Go: gofmt, golangci-lint)
+- **Pre-Commit Quality Gates**: Automated formatting (`trunk fmt`), issue resolution (`trunk check --fix`), validation (`trunk check --ci`)
+- **Security Scanning**: Universal tools (osv-scanner, gitleaks) for vulnerability detection and secret scanning
+- **User Transparency**: Clear notifications about configuration changes, quality actions, and issue resolution
+
+#### Quality Integration Patterns
+- **Proactive Activation**: Automatically triggers before any commit across all agents
+- **Cross-Agent Coordination**: Integrates with `@code-reviewer` for enhanced quality analysis
+- **CI/CD Integration**: Works with `@cicd-pipeline-engineer` for pipeline quality gates
+- **Basic Memory Integration**: Stores quality configurations, patterns, and organizational standards
 
 ### Hierarchical Dependencies
 Specialized agents build upon universal foundations:
