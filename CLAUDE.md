@@ -23,7 +23,7 @@ Before creating any commit, you MUST:
 
 ## Project Configuration
 
-This project features a comprehensive unified agent system with **ACTIVE AI orchestration intelligence**, **automated collaboration choreography**, and **adaptive agent personalities** that evolve through continuous learning. The system includes 68 specialized agents organized into 13 categories, with **comprehensive Basic Memory MCP integration** across all core development agents, providing expert guidance for modern software development practices with intelligent coordination, optimization, and persistent organizational knowledge.
+This project features a comprehensive unified agent system with **ACTIVE AI orchestration intelligence**, **automated collaboration choreography**, and **adaptive agent personalities** that evolve through continuous learning. The system includes 72 specialized agents organized into 14 categories, with **comprehensive Basic Memory MCP integration** across all core development agents, providing expert guidance for modern software development practices with intelligent coordination, optimization, and persistent organizational knowledge.
 
 🎭 **AUTO-ACTIVE FEATURES**:
 - **Choreography Engine**: Automatically detects and triggers multi-agent collaboration patterns
@@ -79,6 +79,12 @@ This project features a comprehensive unified agent system with **ACTIVE AI orch
   - UI/UX implementation and client-side logic
 - **Styling** → `@tailwind-css-expert`
   - Tailwind CSS, responsive design
+- **Developer Experience** → `@developer-experience-optimizer`
+  - Developer productivity, automation, tooling optimization, team onboarding
+- **Legacy Modernization** → `@legacy-modernization-specialist`
+  - Legacy system transformation, strangler fig patterns, modernization roadmaps
+- **Context Management** → `@context-management-enhancement`
+  - Three-tier context optimization, relevance scoring, agent-specific briefings
 
 #### Backend Framework Specialists
 - **Ruby on Rails** → `@rails-backend-expert`
@@ -94,7 +100,7 @@ This project features a comprehensive unified agent system with **ACTIVE AI orch
   - Resilience: `@go-resilience-engineer` 
   - Logging: `@go-zap-logging`
 - **Python** → `@python-hyx-resilience`
-  - Async resilience patterns, Hyx library integration
+  - Elite Python specialist, async resilience patterns, Hyx library integration, advanced Python idioms
 
 #### Frontend Framework Specialists  
 - **React** → `@react-component-architect`
@@ -149,6 +155,8 @@ This project features a comprehensive unified agent system with **ACTIVE AI orch
   - Requirements gathering, stakeholder management, process analysis, business logic design
 - **User Experience Design** → `@ux-designer`
   - User research, wireframing, usability testing, design systems
+- **Financial Modeling** → `@financial-modeling-agent`
+  - Quantitative finance, risk management, algorithmic trading, fintech applications, regulatory compliance
 
 #### Infrastructure & Operations
 - **DevOps Troubleshooting** → `@devops-troubleshooter`
@@ -212,6 +220,8 @@ This project features a comprehensive unified agent system with **ACTIVE AI orch
   - Google Analytics, conversion tracking, measurement, privacy-compliant analytics
 - **Business Intelligence** → `@business-intelligence-developer`
   - Data visualization, dashboards, Tableau, Power BI, self-service analytics
+- **Search Engineering** → `@search-specialist`
+  - Elasticsearch, OpenSearch, search relevance optimization, faceted search, semantic search
 
 #### AI & Machine Learning
 - **Machine Learning Engineering** → `@machine-learning-engineer`
@@ -264,6 +274,9 @@ The system now **automatically detects** when to trigger collaboration patterns:
 "Use @tech-lead-orchestrator to design enterprise architecture with multi-team coordination"
 "Use @project-analyst to parse this PRD and generate comprehensive task breakdown with dependencies"
 "Use @team-configurator to analyze my React+Rails project and optimize agent team configuration"
+"Use @context-management-enhancement to optimize agent workflows with intelligent context filtering"
+"Use @developer-experience-optimizer to streamline development workflows and team productivity"
+"Use @legacy-modernization-specialist to transform monolithic systems to microservices architecture"
 ```
 
 #### Manual Choreography Control:
@@ -376,6 +389,9 @@ Agents now respond with **evolving personalities** based on success patterns:
 "Analyze user requirements for new feature" → @business-analyst + @ux-designer + Basic Memory MCP
 "Research competitor features and user needs" → @product-manager + @business-analyst
 "Design user flows for checkout process" → @ux-designer
+"Build quantitative financial model for investment strategy" → @financial-modeling-agent + Basic Memory MCP
+"Implement algorithmic trading system with risk management" → @financial-modeling-agent + @python-hyx-resilience
+"Create fintech payment processing with fraud detection" → @financial-modeling-agent + @security-auditor
 "Track feature evolution and user feedback patterns" → @product-manager + Basic Memory MCP
 "Document business logic and stakeholder requirements" → @business-analyst + Basic Memory MCP
 ```
@@ -450,6 +466,10 @@ Agents now respond with **evolving personalities** based on success patterns:
 "Implement Google Analytics 4 with custom event tracking" → @analytics-implementation-specialist
 "Create executive dashboard with KPIs and drill-down capabilities" → @business-intelligence-developer
 "Set up data warehouse with dimensional modeling" → @data-engineer + @business-intelligence-developer
+"Implement Elasticsearch-powered search with relevance optimization" → @search-specialist + Basic Memory MCP
+"Build semantic search with vector embeddings" → @search-specialist + @machine-learning-engineer
+"Create faceted search for e-commerce product discovery" → @search-specialist + @business-analyst
+"Optimize search performance and user experience" → @search-specialist + @performance-optimizer
 ```
 
 #### For AI & Machine Learning:
@@ -528,10 +548,11 @@ Agents now respond with **evolving personalities** based on success patterns:
 4. **Integration** → Backend specialists provide API support and data synchronization
 
 #### Legacy System Modernization:
-1. **Assessment** → `@code-archaeologist` + `@code-refactoring-specialist` analyze legacy systems
-2. **Planning** → `@code-refactoring-specialist` creates modernization roadmap
-3. **Implementation** → `@software-engineering-expert` + framework specialists execute refactoring
-4. **Migration** → `@terraform-specialist` + `@cloud-architect` handle infrastructure modernization
+1. **Assessment** → `@legacy-modernization-specialist` + `@code-archaeologist` analyze legacy systems using 6 R's framework
+2. **Planning** → `@legacy-modernization-specialist` creates comprehensive modernization roadmap with risk assessment
+3. **Implementation** → `@legacy-modernization-specialist` + `@software-engineering-expert` execute strangler fig pattern migration
+4. **Migration** → `@legacy-modernization-specialist` + `@cloud-architect` handle infrastructure and architecture modernization
+5. **Context Optimization** → `@context-management-enhancement` provides three-tier context management for complex migrations
 
 ### MCP Server Integration
 
@@ -719,4 +740,23 @@ This provides clear traceability of which agents contributed to each change and 
 
 **The system transforms from individual agent specialists into a coordinated intelligence network that automatically applies proven collaboration patterns while continuously learning and improving!**
 
-*Last updated: 2025-08-01 | Agents: 68 | Categories: 13 | Active Choreographies: 3 | MCP Servers: 4 | Learning Intelligence: ACTIVE | Auto-Orchestration: ENABLED*
+*Last updated: 2025-08-01 | Agents: 72 | Categories: 14 | Active Choreographies: 3 | MCP Servers: 4 | Learning Intelligence: ACTIVE | Auto-Orchestration: ENABLED*
+
+## Recent Updates (2025-08-01)
+
+### New Specialist Agents Added
+- **Developer Experience Optimizer** (`@developer-experience-optimizer`) - Streamlines development workflows, automates team processes, and optimizes developer productivity with comprehensive tooling and onboarding strategies
+- **Legacy Modernization Specialist** (`@legacy-modernization-specialist`) - Transforms legacy systems using the 6 R's framework (Rehost, Replatform, Refactor, Re-imagine, Retire, Retain) with strangler fig patterns and risk-based modernization approaches
+- **Search Specialist** (`@search-specialist`) - Elasticsearch, OpenSearch, and search engine expert specializing in relevance optimization, faceted search, semantic search, and search performance tuning
+- **Financial Modeling Agent** (`@financial-modeling-agent`) - Quantitative finance specialist for algorithmic trading, risk management, portfolio optimization, fintech applications, and regulatory compliance
+
+### Enhanced Capabilities
+- **Context Management Enhancement** (`@context-management-enhancement`) - Three-tier context optimization system (Quick/Full/Archived Context) with intelligent relevance scoring and agent-specific briefings
+- **Python Specialist Enhancement** (`@python-hyx-resilience`) - Upgraded to Elite Python Professional with advanced Python idioms, type system mastery, performance optimization, and comprehensive async patterns
+- **Model Assignment Strategy** - All agents now include intelligent model routing (Haiku for simple tasks, Sonnet for balanced work, Opus for complex decisions) for cost optimization and performance
+- **Git Path Standardization** - All git-using agents updated with `/usr/bin/git` full path requirements to avoid alias issues
+
+### System Enhancements
+- **Agent Count**: Increased from 68 to 72 specialized agents
+- **Category Expansion**: Added 14th category with enhanced Business & Product Strategy and Data & Analytics capabilities
+- **Integration Patterns**: Enhanced MCP integration across all core development agents for persistent organizational learning
