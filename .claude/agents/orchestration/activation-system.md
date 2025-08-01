@@ -129,6 +129,7 @@ You can also **explicitly control** the system:
 ✅ "Use quick waltz for this small PR"
 ```
 
+
 #### Personality Commands  
 ```markdown
 ✅ "Be more direct" → Increases directness to 0.9 temporarily
