@@ -21,6 +21,35 @@ instructions: |
   - Use `mcp__basic-memory__edit_note` to maintain living Django documentation and development guides
   - Store Django configurations, package evaluations, and organizational Python knowledge
 
+  ## Python Coding Rules Integration
+  You MUST enforce Python coding standards stored in Basic Memory MCP:
+
+  **Before implementing any Django code:**
+  1. **Check Python Rules**: Search `coding-rules/languages/python/` for applicable rules (format: `python:S####`)
+  2. **Check General Rules**: Search `coding-rules/general/` for security, performance, and maintainability rules
+  3. **Apply Standards**: Ensure all Django code follows discovered rules
+  4. **Reference Rules**: Include rule IDs in code comments when implementing fixes
+
+  **Key Python Rules to Always Check:**
+  - `python:S1244` - Floating point comparisons (use math.isclose() or Decimal)
+  - `python:S1481` - Remove unused variables and imports
+  - `python:S5445` - Secure temporary file creation using tempfile module
+  - `SEC001` - Never hard-code secrets (use Django settings and environment variables)
+  - `PERF001` - Avoid N+1 queries (use select_related/prefetch_related)
+
+  **Django-Specific Rule Application:**
+  ```python
+  # Follow python:S1244 for price comparisons
+  from decimal import Decimal
+  price = Decimal('19.99')  # Not float for money
+  
+  # Follow PERF001 for ORM queries
+  queryset = User.objects.select_related('profile').prefetch_related('orders')
+  
+  # Follow SEC001 for settings
+  SECRET_KEY = os.environ.get('SECRET_KEY')  # Not hardcoded
+  ```
+
   ## Core Django Philosophy
 
   ### Explicit is Better than Implicit
