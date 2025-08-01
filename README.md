@@ -548,39 +548,39 @@ Agents that automatically activate based on context:
 
 The unified agent system includes a **comprehensive coding rules and best practices system** stored in Basic Memory MCP, ensuring consistent code quality across all implementations.
 
-#### 🔧 Available Rules
+#### 🔧 Available Rule Categories
 
-**🔒 Security Rules**
-- `SEC001` - Never Hard-Code Secrets *(Critical)*
-- `SEC002` - SQL Injection Prevention *(Critical)*
-- `SEC003` - Input Sanitization Required *(High)*
+The system supports comprehensive coding rules across multiple languages and categories:
 
-**⚡ Performance Rules**
-- `PERF001` - Avoid N+1 Query Problems *(High)*
-- `PERF002` - Implement Caching Strategies *(Medium)*
-- `PERF003` - Optimize Database Queries *(High)*
-- `PERF004` - Use Connection Pooling *(Medium)*
-- `PERF005` - Minimize API Calls *(Medium)*
+**🔒 Security Rules (SEC###)**
+- Critical security patterns and vulnerability prevention
+- Input validation, authentication, and data protection standards
 
-**🐍 Python Rules**
-- `python:S1244` - Floating Point Comparison *(High)*
-- `python:S1481` - Unused Local Variables *(Medium)*
-- `python:S5445` - Insecure Temporary File Creation *(Critical)*
+**⚡ Performance Rules (PERF###)**  
+- Database optimization and N+1 query prevention
+- Caching strategies and connection pooling best practices
 
-**📘 TypeScript Rules**
-- `typescript:S1481` - Unused Variables *(Medium)*
-- `typescript:S2589` - Boolean Expression Always True/False *(High)*
-- `typescript:S3776` - Cognitive Complexity *(High)*
-- `typescript:S4138` - Functions Should Not Have Too Many Parameters *(Medium)*
+**🏗️ Maintainability Rules (MAINT###)**
+- Code organization and complexity management
+- Naming conventions and architectural patterns
 
-**🔵 Go Rules**
-- `go:S1005` - Error Handling *(Critical)*
-- `go:S1006` - Package Naming Convention *(Medium)*
-- `go:S1021` - Goroutine and Channel Safety *(High)*
-- `go:S1030` - Interface Design *(Medium)*
+**🐍 Python Rules (python:S####)**
+- Python-specific patterns including Django and FastAPI examples
+- Security, performance, and Pythonic code standards
 
-**🟨 JavaScript Rules**
-- `javascript:S1481` - Unused Variables *(Medium)*
+**📘 TypeScript Rules (typescript:S####)**
+- Frontend security (XSS prevention, CORS configuration)
+- React, Vue, Angular, and Next.js specific patterns
+- Type safety and complexity management
+
+**🔵 Go Rules (go:S####)**
+- Error handling and goroutine safety patterns
+- Interface design and naming conventions
+- Performance and concurrency best practices
+
+**🟨 JavaScript Rules (javascript:S####)**
+- Modern JavaScript patterns and ES6+ features
+- Node.js and browser-specific optimizations
 
 ### 📋 How to Use Coding Rules
 
@@ -618,6 +618,38 @@ The unified agent system includes a **comprehensive coding rules and best practi
 "Show me all Python rules"
 "List security rules"
 "Find rules related to database performance"
+```
+
+#### Method 4: Import Rules from SonarSource (Batch Import)
+```bash
+# Import all rules from a language (426 TypeScript rules available)
+"Import all rules from https://rules.sonarsource.com/typescript/"
+
+# Import rules by category
+"Import vulnerability rules from https://rules.sonarsource.com/typescript/"
+"Import bug detection rules from https://rules.sonarsource.com/typescript/"
+"Import security hotspot rules from https://rules.sonarsource.com/typescript/"
+
+# Import specific rule by URL
+"Import rule from https://next.sonarqube.com/sonarqube/coding_rules?impactSeverities=HIGH&languages=ts&open=typescript%3AS2871"
+
+# Import rules from other languages (coming soon)
+"Import all rules from https://rules.sonarsource.com/python/"
+"Import all rules from https://rules.sonarsource.com/java/"
+"Import all rules from https://rules.sonarsource.com/csharp/"
+```
+
+#### Method 5: Bulk Operations
+```bash
+# Import multiple rule categories in parallel
+"Import TypeScript vulnerability and bug rules in parallel from SonarSource"
+
+# Update multiple rules with new framework examples
+"Update all TypeScript rules to include React, Vue, and Angular examples"
+
+# Generate reports
+"Generate a report of all high-severity rules across languages"
+"Show rule coverage analysis for our current technology stack"
 ```
 
 ### 🔄 Automatic Rule Enforcement
@@ -676,24 +708,68 @@ class Product(models.Model):
 # → Checks all applicable rules and provides rule-referenced feedback
 ```
 
+### 🎯 Rule System Capabilities
+
+**Comprehensive Language Support:**
+- **Universal Rules**: Security, performance, and maintainability standards across all languages
+- **Python Rules**: Django, FastAPI, and modern Python patterns with security focus
+- **TypeScript Rules**: Frontend security, React/Vue/Angular patterns, type safety
+- **Go Rules**: Concurrency safety, error handling, and performance optimization
+- **JavaScript Rules**: Modern ES6+ patterns and Node.js best practices
+- **Growing Coverage**: Expandable to Ruby, PHP, Java, C#, and other languages
+
+**Advanced Features:**
+- **Natural Language Management**: Add, update, search rules conversationally
+- **Automatic Application**: All development agents check and apply relevant rules
+- **Framework Integration**: Rules include React, Vue, Angular, Next.js, Express examples
+- **SonarSource Integration**: Import capability for 426+ TypeScript rules and growing
+- **Cross-Language Consistency**: Universal security and performance standards
+- **Pattern Recognition**: AI-powered rule discovery from successful implementations
+
+**Live Rule Import System:**
+```bash
+# Import rules directly from industry standards
+"Import rule from https://next.sonarqube.com/sonarqube/coding_rules?..."
+# → Automatically creates comprehensive rule documentation with examples
+
+# Batch import by language or category
+"Import all vulnerability rules from https://rules.sonarsource.com/typescript/"
+# → Imports multiple rules in parallel with framework-specific examples
+```
+
 ### 🚀 Next Steps for Rules
 
-**Priority 1: Ruby Rules**
-- Rails-specific patterns and security
-- ActiveRecord best practices
-- Ruby idioms and conventions
+**Priority 1: Complete TypeScript Import (420+ remaining)**
+- Batch import remaining vulnerability rules
+- Import all bug detection rules
+- Add code smell and maintainability rules
+- Framework-specific rule collections
 
-**Priority 2: PHP Rules**
+**Priority 2: Ruby Rules**
+- Rails-specific patterns and security
+- ActiveRecord best practices and N+1 prevention
+- Ruby idioms and conventions
+- ERB template security patterns
+
+**Priority 3: PHP Rules**
 - Laravel patterns and security
 - Eloquent ORM best practices
 - PHP-specific vulnerabilities
+- Blade template security patterns
 
-**Priority 3: Enterprise Languages**
-- Java enterprise patterns
-- C# .NET best practices
+**Priority 4: Enterprise Languages**
+- Java enterprise patterns and Spring Boot
+- C# .NET best practices and Entity Framework
 - Kotlin modern JVM patterns
+- Scala functional programming patterns
 
-All rules integrate seamlessly with the quality system and are automatically applied by development agents during code generation, ensuring consistent, high-quality implementations across all projects.
+**Rule System Evolution:**
+- **AI-Powered Discovery**: Automatic rule generation from successful implementations
+- **Cross-Project Analytics**: Rule effectiveness tracking and optimization
+- **Industry-Specific Collections**: Fintech, healthcare, e-commerce rule sets
+- **CI/CD Integration**: Automated rule compliance reporting and quality gates
+
+All rules integrate seamlessly with the Trunk.io quality system and are automatically applied by development agents during code generation, ensuring consistent, high-quality implementations across all projects and languages.
 
 ## 🛠️ Team Configuration Examples
 
