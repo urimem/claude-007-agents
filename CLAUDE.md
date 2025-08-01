@@ -23,7 +23,7 @@ Before creating any commit, you MUST:
 
 ## Project Configuration
 
-This project features a comprehensive unified agent system with **ACTIVE AI orchestration intelligence**, **automated collaboration choreography**, and **adaptive agent personalities** that evolve through continuous learning. The system includes 72 specialized agents organized into 14 categories, with **comprehensive Basic Memory MCP integration** across all core development agents, providing expert guidance for modern software development practices with intelligent coordination, optimization, and persistent organizational knowledge.
+This project features a comprehensive unified agent system with **ACTIVE AI orchestration intelligence**, **automated collaboration choreography**, and **adaptive agent personalities** that evolve through continuous learning. The system includes 77 specialized agents organized into 15 categories, with **comprehensive Basic Memory MCP integration** and **lst97 enhanced coordination protocols** across all core development agents, providing expert guidance for modern software development practices with intelligent coordination, optimization, and persistent organizational knowledge.
 
 🎭 **AUTO-ACTIVE FEATURES**:
 - **Choreography Engine**: Automatically detects and triggers multi-agent collaboration patterns
@@ -57,6 +57,28 @@ This project features a comprehensive unified agent system with **ACTIVE AI orch
 - **Team Configuration Optimization** → `@team-configurator`
   - Technology stack detection, optimal agent team assembly, performance-based optimization
   - Dynamic team adjustment, custom agent configuration, success pattern analysis
+
+#### lst97 Enhanced Coordination System
+- **Enhanced Agent Organizer** → `@enhanced-agent-organizer`
+  - Meta-orchestration with systematic team assembly and delegation patterns
+  - Evidence-based agent recommendations using "Specialization Over Generalization" philosophy
+  - Multi-agent coordination with comprehensive capability matrix analysis
+- **Knowledge Graph Manager** → `@knowledge-graph-manager`
+  - Centralized project context management with dynamic understanding
+  - Real-time context distribution and intelligent briefing generation
+  - Agent activity tracking and collaboration pattern analysis
+- **Agent Communication Protocol** → `@agent-communication-protocol`
+  - Structured inter-agent messaging with JSON-based coordination
+  - Request/response patterns with correlation IDs and workflow tracking
+  - Communication analytics and performance optimization
+- **Intelligent Agent Selector** → `@intelligent-agent-selector`
+  - Context-aware agent selection with multi-dimensional analysis
+  - Technology stack detection and agent capability matching
+  - Performance-based selection using historical success data
+- **Enhanced Agent Template** → `@enhanced-agent-template`
+  - Standardized interaction protocols for structured agent collaboration
+  - Three-phase workflow coordination (Context → Process → Completion)
+  - Template framework for creating agents with enhanced coordination capabilities
 
 #### Universal Specialists (Cross-Framework)
 - **Software Engineering Excellence** → `@software-engineering-expert`
@@ -740,9 +762,20 @@ This provides clear traceability of which agents contributed to each change and 
 
 **The system transforms from individual agent specialists into a coordinated intelligence network that automatically applies proven collaboration patterns while continuously learning and improving!**
 
-*Last updated: 2025-08-01 | Agents: 72 | Categories: 14 | Active Choreographies: 3 | MCP Servers: 4 | Learning Intelligence: ACTIVE | Auto-Orchestration: ENABLED*
+*Last updated: 2025-08-01 | Agents: 77 | Categories: 15 | Active Choreographies: 3 | MCP Servers: 4 | Learning Intelligence: ACTIVE | Auto-Orchestration: ENABLED | lst97 Integration: COMPLETE*
 
 ## Recent Updates (2025-08-01)
+
+### lst97 Integration Complete ✅
+- **Enhanced Agent Organizer** (`@enhanced-agent-organizer`) - Meta-orchestration specialist with systematic team assembly using "Specialization Over Generalization" philosophy and evidence-based agent recommendations
+- **Knowledge Graph Manager** (`@knowledge-graph-manager`) - Centralized project context management with dynamic understanding, real-time briefing generation, and agent activity tracking
+- **Agent Communication Protocol** (`@agent-communication-protocol`) - Structured inter-agent messaging system with JSON-based coordination, correlation IDs, and workflow tracking
+- **Intelligent Agent Selector** (`@intelligent-agent-selector`) - Context-aware agent selection with multi-dimensional analysis, technology detection, and performance-based matching
+- **Enhanced Agent Template** (`@enhanced-agent-template`) - Standardized interaction protocols with three-phase workflow coordination (Context → Process → Completion)
+
+### Agent Protocol Enhancements
+- **Code Reviewer** (`@code-reviewer`) - Enhanced with structured interaction protocols, mandatory context acquisition, and systematic review processes
+- **Performance Optimizer** (`@performance-optimizer`) - Updated with evidence-based optimization workflows and collaborative implementation coordination
 
 ### New Specialist Agents Added
 - **Developer Experience Optimizer** (`@developer-experience-optimizer`) - Streamlines development workflows, automates team processes, and optimizes developer productivity with comprehensive tooling and onboarding strategies
