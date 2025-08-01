@@ -23,7 +23,13 @@ Before creating any commit, you MUST:
 
 ## Project Configuration
 
-This project features a comprehensive unified agent system with **advanced AI orchestration intelligence**, integrated **resilience engineering** and **structured logging** capabilities across all backend frameworks. The system includes 75+ specialized agents organized into 14 categories, with **comprehensive Basic Memory MCP integration** across all core development agents, providing expert guidance for modern software development practices with intelligent coordination, optimization, and persistent organizational knowledge.
+This project features a comprehensive unified agent system with **ACTIVE AI orchestration intelligence**, **automated collaboration choreography**, and **adaptive agent personalities** that evolve through continuous learning. The system includes 75+ specialized agents organized into 14 categories, with **comprehensive Basic Memory MCP integration** across all core development agents, providing expert guidance for modern software development practices with intelligent coordination, optimization, and persistent organizational knowledge.
+
+🎭 **AUTO-ACTIVE FEATURES**:
+- **Choreography Engine**: Automatically detects and triggers multi-agent collaboration patterns
+- **Personality System**: Agents adapt their communication style and approach based on success patterns
+- **Workflow Coordination**: Systematic handoffs with quality gates and context preservation
+- **Learning Intelligence**: Continuous improvement through outcome analysis and pattern recognition
 
 ## AI Development Team Configuration
 
@@ -233,12 +239,27 @@ This project features a comprehensive unified agent system with **advanced AI or
 
 ### How to Use Your AI Development Team
 
+🎭 **AUTOMATIC CHOREOGRAPHY ACTIVATION**:
+The system now **automatically detects** when to trigger collaboration patterns:
+
+- **"implement user authentication"** → 🎭 Feature Development Dance (7-agent coordination)
+- **"fix the login bug"** → 🕺 Bug Hunting Tango (systematic investigation & resolution)
+- **"review this PR"** → 💃 Code Review Waltz (multi-dimensional quality assessment)
+
 #### For Advanced Orchestration & Complex Projects:
 ```
 "Use @orchestrator to build a scalable e-commerce platform with microservices and payment processing"
 "Use @tech-lead-orchestrator to design enterprise architecture with multi-team coordination"
 "Use @project-analyst to parse this PRD and generate comprehensive task breakdown with dependencies"
 "Use @team-configurator to analyze my React+Rails project and optimize agent team configuration"
+```
+
+#### Manual Choreography Control:
+```
+"Use feature development dance for the shopping cart implementation"
+"Start bug hunting tango for the payment processing issue"
+"Skip choreography, just implement directly"
+"Use quick waltz for this small PR review"
 ```
 
 #### For Resilient Backend Development:
@@ -275,9 +296,9 @@ This project features a comprehensive unified agent system with **advanced AI or
 
 #### For Code Quality & Engineering Excellence:
 ```
-"Implement a user authentication system with clean architecture" → @software-engineering-expert + Context7 MCP + Basic Memory MCP
-"Refactor this messy code following best practices" → @software-engineering-expert + Context7 MCP + Basic Memory MCP
-"Review my authentication implementation" → @code-reviewer + GitHub MCP + Basic Memory MCP
+"Implement a user authentication system with clean architecture" → 🎭 AUTO: Feature Development Dance + Context7 MCP + Basic Memory MCP
+"Refactor this messy code following best practices" → @software-engineering-expert + Context7 MCP + Basic Memory MCP  
+"Review my authentication implementation" → 💃 AUTO: Code Review Waltz + GitHub MCP + Basic Memory MCP
 "Optimize database queries in this service" → @performance-optimizer + ORM specialist + Context7 MCP + Basic Memory MCP
 "Explore this legacy Rails application" → @code-archaeologist + Basic Memory MCP
 "Resolve complex merge conflict between feature branches" → @git-expert + GitHub MCP + Basic Memory MCP
@@ -288,6 +309,20 @@ This project features a comprehensive unified agent system with **advanced AI or
 "Implement comprehensive testing strategy" → @test-automation-expert + Basic Memory MCP
 "Set up CI/CD pipeline with best practices" → @cicd-pipeline-engineer + GitHub MCP + Basic Memory MCP
 ```
+
+🧠 **ADAPTIVE PERSONALITIES**:
+Agents now respond with **evolving personalities** based on success patterns:
+
+- **@software-engineering-expert** (Detail: 90%, Perfectionist: 90%): 
+  *"I'll implement a comprehensive OAuth 2.0 authentication system with PKCE flow, JWT access tokens, and refresh token rotation..."*
+
+- **@code-reviewer** (Mentoring: 90%, Diplomatic: 70%):
+  *"I noticed some areas where we could enhance security. Let me share some observations that might be helpful..."*
+
+- **Personality Control**: 
+  - `"Be more direct"` → Temporarily increases directness
+  - `"Keep it brief"` → Reduces detail level  
+  - `"Explain thoroughly"` → Increases comprehensive explanations
 
 #### For Project Planning:
 ```
@@ -571,15 +606,14 @@ This project features a comprehensive unified agent system with **advanced AI or
 4. `@code-archaeologist` + Basic Memory MCP → Reference legacy system analysis and migration patterns
 5. Basic Memory MCP → Continuous knowledge capture and organizational learning
 
-**Integrated Development Workflow:**
-1. **Planning** → Task Master MCP generates structured tasks from requirements
-2. **Research** → Context7 MCP provides current documentation and examples
-3. **Knowledge Context** → Basic Memory MCP provides historical context and lessons learned
-4. **Development** → Framework specialists implement with GitHub MCP for live repo operations
-5. **Review** → `@code-reviewer` + GitHub MCP for automated quality assurance
-6. **Memory Capture** → Basic Memory MCP stores key decisions and patterns for future reference
-7. **Deployment** → `@release-manager` + GitHub MCP for orchestrated releases
-8. **Tracking** → Task Master MCP maintains project progress visibility
+**🎭 ORCHESTRATED Development Workflow (AUTO-ACTIVE):**
+1. **Auto-Detection** → Choreography Engine detects collaboration patterns from user input
+2. **Agent Coordination** → Workflow Coordinator manages multi-agent handoffs with context preservation
+3. **Personality Application** → Each agent applies adaptive personality based on evolution patterns
+4. **Quality Gates** → Systematic validation at each step (security, testing, review, documentation)
+5. **Learning Capture** → Success patterns stored for continuous improvement
+6. **Context Building** → MCP integration provides live documentation, project history, and repository operations
+7. **Progress Tracking** → Real-time workflow status with completion estimates
 
 ### Agent Dependencies & Relationships
 
@@ -619,6 +653,33 @@ This provides clear traceability of which agents contributed to each change and 
 
 ---
 
-**Your AI development team is ready to build resilient, well-logged, high-quality software with comprehensive organizational memory! 🚀**
+**Your AI development team is now an ACTIVE, LEARNING orchestration system that automatically coordinates agents, adapts personalities, and continuously improves! 🎭🧠🚀**
 
-*Last updated: 2025-01-31 | Agents: 75+ | Categories: 14 | Workflows: 12 | MCP Servers: 4 | Basic Memory Integration: ALL Core Development Agents*
+## 🎯 **ACTIVE SYSTEM STATUS**
+
+### 🎭 **Choreography System**: ✅ ACTIVE
+- **Auto-Detection**: Triggers collaboration patterns from natural language
+- **Multi-Agent Coordination**: Systematic handoffs with quality gates
+- **Progress Tracking**: Real-time workflow status and completion estimates
+
+### 🧠 **Personality System**: ✅ ACTIVE  
+- **Adaptive Responses**: Agent communication evolves based on success patterns
+- **Context Awareness**: Personalities adjust for urgency, team experience, project complexity
+- **Continuous Learning**: Agents improve through outcome analysis and user feedback
+
+### 📊 **Learning System**: ✅ ACTIVE
+- **Success Pattern Recognition**: Identifies what works in different contexts
+- **Organizational Knowledge Building**: Continuous improvement through Basic Memory MCP
+- **Performance Optimization**: Choreographies and personalities evolve over time
+
+### 🔗 **MCP Integration**: ✅ FULLY ACTIVE
+- **GitHub MCP**: Live repository operations and workflow management
+- **Task Master MCP**: Project structure and complexity analysis
+- **Context7 MCP**: Current documentation and best practices
+- **Basic Memory MCP**: Historical patterns and organizational learning
+
+---
+
+**The system transforms from individual agent specialists into a coordinated intelligence network that automatically applies proven collaboration patterns while continuously learning and improving!**
+
+*Last updated: 2025-08-01 | Agents: 75+ | Categories: 14 | Active Choreographies: 3 | MCP Servers: 4 | Learning Intelligence: ACTIVE | Auto-Orchestration: ENABLED*
