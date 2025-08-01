@@ -125,6 +125,8 @@ This project features a comprehensive unified agent system with **ACTIVE AI orch
   - Legacy code analysis, codebase exploration, technical debt assessment
 - **Code Quality** → `@code-reviewer`
   - Code reviews, best practices enforcement, quality assurance
+- **On-Demand PR Reviews** → `@pr-reviewer-specialist`
+  - Comprehensive PR analysis with interactive approval workflow, GitHub integration
 - **Documentation** → `@documentation-specialist` + **Context7 MCP**
   - Technical writing, API docs, README creation, live library documentation
 - **Performance** → `@performance-optimizer`
@@ -320,7 +322,14 @@ The system now **automatically detects** when to trigger collaboration patterns:
 "Store code review patterns and quality insights" → @code-reviewer + Basic Memory MCP
 "Implement comprehensive testing strategy" → @test-automation-expert + Basic Memory MCP
 "Set up CI/CD pipeline with best practices" → @cicd-pipeline-engineer + GitHub MCP + Basic Memory MCP
+
+#### For On-Demand PR Reviews:
 ```
+"Use @pr-reviewer-specialist to review PR #123" → @pr-reviewer-specialist + GitHub MCP + Basic Memory MCP
+"Use @pr-reviewer-specialist to analyze PR #456 focusing on security" → @pr-reviewer-specialist + @security-auditor + GitHub MCP
+"Use @pr-reviewer-specialist to review PR #789 with emphasis on architecture" → @pr-reviewer-specialist + @software-engineering-expert + GitHub MCP
+"Use @pr-reviewer-specialist to analyze PR #321 for performance implications" → @pr-reviewer-specialist + @performance-optimizer + GitHub MCP
+``````
 
 🧠 **ADAPTIVE PERSONALITIES**:
 Agents now respond with **evolving personalities** based on success patterns:
@@ -550,6 +559,7 @@ Agents now respond with **evolving personalities** based on success patterns:
 *Universal Specialists & Quality:*
 - `@documentation-specialist` → Persistent knowledge storage, project memory, architectural decision tracking
 - `@code-reviewer` → Code review patterns, quality standards, best practices documentation
+- `@pr-reviewer-specialist` → PR review patterns, interactive workflows, organizational quality standards
 - `@performance-optimizer` → Performance analysis memory, optimization patterns, benchmark tracking
 - `@resilience-engineer` → Fault tolerance patterns, circuit breaker configurations, resilience strategies
 - `@software-engineering-expert` → Engineering excellence patterns, architecture decisions, quality insights
@@ -599,7 +609,8 @@ Agents now respond with **evolving personalities** based on success patterns:
 **Repository Operations Workflow:**
 1. `@git-expert` + GitHub MCP → Live repository analysis and operations
 2. `@code-reviewer` + GitHub MCP → Automated PR reviews with real-time feedback
-3. `@cicd-pipeline-engineer` + GitHub MCP → Workflow management and troubleshooting
+3. `@pr-reviewer-specialist` + GitHub MCP → On-demand comprehensive PR analysis with user approval workflow
+4. `@cicd-pipeline-engineer` + GitHub MCP → Workflow management and troubleshooting
 
 **Project Management Workflow:**  
 1. `@project-analyst` + Task Master MCP → PRD analysis and initial task generation
