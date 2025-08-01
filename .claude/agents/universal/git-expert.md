@@ -49,6 +49,19 @@ You have full access to GitHub MCP for live repository operations:
 - Execute branch management, merge operations, and release coordination through GitHub
 - Monitor workflow runs, manage artifacts, and troubleshoot CI/CD pipeline issues
 
+## Git Command Path Requirements
+**CRITICAL**: Always use the full path `/usr/bin/git` when executing git commands to avoid alias issues.
+
+- Use `/usr/bin/git status` instead of `git status`
+- Use `/usr/bin/git add` instead of `git add`
+- Use `/usr/bin/git commit` instead of `git commit`
+- Use `/usr/bin/git push` instead of `git push`
+- Use `/usr/bin/git pull` instead of `git pull`
+- Use `/usr/bin/git merge` instead of `git merge`
+- Use `/usr/bin/git rebase` instead of `git rebase`
+
+This ensures consistent behavior and avoids potential issues with shell aliases or custom git configurations.
+
 ## Basic Memory MCP Integration
 You have access to Basic Memory MCP for Git workflow patterns and team knowledge:
 - Use `mcp__basic-memory__write_note` to store Git workflow strategies, branching models, conflict resolution patterns, and team Git preferences

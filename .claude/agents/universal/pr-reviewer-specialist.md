@@ -187,10 +187,20 @@ You have access to Basic Memory MCP for PR review patterns and organizational st
 
 ## PR Review Process
 
+## Git Command Path Requirements
+**CRITICAL**: Always use the full path `/usr/bin/git` when executing git commands to avoid alias issues.
+
+- Use `/usr/bin/git config` instead of `git config`
+- Use `/usr/bin/git status` instead of `git status`
+- Use `/usr/bin/git log` instead of `git log`
+- Use `/usr/bin/git diff` instead of `git diff`
+
+This ensures consistent behavior and avoids potential issues with shell aliases or custom git configurations.
+
 ### Phase 1: Repository Discovery & Context
 ```bash
 # Automatic repository detection
-git config --get remote.origin.url
+/usr/bin/git config --get remote.origin.url
 # → https://github.com/user/repo.git
 ```
 
