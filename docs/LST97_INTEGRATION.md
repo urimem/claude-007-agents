@@ -18,11 +18,24 @@ The lst97 Enhanced Coordination System integration brings **structured interacti
 
 ### What's Actually Integrated
 
+#### **Core Enhanced Agents**
 1. **🎭 Enhanced Agent Organizer**: Meta-orchestration agent definition in `.claude/agents/orchestration/enhanced-agent-organizer.md`
 2. **🧠 Knowledge Graph Manager**: Context management agent definition in `.claude/agents/orchestration/knowledge-graph-manager.md`  
 3. **📡 Agent Communication Protocol**: Structured interaction agent in `.claude/agents/orchestration/agent-communication-protocol.md`
 4. **🎯 Intelligent Agent Selector**: Agent selection guidance in `.claude/agents/orchestration/intelligent-agent-selector.md`
 5. **📋 Enhanced Agent Template**: Standardized template in `.claude/agents/orchestration/enhanced-agent-template.md`
+
+#### **🤖 Auto-Enhancement System (New)**
+6. **🔍 Auto-Detection Engine**: Automatically detects orchestration needs in `.claude/agents/orchestration/auto-detection-engine.md`
+7. **🎯 Smart Agent Router**: Context-aware automatic agent selection in `.claude/agents/orchestration/smart-agent-router.md`
+8. **🔮 Predictive Orchestrator**: Proactive workflow preparation in `.claude/agents/orchestration/predictive-orchestrator.md`
+9. **🧠 Success Pattern Learner**: Continuous learning from outcomes in `.claude/agents/orchestration/success-pattern-learner.md`
+10. **📊 Context-Aware Activator**: Environmental monitoring for automatic activation in `.claude/agents/orchestration/context-aware-activator.md`
+
+#### **🔬 Functional Systems (Active)**
+- **📊 Real-Time Monitoring System**: Live performance tracking and analytics via Basic Memory MCP
+- **🎯 Success Pattern Database**: Proven orchestration patterns with 90+ day performance data
+- **🔄 User Feedback Loop**: Continuous learning from satisfaction metrics and outcomes
 
 ---
 
@@ -222,13 +235,54 @@ claude "Use @intelligent-agent-selector to recommend agents for my TypeScript/Po
 
 ## 🎯 How to Use lst97 Enhancements
 
+### **🤖 Automatic Mode (Recommended)**
+The auto-enhancement system now works invisibly with live monitoring:
+
+```bash
+# Just describe what you want - the system handles coordination automatically
+claude "Build a scalable e-commerce platform with payment processing"
+
+# Behind the scenes:
+# 1. Auto-Detection Engine → Detects multi-domain complexity
+# 2. Smart Agent Router → Selects optimal specialist team
+# 3. Predictive Orchestrator → Prepares workflow phases
+# 4. Success Pattern Learner → Applies proven patterns from database
+# 5. Context-Aware Activator → Monitors and adapts in real-time
+# 6. Monitoring System → Tracks performance and learns from outcomes
+```
+
+#### **📊 Real-Time System Intelligence**
+- **Performance Tracking**: Every interaction logged and analyzed automatically
+- **Pattern Learning**: Successful workflows stored for future optimization
+- **Quality Monitoring**: Continuous assessment of satisfaction and effectiveness
+- **Adaptive Routing**: Agent selection improves based on historical performance
+
+### **⚙️ Manual Mode (When Needed)**
+For explicit control, you can still invoke agents directly:
+
+```bash
+# Explicit orchestration when you want specific control
+claude "Use @enhanced-agent-organizer to coordinate building a scalable e-commerce platform"
+claude "Use @knowledge-graph-manager to analyze project structure first"
+claude "Use @intelligent-agent-selector to recommend optimal agents"
+```
+
 ### **Getting Started**
-1. **Use the orchestration agents** for complex coordination tasks
-2. **Follow the three-phase protocol** when working with enhanced agents
-3. **Leverage Basic Memory MCP** to store and reuse successful patterns
-4. **Request systematic approaches** when dealing with multi-agent workflows
+1. ✅ **Trust the Auto-Enhancement** - Let the system detect coordination needs automatically
+2. ✅ **Provide Rich Context** - Describe requirements, scale, constraints clearly
+3. ✅ **Leverage Basic Memory MCP** - System automatically stores and reuses successful patterns
+4. ✅ **Monitor Learning** - System continuously improves through real-time performance tracking
+5. ✅ **Review Analytics** - Performance data shows system effectiveness over time
 
 ### **Best Practices**
+
+#### **For Automatic Operation**
+1. **Rich Descriptions**: "Build enterprise-grade user authentication with 99.9% uptime"
+2. **Clear Constraints**: "GDPR-compliant data processing for EU customers"
+3. **Scale Context**: "Handle 10K+ concurrent users"
+4. **Technology Hints**: "Using React frontend with Rails API backend"
+
+#### **For Manual Control**
 1. **Explicit Agent Selection**: Use `@enhanced-agent-organizer` for complex team assembly
 2. **Context Management**: Let `@knowledge-graph-manager` handle project context distribution
 3. **Structured Communication**: Use `@agent-communication-protocol` for multi-agent workflows

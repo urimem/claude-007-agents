@@ -51,6 +51,50 @@ graph TB
     end
 ```
 
+## 🤖 Auto-Enhancement Agents (New)
+
+These agents make orchestration truly automatic by eliminating the need for explicit invocation:
+
+### [Auto-Detection Engine](./auto-detection-engine.md)
+**Status**: 🟡 Ready for Integration
+**Function**: Automatically detects when orchestration is needed based on complexity indicators
+- **Multi-Technology Detection**: Triggers for "React + Rails + PostgreSQL" patterns
+- **Cross-Domain Analysis**: Detects frontend + backend + infrastructure coordination needs
+- **Scale Requirements**: Auto-activates for enterprise/scalability mentions
+- **Complexity Scoring**: Threshold-based automatic orchestration triggering
+
+### [Smart Agent Router](./smart-agent-router.md)  
+**Status**: 🟡 Ready for Integration
+**Function**: Routes requests to optimal agents based on context and success patterns
+- **Project Context Detection**: Analyzes files/dependencies for optimal agent selection
+- **Success Pattern Matching**: Uses Basic Memory to find historically successful combinations
+- **Real-Time Capability Assessment**: Evaluates agent fit for current requirements
+- **Automatic Fallback**: Handles agent unavailability with intelligent alternatives
+
+### [Predictive Orchestrator](./predictive-orchestrator.md)
+**Status**: 🟡 Ready for Integration  
+**Function**: Predicts workflow needs and prepares coordination proactively
+- **Workflow Prediction**: Anticipates implementation phases from request analysis
+- **Proactive Context Preparation**: Pre-gathers project context and dependencies
+- **Pre-emptive Quality Gates**: Sets up security/performance reviews automatically
+- **Resource Pre-allocation**: Prepares agent briefings before they're needed
+
+### [Success Pattern Learner](./success-pattern-learner.md)
+**Status**: 🟡 Ready for Integration
+**Function**: Continuously learns from outcomes to improve orchestration decisions
+- **Success Metrics Collection**: Measures quality, efficiency, satisfaction outcomes
+- **Pattern Recognition**: Identifies consistently successful agent combinations
+- **Adaptive Rule Creation**: Generates new auto-trigger rules from learned patterns
+- **Continuous Improvement**: Updates orchestration intelligence over time
+
+### [Context-Aware Activator](./context-aware-activator.md)
+**Status**: 🟡 Ready for Integration
+**Function**: Monitors environment to automatically activate orchestration when needed
+- **Real-Time Project Analysis**: Monitors file changes, git activity, team patterns
+- **Environmental Context**: Adapts to system load, deadlines, team availability
+- **User Pattern Recognition**: Learns individual preferences and anticipates needs
+- **Invisible Intelligence**: Triggers coordination before problems become apparent
+
 ## Active Components
 
 ### 🎭 [Choreography Engine](./choreography-engine.md)
