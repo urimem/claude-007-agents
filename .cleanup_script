@@ -1,0 +1,12 @@
+#!/bin/bash
+# Cleanup script for removing consolidated agent files
+
+# Remove duplicate files that have been consolidated
+rm -f "/Users/avivl/GitHub/avivl/claude-007-agents/.claude/agents/backend/logging-concepts-engineer.md"
+rm -f "/Users/avivl/GitHub/avivl/claude-007-agents/.claude/agents/business/ux-designer.md"
+rm -f "/Users/avivl/GitHub/avivl/claude-007-agents/.claude/agents/backend/django-backend-expert.md"
+rm -f "/Users/avivl/GitHub/avivl/claude-007-agents/.claude/agents/backend/rails-backend-expert.md"
+rm -f "/Users/avivl/GitHub/avivl/claude-007-agents/.claude/agents/backend/nodejs-backend-expert.md"
+rm -f "/Users/avivl/GitHub/avivl/claude-007-agents/.claude/agents/security/security-auditor.md"
+
+echo "Cleanup complete: Removed 6 consolidated agent files"

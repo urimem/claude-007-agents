@@ -1,6 +1,6 @@
 # 🚀 Claude Code: The Ultimate AI Agent System for Developers
 
-**Transform your development workflow with 77 specialized AI agents that deliver enterprise-grade code quality through advanced orchestration, resilience engineering, and organizational memory.**
+**Transform your development workflow with 71 specialized AI agents that deliver enterprise-grade code quality through advanced orchestration, resilience engineering, and organizational memory.**
 
 <div align="center">
 
@@ -16,12 +16,12 @@
 ## 🌟 Why Claude Code Agents Will Transform Your Development
 
 ### ⚡ **Instant Expertise Across Every Technology**
-No more context switching between documentation, Stack Overflow, and your IDE. Get **instant access to 77 specialized experts** covering every major framework, language, and domain.
+No more context switching between documentation, Stack Overflow, and your IDE. Get **instant access to 71 specialized experts** covering every major framework, language, and domain.
 
 ```bash
 # Instead of spending hours researching...
 claude "Build a resilient authentication system with circuit breakers and structured logging"
-# → @rails-backend-expert + @resilience-engineer + @security-auditor work in perfect coordination
+# → @rails-expert + @resilience-engineer + @security-specialist work in perfect coordination
 ```
 
 ### 🧠 **Advanced AI System with Organizational Memory**
@@ -38,7 +38,7 @@ While others give you single-purpose chatbots, we deliver **truly intelligent co
 # Just describe what you want - the system handles everything automatically:
 claude "Build an e-commerce platform"
 # → Auto-Detection Engine: Detects multi-domain complexity
-# → Smart Agent Router: Selects optimal team (@product-manager + @react-expert + @rails-expert + @payment-specialist + @security-auditor)
+# → Smart Agent Router: Selects optimal team (@product-manager + @react-expert + @rails-expert + @payment-specialist + @security-specialist)
 # → Predictive Orchestrator: Prepares workflow phases proactively
 # → Success Pattern Learner: Applies proven patterns from organizational memory
 # → Context-Aware Activator: Monitors and adapts in real-time
@@ -185,7 +185,7 @@ EOF
 # Just describe what you need - auto-enhancement handles the rest
 claude "Create a user authentication API with rate limiting and structured logging"
 # → Auto-Detection: Detects security + performance + API design complexity
-# → Smart Routing: Selects @security-auditor + @api-architect + @performance-optimizer
+# → Smart Routing: Selects @security-specialist + @api-architect + @performance-optimizer
 # → Pattern Application: Applies proven authentication patterns from organizational memory
 # → Complete implementation with circuit breakers, proper error handling, and security
 ```

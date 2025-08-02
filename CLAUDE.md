@@ -109,9 +109,9 @@ This project features a comprehensive unified agent system with **ACTIVE AI orch
   - Three-tier context optimization, relevance scoring, agent-specific briefings
 
 #### Backend Framework Specialists
-- **Ruby on Rails** → `@rails-backend-expert`
+- **Ruby on Rails** → `@rails-expert`
   - ActiveRecord, Rails APIs, MVC patterns, resilience integration
-- **Django** → `@django-backend-expert` 
+- **Django** → `@django-expert` 
   - Django ORM, REST APIs, middleware, Python resilience patterns
 - **Laravel** → `@laravel-backend-expert`
   - Eloquent ORM, PHP patterns, Laravel ecosystem
@@ -197,7 +197,7 @@ This project features a comprehensive unified agent system with **ACTIVE AI orch
   - Log analysis, error pattern detection, debugging complex issues
 
 #### Security & Compliance
-- **Security Auditing** → `@security-auditor`
+- **Security Auditing** → `@security-specialist`
   - Penetration testing, vulnerability scanning, compliance auditing
 - **Privacy Engineering** → `@privacy-engineer`
   - GDPR/CCPA compliance, privacy-by-design, data protection technologies
@@ -338,7 +338,7 @@ The system now **automatically detects** when to trigger collaboration patterns:
 
 #### For API Development:
 ```
-"Design a REST API for user management" → @api-architect + @rails-backend-expert + Basic Memory MCP
+"Design a REST API for user management" → @api-architect + @rails-expert + Basic Memory MCP
 "Create GraphQL endpoints with error handling" → @graphql-architect + framework specialist + Basic Memory MCP
 "Build GraphQL federation architecture" → @graphql-architect + @cloud-architect + Basic Memory MCP
 "Build API rate limiting with proper logging" → framework specialist + @resilience-engineer + Basic Memory MCP
@@ -375,7 +375,7 @@ The system now **automatically detects** when to trigger collaboration patterns:
 #### For On-Demand PR Reviews:
 ```
 "Use @pr-reviewer-specialist to review PR #123" → @pr-reviewer-specialist + GitHub MCP + Basic Memory MCP
-"Use @pr-reviewer-specialist to analyze PR #456 focusing on security" → @pr-reviewer-specialist + @security-auditor + GitHub MCP
+"Use @pr-reviewer-specialist to analyze PR #456 focusing on security" → @pr-reviewer-specialist + @security-specialist + GitHub MCP
 "Use @pr-reviewer-specialist to review PR #789 with emphasis on architecture" → @pr-reviewer-specialist + @software-engineering-expert + GitHub MCP
 "Use @pr-reviewer-specialist to analyze PR #321 for performance implications" → @pr-reviewer-specialist + @performance-optimizer + GitHub MCP
 ``````
@@ -413,7 +413,7 @@ Agents now respond with **evolving personalities** based on success patterns:
 "Design user flows for checkout process" → @ux-designer
 "Build quantitative financial model for investment strategy" → @financial-modeling-agent + Basic Memory MCP
 "Implement algorithmic trading system with risk management" → @financial-modeling-agent + @python-hyx-resilience
-"Create fintech payment processing with fraud detection" → @financial-modeling-agent + @security-auditor
+"Create fintech payment processing with fraud detection" → @financial-modeling-agent + @security-specialist
 "Track feature evolution and user feedback patterns" → @product-manager + Basic Memory MCP
 "Document business logic and stakeholder requirements" → @business-analyst + Basic Memory MCP
 ```
@@ -440,14 +440,14 @@ Agents now respond with **evolving personalities** based on success patterns:
 
 #### For Security & Compliance:
 ```
-"Conduct security audit of our web application" → @security-auditor + Basic Memory MCP
-"Perform penetration testing on API endpoints" → @security-auditor
-"Review infrastructure for compliance gaps" → @security-auditor + @cloud-architect
+"Conduct security audit of our web application" → @security-specialist + Basic Memory MCP
+"Perform penetration testing on API endpoints" → @security-specialist
+"Review infrastructure for compliance gaps" → @security-specialist + @cloud-architect
 "Implement GDPR compliance for user data processing" → @privacy-engineer
 "Design privacy-preserving analytics system" → @privacy-engineer + @data-engineer
 "Integrate security scanning into CI/CD pipeline" → @devsecops-engineer
-"Store security assessment patterns and vulnerability tracking" → @security-auditor + Basic Memory MCP
-"Document compliance requirements and validation procedures" → @security-auditor + Basic Memory MCP
+"Store security assessment patterns and vulnerability tracking" → @security-specialist + Basic Memory MCP
+"Document compliance requirements and validation procedures" → @security-specialist + Basic Memory MCP
 ```
 
 #### For Mobile Development:
@@ -462,7 +462,7 @@ Agents now respond with **evolving personalities** based on success patterns:
 "Configure load balancers for high availability" → @network-engineer
 "Troubleshoot DNS resolution issues" → @network-engineer
 "Create Terraform modules for multi-cloud deployment" → @terraform-specialist
-"Set up infrastructure as code with security best practices" → @terraform-specialist + @security-auditor
+"Set up infrastructure as code with security best practices" → @terraform-specialist + @security-specialist
 ```
 
 #### For Domain Specialists:
@@ -521,7 +521,7 @@ Agents now respond with **evolving personalities** based on success patterns:
 #### For Security & DevSecOps:
 ```
 "Integrate security testing into CI/CD pipeline" → @devsecops-engineer
-"Implement automated vulnerability management" → @devsecops-engineer + @security-auditor
+"Implement automated vulnerability management" → @devsecops-engineer + @security-specialist
 "Build secure development workflow with shift-left practices" → @devsecops-engineer + @cicd-pipeline-engineer
 "Create compliance automation with continuous monitoring" → @devsecops-engineer
 ```
@@ -558,8 +558,8 @@ Agents now respond with **evolving personalities** based on success patterns:
 4. **Response** → `@incident-responder` handles production issues
 
 #### Security-First Development:
-1. **Security Assessment** → `@security-auditor` conducts vulnerability analysis
-2. **Secure Architecture** → `@software-engineering-expert` + `@security-auditor` design secure systems
+1. **Security Assessment** → `@security-specialist` conducts vulnerability analysis
+2. **Secure Architecture** → `@software-engineering-expert` + `@security-specialist` design secure systems
 3. **Implementation** → Framework specialists implement with security best practices
 4. **Compliance Validation** → Domain compliance agents validate regulatory requirements
 
@@ -602,8 +602,8 @@ Agents now respond with **evolving personalities** based on success patterns:
 **Context7 MCP Integration:**
 - `@documentation-specialist` → Live library documentation access, API reference retrieval
 - `@software-engineering-expert` → Up-to-date framework patterns, best practices documentation
-- `@rails-backend-expert` → Rails documentation, gem usage examples, API references
-- `@django-backend-expert` → Django documentation, package examples, ORM patterns
+- `@rails-expert` → Rails documentation, gem usage examples, API references
+- `@django-expert` → Django documentation, package examples, ORM patterns
 - `@laravel-backend-expert` → Laravel documentation, package usage, Eloquent examples
 - `@react-component-architect` → React documentation, hooks patterns, component examples
 - `@vue-component-architect` → Vue documentation, composition API, component patterns
@@ -651,8 +651,7 @@ Agents now respond with **evolving personalities** based on success patterns:
 - `@vue-expert` → Vue patterns, Composition API solutions, reactive programming
 
 *Security & Infrastructure:*
-- `@security-specialist` → Security patterns, vulnerability assessments, threat models
-- `@security-auditor` → Security assessment memory, vulnerability tracking, compliance documentation
+- `@security-specialist` → Security patterns, vulnerability assessments, threat models, security assessment memory, vulnerability tracking, compliance documentation
 - `@incident-responder` → Post-mortem analysis, incident knowledge base, response patterns
 - `@error-detective` → Error pattern memory, debugging insights, solution knowledge base
 
@@ -722,7 +721,7 @@ Specialized agents build upon universal foundations:
 - **Required Format**: `type(scope): description - @agent1 @agent2`
 - **Default Behavior**: Every commit automatically includes the contributing agents
 - **Examples**: 
-  - `feat(auth): implement OAuth integration - @rails-backend-expert @security-specialist`
+  - `feat(auth): implement OAuth integration - @rails-expert @security-specialist`
   - `fix(ui): resolve responsive layout issues - @react-component-architect @tailwind-css-expert`
   - `docs: update API documentation - @documentation-specialist @api-architect`
   - `refactor: improve database queries - @database-architect @performance-optimizer`

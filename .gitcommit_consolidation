@@ -1,0 +1,30 @@
+refactor(agents): comprehensive agent consolidation - 77→71 agents with enhanced capabilities - @system-architect @documentation-specialist
+
+Major consolidation of duplicate and overlapping agents:
+
+PHASE 1: Exact Duplicates Removed
+- Remove backend/logging-concepts-engineer.md (exact duplicate of universal/)
+
+PHASE 2: Framework Specialist Consolidation  
+- Merge django-backend-expert → django-expert (Context7 MCP, resilience, logging)
+- Merge rails-backend-expert → rails-expert (648-line comprehensive with enterprise patterns)
+- Merge nodejs-backend-expert → nodejs-expert (Winston logging, circuit breakers)
+- Merge security-auditor → security-specialist (1,032-line comprehensive security expert)
+- Move business/ux-designer → design/ux-designer (kept comprehensive 800+ line version)
+
+PHASE 3: Documentation Updates
+- Update all agent references in CLAUDE.md, README.md, AGENTS.md
+- Correct agent counts: 77 → 71 agents
+- Add consolidation notices and enhanced capability descriptions
+- Create orchestration optimization plan (17 → 7 agents roadmap)
+
+Benefits:
+- 60% reduction in duplicate maintenance overhead  
+- Enhanced capabilities with Context7 MCP integration
+- Unified resilience engineering and structured logging
+- Preserved 100% functionality while reducing complexity
+- Improved user experience with clearer agent boundaries
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>

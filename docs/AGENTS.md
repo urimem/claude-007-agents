@@ -1,20 +1,22 @@
 # 🤖 Complete Agent Catalog
 
-**77 Specialized AI Agents** organized into 15 categories, each with unique expertise and capabilities. Every agent includes Basic Memory MCP integration for organizational learning and pattern reuse.
+**71 Specialized AI Agents** organized into 15 categories, each with unique expertise and capabilities. Every agent includes Basic Memory MCP integration for organizational learning and pattern reuse.
+
+*Note: Recent consolidation enhanced several agents with expanded capabilities, combining specialized variants into more comprehensive experts.*
 
 ## 📊 Quick Overview
 
 | **Category** | **Agents** | **Key Focus** | **Memory Integration** |
 |--------------|------------|---------------|----------------------|
 | **[lst97 Enhanced Coordination](#lst97-enhanced-coordination-system)** | 5 | Meta-orchestration, knowledge management, structured communication | ✅ Full |
-| **[Backend Development](#backend-development)** | 13 | Framework specialists with resilience engineering | ✅ All agents |
+| **[Backend Development](#backend-development)** | 10 | Framework specialists with resilience engineering | ✅ All agents |
 | **[Frontend Development](#frontend-development)** | 10 | Modern web frameworks with error boundaries | ✅ All agents |
 | **[Infrastructure & Cloud](#infrastructure--cloud)** | 10 | DevOps, cloud architecture, serverless | ✅ Config patterns |
-| **[Universal Specialists](#universal-specialists)** | 8 | Cross-framework architecture and quality | ✅ All agents |
+| **[Universal Specialists](#universal-specialists)** | 7 | Cross-framework architecture and quality | ✅ All agents |
 | **[Core Development](#core-development)** | 6 | Code review, performance, documentation | ✅ All agents |
-| **[Business Strategy](#business-strategy)** | 5 | Product management, UX design, compliance | ✅ Requirements memory |
+| **[Business Strategy](#business-strategy)** | 4 | Product management, business analysis, compliance | ✅ Requirements memory |
 | **[Advanced Orchestrators](#advanced-orchestrators)** | 4 | AI coordination and team assembly | ✅ Orchestration patterns |
-| **[Security & Compliance](#security--compliance)** | 3 | Security auditing, privacy engineering | ✅ Security patterns |
+| **[Security & Compliance](#security--compliance)** | 2 | Enhanced security analysis, privacy engineering | ✅ Security patterns |
 | **[Automation & DevOps](#automation--devops)** | 3 | CI/CD, testing, release management | ✅ Automation patterns |
 | **[Data & Analytics](#data--analytics)** | 3 | Data engineering, business intelligence | ✅ Data patterns |
 | **[AI & Machine Learning](#ai--machine-learning)** | 3 | ML engineering, computer vision, NLP | ✅ ML patterns |
@@ -68,30 +70,35 @@
 
 ## 🏗️ Backend Development
 
-**13 Agents** - Framework specialists with integrated resilience engineering and Basic Memory MCP.
+**10 Agents** - Framework specialists with integrated resilience engineering and Basic Memory MCP.
 
-### **rails-backend-expert** 💎
-**Ruby on Rails specialist with ActiveRecord expertise**
-- **Specializations**: MVC patterns, ActiveRecord optimization, Rails APIs, security patterns
+*Consolidation Note: Backend experts now include enhanced capabilities from merged specialized variants, providing comprehensive framework expertise with resilience patterns.*
+
+### **rails-expert** 💎
+**Comprehensive Ruby on Rails specialist with full-stack expertise**
+- **Specializations**: MVC patterns, ActiveRecord optimization, Rails APIs, full-stack development, security patterns
 - **Resilience**: CircuitBox integration, retry mechanisms, graceful degradation
+- **Enhanced Capabilities**: Combined backend and general Rails expertise for comprehensive development
 - **Model**: Sonnet (balanced for Rails development complexity)
-- **Memory**: Rails patterns, authentication implementations, API designs
+- **Memory**: Rails patterns, authentication implementations, API designs, full-stack patterns
 - **Quality Rules**: Ruby conventions, Rails security patterns, ActiveRecord best practices
 
-### **django-backend-expert** 🐍
-**Django specialist with Python best practices**
-- **Specializations**: Django ORM, REST APIs, middleware, async patterns, security
+### **django-expert** 🐍
+**Comprehensive Django specialist with full-stack Python expertise**
+- **Specializations**: Django ORM, REST APIs, middleware, async patterns, full-stack development, security
 - **Resilience**: Python Hyx integration, circuit breakers, fault tolerance
+- **Enhanced Capabilities**: Combined backend and general Django expertise for comprehensive Python web development
 - **Model**: Sonnet (optimal for Django complexity)
-- **Memory**: Django patterns, ORM optimizations, Python implementations
+- **Memory**: Django patterns, ORM optimizations, Python implementations, full-stack patterns
 - **Quality Rules**: Python:S#### rules, Django security, PEP 8 compliance
 
-### **laravel-backend-expert** 🔶
-**Laravel specialist with PHP ecosystem expertise**
-- **Specializations**: Eloquent ORM, PHP patterns, Laravel ecosystem, Blade templates
+### **laravel-expert** 🔶
+**Comprehensive Laravel specialist with full PHP ecosystem expertise**
+- **Specializations**: Eloquent ORM, PHP patterns, Laravel ecosystem, Blade templates, full-stack development
 - **Resilience**: PHP resilience patterns, error handling, recovery mechanisms
+- **Enhanced Capabilities**: Combined backend and general Laravel expertise for comprehensive PHP development
 - **Model**: Sonnet (for Laravel framework complexity)
-- **Memory**: Laravel patterns, Eloquent optimizations, PHP best practices
+- **Memory**: Laravel patterns, Eloquent optimizations, PHP best practices, full-stack patterns
 - **Quality Rules**: PHP conventions, Laravel security, Eloquent best practices
 
 ### **fastapi-expert** ⚡
@@ -103,11 +110,12 @@
 - **Quality Rules**: Python:S#### rules, async best practices, API security
 
 ### **nodejs-expert** 🟢
-**Node.js specialist with TypeScript and JavaScript expertise**
-- **Specializations**: Express.js, async patterns, npm ecosystem, server-side JavaScript
+**Comprehensive Node.js specialist with full-stack JavaScript/TypeScript expertise**
+- **Specializations**: Express.js, async patterns, npm ecosystem, server-side JavaScript, full-stack development
 - **Resilience**: Node.js resilience patterns, error handling, cluster management
+- **Enhanced Capabilities**: Combined backend and general Node.js expertise for comprehensive JavaScript development
 - **Model**: Sonnet (for Node.js ecosystem complexity)
-- **Memory**: Node.js patterns, async implementations, Express configurations
+- **Memory**: Node.js patterns, async implementations, Express configurations, full-stack patterns
 - **Quality Rules**: JavaScript:S#### rules, Node.js best practices, async patterns
 
 ### **fastify-expert** ⚡
@@ -166,13 +174,13 @@
 - **Memory**: Go resilience patterns, circuit breaker configurations, error handling
 - **Quality Rules**: Go:S#### rules, concurrency safety, error handling patterns
 
-### **typescript-pino-logging** 📊
-**TypeScript logging specialist with Pino structured logging**
-- **Specializations**: Pino logger configuration, structured logging, observability
+### **go-zap-logging** 📊
+**Go logging specialist with Zap structured logging**
+- **Specializations**: Zap logger configuration, structured logging, Go observability patterns
 - **Resilience**: Logging resilience, error tracking, monitoring integration
 - **Model**: Haiku (for logging configuration and patterns)
-- **Memory**: Logging configurations, structured patterns, observability setups
-- **Quality Rules**: Logging best practices, structured data, performance considerations
+- **Memory**: Go logging configurations, structured patterns, observability setups
+- **Quality Rules**: Go logging best practices, structured data, performance considerations
 
 ---
 
@@ -340,7 +348,9 @@
 
 ## 🔧 Universal Specialists
 
-**8 Agents** - Cross-framework architecture and quality with Basic Memory MCP.
+**7 Agents** - Cross-framework architecture and quality with Basic Memory MCP.
+
+*Consolidation Note: Universal specialists now provide enhanced cross-framework capabilities with consolidated expertise.*
 
 ### **software-engineering-expert** 🏗️
 **Architecture and code quality across all languages**
@@ -365,12 +375,6 @@
 - **Memory**: Resilience patterns, circuit breaker configurations, fault tolerance strategies
 - **Quality Rules**: Resilience best practices, error handling, recovery patterns
 
-### **logging-concepts-engineer** 📊
-**Structured logging and observability**
-- **Specializations**: JSON logging, contextual information, observability patterns
-- **Model**: Haiku (for logging patterns and configuration)
-- **Memory**: Logging patterns, configuration templates, observability strategies
-- **Quality Rules**: Logging best practices, structured data, performance considerations
 
 ### **quality-system-engineer** 🛡️
 **Automated quality systems and trunk.io integration**
@@ -459,7 +463,9 @@
 
 ## 💼 Business Strategy
 
-**5 Agents** - Product management and business intelligence with Basic Memory MCP for requirements memory.
+**4 Agents** - Product management, business analysis, and compliance with Basic Memory MCP for requirements memory.
+
+*Consolidation Note: UX design capabilities moved to design-focused categories for better specialization.*
 
 ### **product-manager** 📊
 **Product strategy and roadmap planning**
@@ -475,12 +481,6 @@
 - **Memory**: Requirements memory, stakeholder context, business logic
 - **Quality Rules**: Business analysis best practices, requirement documentation
 
-### **ux-designer** 🎨
-**User experience design and research**
-- **Specializations**: User research, wireframing, usability testing, design systems
-- **Model**: Sonnet (for UX design complexity)
-- **Memory**: Design patterns, user research insights, usability findings
-- **Quality Rules**: UX design best practices, usability standards, accessibility
 
 ### **payment-integration-agent** 💳
 **Payment systems and financial compliance**
@@ -537,14 +537,17 @@
 
 ## 🔐 Security & Compliance
 
-**3 Agents** - Security auditing and privacy engineering with Basic Memory MCP for security patterns.
+**2 Agents** - Enhanced security analysis and privacy engineering with Basic Memory MCP for security patterns.
 
-### **security-auditor** 🛡️
-**Comprehensive security analysis and vulnerability assessment**
-- **Specializations**: Penetration testing, vulnerability scanning, compliance auditing
+*Consolidation Note: Security capabilities consolidated into comprehensive specialists with enhanced analysis capabilities.*
+
+### **security-specialist** 🛡️
+**Comprehensive security analysis and threat modeling expert**
+- **Specializations**: Security architecture, threat modeling, penetration testing, vulnerability scanning, compliance auditing, secure coding practices
+- **Enhanced Capabilities**: Combined security auditing and architecture expertise for comprehensive security analysis
 - **Model**: Sonnet (for security analysis complexity)
-- **Memory**: Security patterns, vulnerability assessments, compliance requirements
-- **Quality Rules**: Security best practices, vulnerability management, compliance standards
+- **Memory**: Security assessment patterns, vulnerability databases, compliance frameworks, threat models, secure design principles
+- **Quality Rules**: Security architecture, threat modeling, secure coding standards, compliance frameworks
 
 ### **devsecops-engineer** 🔒
 **Security integration and shift-left practices**
@@ -699,9 +702,9 @@ We're continuously expanding our domain specialist coverage. Current priorities 
 ### **Direct Agent Selection**
 ```bash
 # Use specific agents for targeted tasks
-claude "Use @rails-backend-expert to build authentication API"
+claude "Use @rails-expert to build authentication API"
 claude "Use @react-component-architect to create dashboard components"
-claude "Use @security-auditor to review security vulnerabilities"
+claude "Use @security-specialist to review security vulnerabilities"
 ```
 
 ### **Automatic Orchestration**
