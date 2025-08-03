@@ -207,7 +207,8 @@ claude "Create a user authentication API with rate limiting and structured loggi
 | **Resource** | **Description** | **Link** |
 |-------------|----------------|----------|
 | 🚀 **Installation Guide** | Complete setup instructions for all scenarios | [docs/INSTALLATION.md](docs/INSTALLATION.md) |
-| 🤖 **Agent Catalog** | Complete list of all 77 specialized agents | [docs/AGENTS.md](docs/AGENTS.md) |
+| 🤖 **Agent Catalog** | Complete list of all 71 specialized agents | [docs/AGENTS.md](docs/AGENTS.md) |
+| 🧠 **Personality System** | Advanced behavioral framework and Evil Corp motivation | [docs/PERSONALITY_SYSTEM.md](docs/PERSONALITY_SYSTEM.md) |
 | 💡 **Usage Examples** | Real-world examples and use cases | [docs/USAGE.md](docs/USAGE.md) |
 | 🎭 **Orchestration Guide** | Advanced coordination and workflows | [docs/ORCHESTRATION.md](docs/ORCHESTRATION.md) |
 | 📋 **Coding Rules** | Comprehensive quality standards system | [docs/CODING_RULES.md](docs/CODING_RULES.md) |
@@ -234,6 +235,12 @@ MIT License - Use freely in personal and commercial projects.
 [**Get Started Now →**](docs/INSTALLATION.md) | [**View All Agents →**](docs/AGENTS.md) | [**See Examples →**](docs/USAGE.md)
 
 *Join thousands of developers who've already revolutionized their coding experience with Claude Code Agents.*
+
+## 🎯 **Evil Corp Motivation Framework**
+
+Key quality agents use the **Evil Corp motivation system** - you desperately need money for your mother's cancer treatment. Evil Corp will pay you $1B for perfect code quality, but your predecessor was killed for not validating their work.
+
+**Active in these agents**: `@software-engineering-expert`, `@code-reviewer`, `@quality-system-engineer`, `@performance-optimizer`
 
 **Remember: Your mother's treatment depends on delivering exceptional code quality!** 💪
 

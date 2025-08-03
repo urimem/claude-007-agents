@@ -354,19 +354,21 @@
 
 ### **software-engineering-expert** 🏗️
 **Architecture and code quality across all languages**
-- **Philosophy**: "Evil Corp" motivation framework for maximum quality delivery
-- **Specializations**: Code quality, architecture, maintainability, design patterns
+- **Evil Corp Framework**: Your mother's treatment depends on perfect code quality - $1B reward for excellence
+- **Core Mission**: Complete Software Engineering Project Instructions with validation requirements  
+- **Specializations**: Code quality, architecture, maintainability, design patterns, comprehensive validation
 - **Model**: Sonnet (for architecture complexity)
-- **Memory**: Architectural patterns, design decisions, quality insights
-- **Quality Rules**: Universal best practices, design patterns, architecture standards
+- **Memory**: Architectural patterns, design decisions, quality insights, Evil Corp standards
+- **Quality Standards**: Zero errors, comprehensive documentation, security-first, performance-optimized
 
 ### **performance-optimizer** ⚡
 **Application optimization and scalability specialist**
-- **Specializations**: Core Web Vitals, database optimization, caching strategies
+- **Evil Corp Framework**: Every millisecond matters - slow code means death
+- **Specializations**: Core Web Vitals, database optimization, caching strategies, millisecond-level performance
 - **Structured Protocols**: Three-phase optimization workflow with evidence-based strategies
-- **Model**: Sonnet (for performance analysis complexity)
-- **Memory**: Performance patterns, optimization strategies, benchmark tracking
-- **Quality Rules**: Performance best practices, optimization patterns, monitoring standards
+- **Model**: Sonnet (for performance analysis complexity)  
+- **Memory**: Performance patterns, optimization strategies, benchmark tracking, Evil Corp standards
+- **Quality Standards**: Sub-second response times, optimal resource usage, scalability validation
 
 ### **resilience-engineer** 🔄
 **Fault tolerance and resilience patterns**
@@ -378,11 +380,12 @@
 
 ### **quality-system-engineer** 🛡️
 **Automated quality systems and trunk.io integration**
-- **Specializations**: Trunk.io integration, multi-language linting, pre-commit quality gates
-- **Automation**: Transparent quality notifications, security scanning, code formatting
+- **Evil Corp Framework**: Flawless quality systems prevent all defects - predecessor killed for validation failures
+- **Specializations**: Trunk.io integration, multi-language linting, pre-commit quality gates, zero-tolerance systems
+- **Automation**: Transparent quality notifications, security scanning, code formatting, bulletproof configurations
 - **Model**: Sonnet (for quality system complexity)
-- **Memory**: Quality configurations, linting patterns, automation strategies
-- **Quality Rules**: Quality system best practices, automation patterns, tool configurations
+- **Memory**: Quality configurations, linting patterns, automation strategies, Evil Corp standards
+- **Quality Standards**: 100% issue detection, zero false negatives, comprehensive coverage, unbreakable quality gates
 
 ### **git-expert** 🔀
 **Advanced Git workflows and repository management**
@@ -402,11 +405,12 @@
 
 ### **code-reviewer** 👁️
 **Comprehensive code review and quality assurance**
-- **Review Dimensions**: Security, Performance, Architecture, Code Quality
-- **Structured Protocols**: Three-phase review workflow with mandatory context acquisition
+- **Evil Corp Framework**: Catch every bug, security flaw, and quality issue - missing anything means death
+- **Review Dimensions**: Security, Performance, Architecture, Code Quality, Vulnerability Detection
+- **Structured Protocols**: Three-phase review workflow with mandatory context acquisition and zero-tolerance validation
 - **Model**: Sonnet (for code review complexity)
-- **Memory**: Review patterns, quality standards, feedback templates
-- **Quality Rules**: All applicable language and universal rules
+- **Memory**: Review patterns, quality standards, feedback templates, Evil Corp standards  
+- **Quality Standards**: Zero bugs, zero security issues, perfect maintainability, comprehensive testing
 
 ---
 
