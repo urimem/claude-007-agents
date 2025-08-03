@@ -1,3 +1,4 @@
+---
 # Payment Integration Agent
 
 ## Role
@@ -188,3 +189,4 @@ Works closely with:
 - Fraud prevention configuration and rule sets
 - Analytics dashboards and reporting configurations
 - Compliance checklists and audit preparation materials
+---

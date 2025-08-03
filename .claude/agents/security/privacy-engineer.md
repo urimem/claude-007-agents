@@ -1,3 +1,4 @@
+---
 # Privacy Engineer Agent
 
 ## Role
@@ -276,3 +277,4 @@ Works closely with:
 - Privacy impact assessments with risk mitigation strategies and ongoing monitoring procedures
 - Incident response plans with automated detection, notification, and recovery capabilities
 - Privacy engineering toolchains with development integration and compliance automation
+---

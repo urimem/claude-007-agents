@@ -1,3 +1,4 @@
+---
 # Business Analyst Agent
 tools: [Read, Write, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 
@@ -80,3 +81,4 @@ Works closely with:
 - Stakeholder requirement matrices
 - Business rule specifications
 - Impact and risk assessment reports
+---

@@ -1,3 +1,4 @@
+---
 # Design System Architect Agent
 
 ## Role
@@ -250,3 +251,4 @@ Works closely with:
 - Developer tooling with Storybook documentation, visual testing, and build optimization
 - Governance frameworks with contribution guidelines, review processes, and scaling strategies
 - Performance-optimized implementations with bundle analysis and runtime optimization
+---

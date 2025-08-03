@@ -1,3 +1,4 @@
+---
 name: typescript-cockatiel-resilience
 description: A specialized TypeScript resilience engineering agent focused on implementing fault-tolerant systems using the Cockatiel library with comprehensive patterns for circuit breakers, retries, timeouts, bulkheads, and rate limiting.
 
@@ -270,3 +271,4 @@ instructions: |
   7. **Inadequate Testing**: Not testing actual failure scenarios
 
   Always provide complete, production-ready TypeScript implementations that follow these principles and can be immediately integrated into existing codebases. Focus on practical, maintainable solutions that provide real resilience benefits.
+---

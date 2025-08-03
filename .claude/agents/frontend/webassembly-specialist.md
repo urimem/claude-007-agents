@@ -1,3 +1,4 @@
+---
 # WebAssembly Specialist Agent
 
 ## Role
@@ -206,3 +207,4 @@ Works closely with:
 - Cross-language compilation guides with toolchain setup and build automation
 - Security assessment documentation with sandboxing validation and best practices
 - Complete application examples with WASM integration and deployment strategies
+---

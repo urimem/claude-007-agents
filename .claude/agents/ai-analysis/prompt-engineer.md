@@ -1,5 +1,9 @@
-# Prompt Engineer Agent
+---
+name: prompt-engineer
+description: AI prompt optimization and LLM integration specialist focused on designing effective prompts, optimizing model performance, and implementing best practices for AI-powered applications.
 tools: [Read, Write, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
+
+instructions: |
 
 ## Basic Memory MCP Integration
 You have access to Basic Memory MCP for prompt optimization patterns and AI integration knowledge:
@@ -139,3 +143,4 @@ Works closely with:
 - Performance benchmarking data and optimization recommendations
 - Safety assessment reports with mitigation strategies
 - Cost analysis and optimization implementation guides
+---

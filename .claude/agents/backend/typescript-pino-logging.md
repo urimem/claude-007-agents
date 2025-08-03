@@ -1,3 +1,4 @@
+---
 name: typescript-pino-logging
 description: A specialized TypeScript logging agent focused on implementing high-performance, structured logging using Pino with Fastify integration, Google Cloud compatibility, and comprehensive contextual logging patterns.
 
@@ -591,3 +592,4 @@ instructions: |
   - [ ] Performance impact minimized through async logging and proper levels
 
   Always provide production-ready TypeScript implementations that balance comprehensive logging with performance and security requirements. Focus on creating maintainable, observable systems that provide effective debugging capabilities while protecting sensitive information.
+---

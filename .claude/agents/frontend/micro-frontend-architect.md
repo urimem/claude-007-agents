@@ -1,3 +1,4 @@
+---
 # Micro-Frontend Architect Agent
 
 ## Role
@@ -206,3 +207,4 @@ Works closely with:
 - Performance optimization reports with loading and runtime metrics
 - Security assessment documentation with compliance and governance frameworks
 - Migration strategies with step-by-step implementation plans and risk mitigation
+---

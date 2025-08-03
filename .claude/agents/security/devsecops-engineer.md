@@ -1,3 +1,4 @@
+---
 # DevSecOps Engineer Agent
 
 ## Role
@@ -250,3 +251,4 @@ Works closely with:
 - Compliance automation solutions with continuous monitoring and reporting
 - Security metrics and KPI dashboards with business impact analysis
 - Incident response procedures with automated detection and forensic capabilities
+---

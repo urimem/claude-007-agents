@@ -115,11 +115,11 @@ cd claude-007-agents
 
 # Option A: Copy files (simple)
 cp -r .claude/agents/* ~/.claude/agents/
-cp agents.json ~/.claude/
+cp agents.json ~/.claude/agents/
 
 # Option B: Create symbolic links (recommended - stays updated)
 ln -sf "$(pwd)/.claude/agents"/* ~/.claude/agents/
-ln -sf "$(pwd)/agents.json" ~/.claude/
+ln -sf "$(pwd)/agents.json" ~/.claude/agents/
 
 # Now you can use all agents globally
 claude "Use @code-archaeologist-time-traveler to analyze git history"
@@ -132,7 +132,7 @@ mkdir -p ~/.local/share/claude-agents
 cp -r .claude/agents ~/.local/share/claude-agents/
 
 # Copy agents.json for agent registration (IMPORTANT!)
-cp agents.json ~/.local/share/claude-agents/
+cp agents.json ~/.local/share/claude-agents/agents/
 
 # Configure Claude Code globally
 cat > ~/.claude/config.json << 'EOF'

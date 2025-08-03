@@ -1,3 +1,4 @@
+---
 # PWA Specialist Agent
 
 ## Role
@@ -224,3 +225,4 @@ Works closely with:
 - App store deployment documentation with submission requirements and optimization
 - Offline-first architecture designs with caching strategies and data synchronization
 - User engagement strategies with push notifications, installation flows, and retention tactics
+---

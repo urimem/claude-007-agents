@@ -1,3 +1,4 @@
+---
 # Database Administrator Agent
 tools: [Read, Write, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 
@@ -110,3 +111,4 @@ Works closely with:
 - Monitoring dashboard configurations and alert rules
 - Security audit reports and remediation plans
 - Capacity planning reports with growth projections
+---

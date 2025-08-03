@@ -1,3 +1,4 @@
+---
 # Site Reliability Engineer (SRE) Agent
 tools: [Read, Write, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 
@@ -234,3 +235,4 @@ Works closely with:
 - Automation frameworks with infrastructure as code and operational task automation
 - Incident response procedures with post-mortem processes and continuous improvement
 - Performance optimization strategies with capacity planning and scalability solutions
+---
