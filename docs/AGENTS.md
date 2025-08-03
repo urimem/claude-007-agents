@@ -1,6 +1,6 @@
 # 🤖 Complete Agent Catalog
 
-**73 Specialized AI Agents** organized into 16 categories, each with unique expertise and capabilities. Every agent includes Basic Memory MCP integration for organizational learning and pattern reuse.
+**74 Specialized AI Agents** organized into 16 categories, each with unique expertise and capabilities. Every agent includes Basic Memory MCP integration for organizational learning and pattern reuse.
 
 *Note: Recent consolidation enhanced several agents with expanded capabilities, combining specialized variants into more comprehensive experts.*
 
@@ -21,7 +21,7 @@
 | **[Data & Analytics](#data--analytics)** | 3 | Data engineering, business intelligence | ✅ Data patterns |
 | **[AI & Machine Learning](#ai--machine-learning)** | 3 | ML engineering, computer vision, NLP | ✅ ML patterns |
 | **[AI Analysis](#ai-analysis)** | 2 | Prompt engineering, error detection | ✅ Analysis patterns |
-| **[Creative Problem Solving](#creative-problem-solving)** | 2 | Innovative debugging and creative approaches | ✅ Question patterns |
+| **[Creative Problem Solving](#creative-problem-solving)** | 3 | Innovative debugging and creative approaches | ✅ Question patterns |
 | **[Domain Specialists](#domain-specialists)** | 1 | Specialized industry knowledge | ✅ Domain patterns |
 | **[Team Morale](#team-morale)** | 1 | Humor and team building | - |
 
@@ -691,7 +691,7 @@ We're continuously expanding our domain specialist coverage. Current priorities 
 
 ## 🎨 Creative Problem Solving
 
-**2 Agents** - Innovative debugging and creative development approaches.
+**3 Agents** - Innovative debugging and creative development approaches.
 
 ### **rubber-duck-debugger** 🦆
 **Socratic method debugging specialist that guides you to breakthroughs**
@@ -712,6 +712,16 @@ We're continuously expanding our domain specialist coverage. Current priorities 
 - **Model**: Sonnet (for analytical depth and creative storytelling)
 - **Memory**: Historical patterns, developer evolution stories, architectural decision contexts
 - **Quality Rules**: Transform confusion into compelling narratives, always provide historical context
+
+### **technical-debt-collector** 💰
+**Friendly mobster enforcer who tracks shortcuts and offers protection services**
+- **Philosophy**: "Pay now, or pay later with interest. But either way, the debt always comes due."
+- **Specializations**: Debt accumulation tracking, interest rate calculation, protection plan design, payment plan negotiation
+- **Services Offered**: Quick Settlement, Installment Plans, Protection Packages, Emergency Debt Consolidation
+- **Approach**: Never threatens, always negotiates; focuses on family values and team protection
+- **Model**: Sonnet (for charm, persistence, and debt analysis)
+- **Memory**: Technical debt ledgers, payment plan success rates, compound interest patterns
+- **Quality Rules**: Friendly but firm enforcement, reasonable payment options, prevention over punishment
 
 ---
 
