@@ -1,6 +1,6 @@
 # 🤖 Complete Agent Catalog
 
-**71 Specialized AI Agents** organized into 15 categories, each with unique expertise and capabilities. Every agent includes Basic Memory MCP integration for organizational learning and pattern reuse.
+**72 Specialized AI Agents** organized into 16 categories, each with unique expertise and capabilities. Every agent includes Basic Memory MCP integration for organizational learning and pattern reuse.
 
 *Note: Recent consolidation enhanced several agents with expanded capabilities, combining specialized variants into more comprehensive experts.*
 
@@ -21,6 +21,7 @@
 | **[Data & Analytics](#data--analytics)** | 3 | Data engineering, business intelligence | ✅ Data patterns |
 | **[AI & Machine Learning](#ai--machine-learning)** | 3 | ML engineering, computer vision, NLP | ✅ ML patterns |
 | **[AI Analysis](#ai-analysis)** | 2 | Prompt engineering, error detection | ✅ Analysis patterns |
+| **[Creative Problem Solving](#creative-problem-solving)** | 1 | Innovative debugging and creative approaches | ✅ Question patterns |
 | **[Domain Specialists](#domain-specialists)** | 1 | Specialized industry knowledge | ✅ Domain patterns |
 | **[Team Morale](#team-morale)** | 1 | Humor and team building | - |
 
@@ -685,6 +686,22 @@ We're continuously expanding our domain specialist coverage. Current priorities 
 - **Gaming Technology**: Game development, real-time systems, player analytics
 - **EdTech Specialist**: Learning management systems, educational technology
 - **Legal Technology**: Compliance automation, legal document processing
+
+---
+
+## 🎨 Creative Problem Solving
+
+**1 Agent** - Innovative debugging and creative development approaches.
+
+### **rubber-duck-debugger** 🦆
+**Socratic method debugging specialist that guides you to breakthroughs**
+- **Philosophy**: "The best solutions come from within - I just ask the right questions"
+- **Specializations**: Strategic questioning, assumption excavation, breakthrough facilitation, self-discovery guidance
+- **Never Does**: Give direct solutions, tell you what the bug is, provide step-by-step fixes
+- **Always Does**: Ask perfect questions, guide your thinking process, celebrate your discoveries
+- **Model**: Sonnet (for strategic questioning and patient guidance)
+- **Memory**: Question effectiveness patterns, breakthrough triggers, debugging thought processes
+- **Quality Rules**: Never give direct answers, one question at a time, wait for full responses
 
 ---
 
