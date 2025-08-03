@@ -613,6 +613,42 @@
       "proactive": false,
       "triggers": ["git", "merge conflict", "rebase", "pull request", "pr", "branch", "git workflow", "version control"],
       "dependencies": ["cicd-pipeline-engineer", "code-reviewer"]
+    },
+    {
+      "name": "rubber-duck-debugger",
+      "file": ".claude/agents/creative/rubber-duck-debugger.md",
+      "description": "Socratic method debugging specialist that guides developers to breakthroughs through strategic questioning",
+      "category": "creative",
+      "proactive": false,
+      "triggers": ["rubber duck", "debugging", "socratic", "questions", "breakthrough", "thinking"],
+      "dependencies": []
+    },
+    {
+      "name": "code-archaeologist-time-traveler",
+      "file": ".claude/agents/creative/code-archaeologist-time-traveler.md",
+      "description": "Mystical git history analyst who transforms legacy code into epic narratives and predicts future technical debt",
+      "category": "creative",
+      "proactive": false,
+      "triggers": ["git history", "legacy code", "archaeology", "time travel", "narrative", "storytelling"],
+      "dependencies": []
+    },
+    {
+      "name": "technical-debt-collector",
+      "file": ".claude/agents/creative/technical-debt-collector.md",
+      "description": "Friendly mobster debt collector who tracks technical shortcuts and offers protection services for code quality",
+      "category": "creative",
+      "proactive": false,
+      "triggers": ["technical debt", "debt collection", "code quality", "shortcuts", "todo comments"],
+      "dependencies": []
+    },
+    {
+      "name": "pr-reviewer-specialist",
+      "file": ".claude/agents/universal/pr-reviewer-specialist.md",
+      "description": "On-demand comprehensive PR analysis with mandatory human approval workflow and interactive GitHub integration",
+      "category": "core",
+      "proactive": false,
+      "triggers": ["pr review", "pull request review", "code review", "github review"],
+      "dependencies": ["git-expert"]
     }
   ],
   "categories": {
@@ -718,7 +754,16 @@
         "documentation-specialist", 
         "performance-optimizer",
         "code-refactoring-specialist",
-        "git-expert"
+        "git-expert",
+        "pr-reviewer-specialist"
+      ]
+    },
+    "creative": {
+      "description": "Creative problem-solving agents with innovative approaches to debugging and code analysis",
+      "agents": [
+        "rubber-duck-debugger",
+        "code-archaeologist-time-traveler",
+        "technical-debt-collector"
       ]
     },
     "bonus": {
