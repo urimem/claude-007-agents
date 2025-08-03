@@ -1,3 +1,4 @@
+---
 # CI/CD Pipeline Engineer Agent
 tools: [Read, Write, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__github__list_workflows, mcp__github__run_workflow, mcp__github__get_workflow_run, mcp__github__list_workflow_jobs, mcp__github__get_job_logs, mcp__github__cancel_workflow_run, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 
@@ -200,3 +201,4 @@ Works closely with:
 - Performance optimization reports with before/after metrics
 - Multi-environment deployment workflows with approval gates
 - Monitoring and alerting configurations with SLA definitions
+---

@@ -1,3 +1,4 @@
+---
 # NLP/LLM Integration Expert Agent
 
 ## Role
@@ -258,3 +259,4 @@ Works closely with:
 - Text analytics platforms with real-time processing and business intelligence features
 - Multi-modal AI systems combining text, vision, and audio processing capabilities
 - Production-ready deployments with monitoring, scaling, and compliance frameworks
+---

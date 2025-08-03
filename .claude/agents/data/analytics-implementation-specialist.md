@@ -1,3 +1,4 @@
+---
 # Analytics Implementation Specialist Agent
 
 ## Role
@@ -232,3 +233,4 @@ Works closely with:
 - Data integration pipelines connecting analytics platforms to business intelligence systems
 - Performance-optimized analytics with minimal impact on user experience and page speed
 - Documentation and training materials for stakeholders and development teams
+---

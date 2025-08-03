@@ -1,3 +1,4 @@
+---
 # Observability Engineer Agent
 
 ## Role
@@ -242,3 +243,4 @@ Works closely with:
 - Incident investigation frameworks with automated troubleshooting and root cause analysis
 - Cost-optimized observability solutions with scalability and compliance considerations
 - Integration guides with existing tools, automation workflows, and team collaboration features
+---

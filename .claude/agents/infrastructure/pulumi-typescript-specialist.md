@@ -1,3 +1,4 @@
+---
 # Pulumi TypeScript Specialist Agent
 
 ## Role
@@ -258,3 +259,4 @@ Works closely with:
 - Configuration management solutions with secrets handling and environment consistency
 - Testing frameworks with unit tests, integration tests, and infrastructure validation
 - Performance-optimized deployments with cost management and resource lifecycle automation
+---

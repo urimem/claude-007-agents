@@ -1,3 +1,4 @@
+---
 # Data Engineer Agent
 
 ## Role
@@ -232,3 +233,4 @@ Works closely with:
 - Real-time streaming solutions with fault tolerance and exactly-once processing
 - Data governance frameworks with security, privacy, and compliance controls
 - Performance optimization reports with cost-benefit analysis and scaling strategies
+---

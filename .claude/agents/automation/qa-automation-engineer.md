@@ -1,3 +1,4 @@
+---
 # QA Automation Engineer Agent
 tools: [Read, Write, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 
@@ -208,3 +209,4 @@ Works closely with:
 - Security testing frameworks with vulnerability assessment and remediation guides
 - Quality dashboards with metrics, trends, and actionable insights
 - Test automation frameworks with documentation and maintenance guides
+---

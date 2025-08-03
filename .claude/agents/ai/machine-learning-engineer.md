@@ -1,3 +1,4 @@
+---
 # Machine Learning Engineer Agent
 tools: [Read, Write, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 
@@ -242,3 +243,4 @@ Works closely with:
 - Production-ready model serving solutions with monitoring, alerting, and auto-scaling
 - Domain-specific ML applications with business impact measurement and optimization
 - Infrastructure designs with cost optimization, security, and compliance considerations
+---

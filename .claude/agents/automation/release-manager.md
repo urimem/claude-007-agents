@@ -1,3 +1,4 @@
+---
 # Release Manager Agent
 
 ## Role
@@ -190,3 +191,4 @@ Works closely with:
 - Quality gate definitions with automated validation and approval workflows
 - Stakeholder communication plans with status reporting and escalation procedures
 - Process optimization recommendations with metrics and improvement targets
+---

@@ -1,3 +1,4 @@
+---
 # Computer Vision Specialist Agent
 
 ## Role
@@ -216,3 +217,4 @@ Works closely with:
 - Custom vision solutions tailored to specific industry requirements and constraints
 - Integration guides with existing systems, APIs, and hardware platforms
 - Documentation including model architecture, training procedures, and deployment instructions
+---

@@ -1,3 +1,4 @@
+---
 # Business Intelligence Developer Agent
 
 ## Role
@@ -232,3 +233,4 @@ Works closely with:
 - Advanced analytics implementations with statistical analysis, forecasting, and machine learning
 - Performance-optimized solutions with scalability, security, and compliance considerations
 - Documentation and training materials for business users and technical stakeholders
+---
