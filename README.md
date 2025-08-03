@@ -1,6 +1,6 @@
 # 🚀 Claude Code: The Ultimate AI Agent System for Developers
 
-**Transform your development workflow with 74 specialized AI agents that deliver enterprise-grade code quality through advanced orchestration, resilience engineering, and organizational memory.**
+**Transform your development workflow with 77 specialized AI agents that deliver enterprise-grade code quality through advanced orchestration, resilience engineering, and organizational memory.**
 
 <div align="center">
 
@@ -16,7 +16,7 @@
 ## 🌟 Why Claude Code Agents Will Transform Your Development
 
 ### ⚡ **Instant Expertise Across Every Technology**
-No more context switching between documentation, Stack Overflow, and your IDE. Get **instant access to 71 specialized experts** covering every major framework, language, and domain.
+No more context switching between documentation, Stack Overflow, and your IDE. Get **instant access to 77 specialized experts** covering every major framework, language, and domain.
 
 ```bash
 # Instead of spending hours researching...
@@ -100,8 +100,29 @@ cd claude-007-agents
 # 2. Copy to your project
 cp -r .claude/agents /path/to/your/project/.claude/
 
-# 3. Auto-configure for your stack
+# 3. Copy agents.json for agent registration (IMPORTANT!)
+cp agents.json /path/to/your/project/
+
+# 4. Auto-configure for your stack
 claude "Use @team-configurator to analyze my project and create CLAUDE.md"
+```
+
+### Standard Claude Code Installation
+```bash
+# Install to standard Claude Code directory (most common)
+git clone https://github.com/avivl/claude-007-agents.git
+cd claude-007-agents
+
+# Option A: Copy files (simple)
+cp -r .claude/agents/* ~/.claude/agents/
+cp agents.json ~/.claude/
+
+# Option B: Create symbolic links (recommended - stays updated)
+ln -sf "$(pwd)/.claude/agents"/* ~/.claude/agents/
+ln -sf "$(pwd)/agents.json" ~/.claude/
+
+# Now you can use all agents globally
+claude "Use @code-archaeologist-time-traveler to analyze git history"
 ```
 
 ### Global Installation (Power Users)
@@ -109,6 +130,9 @@ claude "Use @team-configurator to analyze my project and create CLAUDE.md"
 # Install once, use everywhere
 mkdir -p ~/.local/share/claude-agents
 cp -r .claude/agents ~/.local/share/claude-agents/
+
+# Copy agents.json for agent registration (IMPORTANT!)
+cp agents.json ~/.local/share/claude-agents/
 
 # Configure Claude Code globally
 cat > ~/.claude/config.json << 'EOF'
@@ -119,6 +143,24 @@ cat > ~/.claude/config.json << 'EOF'
   }
 }
 EOF
+```
+
+### 🎨 New Creative Problem Solving Agents
+
+After installation, you can now use these innovative agents:
+
+```bash
+# Socratic method debugging - guides you to solutions through questions
+claude "Use @rubber-duck-debugger to help me understand this complex bug"
+
+# Git history storytelling - transforms boring legacy code into epic narratives  
+claude "Use @code-archaeologist-time-traveler to explain the history of this authentication module"
+
+# Technical debt management - friendly enforcement of code quality
+claude "Use @technical-debt-collector to assess technical debt in this codebase"
+
+# Interactive PR reviews - human-approved GitHub integration
+claude "Use @pr-reviewer-specialist to review PR #123"
 ```
 
 **🎉 That's it!** Your agents are ready to transform your development workflow.
@@ -133,7 +175,7 @@ EOF
 - ❌ Repeated architectural mistakes
 
 ### **After: Claude Code Agents**
-- ✅ **Instant expertise** in 74+ domains
+- ✅ **Instant expertise** in 77+ domains
 - ✅ **Automated quality** with comprehensive linting
 - ✅ **AI-powered reviews** with 4-dimensional analysis
 - ✅ **Organizational memory** that compounds over time
@@ -171,8 +213,8 @@ EOF
 
 | **Metric** | **Value** | **Impact** |
 |------------|-----------|------------|
-| **🤖 Specialized Agents** | 74 | Complete technology coverage |
-| **📂 Categories** | 16 | Every domain expertise |
+| **🤖 Specialized Agents** | 77 | Complete technology coverage |
+| **📂 Categories** | 17 | Every domain expertise |
 | **🔗 MCP Integrations** | 4 | Live system connectivity |
 | **🏗️ Frameworks Supported** | 20+ | Universal compatibility |
 | **⚡ Setup Time** | <60 seconds | Instant productivity |
