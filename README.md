@@ -213,6 +213,7 @@ claude "Create a user authentication API with rate limiting and structured loggi
 | 🎭 **Orchestration Guide** | Advanced coordination and workflows | [docs/ORCHESTRATION.md](docs/ORCHESTRATION.md) |
 | 📋 **Coding Rules** | Comprehensive quality standards system | [docs/CODING_RULES.md](docs/CODING_RULES.md) |
 | 🚀 **lst97 Integration** | Technical details of enhanced coordination | [docs/LST97_INTEGRATION.md](docs/LST97_INTEGRATION.md) |
+| 🔍 **PR Review Workflow** | Interactive approval workflow for PR reviews | [docs/PR_REVIEWER_WORKFLOW.md](docs/PR_REVIEWER_WORKFLOW.md) |
 
 
 ## 🤝 **Community & Support**
