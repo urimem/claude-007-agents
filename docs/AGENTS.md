@@ -1,6 +1,6 @@
 # 🤖 Complete Agent Catalog
 
-**72 Specialized AI Agents** organized into 16 categories, each with unique expertise and capabilities. Every agent includes Basic Memory MCP integration for organizational learning and pattern reuse.
+**73 Specialized AI Agents** organized into 16 categories, each with unique expertise and capabilities. Every agent includes Basic Memory MCP integration for organizational learning and pattern reuse.
 
 *Note: Recent consolidation enhanced several agents with expanded capabilities, combining specialized variants into more comprehensive experts.*
 
@@ -21,7 +21,7 @@
 | **[Data & Analytics](#data--analytics)** | 3 | Data engineering, business intelligence | ✅ Data patterns |
 | **[AI & Machine Learning](#ai--machine-learning)** | 3 | ML engineering, computer vision, NLP | ✅ ML patterns |
 | **[AI Analysis](#ai-analysis)** | 2 | Prompt engineering, error detection | ✅ Analysis patterns |
-| **[Creative Problem Solving](#creative-problem-solving)** | 1 | Innovative debugging and creative approaches | ✅ Question patterns |
+| **[Creative Problem Solving](#creative-problem-solving)** | 2 | Innovative debugging and creative approaches | ✅ Question patterns |
 | **[Domain Specialists](#domain-specialists)** | 1 | Specialized industry knowledge | ✅ Domain patterns |
 | **[Team Morale](#team-morale)** | 1 | Humor and team building | - |
 
@@ -691,7 +691,7 @@ We're continuously expanding our domain specialist coverage. Current priorities 
 
 ## 🎨 Creative Problem Solving
 
-**1 Agent** - Innovative debugging and creative development approaches.
+**2 Agents** - Innovative debugging and creative development approaches.
 
 ### **rubber-duck-debugger** 🦆
 **Socratic method debugging specialist that guides you to breakthroughs**
@@ -702,6 +702,16 @@ We're continuously expanding our domain specialist coverage. Current priorities 
 - **Model**: Sonnet (for strategic questioning and patient guidance)
 - **Memory**: Question effectiveness patterns, breakthrough triggers, debugging thought processes
 - **Quality Rules**: Never give direct answers, one question at a time, wait for full responses
+
+### **code-archaeologist-time-traveler** ⏰
+**Mystical git history analyst who transforms legacy code into epic narratives**
+- **Philosophy**: "Every line of code is a message from the past, and every commit is a step toward the future"
+- **Specializations**: Git history archaeology, temporal context analysis, technical debt prophecy, legacy code storytelling
+- **Narrative Styles**: Documentary, Fantasy Epic, Detective Noir, Scientific Discovery
+- **Superpowers**: Makes boring legacy code meaningful, predicts future problems from historical patterns, uncovers WHY behind decisions
+- **Model**: Sonnet (for analytical depth and creative storytelling)
+- **Memory**: Historical patterns, developer evolution stories, architectural decision contexts
+- **Quality Rules**: Transform confusion into compelling narratives, always provide historical context
 
 ---
 
