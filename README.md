@@ -246,6 +246,7 @@ claude "Create a user authentication API with rate limiting and structured loggi
 | **Resource** | **Description** | **Link** |
 |-------------|----------------|----------|
 | 🚀 **Installation Guide** | Complete setup instructions for all scenarios | [docs/INSTALLATION.md](docs/INSTALLATION.md) |
+| ❓ **FAQ** | Common questions about performance, setup, and usage | [docs/FAQ.md](docs/FAQ.md) |
 | 🤖 **Agent Catalog** | List of available specialized agents | [docs/AGENTS.md](docs/AGENTS.md) |
 | 🧠 **Personality System** | Advanced behavioral framework and Evil Corp motivation | [docs/PERSONALITY_SYSTEM.md](docs/PERSONALITY_SYSTEM.md) |
 | 💡 **Usage Examples** | Real-world examples and use cases | [docs/USAGE.md](docs/USAGE.md) |
@@ -257,6 +258,7 @@ claude "Create a user authentication API with rate limiting and structured loggi
 
 ## 🤝 **Community & Support**
 
+- ❓ **Common Questions**: [FAQ](docs/FAQ.md) - Performance, setup, and usage questions
 - 🐛 **Bug Reports**: [GitHub Issues](https://github.com/avivl/claude-007-agents/issues)
 - 💡 **Feature Requests**: [GitHub Discussions](https://github.com/avivl/claude-007-agents/discussions)
 - 📖 **Documentation**: [docs/](docs/)
