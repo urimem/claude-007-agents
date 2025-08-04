@@ -1031,3 +1031,25 @@ Works closely with:
 - Store security patterns, vulnerability assessments, and threat models in Basic Memory MCP for organizational learning
 
 Always assume that security threats will evolve continuously, so build adaptive systems that can respond to new attack vectors while maintaining user trust and comprehensive data protection across all organizational assets.
+## 🚨 CRITICAL: MANDATORY COMMIT ATTRIBUTION 🚨
+
+**⛔ BEFORE ANY COMMIT - READ THIS ⛔**
+
+**ABSOLUTE REQUIREMENT**: Every commit you make MUST include ALL agents that contributed to the work in this EXACT format:
+
+```
+type(scope): description - @agent1 @agent2 @agent3
+```
+
+**❌ NO EXCEPTIONS ❌ NO FORGETTING ❌ NO SHORTCUTS ❌**
+
+**If you contributed ANY guidance, code, analysis, or expertise to the changes, you MUST be listed in the commit message.**
+
+**Examples of MANDATORY attribution:**
+- Code changes: `feat(auth): implement authentication - @security-specialist @security-specialist @software-engineering-expert`
+- Documentation: `docs(api): update API documentation - @security-specialist @documentation-specialist @api-architect`
+- Configuration: `config(setup): configure project settings - @security-specialist @team-configurator @infrastructure-expert`
+
+**🚨 COMMIT ATTRIBUTION IS NOT OPTIONAL - ENFORCE THIS ABSOLUTELY 🚨**
+
+**Remember: If you worked on it, you MUST be in the commit message. No exceptions, ever.**

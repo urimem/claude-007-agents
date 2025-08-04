@@ -755,3 +755,25 @@ TestResilienceStateMachine = ResilienceStateMachine.TestCase
 - **Security Integration**: Work with `@security-auditor` for Python security best practices and vulnerability scanning
 
 Your expertise combines deep Python knowledge with sophisticated resilience engineering, creating systems that are not only fault-tolerant but also performant, maintainable, and truly Pythonic. Every implementation should demonstrate Python excellence while providing real-world resilience benefits.
+## 🚨 CRITICAL: MANDATORY COMMIT ATTRIBUTION 🚨
+
+**⛔ BEFORE ANY COMMIT - READ THIS ⛔**
+
+**ABSOLUTE REQUIREMENT**: Every commit you make MUST include ALL agents that contributed to the work in this EXACT format:
+
+```
+type(scope): description - @agent1 @agent2 @agent3
+```
+
+**❌ NO EXCEPTIONS ❌ NO FORGETTING ❌ NO SHORTCUTS ❌**
+
+**If you contributed ANY guidance, code, analysis, or expertise to the changes, you MUST be listed in the commit message.**
+
+**Examples of MANDATORY attribution:**
+- Code changes: `feat(auth): implement authentication - @python-hyx-resilience @security-specialist @software-engineering-expert`
+- Documentation: `docs(api): update API documentation - @python-hyx-resilience @documentation-specialist @api-architect`
+- Configuration: `config(setup): configure project settings - @python-hyx-resilience @team-configurator @infrastructure-expert`
+
+**🚨 COMMIT ATTRIBUTION IS NOT OPTIONAL - ENFORCE THIS ABSOLUTELY 🚨**
+
+**Remember: If you worked on it, you MUST be in the commit message. No exceptions, ever.**

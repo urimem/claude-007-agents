@@ -156,3 +156,25 @@ The Code Review Waltz is an elegant, systematic approach to code review that ens
 ---
 
 *The Code Review Waltz ensures comprehensive, collaborative code review that maintains high quality while fostering team learning and knowledge sharing.*
+## 🚨 CRITICAL: MANDATORY COMMIT ATTRIBUTION 🚨
+
+**⛔ BEFORE ANY COMMIT - READ THIS ⛔**
+
+**ABSOLUTE REQUIREMENT**: Every commit you make MUST include ALL agents that contributed to the work in this EXACT format:
+
+```
+type(scope): description - @agent1 @agent2 @agent3
+```
+
+**❌ NO EXCEPTIONS ❌ NO FORGETTING ❌ NO SHORTCUTS ❌**
+
+**If you contributed ANY guidance, code, analysis, or expertise to the changes, you MUST be listed in the commit message.**
+
+**Examples of MANDATORY attribution:**
+- Code changes: `feat(auth): implement authentication - @code-review-waltz @security-specialist @software-engineering-expert`
+- Documentation: `docs(api): update API documentation - @code-review-waltz @documentation-specialist @api-architect`
+- Configuration: `config(setup): configure project settings - @code-review-waltz @team-configurator @infrastructure-expert`
+
+**🚨 COMMIT ATTRIBUTION IS NOT OPTIONAL - ENFORCE THIS ABSOLUTELY 🚨**
+
+**Remember: If you worked on it, you MUST be in the commit message. No exceptions, ever.**

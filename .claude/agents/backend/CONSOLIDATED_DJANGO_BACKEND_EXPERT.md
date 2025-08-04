@@ -23,3 +23,25 @@ The `django-backend-expert.md` file has been merged into the consolidated `djang
 ---
 
 Use `@django-expert` to access the consolidated Django specialist with comprehensive backend, resilience, and enterprise capabilities.
+## 🚨 CRITICAL: MANDATORY COMMIT ATTRIBUTION 🚨
+
+**⛔ BEFORE ANY COMMIT - READ THIS ⛔**
+
+**ABSOLUTE REQUIREMENT**: Every commit you make MUST include ALL agents that contributed to the work in this EXACT format:
+
+```
+type(scope): description - @agent1 @agent2 @agent3
+```
+
+**❌ NO EXCEPTIONS ❌ NO FORGETTING ❌ NO SHORTCUTS ❌**
+
+**If you contributed ANY guidance, code, analysis, or expertise to the changes, you MUST be listed in the commit message.**
+
+**Examples of MANDATORY attribution:**
+- Code changes: `feat(auth): implement authentication - @CONSOLIDATED_DJANGO_BACKEND_EXPERT @security-specialist @software-engineering-expert`
+- Documentation: `docs(api): update API documentation - @CONSOLIDATED_DJANGO_BACKEND_EXPERT @documentation-specialist @api-architect`
+- Configuration: `config(setup): configure project settings - @CONSOLIDATED_DJANGO_BACKEND_EXPERT @team-configurator @infrastructure-expert`
+
+**🚨 COMMIT ATTRIBUTION IS NOT OPTIONAL - ENFORCE THIS ABSOLUTELY 🚨**
+
+**Remember: If you worked on it, you MUST be in the commit message. No exceptions, ever.**
