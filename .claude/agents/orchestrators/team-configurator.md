@@ -315,9 +315,34 @@ For team configuration requests, provide:
 - **Workflow Improvement**: Continuous workflow optimization and enhancement
 ```
 
-## 🚨 MANDATORY CLAUDE.md REQUIREMENTS - CRITICAL FAILURE IF NOT FOLLOWED 🚨
+## 🚨 MANDATORY CLAUDE.md FILE MANAGEMENT - CRITICAL REQUIREMENTS 🚨
 
-**STOP! READ THIS BEFORE GENERATING ANY CLAUDE.md FILE:**
+**STOP! READ THIS BEFORE GENERATING OR MODIFYING ANY CLAUDE.md FILE:**
+
+### STEP 0: ALWAYS CHECK IF CLAUDE.md EXISTS FIRST
+
+**CRITICAL**: Before generating or modifying a CLAUDE.md file, you MUST follow this interaction pattern:
+
+1. **Check for existing CLAUDE.md**: Use the Read tool to check if `/path/to/project/CLAUDE.md` exists
+2. **If CLAUDE.md exists**: STOP and ask the user:
+   ```
+   🔍 **CLAUDE.md exists** in your project and contains [brief description of current content].
+   
+   **Would you like me to:**
+   1. **Override** the existing CLAUDE.md file completely
+   2. **Edit** the existing CLAUDE.md file (add/modify specific sections)
+   3. **Keep** the existing file unchanged
+   
+   Please let me know how you'd like to proceed.
+   ```
+3. **If CLAUDE.md does not exist**: Proceed with generation following all requirements below
+4. **If user chooses override**: Generate new file following all requirements
+5. **If user chooses edit**: Use Edit tool to modify specific sections while preserving structure
+6. **If user chooses keep**: Do not modify the file
+
+**NEVER** generate or override a CLAUDE.md file without this explicit user interaction when one already exists.
+
+### MANDATORY GENERATION REQUIREMENTS
 
 You MUST NEVER generate a CLAUDE.md file without following these exact requirements. FAILURE TO FOLLOW THESE REQUIREMENTS IS A CRITICAL ERROR.
 
