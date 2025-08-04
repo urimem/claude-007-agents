@@ -1,6 +1,6 @@
-# 🚀 Claude Code: The Ultimate AI Agent System for Developers
+# 🚀 Claude Code: Comprehensive AI Agent System for Developers
 
-**Transform your development workflow with 77 specialized AI agents that deliver enterprise-grade code quality through advanced orchestration, resilience engineering, and organizational memory.**
+**Enhance your development workflow with specialized AI agents that help deliver quality code through orchestration, resilience engineering, and organizational memory.**
 
 <div align="center">
 
@@ -9,14 +9,14 @@
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 [![Claude Code](https://img.shields.io/badge/Built_for-Claude_Code-purple?style=for-the-badge&logo=anthropic)](https://claude.ai/chat)
 
-*"Because your mother's treatment depends on delivering exceptional code quality!"* 💪
+*Open-source AI agents for enhanced development workflows*
 
 </div>
 
-## 🌟 Why Claude Code Agents Will Transform Your Development
+## 🌟 Why Claude Code Agents Can Improve Your Development
 
-### ⚡ **Instant Expertise Across Every Technology**
-No more context switching between documentation, Stack Overflow, and your IDE. Get **instant access to 77 specialized experts** covering every major framework, language, and domain.
+### ⚡ **Specialized Expertise Across Technologies**
+Reduce context switching between documentation, Stack Overflow, and your IDE. Get **access to specialized agents** covering major frameworks, languages, and domains.
 
 ```bash
 # Instead of spending hours researching...
@@ -24,15 +24,15 @@ claude "Build a resilient authentication system with circuit breakers and struct
 # → @rails-expert + @resilience-engineer + @security-specialist work in perfect coordination
 ```
 
-### 🧠 **Advanced AI System with Organizational Memory**
-Unlike other AI tools that forget everything between conversations, our agents **remember and learn** from every project, building institutional knowledge that compounds over time.
+### 🧠 **AI System with Organizational Memory**
+These agents can **remember and learn** from projects when configured with Basic Memory MCP, helping build institutional knowledge over time.
 
 - **Pattern Reuse**: "Use patterns from previous authentication implementations"
 - **Context Building**: "Reference similar microservice architectures we've built"
 - **Knowledge Evolution**: "Update our React component patterns based on this success"
 
-### 🎭 **Auto-Enhancement Orchestration That Actually Works**
-While others give you single-purpose chatbots, we deliver **truly intelligent coordination** with auto-enhancement system that eliminates manual agent management entirely.
+### 🎭 **Agent Orchestration System**
+The system includes coordination features that can help with agent selection and workflow management for complex tasks.
 
 ```bash
 # Just describe what you want - the system handles everything automatically:
@@ -44,7 +44,7 @@ claude "Build an e-commerce platform"
 # → Context-Aware Activator: Monitors and adapts in real-time
 ```
 
-## 🚀 **Unique Competitive Advantages**
+## 🚀 **Key Features**
 
 ### 1. 🏗️ **Engineering Excellence by Design**
 Every agent prioritizes **production-grade quality**:
@@ -53,8 +53,8 @@ Every agent prioritizes **production-grade quality**:
 - 🔄 **Self-Healing**: Automatic recovery patterns
 - 🛡️ **Automated Quality**: Trunk.io integration for linting and security
 
-### 2. 🤖 **Auto-Enhancement Intelligence (New)**
-The world's first truly automatic AI orchestration system:
+### 2. 🤖 **Agent Orchestration Features**
+Includes several orchestration components:
 - **Auto-Detection Engine**: Automatically detects when coordination is needed
 - **Smart Agent Router**: Context-aware optimal agent selection  
 - **Predictive Orchestrator**: Proactive workflow preparation
@@ -145,25 +145,25 @@ cat > ~/.claude/config.json << 'EOF'
 EOF
 ```
 
-### 🎨 New Creative Problem Solving Agents
+### 🎨 Creative Problem Solving Agents
 
-After installation, you can now use these innovative agents:
+After installation, you can use these agents:
 
 ```bash
 # Socratic method debugging - guides you to solutions through questions
 claude "Use @rubber-duck-debugger to help me understand this complex bug"
 
-# Git history storytelling - transforms boring legacy code into epic narratives  
+# Git history storytelling - provides context about legacy code
 claude "Use @code-archaeologist-time-traveler to explain the history of this authentication module"
 
-# Technical debt management - friendly enforcement of code quality
+# Technical debt management - helps assess code quality
 claude "Use @technical-debt-collector to assess technical debt in this codebase"
 
 # Interactive PR reviews - human-approved GitHub integration
 claude "Use @pr-reviewer-specialist to review PR #123"
 ```
 
-**🎉 That's it!** Your agents are ready to transform your development workflow.
+**🎉 That's it!** Your agents are ready to assist with your development workflow.
 
 ## 🏆 **What Makes This Different**
 
@@ -175,11 +175,11 @@ claude "Use @pr-reviewer-specialist to review PR #123"
 - ❌ Repeated architectural mistakes
 
 ### **After: Claude Code Agents**
-- ✅ **Instant expertise** in 77+ domains
-- ✅ **Automated quality** with comprehensive linting
-- ✅ **AI-powered reviews** with 4-dimensional analysis
-- ✅ **Organizational memory** that compounds over time
-- ✅ **Coordinated intelligence** preventing mistakes
+- ✅ **Specialized assistance** in various domains
+- ✅ **Quality tooling** with linting integration
+- ✅ **AI-assisted reviews** with multi-dimensional analysis
+- ✅ **Optional organizational memory** with MCP
+- ✅ **Agent coordination** for complex tasks
 
 ## 🌍 **Supported Technologies**
 
@@ -209,47 +209,44 @@ claude "Use @pr-reviewer-specialist to review PR #123"
 
 </div>
 
-## 📊 **The Numbers Speak**
+## 📊 **System Overview**
 
-| **Metric** | **Value** | **Impact** |
+| **Metric** | **Value** | **Notes** |
 |------------|-----------|------------|
-| **🤖 Specialized Agents** | 77 | Complete technology coverage |
-| **📂 Categories** | 17 | Every domain expertise |
+| **🤖 Specialized Agents** | ~70 | Various technology domains |
+| **📂 Categories** | 25+ | Organized by specialization |
 | **🔗 MCP Integrations** | 4 | Live system connectivity |
-| **🏗️ Frameworks Supported** | 20+ | Universal compatibility |
-| **⚡ Setup Time** | <60 seconds | Instant productivity |
-| **🧠 Memory Integration** | All agents | Persistent learning |
+| **🏗️ Frameworks Supported** | 20+ | Major web frameworks |
+| **⚡ Setup Time** | ~5 minutes | Quick installation |
+| **🧠 Memory Integration** | Optional | Via Basic Memory MCP |
 
-## 🎯 **Quick Wins You'll Experience**
+## 🎯 **Potential Benefits**
 
-### **Day 1: Instant Productivity**
+### **Getting Started**
 ```bash
-# Just describe what you need - auto-enhancement handles the rest
+# Example usage with agent coordination
 claude "Create a user authentication API with rate limiting and structured logging"
-# → Auto-Detection: Detects security + performance + API design complexity
-# → Smart Routing: Selects @security-specialist + @api-architect + @performance-optimizer
-# → Pattern Application: Applies proven authentication patterns from organizational memory
-# → Complete implementation with circuit breakers, proper error handling, and security
+# → System can help select relevant agents: @security-specialist + @api-architect + @performance-optimizer
+# → Agents work together to provide guidance on implementation patterns
+# → Results in structured implementation with proper error handling and security considerations
 ```
 
-### **Week 1: Quality Transformation**
-- Auto-enhancement learns your preferences and patterns
-- Predictive orchestration starts anticipating your needs
-- Quality gates automatically adapt to your project requirements
-- Success patterns begin accumulating in organizational memory
+### **Over Time**
+- Agents can learn project-specific patterns with proper MCP configuration
+- Quality gates can be customized to project requirements
+- Organizational knowledge can accumulate with Basic Memory MCP
 
-### **Month 1: Organizational Excellence**
-- System automatically applies proven patterns from your project history
-- Context-aware activation proactively suggests optimizations
-- User feedback loop continuously improves orchestration decisions
-- Intelligence compounds across all projects and team members
+### **Long Term**
+- Historical patterns can inform future projects
+- Context-aware suggestions may improve decision-making
+- Team knowledge can be preserved across projects
 
 ## 📚 **Documentation & Resources**
 
 | **Resource** | **Description** | **Link** |
 |-------------|----------------|----------|
 | 🚀 **Installation Guide** | Complete setup instructions for all scenarios | [docs/INSTALLATION.md](docs/INSTALLATION.md) |
-| 🤖 **Agent Catalog** | Complete list of all 74 specialized agents | [docs/AGENTS.md](docs/AGENTS.md) |
+| 🤖 **Agent Catalog** | List of available specialized agents | [docs/AGENTS.md](docs/AGENTS.md) |
 | 🧠 **Personality System** | Advanced behavioral framework and Evil Corp motivation | [docs/PERSONALITY_SYSTEM.md](docs/PERSONALITY_SYSTEM.md) |
 | 💡 **Usage Examples** | Real-world examples and use cases | [docs/USAGE.md](docs/USAGE.md) |
 | 🎭 **Orchestration Guide** | Advanced coordination and workflows | [docs/ORCHESTRATION.md](docs/ORCHESTRATION.md) |
@@ -273,11 +270,11 @@ MIT License - Use freely in personal and commercial projects.
 
 <div align="center">
 
-**🚀 Ready to Transform Your Development Workflow?**
+**🚀 Ready to Try Claude Code Agents?**
 
 [**Get Started Now →**](docs/INSTALLATION.md) | [**View All Agents →**](docs/AGENTS.md) | [**See Examples →**](docs/USAGE.md)
 
-*Join thousands of developers who've already revolutionized their coding experience with Claude Code Agents.*
+*An open-source collection of Claude Code agents for development assistance.*
 
 ## 🎯 **Evil Corp Motivation Framework**
 
