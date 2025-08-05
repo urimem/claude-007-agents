@@ -163,6 +163,8 @@ claude "Use @technical-debt-collector to assess technical debt in this codebase"
 claude "Use @pr-reviewer-specialist to review PR #123"
 ```
 
+**🦆 Demo Video**: [Watch the rubber duck debugging session in action](static/rubber-duck.mp4)
+
 **🎉 That's it!** Your agents are ready to assist with your development workflow.
 
 ## 🏆 **What Makes This Different**
