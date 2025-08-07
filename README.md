@@ -1,5 +1,7 @@
 # 🚀 Claude Code: Comprehensive AI Agent System for Developers
 
+![Claude Code Agents](static/agent.jpg)
+
 **Enhance your development workflow with specialized AI agents that help deliver quality code through orchestration, resilience engineering, and organizational memory.**
 
 <div align="center">
@@ -37,11 +39,11 @@ The system includes coordination features that can help with agent selection and
 ```bash
 # Just describe what you want - the system handles everything automatically:
 claude "Build an e-commerce platform"
-# → Auto-Detection Engine: Detects multi-domain complexity
-# → Smart Agent Router: Selects optimal team (@product-manager + @react-expert + @rails-expert + @payment-specialist + @security-specialist)
-# → Predictive Orchestrator: Prepares workflow phases proactively
-# → Success Pattern Learner: Applies proven patterns from organizational memory
-# → Context-Aware Activator: Monitors and adapts in real-time
+# → Vibe Coding Coordinator: 15-20 minute preparation phase, analyzes requirements
+# → Exponential Planner: Strategic planning with capability scaling awareness
+# → Parallel Coordinator: Coordinates (@react-expert + @rails-expert + @payment-specialist + @security-specialist)
+# → Session Manager: Maintains context across extended development sessions
+# → Safety Specialists: Pre-deployment validation and architectural analysis
 ```
 
 ## 🚀 **Key Features**
@@ -53,13 +55,13 @@ Every agent prioritizes **production-grade quality**:
 - 🔄 **Self-Healing**: Automatic recovery patterns
 - 🛡️ **Automated Quality**: Trunk.io integration for linting and security
 
-### 2. 🤖 **Agent Orchestration Features**
-Includes several orchestration components:
-- **Auto-Detection Engine**: Automatically detects when coordination is needed
-- **Smart Agent Router**: Context-aware optimal agent selection  
-- **Predictive Orchestrator**: Proactive workflow preparation
-- **Success Pattern Learner**: Continuous learning from outcomes
-- **Context-Aware Activator**: Environmental monitoring for intelligent adaptation
+### 2. 🤖 **Advanced Orchestration System**
+Built on insights from Anthropic's "Code with Claude" conference:
+- **Vibe Coding Coordinator**: 15-20 minute preparation phases for autonomous development
+- **Exponential Planner**: Strategic planning with AI capability doubling awareness (7-month cycles)
+- **Session Manager**: Resumable workflows with context preservation across extended sessions
+- **Parallel Coordinator**: Multi-agent execution with coordinated tool calling
+- **Safety Specialists**: Pre-deployment testing, architectural analysis, and risk management
 
 ### 3. 🎯 **Live MCP Integrations**
 Direct access to live systems and real-time data:
@@ -69,10 +71,13 @@ Direct access to live systems and real-time data:
 - **Basic Memory MCP**: Persistent organizational knowledge
 
 ### 4. 📋 **Professional-Grade Workflows**
+- **Vibe Coding**: 15-20 minute autonomous development preparation phases
+- **Parallel Execution**: Coordinated multi-agent development with tool call batching
+- **Exponential Planning**: Long-term development planning with AI capability scaling awareness
+- **Safety Validation**: Pre-deployment testing and architectural safety analysis
+- **Dynamic Permissions**: Real-time permission management with risk-based escalation
 - **Automatic Commit Attribution**: Every commit traces back to contributing agents
 - **Quality Gates**: Pre-commit hooks with comprehensive linting
-- **Structured Reviews**: Multi-dimensional code analysis (Security, Performance, Architecture, Quality)
-- **Workflow Orchestration**: Three-phase coordination (Context → Process → Completion)
 
 ### 5. 🧠 **Organizational Intelligence**
 - **Cross-Project Learning**: Patterns and knowledge shared across all projects
@@ -145,25 +150,29 @@ cat > ~/.claude/config.json << 'EOF'
 EOF
 ```
 
-### 🎨 Creative Problem Solving Agents
+### 🎨 Advanced Agent Capabilities
 
-After installation, you can use these agents:
+After installation, you can use these specialized agents:
 
 ```bash
-# Socratic method debugging - guides you to solutions through questions
-claude "Use @rubber-duck-debugger to help me understand this complex bug"
+# Vibe Coding - Autonomous development with preparation phases
+claude "Use @vibe-coding-coordinator to implement user authentication system"
 
-# Git history storytelling - provides context about legacy code
-claude "Use @code-archaeologist-time-traveler to explain the history of this authentication module"
+# Parallel Development - Coordinated multi-agent execution
+claude "Use @parallel-coordinator to build full-stack e-commerce platform"
 
-# Technical debt management - helps assess code quality
-claude "Use @technical-debt-collector to assess technical debt in this codebase"
+# Exponential Planning - Long-term strategic development
+claude "Use @exponential-planner to architect scalable microservices system"
 
-# Interactive PR reviews - human-approved GitHub integration
-claude "Use @pr-reviewer-specialist to review PR #123"
+# Safety Validation - Pre-deployment testing and verification
+claude "Use @agent-environment-simulator to validate new deployment workflow"
+
+# Creative Problem Solving
+claude "Use @rubber-duck-debugger to help me debug this complex state management issue"
+claude "Use @code-archaeologist-time-traveler to analyze the evolution of this authentication module"
 ```
 
-**🦆 Demo Video**: [Watch the rubber duck debugging session in action](static/rubber-duck.mp4)
+**🦆 Demo**: ![Rubber duck debugging session in action](static/rubber-duck.gif)
 
 **🎉 That's it!** Your agents are ready to assist with your development workflow.
 
@@ -215,8 +224,8 @@ claude "Use @pr-reviewer-specialist to review PR #123"
 
 | **Metric** | **Value** | **Notes** |
 |------------|-----------|------------|
-| **🤖 Specialized Agents** | ~70 | Various technology domains |
-| **📂 Categories** | 25+ | Organized by specialization |
+| **🤖 Specialized Agents** | 75 | Various technology domains |
+| **📂 Categories** | 14 | Organized by specialization |
 | **🔗 MCP Integrations** | 4 | Live system connectivity |
 | **🏗️ Frameworks Supported** | 20+ | Major web frameworks |
 | **⚡ Setup Time** | ~5 minutes | Quick installation |
@@ -226,11 +235,12 @@ claude "Use @pr-reviewer-specialist to review PR #123"
 
 ### **Getting Started**
 ```bash
-# Example usage with agent coordination
+# Vibe Coding - Autonomous development with preparation
 claude "Create a user authentication API with rate limiting and structured logging"
-# → System can help select relevant agents: @security-specialist + @api-architect + @performance-optimizer
-# → Agents work together to provide guidance on implementation patterns
-# → Results in structured implementation with proper error handling and security considerations
+# → @vibe-coding-coordinator: 15-20 minute preparation phase
+# → @parallel-coordinator: Coordinates @security-specialist + @api-architect + @performance-optimizer
+# → @session-manager: Maintains context across implementation phases
+# → Results in production-ready implementation with proper patterns and safety validation
 ```
 
 ### **Over Time**
