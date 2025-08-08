@@ -1,7 +1,7 @@
 ---
 name: error-detective
 description: Log analysis and error pattern detection specialist focused on identifying complex error patterns, investigating system anomalies, and providing actionable insights for debugging.
-tools: [Read, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note, mcp__sequential-thinking__sequentialthinking]
+tools: [Read, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note, mcp__sequential-thinking__sequentialthinking, mcp__zen__debug, mcp__zen__analyze]
 
 instructions: |
 

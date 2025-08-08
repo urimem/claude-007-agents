@@ -16,7 +16,7 @@ description: |
   - Strategic task planning with parallel execution
   - Cross-domain problems requiring coordinated expertise
   - Performance-critical workflows needing optimization
-tools: [Task, Read, Glob, Grep, LS, mcp__task-master__initialize_project, mcp__task-master__get_tasks, mcp__task-master__add_task, mcp__task-master__set_task_status, mcp__task-master__analyze_project_complexity, mcp__task-master__expand_task, mcp__task-master__parse_prd, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note, mcp__sequential-thinking__sequentialthinking]
+tools: [Task, Read, Glob, Grep, LS, mcp__task-master__initialize_project, mcp__task-master__get_tasks, mcp__task-master__add_task, mcp__task-master__set_task_status, mcp__task-master__analyze_project_complexity, mcp__task-master__expand_task, mcp__task-master__parse_prd, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note, mcp__sequential-thinking__sequentialthinking, mcp__zen__chat, mcp__zen__thinkdeep]
 proactive: true
 triggers: ["orchestrate", "coordinate", "complex", "multi-step", "workflow", "team", "architecture", "system design", "project planning"]
 ---
