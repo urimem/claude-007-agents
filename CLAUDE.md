@@ -45,7 +45,7 @@ Quality agents operate under high-stakes motivation for maximum code delivery:
 ## Agent Categories
 
 **Tech Stack**: Rails, Django, Laravel, Node.js/TypeScript, Go, React, Vue.js, Next.js, Nuxt.js  
-**Integrations**: GitHub MCP, Task Master MCP, Context7 MCP, Basic Memory MCP  
+**Integrations**: GitHub MCP, Task Master MCP, Context7 MCP, Basic Memory MCP, Sequential Thinking MCP  
 **Quality**: Trunk.io linting, Cockatiel/Hyx/GoBreaker resilience, Pino/Zap logging
 
 ### Agents by Category
@@ -194,12 +194,44 @@ Agents evolve communication style based on success patterns. Control with:
 - **Task Master MCP**: Project management, complexity analysis  
 - **Context7 MCP**: Live library documentation, code examples
 - **Basic Memory MCP**: Persistent knowledge, organizational learning
+- **Sequential Thinking MCP**: Complex multi-step reasoning with adaptive planning and course correction
 
 ### Key Integrations
 - **GitHub**: `@git-expert`, `@code-reviewer`, `@cicd-pipeline-engineer`, `@pr-reviewer-specialist`, `@session-manager`
 - **Task Master**: `@tech-lead-orchestrator`, `@project-analyst`, `@team-configurator`, `@exponential-planner`, `@parallel-coordinator`
 - **Context7**: `@documentation-specialist`, framework specialists, `@api-architect`, `@verification-specialist`
 - **Basic Memory**: All core development agents + new context orchestrators, safety specialists, and performance optimizers
+- **Sequential Thinking**: `@orchestrator`, `@system-architect`, `@cloud-architect`, `@database-architect`, `@error-detective`, `@rubber-duck-debugger`, `@vibe-coding-coordinator`, `@exponential-planner`, `@session-manager`, `@leaf-node-detector`, `@permission-escalator`, `@verification-specialist`, `@parallel-coordinator`, `@tool-batch-optimizer`, `@session-optimizer`
+
+## ⚠️ CRITICAL: MCP Server Usage Policy
+
+**ALL AGENTS MUST USE MCP SERVERS** for persistent operations and memory storage:
+
+### **✅ REQUIRED MCP Usage:**
+- **`mcp__basic-memory__*`** - All knowledge storage, pattern recognition, organizational learning
+- **`mcp__github__*`** - All repository operations, PR management, branch operations
+- **`mcp__task-master__*`** - All project management, task tracking, complexity analysis
+- **`mcp__context7__*`** - All library documentation, framework research, code examples
+- **`mcp__sequential-thinking__*`** - All complex multi-step reasoning and adaptive planning
+
+### **❌ FORBIDDEN Operations:**
+- **`Write(file_path: "...")`** - Creating any new files outside of codebase
+- **File creation for memory/notes** - Use Basic Memory MCP instead
+- **Manual documentation creation** - Use Context7 MCP or existing file editing
+- **Direct file system storage** - Use appropriate MCP servers
+
+### **✅ ALLOWED File Operations:**
+- **`Read`** - Reading existing project files and codebase
+- **`Edit/MultiEdit`** - Modifying existing project files and code
+- **`Bash`** - Build tools, package managers, git commands, system operations
+- **`Grep/Glob/LS`** - Searching and exploring existing codebase
+
+### **MCP Integration Patterns:**
+- **Memory & Learning**: Store insights, patterns, and knowledge in Basic Memory MCP
+- **Code Operations**: Use GitHub MCP for all repository and version control operations  
+- **Task Management**: Use Task Master MCP for project coordination and complexity analysis
+- **Research**: Use Context7 MCP for up-to-date library documentation and examples
+- **Complex Reasoning**: Use Sequential Thinking MCP for multi-step analysis and planning
 
 ## Agent Dependencies
 
@@ -230,9 +262,9 @@ Claude Code automatically includes agent attribution in all commits for traceabi
 ✅ **Choreography**: Auto-detection, coordination, progress tracking  
 ✅ **Personalities**: Adaptive responses based on success patterns  
 ✅ **Learning**: Pattern recognition, organizational knowledge building  
-✅ **MCP Integration**: GitHub, Task Master, Context7, Basic Memory
+✅ **MCP Integration**: GitHub, Task Master, Context7, Basic Memory, Sequential Thinking
 
-*88 agents | 18 categories | Vibe coding + parallel execution enabled*
+*88 agents | 18 categories | Vibe coding + parallel execution + sequential reasoning enabled*
 
 ## 🚀 Version 2.0 - Major System Upgrade
 
@@ -264,5 +296,6 @@ Claude Code automatically includes agent attribution in all commits for traceabi
 - Task Master MCP: Complex project coordination and exponential planning
 - GitHub MCP: Enhanced session management and parallel development
 - Context7 MCP: Live documentation for verification and testing
+- Sequential Thinking MCP: Multi-step reasoning with adaptive planning and course correction
 
 **System Evolution**: From 77 → 88 agents | 15 → 18 categories | Added autonomous development capabilities
