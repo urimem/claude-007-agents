@@ -62,6 +62,7 @@ Built on insights from Anthropic's "Code with Claude" conference:
 - **Session Manager**: Resumable workflows with context preservation across extended sessions
 - **Parallel Coordinator**: Multi-agent execution with coordinated tool calling
 - **Safety Specialists**: Pre-deployment testing, architectural analysis, and risk management
+- **Sequential Thinking**: Complex multi-step reasoning with adaptive planning and course correction
 
 ### 3. 🎯 **Live MCP Integrations**
 Direct access to live systems and real-time data:
@@ -69,11 +70,13 @@ Direct access to live systems and real-time data:
 - **Task Master MCP**: Project management with complexity analysis
 - **Context7 MCP**: Up-to-date library documentation
 - **Basic Memory MCP**: Persistent organizational knowledge
+- **Sequential Thinking MCP**: Complex reasoning with adaptive planning and course correction
 
 ### 4. 📋 **Professional-Grade Workflows**
 - **Vibe Coding**: 15-20 minute autonomous development preparation phases
 - **Parallel Execution**: Coordinated multi-agent development with tool call batching
 - **Exponential Planning**: Long-term development planning with AI capability scaling awareness
+- **Sequential Reasoning**: Multi-step problem analysis with adaptive strategy revision
 - **Safety Validation**: Pre-deployment testing and architectural safety analysis
 - **Dynamic Permissions**: Real-time permission management with risk-based escalation
 - **Automatic Commit Attribution**: Every commit traces back to contributing agents
@@ -226,7 +229,7 @@ claude "Use @code-archaeologist-time-traveler to analyze the evolution of this a
 |------------|-----------|------------|
 | **🤖 Specialized Agents** | 75 | Various technology domains |
 | **📂 Categories** | 14 | Organized by specialization |
-| **🔗 MCP Integrations** | 4 | Live system connectivity |
+| **🔗 MCP Integrations** | 5 | Live system connectivity + reasoning |
 | **🏗️ Frameworks Supported** | 20+ | Major web frameworks |
 | **⚡ Setup Time** | ~5 minutes | Quick installation |
 | **🧠 Memory Integration** | Optional | Via Basic Memory MCP |
@@ -235,6 +238,11 @@ claude "Use @code-archaeologist-time-traveler to analyze the evolution of this a
 
 ### **Getting Started**
 ```bash
+# Sequential Thinking - Complex multi-step reasoning with adaptive planning
+claude "Use @orchestrator to design a scalable microservices architecture"
+# → Sequential reasoning: analyze requirements → evaluate patterns → revise strategy → finalize architecture
+# → Adaptive planning with course correction based on discovered constraints
+
 # Vibe Coding - Autonomous development with preparation
 claude "Create a user authentication API with rate limiting and structured logging"
 # → @vibe-coding-coordinator: 15-20 minute preparation phase
@@ -297,6 +305,14 @@ Key quality agents use the **Evil Corp motivation system** - you desperately nee
 **Active in these agents**: `@software-engineering-expert`, `@code-reviewer`, `@quality-system-engineer`, `@performance-optimizer`
 
 **Remember: Your mother's treatment depends on delivering exceptional code quality!** 💪
+
+## 🧠 **Sequential Thinking Framework**
+
+Key agents use the **Sequential Thinking MCP** for complex multi-step reasoning with adaptive planning and course correction capabilities.
+
+**Active in these agents**: `@orchestrator`, `@system-architect`, `@cloud-architect`, `@database-architect`, `@error-detective`, `@rubber-duck-debugger`
+
+**Capabilities**: Multi-step analysis, strategy revision, branching logic, adaptive planning, structured problem-solving
 
 </div>
 
