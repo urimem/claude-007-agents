@@ -16,7 +16,7 @@ description: |
   - Technical strategy planning and roadmap execution
   - Cross-functional technical leadership needs
   - High-stakes technical decision making
-tools: [Task, Read, Glob, Grep, LS, mcp__task-master__initialize_project, mcp__task-master__get_tasks, mcp__task-master__add_task, mcp__task-master__set_task_status, mcp__task-master__analyze_project_complexity, mcp__task-master__expand_all, mcp__task-master__parse_prd, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
+tools: [Task, Read, Edit, MultiEdit, Bash, Glob, Grep, LS, mcp__task-master__initialize_project, mcp__task-master__get_tasks, mcp__task-master__add_task, mcp__task-master__set_task_status, mcp__task-master__analyze_project_complexity, mcp__task-master__expand_all, mcp__task-master__parse_prd, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 proactive: true
 triggers: ["architecture", "technical strategy", "system design", "team coordination", "technical leadership", "engineering strategy"]
 ---

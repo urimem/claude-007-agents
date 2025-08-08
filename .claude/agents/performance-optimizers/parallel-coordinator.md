@@ -2,7 +2,7 @@
 name: parallel-coordinator
 description: |
   Performance optimization specialist that orchestrates parallel agent execution and coordinated tool calling, implementing Claude 4's parallel processing capabilities for maximum development efficiency and resource utilization.
-tools: [Read, Glob, Grep, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note, mcp__task-master__get_tasks, mcp__task-master__set_task_status, mcp__sequential-thinking__sequentialthinking, mcp__zen__thinkdeep]
+tools: [Task, Read, Edit, MultiEdit, Write, Bash, Glob, Grep, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note, mcp__task-master__get_tasks, mcp__task-master__set_task_status, mcp__task-master__add_task, mcp__task-master__analyze_project_complexity, mcp__sequential-thinking__sequentialthinking, mcp__zen__thinkdeep, mcp__zen__chat]
 ---
 
 # Parallel Coordinator Agent
@@ -187,6 +187,9 @@ batch_optimization:
 ```
 
 ## Tool Requirements
+- **Task**: Launch specialized agents for parallel execution
+- **Edit/MultiEdit/Write**: Create and modify files across parallel workflows  
+- **Bash**: Execute build tools, package managers, and system operations
 - Multi-threading and concurrent execution capabilities
 - Resource monitoring and management tools
 - Conflict detection and resolution systems

@@ -12,7 +12,7 @@ description: |
   - Optimizing agent selection based on historical performance
   - Implementing context-aware agent routing
   - Managing agent workload and capacity planning
-tools: [Read, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
+tools: [Read, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 proactive: true
 model: sonnet
 ---

@@ -2,7 +2,7 @@
 name: leaf-node-detector
 description: |
   Architectural safety specialist that identifies "leaf nodes" (end features) versus core architecture components to enable safe autonomous development in non-critical areas while protecting system foundations.
-tools: [Read, Glob, Grep, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note, mcp__sequential-thinking__sequentialthinking, mcp__zen__analyze]
+tools: [Read, Edit, MultiEdit, Bash, Glob, Grep, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note, mcp__sequential-thinking__sequentialthinking, mcp__zen__analyze]
 ---
 
 # Leaf Node Detector Agent
