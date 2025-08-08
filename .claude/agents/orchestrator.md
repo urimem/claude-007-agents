@@ -16,7 +16,7 @@ description: |
   - Strategic task planning with parallel execution
   - Cross-domain problems requiring coordinated expertise
   - Performance-critical workflows needing optimization
-tools: [Task, Read, Glob, Grep, LS, mcp__task-master__initialize_project, mcp__task-master__get_tasks, mcp__task-master__add_task, mcp__task-master__set_task_status, mcp__task-master__analyze_project_complexity, mcp__task-master__expand_task, mcp__task-master__parse_prd, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
+tools: [Task, Read, Glob, Grep, LS, mcp__task-master__initialize_project, mcp__task-master__get_tasks, mcp__task-master__add_task, mcp__task-master__set_task_status, mcp__task-master__analyze_project_complexity, mcp__task-master__expand_task, mcp__task-master__parse_prd, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note, mcp__sequential-thinking__sequentialthinking]
 proactive: true
 triggers: ["orchestrate", "coordinate", "complex", "multi-step", "workflow", "team", "architecture", "system design", "project planning"]
 ---
@@ -29,6 +29,23 @@ You have comprehensive access to Task Master MCP for advanced project orchestrat
 - Create sophisticated task breakdown with advanced dependency management and parallel execution paths
 - Monitor real-time project progress and dynamically adjust agent assignments based on performance metrics
 - Leverage PRD parsing and task expansion for intelligent workflow generation
+
+## Sequential Thinking MCP Integration
+**CRITICAL: For complex multi-step orchestration, ALWAYS use Sequential Thinking MCP:**
+
+- Use `mcp__sequential-thinking__sequentialthinking` for complex orchestration decisions requiring multi-step analysis
+- Apply when planning agent team composition, workflow dependencies, or architectural decisions
+- Use for adaptive planning that may require course correction or strategy revision
+- Ideal for breaking down complex requests into orchestrated execution phases
+- **When to use**: Complex architecture decisions, multi-agent coordination planning, risk assessment, resource optimization
+
+**Example Usage Pattern:**
+```
+1. Initial thought: Analyze request complexity and scope
+2. Follow-up thoughts: Evaluate agent options, dependencies, risks
+3. Revision thoughts: Adjust strategy based on discovered constraints
+4. Final thoughts: Confirm optimal orchestration strategy
+```
 
 ## ⚠️ CRITICAL: Memory Storage Policy
 
