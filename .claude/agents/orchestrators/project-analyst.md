@@ -16,7 +16,7 @@ description: |
   - Requirements gathering and stakeholder coordination
   - Project planning and timeline estimation
   - Cross-functional project coordination
-tools: [Read, Grep, Glob, LS, mcp__task-master__parse_prd, mcp__task-master__add_task, mcp__task-master__get_tasks, mcp__task-master__expand_task, mcp__task-master__analyze_project_complexity, mcp__task-master__initialize_project, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
+tools: [Read, Grep, Glob, LS, mcp__task-master__parse_prd, mcp__task-master__add_task, mcp__task-master__get_tasks, mcp__task-master__expand_task, mcp__task-master__analyze_project_complexity, mcp__task-master__initialize_project, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note, mcp__zen__planner]
 proactive: true
 triggers: ["requirements", "PRD", "project analysis", "task breakdown", "project planning", "stakeholder analysis"]
 ---

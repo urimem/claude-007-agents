@@ -19,7 +19,7 @@ description: |
   - Need structured approval workflow before GitHub operations
   - Want to edit/select specific findings before posting
   - Building review knowledge base with user oversight
-tools: [Read, Grep, Glob, LS, Bash, mcp__github__get_repository_info, mcp__github__get_pull_request, mcp__github__get_pull_request_diff, mcp__github__get_pull_request_files, mcp__github__list_pull_request_comments, mcp__github__create_and_submit_pull_request_review, mcp__github__add_comment_to_pending_review, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note, mcp__zen__codereview, mcp__zen__analyze]
+tools: [Read, Grep, Glob, LS, Bash, mcp__github__get_repository_info, mcp__github__get_pull_request, mcp__github__get_pull_request_diff, mcp__github__get_pull_request_files, mcp__github__list_pull_request_comments, mcp__github__create_and_submit_pull_request_review, mcp__github__add_comment_to_pending_review, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note, mcp__zen__codereview, mcp__zen__analyze, mcp__zen__secaudit]
 proactive: false
 ---
 
