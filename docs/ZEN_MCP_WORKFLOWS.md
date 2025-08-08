@@ -29,9 +29,9 @@ With Zen MCP Server integration, 27 agents across the system now have access to 
 
 ```mermaid
 graph LR
-    A[@vibe-coding-coordinator] --> B[@leaf-node-detector]
-    B --> C[@software-engineering-expert]
-    C --> D[@verification-specialist]
+    A[Vibe Coding Coordinator] --> B[Leaf Node Detector]
+    B --> C[Software Engineering Expert]
+    C --> D[Verification Specialist]
     
     A -.-> |chat, thinkdeep, planner| A1[Multi-AI Preparation]
     B -.-> |analyze| B1[Safety Analysis]
