@@ -268,6 +268,7 @@ claude "Create a user authentication API with rate limiting and structured loggi
 | 🚀 **Installation Guide** | Complete setup instructions for all scenarios | [docs/INSTALLATION.md](docs/INSTALLATION.md) |
 | ❓ **FAQ** | Common questions about performance, setup, and usage | [docs/FAQ.md](docs/FAQ.md) |
 | 🤖 **Agent Catalog** | List of available specialized agents | [docs/AGENTS.md](docs/AGENTS.md) |
+| 🔮 **Zen MCP Workflows** | Multi-AI model collaborative intelligence patterns | [docs/ZEN_MCP_WORKFLOWS.md](docs/ZEN_MCP_WORKFLOWS.md) |
 | 🧠 **Personality System** | Advanced behavioral framework and Evil Corp motivation | [docs/PERSONALITY_SYSTEM.md](docs/PERSONALITY_SYSTEM.md) |
 | 💡 **Usage Examples** | Real-world examples and use cases | [docs/USAGE.md](docs/USAGE.md) |
 | 🎭 **Orchestration Guide** | Advanced coordination and workflows | [docs/ORCHESTRATION.md](docs/ORCHESTRATION.md) |

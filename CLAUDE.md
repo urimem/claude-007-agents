@@ -165,6 +165,27 @@ Quality agents operate under high-stakes motivation for maximum code delivery:
 - **Quality**: `@software-engineering-expert` + Context7 MCP + Basic Memory MCP
 - **Git/PR**: `@git-expert`/`@pr-reviewer-specialist` + GitHub MCP + Basic Memory MCP
 
+## 🔮 Zen MCP Hybrid Workflows
+
+**Multi-AI Model Collaborative Intelligence** - 27 agents enhanced with multi-model capabilities:
+
+### **Tier 1: Strategic Workflows**
+- **🚀 Vibe Coding Powerhouse**: `@vibe-coding-coordinator` (chat+thinkdeep+planner) → `@leaf-node-detector` (analyze) → `@software-engineering-expert` (thinkdeep+analyze+refactor) → `@verification-specialist` (analyze+testgen)
+- **⚡ Exponential Architecture**: `@exponential-planner` (thinkdeep+planner) → `@system-architect` (thinkdeep+analyze) → `@orchestrator` (chat+thinkdeep+consensus) → specialist agents
+- **🔒 Security-First Pipeline**: `@security-specialist` (analyze+debug+secaudit) → `@code-reviewer` (codereview+analyze+secaudit) → `@pr-reviewer-specialist` (codereview+analyze+secaudit)
+
+### **Tier 2: Specialized Workflows**
+- **🔧 Legacy Modernization**: `@legacy-modernization-specialist` (refactor) → `@software-engineering-expert` (thinkdeep+analyze+refactor) → `@test-automation-expert` (testgen)
+- **🎯 Consensus Decisions**: `@orchestrator` (consensus) + `@team-configurator` (consensus) for multi-AI technical validation
+- **📋 Interactive Planning**: `@exponential-planner` (planner) + `@project-analyst` (planner) + `@vibe-coding-coordinator` (planner) for comprehensive project breakdown
+
+### **Multi-AI Capabilities**
+- **Cross-Model Intelligence**: Leverage Gemini, GPT-4, Claude, and local models for specialized capabilities
+- **Collaborative Validation**: Multi-perspective analysis for critical decisions and architecture
+- **Adaptive Workflows**: Automatic model selection based on task complexity and requirements
+
+**📖 Full Documentation**: [Zen MCP Workflows Guide](docs/ZEN_MCP_WORKFLOWS.md)
+
 ### 🧠 Adaptive Personalities
 Agents evolve communication style based on success patterns. Control with:
 - "Be more direct" / "Keep it brief" / "Explain thoroughly"
