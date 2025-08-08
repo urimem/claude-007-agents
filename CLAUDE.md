@@ -45,7 +45,7 @@ Quality agents operate under high-stakes motivation for maximum code delivery:
 ## Agent Categories
 
 **Tech Stack**: Rails, Django, Laravel, Node.js/TypeScript, Go, React, Vue.js, Next.js, Nuxt.js  
-**Integrations**: GitHub MCP, Task Master MCP, Context7 MCP, Basic Memory MCP, Sequential Thinking MCP  
+**Integrations**: GitHub MCP, Task Master MCP, Context7 MCP, Basic Memory MCP, Sequential Thinking MCP, Zen MCP Server  
 **Quality**: Trunk.io linting, Cockatiel/Hyx/GoBreaker resilience, Pino/Zap logging
 
 ### Agents by Category
@@ -195,6 +195,7 @@ Agents evolve communication style based on success patterns. Control with:
 - **Context7 MCP**: Live library documentation, code examples
 - **Basic Memory MCP**: Persistent knowledge, organizational learning
 - **Sequential Thinking MCP**: Complex multi-step reasoning with adaptive planning and course correction
+- **Zen MCP Server**: Multi-AI model orchestration, collaborative intelligence
 
 ### Key Integrations
 - **GitHub**: `@git-expert`, `@code-reviewer`, `@cicd-pipeline-engineer`, `@pr-reviewer-specialist`, `@session-manager`
@@ -202,6 +203,7 @@ Agents evolve communication style based on success patterns. Control with:
 - **Context7**: `@documentation-specialist`, framework specialists, `@api-architect`, `@verification-specialist`
 - **Basic Memory**: All core development agents + new context orchestrators, safety specialists, and performance optimizers
 - **Sequential Thinking**: `@orchestrator`, `@system-architect`, `@cloud-architect`, `@database-architect`, `@error-detective`, `@rubber-duck-debugger`, `@vibe-coding-coordinator`, `@exponential-planner`, `@session-manager`, `@leaf-node-detector`, `@permission-escalator`, `@verification-specialist`, `@parallel-coordinator`, `@tool-batch-optimizer`, `@session-optimizer`
+- **Zen**: `@orchestrator`, `@code-reviewer`, `@error-detective`, `@software-engineering-expert`, `@vibe-coding-coordinator`, multi-model collaboration
 
 ## ⚠️ CRITICAL: MCP Server Usage Policy
 
@@ -213,6 +215,7 @@ Agents evolve communication style based on success patterns. Control with:
 - **`mcp__task-master__*`** - All project management, task tracking, complexity analysis
 - **`mcp__context7__*`** - All library documentation, framework research, code examples
 - **`mcp__sequential-thinking__*`** - All complex multi-step reasoning and adaptive planning
+- **`mcp__zen__*`** - All multi-AI model orchestration, collaborative reasoning
 
 ### **❌ FORBIDDEN Operations:**
 - **`Write(file_path: "...")`** - Creating any new files outside of codebase
@@ -232,6 +235,7 @@ Agents evolve communication style based on success patterns. Control with:
 - **Task Management**: Use Task Master MCP for project coordination and complexity analysis
 - **Research**: Use Context7 MCP for up-to-date library documentation and examples
 - **Complex Reasoning**: Use Sequential Thinking MCP for multi-step analysis and planning
+- **Multi-AI Collaboration**: Use Zen MCP Server for multi-model orchestration and enhanced intelligence
 
 ## Agent Dependencies
 
@@ -262,7 +266,7 @@ Claude Code automatically includes agent attribution in all commits for traceabi
 ✅ **Choreography**: Auto-detection, coordination, progress tracking  
 ✅ **Personalities**: Adaptive responses based on success patterns  
 ✅ **Learning**: Pattern recognition, organizational knowledge building  
-✅ **MCP Integration**: GitHub, Task Master, Context7, Basic Memory, Sequential Thinking
+✅ **MCP Integration**: GitHub, Task Master, Context7, Basic Memory, Sequential Thinking, Zen
 
 *88 agents | 18 categories | Vibe coding + parallel execution + sequential reasoning enabled*
 
@@ -297,5 +301,6 @@ Claude Code automatically includes agent attribution in all commits for traceabi
 - GitHub MCP: Enhanced session management and parallel development
 - Context7 MCP: Live documentation for verification and testing
 - Sequential Thinking MCP: Multi-step reasoning with adaptive planning and course correction
+- Zen MCP Server: Multi-AI model orchestration and collaborative intelligence
 
 **System Evolution**: From 77 → 88 agents | 15 → 18 categories | Added autonomous development capabilities
