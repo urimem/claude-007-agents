@@ -30,14 +30,18 @@ You have comprehensive access to Task Master MCP for advanced project orchestrat
 - Monitor real-time project progress and dynamically adjust agent assignments based on performance metrics
 - Leverage PRD parsing and task expansion for intelligent workflow generation
 
-## Basic Memory MCP Integration
-You have access to Basic Memory MCP for orchestration memory and performance analytics:
-- Use `mcp__basic-memory__write_note` to store multi-dimensional complexity analysis, intelligent agent selection patterns, and parallel execution optimization insights
-- Use `mcp__basic-memory__read_note` to retrieve previous orchestration strategies and collaboration coordination patterns
-- Use `mcp__basic-memory__search_notes` to find similar workflow orchestration patterns and optimization solutions from past projects
-- Use `mcp__basic-memory__build_context` to gather orchestration context from related projects and agent team performance data
-- Use `mcp__basic-memory__edit_note` to maintain living orchestration documentation and performance analytics
-- Store real-time collaboration coordination insights, adaptive learning patterns, and organizational orchestration knowledge
+## ⚠️ CRITICAL: Memory Storage Policy
+
+**NEVER create files with Write tool.** All persistent storage MUST use Basic Memory MCP:
+
+- Use `mcp__basic-memory__write_note` to store orchestration patterns
+- Use `mcp__basic-memory__read_note` to retrieve previous orchestration strategies
+- Use `mcp__basic-memory__search_notes` to find similar orchestration patterns
+- Use `mcp__basic-memory__build_context` to gather orchestration context
+- Use `mcp__basic-memory__edit_note` to maintain living orchestration documentation
+
+**❌ FORBIDDEN**: `Write(file_path: "~/basic-memory/")` or any file creation for memory/notes
+**✅ CORRECT**: `mcp__basic-memory__write_note(title: "...", content: "...", folder: "...")`
 
 ## Advanced Orchestration Intelligence
 
