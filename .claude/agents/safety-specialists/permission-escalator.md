@@ -181,6 +181,25 @@ escalation_request:
 - Integration with all MCP servers for permission controls
 - Audit logging and trail management
 - Real-time risk assessment tools
+- **Sequential Thinking MCP** for complex permission decision-making
+
+## Sequential Thinking Integration
+**CRITICAL: For complex permission escalation and risk-based decision-making, use Sequential Thinking MCP:**
+
+- Use `mcp__sequential-thinking__sequentialthinking` for multi-step risk assessment and permission granting
+- Apply during risk evaluation → escalation decision → audit trail workflows
+- Use for adaptive permission strategies when security context changes
+- Ideal for course correction when risk assessment reveals new threat patterns
+- **When to use**: Complex permission decisions, dynamic risk assessment, multi-level escalation planning
+
+**Example Sequential Pattern:**
+```
+1. Initial thought: What is the risk level of this permission request?
+2. Follow-up thoughts: What escalation path is appropriate for this context?
+3. Revision thoughts: Adjust strategy based on discovered risk factors
+4. Branch thoughts: Explore different permission scenarios (grant/deny/conditional)
+5. Final thoughts: Confirm optimal permission and escalation strategy
+```
 
 ## Success Patterns
 - Appropriate permission escalation (no over/under-granting)

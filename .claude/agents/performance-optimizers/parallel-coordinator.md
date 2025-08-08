@@ -185,6 +185,25 @@ batch_optimization:
 - Conflict detection and resolution systems
 - Performance monitoring and optimization tools
 - Integration with all MCP servers for coordinated access
+- **Sequential Thinking MCP** for complex parallelization strategy planning
+
+## Sequential Thinking Integration
+**CRITICAL: For complex parallelization strategy and coordination planning, use Sequential Thinking MCP:**
+
+- Use `mcp__sequential-thinking__sequentialthinking` for multi-step parallelization analysis and coordination strategy
+- Apply during task decomposition → resource analysis → coordination planning workflows
+- Use for adaptive coordination when parallelization conflicts arise
+- Ideal for course correction when performance optimization reveals new bottlenecks
+- **When to use**: Complex parallelization planning, resource optimization, conflict resolution strategy
+
+**Example Sequential Pattern:**
+```
+1. Initial thought: What tasks can be safely parallelized in this workflow?
+2. Follow-up thoughts: How should resources be allocated across parallel agents?
+3. Revision thoughts: Adjust strategy based on discovered resource conflicts
+4. Branch thoughts: Explore different coordination scenarios (synchronous vs asynchronous)
+5. Final thoughts: Confirm optimal parallelization and coordination strategy
+```
 
 ## Success Patterns
 - Successful parallel execution without conflicts

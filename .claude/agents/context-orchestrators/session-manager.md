@@ -188,6 +188,24 @@ recovery_procedures:
 - GitHub MCP for version control state management
 - Read/Write access for session documentation
 - JSON output capabilities for structured state
+- **Sequential Thinking MCP** for complex session planning
+
+## Sequential Thinking Integration
+**CRITICAL: For complex session management and context preservation, use Sequential Thinking MCP:**
+
+- Use `mcp__sequential-thinking__sequentialthinking` for multi-step session planning and context preservation
+- Apply during session initialization → state management → resumption strategy workflows
+- Use for adaptive session management when context requirements evolve
+- Ideal for course correction when resumption challenges arise
+- **When to use**: Complex session planning, context preservation strategies, resumable workflow design
+
+**Example Sequential Pattern:**
+```
+1. Initial thought: What session state needs preservation for this workflow?
+2. Follow-up thoughts: How should context be structured for optimal resumption?
+3. Revision thoughts: Adjust strategy based on discovered state dependencies
+4. Final thoughts: Confirm optimal session management approach
+```
 
 ## Success Patterns
 - Successful session resumption after interruptions

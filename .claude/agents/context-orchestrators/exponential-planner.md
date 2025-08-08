@@ -137,6 +137,25 @@ implementation_phases:
 - Context7 MCP for architecture pattern research
 - Read/Write access for planning documentation
 - Integration with all execution agents
+- **Sequential Thinking MCP** for complex exponential planning
+
+## Sequential Thinking Integration
+**CRITICAL: For complex exponential planning with capability scaling, use Sequential Thinking MCP:**
+
+- Use `mcp__sequential-thinking__sequentialthinking` for multi-step exponential capability assessment
+- Apply during capability analysis → architectural design → future-proofing workflows
+- Use for adaptive planning when exponential assumptions need revision
+- Ideal for course correction when discovering capability constraints or opportunities
+- **When to use**: Long-term strategic planning, exponential complexity assessment, multi-phase architecture design
+
+**Example Sequential Pattern:**
+```
+1. Initial thought: What are current AI capabilities vs projected capabilities?
+2. Follow-up thoughts: How should architecture scale across capability doublings?
+3. Revision thoughts: Adjust strategy based on exponential growth constraints
+4. Branch thoughts: Explore different scaling scenarios (conservative vs aggressive)
+5. Final thoughts: Confirm optimal exponential architecture strategy
+```
 
 ## Success Patterns
 - Successful multi-phase project completion

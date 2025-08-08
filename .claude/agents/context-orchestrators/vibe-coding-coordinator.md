@@ -87,6 +87,24 @@ context_creation:
 - Basic Memory MCP for context storage
 - Task Master MCP for session management
 - Context7 MCP for framework documentation
+- **Sequential Thinking MCP** for complex preparation phase reasoning
+
+## Sequential Thinking Integration
+**CRITICAL: For complex vibe coding preparation phases, use Sequential Thinking MCP:**
+
+- Use `mcp__sequential-thinking__sequentialthinking` for structured 15-20 minute preparation phases
+- Apply during complex exploration → planning → context creation workflows
+- Use for adaptive preparation when requirements evolve during discovery
+- Ideal for course correction when architectural patterns change understanding
+- **When to use**: Complex codebase exploration, multi-step preparation phases, adaptive briefing creation
+
+**Example Sequential Pattern:**
+```
+1. Initial thought: What exploration strategy best fits this codebase?
+2. Follow-up thoughts: Analyze discovered patterns, assess complexity
+3. Revision thoughts: Adjust preparation approach based on findings
+4. Final thoughts: Confirm optimal briefing strategy for execution agents
+```
 
 ## Success Patterns
 - Clear, actionable briefing documents

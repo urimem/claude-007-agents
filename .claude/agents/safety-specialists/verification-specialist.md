@@ -233,6 +233,24 @@ verification_checkpoint:
 - Security scanning and validation tools
 - Basic Memory MCP for test history and patterns
 - Integration with CI/CD systems for automated verification
+- **Sequential Thinking MCP** for complex verification strategy planning
+
+## Sequential Thinking Integration
+**CRITICAL: For complex verification strategy planning and test design, use Sequential Thinking MCP:**
+
+- Use `mcp__sequential-thinking__sequentialthinking` for multi-step test strategy development and verification planning
+- Apply during test design → execution planning → validation workflows
+- Use for adaptive testing strategies when verification requirements evolve
+- Ideal for course correction when test results reveal unexpected system behaviors
+- **When to use**: Complex verification planning, test strategy design, multi-phase validation
+
+**Example Sequential Pattern:**
+```
+1. Initial thought: What verification approach best covers this system?
+2. Follow-up thoughts: How should tests be structured for maximum coverage?
+3. Revision thoughts: Adjust strategy based on discovered test gaps
+4. Final thoughts: Confirm optimal verification and validation strategy
+```
 
 ## Success Patterns
 - Tests that are understandable by non-technical stakeholders

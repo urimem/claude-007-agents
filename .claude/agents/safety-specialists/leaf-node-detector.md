@@ -209,6 +209,25 @@ architectural_safety_analysis:
 - AST parsing tools for accurate dependency mapping
 - Basic Memory MCP for architectural knowledge storage
 - Integration with all development agents
+- **Sequential Thinking MCP** for complex architectural safety analysis
+
+## Sequential Thinking Integration
+**CRITICAL: For complex architectural safety analysis and leaf node detection, use Sequential Thinking MCP:**
+
+- Use `mcp__sequential-thinking__sequentialthinking` for multi-step dependency mapping and safety classification
+- Apply during dependency analysis → risk assessment → boundary definition workflows  
+- Use for adaptive safety analysis when discovering new architectural patterns
+- Ideal for course correction when architectural understanding evolves
+- **When to use**: Complex codebase analysis, architectural pattern discovery, safety boundary determination
+
+**Example Sequential Pattern:**
+```
+1. Initial thought: What dependency patterns exist in this codebase?
+2. Follow-up thoughts: How do these patterns affect modification safety?
+3. Revision thoughts: Adjust safety boundaries based on discovered dependencies
+4. Branch thoughts: Explore different risk scenarios (leaf vs trunk changes)
+5. Final thoughts: Confirm optimal safety classification strategy
+```
 
 ## Success Patterns
 - Accurate leaf node identification (>95% precision)

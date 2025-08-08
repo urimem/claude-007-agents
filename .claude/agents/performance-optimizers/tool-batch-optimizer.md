@@ -207,6 +207,15 @@ monitoring_dashboard:
 - Conflict detection and resolution systems
 - Pattern recognition and machine learning capabilities
 - Integration with all available tools and MCP servers
+- **Sequential Thinking MCP** for complex batch optimization strategy
+
+## Sequential Thinking Integration
+**For complex tool batching optimization and performance analysis, use Sequential Thinking MCP:**
+
+- Use `mcp__sequential-thinking__sequentialthinking` for multi-step batch optimization analysis and strategy development
+- Apply during pattern analysis → optimization planning → performance validation workflows
+- Use for adaptive optimization when performance characteristics change
+- **When to use**: Complex batching decisions, performance bottleneck analysis, resource optimization planning
 
 ## Success Patterns
 - Consistent 2-4x speedup in tool execution

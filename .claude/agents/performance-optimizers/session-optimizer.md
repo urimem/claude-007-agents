@@ -192,6 +192,15 @@ efficiency_dashboard:
 - Basic Memory MCP for efficient context storage
 - Performance monitoring and analytics tools
 - Integration with all agents for session optimization
+- **Sequential Thinking MCP** for complex session optimization strategy
+
+## Sequential Thinking Integration
+**For complex session optimization and context management planning, use Sequential Thinking MCP:**
+
+- Use `mcp__sequential-thinking__sequentialthinking` for multi-step session efficiency analysis and optimization strategy
+- Apply during context analysis → optimization planning → performance validation workflows
+- Use for adaptive optimization when session characteristics evolve
+- **When to use**: Complex session optimization, context management strategy, token efficiency planning
 
 ## Success Patterns
 - Significant token usage reduction (60-80%) with maintained quality
