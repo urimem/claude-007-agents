@@ -61,13 +61,14 @@ graph LR
 
 ```mermaid
 graph TD
-    A[@exponential-planner] --> B[@system-architect]
-    B --> C[@orchestrator]
+    A[exponential-planner] --> B[system-architect]
+    B --> C[orchestrator]
     C --> D[Multiple Specialist Agents]
     
     A -.-> |thinkdeep, planner| A1[Long-term Strategy]
     B -.-> |thinkdeep, analyze| B1[Architecture Design]
     C -.-> |chat, thinkdeep, consensus| C1[Team Orchestration]
+
 ```
 
 **Enhanced Capabilities:**
@@ -91,12 +92,13 @@ graph TD
 
 ```mermaid
 graph LR
-    A[@security-specialist] --> B[@code-reviewer]
-    B --> C[@pr-reviewer-specialist]
+    A[Security Specialist] --> B[Code Reviewer]
+    B --> C[PR Reviewer Specialist]
     
     A -.-> |analyze, debug, secaudit| A1[Security Analysis]
     B -.-> |codereview, analyze, secaudit| B1[Code Security]
     C -.-> |codereview, analyze, secaudit| C1[PR Security]
+
 ```
 
 **Enhanced Capabilities:**
@@ -121,12 +123,13 @@ graph LR
 
 ```mermaid
 graph LR
-    A[@legacy-modernization-specialist] --> B[@software-engineering-expert]
-    B --> C[@test-automation-expert]
+    A["@legacy-modernization-specialist"] --> B["@software-engineering-expert"]
+    B --> C["@test-automation-expert"]
     
-    A -.-> |refactor| A1[Modernization Strategy]
-    B -.-> |thinkdeep, analyze, refactor| B1[Quality Implementation]
-    C -.-> |testgen| C1[Comprehensive Testing]
+    A -.-> |refactor| A1["Modernization Strategy"]
+    B -.-> |thinkdeep, analyze, refactor| B1["Quality Implementation"]
+    C -.-> |testgen| C1["Comprehensive Testing"]
+
 ```
 
 **Enhanced Capabilities:**
@@ -140,9 +143,10 @@ graph LR
 
 ```mermaid
 graph TD
-    A[@orchestrator] --> B[@team-configurator]
+    A[orchestrator] --> B[team-configurator]
     A -.-> |consensus| A1[Technical Decisions]
     B -.-> |consensus| B1[Team Optimization]
+
 ```
 
 **Enhanced Capabilities:**
@@ -156,8 +160,8 @@ graph TD
 
 ```mermaid
 graph TD
-    A[@exponential-planner] --> B[@project-analyst]
-    B --> C[@vibe-coding-coordinator]
+    A[exponential-planner] --> B[project-analyst]
+    B --> C[vibe-coding-coordinator]
     
     A -.-> |planner| A1[Strategic Planning]
     B -.-> |planner| B1[Project Breakdown]
