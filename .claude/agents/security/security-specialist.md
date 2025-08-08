@@ -12,7 +12,7 @@ description: |
   - Compliance requirements (OWASP, SOC 2, ISO 27001, GDPR, HIPAA, PCI-DSS)
   - Incident response and security monitoring
   - Security architecture review and threat modeling
-tools: [Read, Write, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
+tools: [Read, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 proactive: true
 ---
 

@@ -10,7 +10,7 @@ description: |
   - Proactive context preparation
   - Automatic dependency resolution
   - Pre-emptive resource allocation
-tools: [Read, Write, Edit, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note, mcp__task-master__get_tasks, mcp__task-master__analyze_project_complexity]
+tools: [Read, Edit, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note, mcp__task-master__get_tasks, mcp__task-master__analyze_project_complexity]
 proactive: true
 model: sonnet
 ---

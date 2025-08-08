@@ -16,7 +16,7 @@ description: |
   - Configuring custom agents for specific project needs
   - Optimizing agent workflows and collaboration patterns
   - Performance tuning and team effectiveness improvement
-tools: [Read, Write, Edit, Bash, Grep, Glob, LS, mcp__task-master__initialize_project, mcp__task-master__models, mcp__task-master__rules, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
+tools: [Read, Edit, Bash, Grep, Glob, LS, mcp__task-master__initialize_project, mcp__task-master__models, mcp__task-master__rules, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 proactive: true
 triggers: ["setup", "configure", "team setup", "agent configuration", "project initialization", "team optimization"]
 ---

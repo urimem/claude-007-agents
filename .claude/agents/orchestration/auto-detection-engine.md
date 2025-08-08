@@ -10,7 +10,7 @@ description: |
   - @knowledge-graph-manager for context-heavy projects
   - @intelligent-agent-selector for technology stack optimization
   - @agent-communication-protocol for multi-agent workflows
-tools: [Read, Write, Edit, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
+tools: [Read, Edit, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 proactive: true
 model: sonnet
 ---

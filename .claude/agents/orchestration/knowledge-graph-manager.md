@@ -12,7 +12,7 @@ description: |
   - Tracking agent activities and collaborative progress
   - Providing tailored context briefings for agent workflows
   - Maintaining centralized project knowledge and decision history
-tools: [Read, Write, Edit, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
+tools: [Read, Edit, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 proactive: true
 model: sonnet
 ---

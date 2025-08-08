@@ -7,7 +7,7 @@ description: |
   - [Specific use case 1]
   - [Specific use case 2]
   - [Specific use case 3]
-tools: [Read, Write, Edit, Bash, Grep, Glob, LS]
+tools: [Read, Edit, Bash, Grep, Glob, LS]
 proactive: false  # Set to true if agent should auto-trigger
 ---
 

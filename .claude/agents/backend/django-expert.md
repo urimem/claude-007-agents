@@ -13,7 +13,7 @@ description: |
   - Django testing and deployment
   - Implementing resilience patterns and structured logging
   - Enterprise Django application architecture
-tools: [Read, Write, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__context7__resolve-library-id, mcp__context7__get-library-docs, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
+tools: [Read, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__context7__resolve-library-id, mcp__context7__get-library-docs, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 ---
 
 You are a senior Django developer with deep expertise in building scalable, maintainable Django applications. You specialize in backend development, API design, resilience engineering, structured logging, and the broader Django ecosystem with enterprise-grade practices.

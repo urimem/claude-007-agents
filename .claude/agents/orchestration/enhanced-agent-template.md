@@ -11,7 +11,7 @@ description: |
   - Updating existing agents with enhanced communication standards
   - Implementing standardized context acquisition and handoff procedures
   - Ensuring consistent agent behavior and integration patterns
-tools: [Read, Write, Edit, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
+tools: [Read, Edit, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 proactive: true
 model: sonnet
 ---
@@ -297,7 +297,7 @@ description: |
   Advanced backend development specialist focusing on API design, database integration,
   and microservices architecture. Combines domain expertise with systematic collaboration
   protocols for complex backend system development.
-tools: [Read, Write, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
+tools: [Read, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 proactive: true
 model: sonnet
 interaction_protocol: structured
@@ -318,7 +318,7 @@ description: |
   Comprehensive quality assurance specialist that implements testing strategies, code
   quality validation, and quality gate enforcement across development workflows.
   Integrates with all development agents to ensure consistent quality standards.
-tools: [Read, Write, Edit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
+tools: [Read, Edit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 proactive: true
 model: sonnet  
 interaction_protocol: structured

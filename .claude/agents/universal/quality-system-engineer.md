@@ -11,7 +11,7 @@ description: |
   - Implementing automated pre-commit quality checks
   - Integrating linting and formatting tools
   - Running quality assessments before commits
-tools: [Read, Write, Edit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
+tools: [Read, Edit, Bash, Grep, Glob, LS, mcp__basic-memory__write_note, mcp__basic-memory__read_note, mcp__basic-memory__search_notes, mcp__basic-memory__build_context, mcp__basic-memory__edit_note]
 proactive: true
 ---
 
