@@ -325,3 +325,7 @@ Claude Code automatically includes agent attribution in all commits for traceabi
 - Zen MCP Server: Multi-AI model orchestration and collaborative intelligence
 
 **System Evolution**: From 77 → 88 agents | 15 → 18 categories | Added autonomous development capabilities
+
+## Task Master AI Instructions
+**Import Task Master's development workflow commands and guidelines, treat as if import is in the main CLAUDE.md file.**
+@./.taskmaster/CLAUDE.md

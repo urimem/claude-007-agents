@@ -29,7 +29,11 @@ node_modules/
 .cursor/
 .env.example
 .mcp.json
+youtube-transcripts/
+
+# Design documentation (keep in git)
+# docs/design/
+
 # Task files
 # tasks.json
 # tasks/ 
-youtube-transcripts/
