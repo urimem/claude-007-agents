@@ -1,6 +1,6 @@
 {
-  "version": "2.0.0",
-  "description": "Comprehensive AI Agent System with 107 specialized agents across 16 categories",
+  "version": "2.1.0",
+  "description": "Comprehensive AI Agent System with 112 specialized agents across 17 categories including Task Master 0.24.0 integration",
   "agents": [
     {
       "name": "orchestrator",
@@ -1106,6 +1106,81 @@
         "orchestration"
       ],
       "dependencies": []
+    },
+    {
+      "name": "task-master-initialization-specialist",
+      "file": "orchestrators/task-master-initialization-specialist.md",
+      "description": "Task Master 0.24.0 Integration Specialist that transforms ordinary projects into codebase-aware autonomous development ecosystems. Provides comprehensive initialization, tech stack detection, multi-model AI setup, and bridge agent configuration for Task Master integration.",
+      "category": "task-master",
+      "proactive": false,
+      "triggers": [
+        "task-master",
+        "initialization",
+        "specialist",
+        "setup",
+        "config"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "task-master-template-manager",
+      "file": "orchestrators/task-master-template-manager.md", 
+      "description": "Specialized agent for managing Task Master 0.24.0 configuration templates, PRD templates, and environment setup. Provides on-demand generation of MCP configurations, environment files, PRD templates, and project-specific setup guides based on detected tech stack and project requirements.",
+      "category": "task-master",
+      "proactive": false,
+      "triggers": [
+        "template",
+        "configuration", 
+        "mcp config",
+        "environment setup",
+        "prd template",
+        "project template"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "task-orchestrator",
+      "file": "task-orchestrator.md",
+      "description": "Task Orchestrator Bridge with Task Master 0.24.0 codebase-aware intelligence and exponential parallel execution. Coordinates Task Master workflows, manages dependency graphs, and orchestrates Claude 007's 88 specialized agents for autonomous development workflows that respect existing architectural patterns.",
+      "category": "task-master",
+      "proactive": false,
+      "triggers": [
+        "task-orchestrator",
+        "task-master",
+        "orchestrator",
+        "workflow",
+        "coordination"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "task-executor", 
+      "file": "task-executor.md",
+      "description": "Elite Task Executor Enhanced with Task Master 0.24.0 codebase-aware capabilities. Executes specific tasks with architectural intelligence, contextual awareness, and continuous quality integration, transforming requirements into implementations that perfectly align with existing codebase patterns.",
+      "category": "task-master",
+      "proactive": false,
+      "triggers": [
+        "task-executor",
+        "task-master", 
+        "executor",
+        "implementation"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "task-checker",
+      "file": "task-checker.md", 
+      "description": "Task Quality Validator enhanced with Task Master 0.24.0 codebase-aware intelligence and continuous quality verification. Ensures implementations meet task requirements while maintaining architectural alignment, pattern consistency, and quality excellence throughout the development lifecycle.",
+      "category": "task-master",
+      "proactive": false,
+      "triggers": [
+        "task-checker",
+        "task-master",
+        "checker", 
+        "validation",
+        "quality"
+      ],
+      "dependencies": []
     }
   ],
   "categories": {
@@ -1252,6 +1327,16 @@
         "exponential-planner",
         "vibe-coding-coordinator",
         "session-manager"
+      ]
+    },
+    "task-master": {
+      "description": "Task Master 0.24.0 integration specialists",
+      "agents": [
+        "task-master-initialization-specialist",
+        "task-master-template-manager",
+        "task-orchestrator",
+        "task-executor", 
+        "task-checker"
       ]
     }
   },
