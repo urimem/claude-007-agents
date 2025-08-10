@@ -1,0 +1,206 @@
+#!/usr/bin/env node
+
+/**
+ * Task Master 0.24.0 Portable Deployment CLI
+ * 
+ * Universal deployment system that works with any project
+ */
+
+const path = require('path');
+const PortableTaskMasterDeployment = require('../portable-deployment');
+
+// Parse command line arguments
+function parseArgs() {
+  const args = process.argv.slice(2);
+  const options = {
+    projectRoot: process.cwd(),
+    mode: 'auto',
+    help: false,
+    version: false,
+    verbose: false,
+    dryRun: false
+  };
+  
+  for (let i = 0; i < args.length; i++) {
+    const arg = args[i];
+    
+    switch (arg) {
+      case '--help':
+      case '-h':
+        options.help = true;
+        break;
+      case '--version':
+      case '-v':
+        options.version = true;
+        break;
+      case '--mode':
+      case '-m':
+        options.mode = args[++i];
+        break;
+      case '--verbose':
+        options.verbose = true;
+        break;
+      case '--dry-run':
+        options.dryRun = true;
+        break;
+      case '--prd':
+        options.prdPath = args[++i];
+        break;
+      case '--skip-claude':
+        options.createClaudeConfig = false;
+        break;
+      case '--skip-mcp':
+        options.setupMCP = false;
+        break;
+      case '--skip-taskmaster':
+        options.installTaskMaster = false;
+        break;
+      default:
+        if (!arg.startsWith('--') && !options.projectRoot !== process.cwd()) {
+          options.projectRoot = path.resolve(arg);
+        }
+        break;
+    }
+  }
+  
+  return options;
+}
+
+function showHelp() {
+  console.log(`
+🚀 Task Master 0.24.0 Portable Deployment System
+
+USAGE:
+  tm-deploy [PROJECT_PATH] [OPTIONS]
+
+ARGUMENTS:
+  PROJECT_PATH    Path to project directory (default: current directory)
+
+OPTIONS:
+  -h, --help              Show this help message
+  -v, --version           Show version information
+  -m, --mode MODE         Deployment mode: auto|standalone|enhanced|minimal
+      --verbose           Enable verbose logging
+      --dry-run           Show what would be deployed without making changes
+      --prd PATH          Path to PRD file for task generation
+      --skip-claude       Skip Claude Code configuration
+      --skip-mcp          Skip MCP server setup
+      --skip-taskmaster   Skip Task Master initialization
+
+DEPLOYMENT MODES:
+  auto        Automatically detect and choose optimal mode (default)
+  standalone  Complete setup for projects without existing Claude Code
+  enhanced    Enhance existing Claude Code projects
+  minimal     Lightweight setup with essential features only
+
+EXAMPLES:
+  # Deploy to current directory with auto-detection
+  tm-deploy
+
+  # Deploy to specific project
+  tm-deploy /path/to/my-project
+
+  # Deploy with specific mode
+  tm-deploy --mode=standalone
+
+  # Deploy with PRD processing
+  tm-deploy --prd=./requirements.txt
+
+  # Dry run to see what would be deployed
+  tm-deploy --dry-run --verbose
+
+  # Minimal deployment for simple projects
+  tm-deploy --mode=minimal --skip-mcp
+
+SUPPORTED PROJECT TYPES:
+  • React/Next.js applications
+  • Node.js/Express APIs
+  • Python/Django/FastAPI projects
+  • Go/Gin/Fiber applications
+  • Ruby/Rails applications
+  • PHP/Laravel applications
+  • Generic projects (any language)
+
+For more information, visit: https://github.com/your-repo/claude-007-agents
+`);
+}
+
+function showVersion() {
+  const pkg = require('../package.json');
+  console.log(`Task Master Portable Deployment v${pkg.version}`);
+}
+
+async function main() {
+  const options = parseArgs();
+  
+  if (options.help) {
+    showHelp();
+    process.exit(0);
+  }
+  
+  if (options.version) {
+    showVersion();
+    process.exit(0);
+  }
+  
+  console.log('🚀 Task Master 0.24.0 Portable Deployment System');
+  console.log(`📁 Target Project: ${options.projectRoot}`);
+  console.log(`⚙️  Deployment Mode: ${options.mode}`);
+  
+  if (options.dryRun) {
+    console.log('🧪 DRY RUN MODE - No changes will be made');
+  }
+  
+  try {
+    const deployment = new PortableTaskMasterDeployment({
+      verbose: options.verbose,
+      dryRun: options.dryRun,
+      ...options
+    });
+    
+    const result = await deployment.deployToProject(options.projectRoot, options);
+    
+    console.log('\n✅ Deployment completed successfully!');
+    console.log(`📋 Mode: ${result.mode}`);
+    console.log(`📁 Files created: ${result.filesCreated.length}`);
+    
+    if (options.verbose) {
+      console.log('\n📄 Files created:');
+      result.filesCreated.forEach(file => console.log(`  • ${file}`));
+    }
+    
+    console.log('\n📋 Next steps:');
+    result.instructions.forEach(instruction => console.log(`  ${instruction}`));
+    
+    console.log('\n🎉 Your project is now ready for intelligent development with Task Master 0.24.0!');
+    
+  } catch (error) {
+    console.error('\n❌ Deployment failed:', error.message);
+    if (options.verbose) {
+      console.error('\nStack trace:', error.stack);
+    }
+    console.error('\n💡 Try running with --verbose for more details');
+    process.exit(1);
+  }
+}
+
+// Handle uncaught errors
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('❌ Unhandled Rejection at:', promise, 'reason:', reason);
+  process.exit(1);
+});
+
+process.on('uncaughtException', (error) => {
+  console.error('❌ Uncaught Exception:', error.message);
+  process.exit(1);
+});
+
+// Run the CLI
+if (require.main === module) {
+  main().catch(error => {
+    console.error('❌ Fatal error:', error.message);
+    process.exit(1);
+  });
+}
+
+module.exports = { parseArgs, showHelp, showVersion, main };

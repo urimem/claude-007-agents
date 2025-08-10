@@ -64,7 +64,7 @@ Built on insights from Anthropic's "Code with Claude" conference:
 - **Safety Specialists**: Pre-deployment testing, architectural analysis, and risk management
 - **Sequential Thinking**: Complex multi-step reasoning with adaptive planning and course correction
 
-### 3. 🚀 **Task Master 0.24.0 Integration** ⭐ *NEW*
+### 3. 🚀 **Task Master Integration** ⭐ *NEW*
 Revolutionary codebase-aware autonomous development ecosystem:
 - **Codebase-Aware Intelligence**: Tasks generated with deep understanding of existing code architecture and patterns
 - **Bridge Agent Architecture**: 5 specialized Task Master agents seamlessly integrated with Claude 007's 112 agents
@@ -141,6 +141,39 @@ ln -sf "$(pwd)/agents.json" ~/.claude/agents/
 claude "Use @code-archaeologist-time-traveler to analyze git history"
 ```
 
+### 🚀 **NEW: Task Master Portable Deployment** ⭐
+**Universal deployment that works with ANY project - no existing Claude Code setup required!**
+
+```bash
+# One-command deployment for any project
+npx @claude-007/task-master-portable /path/to/any/project
+
+# Or install globally and use anywhere
+npm install -g @claude-007/task-master-portable
+tm-deploy                    # Deploy to current directory
+tm-deploy /path/to/project   # Deploy to specific project
+tm-deploy --mode=standalone  # Complete setup for projects without Claude Code
+tm-deploy --prd=./requirements.txt  # Include PRD processing
+
+# Quick installation script
+curl -sSL https://raw.githubusercontent.com/avivl/claude-007-agents/main/src/codebase-analysis/install.sh | bash
+```
+
+#### What the Portable Deployment Does:
+- 🔍 **Analyzes your codebase** (tech stack, architecture, complexity)
+- 🎯 **Selects optimal agents** based on your technology stack
+- ⚙️ **Creates configuration files** (CLAUDE.md, .claude/settings.json, .mcp.json)
+- 📋 **Sets up Task Master** with codebase-aware features
+- 📖 **Generates usage guide** tailored to your project
+
+#### Works with ANY project:
+- ✅ **React/Next.js** applications → Gets @react-expert, @nextjs-expert
+- ✅ **Node.js/Express** APIs → Gets @nodejs-expert, @fastify-expert  
+- ✅ **Python/Django** projects → Gets @django-expert, @python-expert
+- ✅ **Go/Gin** applications → Gets @gin-expert, @go-expert
+- ✅ **Ruby/Rails** projects → Gets @rails-expert, @ruby-expert
+- ✅ **Any other project** → Gets @software-engineering-expert + optimal agents
+
 ### Global Installation (Power Users)
 ```bash
 # Install once, use everywhere
@@ -166,7 +199,7 @@ EOF
 After installation, you can use these specialized agents:
 
 ```bash
-# Task Master 0.24.0 - Revolutionary codebase-aware autonomous development ⭐ NEW
+# Task Master - Revolutionary codebase-aware autonomous development ⭐ NEW
 claude "Use @task-master-initialization-specialist to set up Task Master for my Rails project"
 # → Analyzes codebase patterns, detects Rails stack, configures Claude + Perplexity models
 # → Generates MCP config, environment templates, codebase-aware PRD template
@@ -247,11 +280,168 @@ claude "Use @code-archaeologist-time-traveler to analyze the evolution of this a
 
 </div>
 
+## 🎯 **Portable Deployment Examples**
+
+### Real-World Deployment Scenarios
+
+#### **Scenario 1: External React Project**
+```bash
+# Developer inherits existing React project with no Claude Code setup
+cd /path/to/existing-react-app
+
+# One command creates complete intelligent development setup
+tm-deploy --mode=standalone
+# ✅ Creates CLAUDE.md with @react-expert, @nodejs-expert, @test-automation-expert
+# ✅ Generates .claude/settings.json with React-optimized configuration
+# ✅ Sets up .mcp.json with Task Master integration
+# ✅ Creates usage guide: CLAUDE_TASKMASTER_GUIDE.md
+
+# Start using immediately
+claude
+"Use @react-expert to analyze this component architecture"
+```
+
+#### **Scenario 2: Enterprise Django Project**
+```bash
+# Enterprise team wants Task Master for Django project
+cd /path/to/django-enterprise-app
+
+# Deploy with enterprise configuration
+tm-deploy --mode=enhanced --prd=./business_requirements.txt
+# ✅ Analyzes Django/Python codebase patterns
+# ✅ Configures @django-expert, @security-specialist, @database-architect
+# ✅ Processes PRD to generate initial task list
+# ✅ Sets up enterprise-grade MCP configuration
+
+# Immediate productivity boost
+claude  
+"Use @django-expert to review our ORM patterns and suggest optimizations"
+"Use @security-specialist to audit authentication implementation"
+```
+
+#### **Scenario 3: Open Source Go Project**
+```bash
+# Open source Go project wants contributor-friendly setup
+cd /path/to/go-opensource-project
+
+# Minimal deployment for all contributors
+tm-deploy --mode=minimal
+# ✅ Lightweight setup with @go-expert, @gin-expert (if using Gin)
+# ✅ Creates contributor-friendly CLAUDE.md
+# ✅ Optimized for Go development patterns
+# ✅ No complex dependencies required
+
+# Contributors can immediately use intelligent assistance
+claude
+"Use @go-expert to explain this concurrency pattern"
+"Use @code-reviewer to check this PR before submitting"
+```
+
+#### **Scenario 4: Full-Stack Next.js + Python API**
+```bash
+# Complex full-stack project with multiple technologies
+cd /path/to/fullstack-project
+
+# Auto-detects both frontend and backend
+tm-deploy --verbose
+# 🔍 Analyzes: "Next.js frontend + FastAPI backend detected"
+# ✅ Configures: @nextjs-expert, @react-expert, @fastapi-expert, @database-architect
+# ✅ Creates: Architecture-aware task management
+# ✅ Sets up: Cross-stack development workflows
+
+# Coordinated full-stack development
+claude
+"Use @nextjs-expert and @fastapi-expert to coordinate API integration"
+```
+
+### Deployment Modes Explained
+
+#### **Auto Mode** (Default - Recommended)
+```bash
+tm-deploy                    # Detects project and chooses optimal mode
+```
+- 🔍 Analyzes existing setup (Claude Code, Task Master, MCP)
+- 🎯 Selects best configuration automatically
+- ⚡ Fastest path to productivity
+
+#### **Standalone Mode** (For Fresh Projects)
+```bash
+tm-deploy --mode=standalone
+```
+- 🏗️ Complete setup from scratch
+- 📋 Creates all necessary configuration files
+- 🤖 Includes essential agents for your tech stack
+- 📖 Generates comprehensive usage guide
+
+#### **Enhanced Mode** (For Existing Claude Projects)
+```bash
+tm-deploy --mode=enhanced
+```
+- 🔧 Enhances existing Claude Code setup
+- 📈 Adds Task Master capabilities
+- 🧠 Integrates with existing agent configurations
+- 🚀 Upgrades to codebase-aware intelligence
+
+#### **Minimal Mode** (Lightweight)
+```bash
+tm-deploy --mode=minimal
+```
+- ⚡ Minimal footprint
+- 🎯 Essential agents only
+- 📦 No complex dependencies
+- 🚀 Quick start for simple projects
+
+### Advanced Deployment Options
+
+#### **With PRD Processing**
+```bash
+# Generate tasks from requirements document
+tm-deploy --prd=./requirements.txt
+tm-deploy --prd=./user_stories.md
+tm-deploy --prd=./project_spec.doc
+```
+
+#### **Custom Configuration**
+```bash
+# Skip specific components
+tm-deploy --skip-mcp          # No MCP server setup
+tm-deploy --skip-claude       # No Claude Code configuration  
+tm-deploy --skip-taskmaster   # No Task Master integration
+
+# Dry run to see what would be deployed
+tm-deploy --dry-run --verbose
+```
+
+#### **Multiple Projects Batch Deployment**
+```bash
+# Deploy to multiple projects
+for project in ~/projects/*/; do
+  echo "Deploying to $project"
+  tm-deploy "$project" --mode=auto
+done
+```
+
+### Integration with Existing Tools
+
+#### **Works with your existing workflow:**
+- ✅ **Git repositories** - Respects .gitignore, creates appropriate commits
+- ✅ **VS Code/Cursor** - Compatible with existing settings
+- ✅ **Package managers** - npm, pip, go mod, cargo, etc.
+- ✅ **CI/CD pipelines** - Integrates with existing automation
+- ✅ **Docker projects** - Detects containerized applications
+- ✅ **Monorepos** - Handles complex project structures
+
+#### **No conflicts with existing tools:**
+- 🔒 Only creates files in `.claude/`, `.taskmaster/`, and root config files
+- 🔄 Never modifies existing source code or configurations
+- 📦 Installs as optional enhancement, not replacement
+- 🚫 No breaking changes to existing development workflow
+
 ## 📊 **System Overview**
 
 | **Metric** | **Value** | **Notes** |
 |------------|-----------|------------|
-| **🤖 Specialized Agents** | 112 | Various technology domains + Task Master 0.24.0 |
+| **🤖 Specialized Agents** | 112 | Various technology domains + Task Master |
 | **📂 Categories** | 17 | Organized by specialization |
 | **🔗 MCP Integrations** | 5 | Live system connectivity + reasoning |
 | **🏗️ Frameworks Supported** | 20+ | Major web frameworks |
@@ -262,7 +452,7 @@ claude "Use @code-archaeologist-time-traveler to analyze the evolution of this a
 
 ### **Getting Started**
 ```bash
-# Task Master 0.24.0 - Codebase-aware autonomous development ⭐ NEW
+# Task Master - Codebase-aware autonomous development ⭐ NEW
 claude "Use @task-master-initialization-specialist to set up Task Master for my Rails API project"
 # → Analyzes existing codebase patterns and architecture
 # → Detects Rails tech stack and configures optimal models (Claude, Perplexity)
@@ -318,7 +508,7 @@ claude "Create a user authentication API with rate limiting and structured loggi
 | 📋 **Coding Rules** | Comprehensive quality standards system | [docs/CODING_RULES.md](docs/CODING_RULES.md) |
 | 🚀 **lst97 Integration** | Technical details of enhanced coordination | [docs/LST97_INTEGRATION.md](docs/LST97_INTEGRATION.md) |
 | 🔍 **PR Review Workflow** | Interactive approval workflow for PR reviews | [docs/PR_REVIEWER_WORKFLOW.md](docs/PR_REVIEWER_WORKFLOW.md) |
-| ⭐ **Task Master 0.24.0 Guide** | Complete integration guide for codebase-aware development | [docs/TASK_MASTER_INTEGRATION.md](docs/TASK_MASTER_INTEGRATION.md) |
+| ⭐ **Task Master Guide** | Complete integration guide for codebase-aware development | [docs/TASK_MASTER_INTEGRATION.md](docs/TASK_MASTER_INTEGRATION.md) |
 
 
 ## 🤝 **Community & Support**

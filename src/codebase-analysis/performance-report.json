@@ -1,0 +1,102 @@
+{
+  "timestamp": "2025-08-10T17:30:05.636Z",
+  "system": {
+    "startMemory": {
+      "rss": 42582016,
+      "heapTotal": 5865472,
+      "heapUsed": 3904848,
+      "external": 1414897,
+      "arrayBuffers": 10515
+    },
+    "startTime": 14.963542,
+    "cpuUsage": {
+      "user": 18195,
+      "system": 7364
+    },
+    "baseline": {
+      "nodeVersion": "v24.5.0",
+      "platform": "darwin",
+      "arch": "arm64",
+      "memory": {
+        "rss": 43778048,
+        "heapTotal": 6127616,
+        "heapUsed": 4407448,
+        "external": 1672309,
+        "arrayBuffers": 10531
+      },
+      "cpu": {
+        "user": 19830,
+        "system": 7556
+      },
+      "timestamp": 1754847005396
+    }
+  },
+  "benchmarks": [
+    {
+      "name": "Cold Start Performance",
+      "metric": "startup_time_ms",
+      "average": 1,
+      "min": 0,
+      "max": 3,
+      "iterations": 5,
+      "threshold": 2000,
+      "pass": true
+    },
+    {
+      "name": "Codebase Analysis Speed",
+      "metric": "analysis_time_ms",
+      "average": 0,
+      "min": 0,
+      "max": 1,
+      "iterations": 10,
+      "threshold": 5000,
+      "pass": true
+    },
+    {
+      "name": "CLI Responsiveness",
+      "metric": "response_time_ms",
+      "average": 24,
+      "details": {
+        "--help": 24,
+        "--version": 22,
+        "--dry-run": 25
+      },
+      "threshold": 3000,
+      "pass": true
+    },
+    {
+      "name": "Memory Usage Under Load",
+      "metric": "memory_increase_mb",
+      "value": 1,
+      "initial": 6,
+      "final": 7,
+      "threshold": 100,
+      "pass": true
+    },
+    {
+      "name": "Concurrent Operations",
+      "metric": "concurrent_time_ms",
+      "results": {
+        "1": 0,
+        "5": 0,
+        "10": 1
+      },
+      "threshold": 15000,
+      "pass": true
+    },
+    {
+      "name": "Large Project Handling",
+      "metric": "large_analysis_time_ms",
+      "value": 0,
+      "fileCount": 50,
+      "threshold": 10000,
+      "pass": true
+    }
+  ],
+  "summary": {
+    "totalBenchmarks": 6,
+    "passedBenchmarks": 6,
+    "overallPass": true,
+    "totalTime": 242
+  }
+}

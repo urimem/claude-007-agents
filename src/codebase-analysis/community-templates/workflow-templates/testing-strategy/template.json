@@ -1,0 +1,33 @@
+{
+  "name": "Testing Strategy",
+  "version": "1.0.0",
+  "category": "Workflow Templates",
+  "description": "Testing Strategy template for workflow templates",
+  "author": "Task Master Community",
+  "tags": [
+    "workflow templates",
+    "testing-strategy"
+  ],
+  "requirements": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "files": [
+    "src/**/*",
+    "package.json",
+    "README.md",
+    ".taskmaster/**/*"
+  ],
+  "variables": {
+    "projectName": "My Project",
+    "description": "A new project created with Task Master",
+    "author": "Your Name"
+  },
+  "postInstall": [
+    "npm install",
+    "task-master init"
+  ],
+  "communityRating": 4.5,
+  "downloadCount": 0,
+  "lastUpdated": "2025-08-10T17:43:23.079Z"
+}
