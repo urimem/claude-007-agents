@@ -37,7 +37,7 @@ class Claude007BootstrapEngine {
     /**
      * Main bootstrap orchestration method
      * @param {Object} options - Bootstrap options
-     * @param {boolean} options.setupMCP - Whether to create MCP configuration (default: true)
+     * @param {boolean} options.setupMCP - Whether to create MCP configuration (default: false, use global MCP config)
      * @param {boolean} options.setupTaskMaster - Whether to initialize Task Master (default: true)  
      * @param {boolean} options.dryRun - Only analyze, don't create files (default: false)
      */
@@ -440,8 +440,8 @@ class Claude007BootstrapEngine {
         console.log('  🤖 Deploying agent system...');
         await this.deployAgentSystem(setupPlan, deployment);
         
-        // Step 4: Configure MCP servers (only if requested)
-        if (options.setupMCP !== false && setupPlan.mcpServers.length > 0) {
+        // Step 4: Configure MCP servers (only if explicitly requested)
+        if (options.setupMCP === true && setupPlan.mcpServers.length > 0) {
             console.log('  🔗 Configuring MCP servers...');
             await this.configureMCPServers(setupPlan, deployment);
         }
@@ -559,8 +559,10 @@ claude
 
 ## MCP Integration
 
-This project is configured with:
+This project works with globally configured MCP servers:
 ${setupPlan.mcpServers.map(server => `- **${server}**: ${this.getMCPDescription(server)}`).join('\n')}
+
+*Note: MCP servers should be configured globally in Claude Code, not per-project.*
 
 ## Commit Attribution
 
