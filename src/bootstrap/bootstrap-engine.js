@@ -36,6 +36,10 @@ class Claude007BootstrapEngine {
 
     /**
      * Main bootstrap orchestration method
+     * @param {Object} options - Bootstrap options
+     * @param {boolean} options.setupMCP - Whether to create MCP configuration (default: true)
+     * @param {boolean} options.setupTaskMaster - Whether to initialize Task Master (default: true)  
+     * @param {boolean} options.dryRun - Only analyze, don't create files (default: false)
      */
     async bootstrap(options = {}) {
         console.log('🚀 Claude 007 Agents - Intelligent Bootstrap System');
@@ -397,7 +401,7 @@ class Claude007BootstrapEngine {
             additional.push('project-scaffolding', 'git-initialization');
         }
         
-        if (!analysis.existingSetup.taskMaster) {
+        if (!analysis.existingSetup.taskMaster && analysis.codebaseAnalysis.complexity >= 5) {
             additional.push('task-master-initialization');
         }
         
@@ -426,8 +430,8 @@ class Claude007BootstrapEngine {
         console.log('  📝 Creating CLAUDE.md configuration...');
         await this.createClaudeConfiguration(setupPlan, analysis, deployment);
         
-        // Step 2: Initialize Task Master
-        if (setupPlan.taskMasterLevel !== 'none') {
+        // Step 2: Initialize Task Master (if requested)
+        if (options.setupTaskMaster !== false && setupPlan.taskMasterLevel !== 'none') {
             console.log('  📊 Initializing Task Master system...');
             await this.initializeTaskMaster(setupPlan, deployment);
         }
@@ -436,9 +440,11 @@ class Claude007BootstrapEngine {
         console.log('  🤖 Deploying agent system...');
         await this.deployAgentSystem(setupPlan, deployment);
         
-        // Step 4: Configure MCP servers
-        console.log('  🔗 Configuring MCP servers...');
-        await this.configureMCPServers(setupPlan, deployment);
+        // Step 4: Configure MCP servers (only if requested)
+        if (options.setupMCP !== false && setupPlan.mcpServers.length > 0) {
+            console.log('  🔗 Configuring MCP servers...');
+            await this.configureMCPServers(setupPlan, deployment);
+        }
         
         // Step 5: Additional setup
         if (setupPlan.additionalSetup.length > 0) {
@@ -669,6 +675,12 @@ Co-Authored-By: Claude <noreply@anthropic.com>
                         await this.createProjectScaffolding();
                         deployment.filesCreated.push('README.md', '.gitignore');
                         break;
+                        
+                    case 'task-master-initialization':
+                        // Initialize Task Master in project
+                        await this.initializeTaskMasterInProject(deployment.projectRoot);
+                        deployment.scriptsExecuted.push('task-master-init');
+                        break;
                 }
             } catch (error) {
                 console.warn(`  ⚠️  Additional setup warning (${setup}): ${error.message}`);
@@ -875,6 +887,57 @@ node_modules/
 Thumbs.db
 `;
             await fs.writeFile(gitignorePath, gitignore);
+        }
+    }
+
+    async initializeTaskMasterInProject(projectRoot) {
+        try {
+            const { execSync } = require('child_process');
+            
+            // Check if task-master is available
+            try {
+                execSync('task-master --version', { stdio: 'ignore' });
+            } catch {
+                console.log('  📋 Task Master CLI not found - skipping initialization');
+                console.log('  💡 Install with: npm install -g task-master-ai');
+                return;
+            }
+            
+            // Initialize Task Master
+            console.log('  📋 Initializing Task Master...');
+            execSync('task-master init', { cwd: projectRoot, stdio: 'inherit' });
+            
+            // Create basic .taskmaster directory structure
+            await fs.mkdir(path.join(projectRoot, '.taskmaster', 'docs'), { recursive: true });
+            
+            // Create example PRD template
+            const examplePRD = `# Project Requirements Document
+
+## Project Overview
+[Describe your project goals and objectives]
+
+## Features
+1. [Feature 1 description]
+2. [Feature 2 description]
+3. [Feature 3 description]
+
+## Technical Requirements
+- [Technical requirement 1]
+- [Technical requirement 2]
+
+## Acceptance Criteria
+- [ ] [Criteria 1]
+- [ ] [Criteria 2]
+
+## Notes
+[Additional notes and considerations]
+`;
+            
+            await fs.writeFile(path.join(projectRoot, '.taskmaster', 'docs', 'prd.txt'), examplePRD);
+            console.log('  📄 Created example PRD template at .taskmaster/docs/prd.txt');
+            
+        } catch (error) {
+            console.warn(`  ⚠️  Task Master initialization warning: ${error.message}`);
         }
     }
 
