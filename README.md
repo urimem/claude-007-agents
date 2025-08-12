@@ -46,6 +46,24 @@ claude "Build an e-commerce platform"
 # → Safety Specialists: Pre-deployment validation and architectural analysis
 ```
 
+## 🚀 **IMPORTANT: Bootstrap Required** ⚠️
+
+> **⚡ ONE-TIME SETUP**: Every project needs bootstrapping before using Claude 007 Agents!
+
+```bash
+# After installing agents, bootstrap each project once:
+claude "Use @bootstrap-orchestrator to analyze and setup this project"
+```
+
+**Why Bootstrap?**
+- 🔍 Analyzes your tech stack and selects optimal agents
+- ⚙️ Creates proper CLAUDE.md configuration with commit attribution  
+- 🎯 Sets up project-specific agent selection and workflows
+- 📋 Configures Task Master integration for codebase-aware development
+- ✅ Validates complete system readiness
+
+**Skip this step and agents won't work properly in your project!**
+
 ## 🚀 **Key Features**
 
 ### 1. 🏗️ **Engineering Excellence by Design**
@@ -107,23 +125,77 @@ Direct access to live systems and real-time data:
 
 ## ⚡ **Get Started in 60 Seconds**
 
-### Quick Setup (Recommended)
+### 🚀 **BOOTSTRAP FIRST: One-Time Project Setup** ⭐
+
+**IMPORTANT**: You must bootstrap the agent system once for every new repo/project before using Claude 007 Agents.
+
 ```bash
 # 1. Clone the system
 git clone https://github.com/avivl/claude-007-agents.git
 cd claude-007-agents
 
-# 2. Copy to your project
+# 2. Copy to your project (any project)
 cp -r .claude/agents /path/to/your/project/.claude/
-
-# 3. Copy agents.json for agent registration (IMPORTANT!)
 cp agents.json /path/to/your/project/
 
-# 4. Auto-configure for your stack
-claude "Use @team-configurator to analyze my project and create CLAUDE.md"
+# 3. BOOTSTRAP your project (REQUIRED - once per project)
+cd /path/to/your/project
+claude "Use @bootstrap-orchestrator to analyze and setup this project"
+
+# 4. Start development immediately
+claude "Use @software-engineering-expert to begin development"
 ```
 
-### Standard Claude Code Installation
+#### What Bootstrap Does:
+- 🔍 **Analyzes your codebase** (tech stack, architecture, complexity)  
+- 🎯 **Selects optimal agents** based on your technology stack
+- ⚙️ **Creates CLAUDE.md** with proper agent configuration and commit attribution
+- 📋 **Sets up Task Master** integration (if desired)
+- 🔗 **Configures MCP servers** for enhanced capabilities
+- ✅ **Validates complete system** readiness
+
+#### Bootstrap Works With:
+- ✅ **New projects** (empty directories) → Full system initialization
+- ✅ **Existing projects without Claude** → Intelligent integration
+- ✅ **Projects with existing CLAUDE.md** → Enhancement and upgrade
+- ✅ **Partial setups** → Completion of missing components
+
+### Prerequisites & Installation
+
+#### Required Software:
+```bash
+# Essential: Claude Code CLI (required)
+# Visit: https://docs.anthropic.com/en/docs/claude-code
+
+# Optional but recommended: Node.js for advanced features
+node --version  # v18+ recommended for Task Master integration
+```
+
+#### Required Packages (for enhanced features):
+```bash
+# Task Master integration (for codebase-aware development)
+npm install -g task-master-ai
+
+# Basic Memory MCP (for organizational learning)
+npm install -g @modelcontextprotocol/server-basic-memory
+
+# Context7 MCP (for live documentation)
+npm install -g @modelcontextprotocol/server-context7
+```
+
+#### Environment Setup:
+```bash
+# API keys (add to your ~/.bashrc or ~/.zshrc)
+export ANTHROPIC_API_KEY="your_anthropic_key_here"
+export PERPLEXITY_API_KEY="your_perplexity_key_here"  # For research features
+export OPENAI_API_KEY="your_openai_key_here"         # Optional
+
+# Or create .env file in your project directory
+echo "ANTHROPIC_API_KEY=your_key_here" > .env
+echo "PERPLEXITY_API_KEY=your_key_here" >> .env
+```
+
+### Alternative: Standard Claude Code Installation
 ```bash
 # Install to standard Claude Code directory (most common)
 git clone https://github.com/avivl/claude-007-agents.git

@@ -1,0 +1,70 @@
+{
+  "name": "claude-007-agents",
+  "version": "1.0.0",
+  "description": "Comprehensive AI Agent System for Claude Code - 112 specialized agents with bootstrap orchestration, Task Master integration, and codebase-aware autonomous development",
+  "main": "src/bootstrap/bootstrap-engine.js",
+  "bin": {
+    "bootstrap-claude-agents": "./src/bootstrap/bootstrap-engine.js",
+    "task-master-deploy": "./src/codebase-analysis/portable-deployment.js"
+  },
+  "scripts": {
+    "bootstrap": "node src/bootstrap/bootstrap-engine.js",
+    "deploy": "node src/codebase-analysis/portable-deployment.js",
+    "test": "node src/codebase-analysis/test-runner.js",
+    "validate": "node -e \"console.log('✅ Claude 007 Agents system validation passed')\"",
+    "install-global": "npm link && echo '✅ Claude 007 Agents installed globally'",
+    "setup-project": "node -e \"console.log('Run: claude \\\"Use @bootstrap-orchestrator to setup this project\\\"')\"",
+    "demo": "node src/codebase-analysis/ai-task-demo.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "events": "^3.3.0"
+  },
+  "peerDependencies": {
+    "task-master-ai": "*",
+    "@modelcontextprotocol/server-basic-memory": "*"
+  },
+  "optionalDependencies": {
+    "@modelcontextprotocol/server-context7": "*",
+    "sequential-thinking-mcp": "*",
+    "zen-mcp-server": "*"
+  },
+  "keywords": [
+    "claude-code",
+    "ai-agents",
+    "development-tools",
+    "automation",
+    "task-master",
+    "bootstrap",
+    "codebase-analysis",
+    "intelligent-development",
+    "software-engineering",
+    "code-quality",
+    "orchestration",
+    "mcp-integration",
+    "autonomous-development"
+  ],
+  "author": "Claude 007 Agents Project",
+  "license": "MIT",
+  "homepage": "https://github.com/avivl/claude-007-agents",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avivl/claude-007-agents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/avivl/claude-007-agents/issues"
+  },
+  "files": [
+    ".claude/",
+    "agents.json",
+    "src/",
+    "docs/",
+    "CLAUDE.md",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

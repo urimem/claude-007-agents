@@ -1,0 +1,105 @@
+name: Validate Claude 007 Agents System
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-agents:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Validate Agent Definitions
+      run: |
+        echo "🤖 Validating Claude 007 Agents system..."
+        
+        # Check required files exist
+        [ -f "CLAUDE.md" ] || { echo "❌ CLAUDE.md missing"; exit 1; }
+        [ -f "agents.json" ] || { echo "❌ agents.json missing"; exit 1; }
+        [ -d ".claude/agents" ] || { echo "❌ .claude/agents directory missing"; exit 1; }
+        
+        # Count agent files
+        AGENT_COUNT=$(find .claude/agents -name "*.md" | wc -l)
+        echo "📊 Found $AGENT_COUNT agent definitions"
+        
+        # Validate agents.json format
+        if command -v jq > /dev/null; then
+          cat agents.json | jq . > /dev/null || { echo "❌ agents.json invalid JSON"; exit 1; }
+          echo "✅ agents.json is valid JSON"
+        fi
+        
+        echo "✅ Basic validation passed"
+  
+  validate-javascript:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+    
+    - name: Validate JavaScript Files
+      run: |
+        echo "🔍 Validating JavaScript files..."
+        
+        # Check JavaScript syntax
+        for js_file in $(find src -name "*.js"); do
+          echo "Checking $js_file..."
+          node -c "$js_file" || { echo "❌ Syntax error in $js_file"; exit 1; }
+        done
+        
+        # Test bootstrap engine
+        if [ -f "src/bootstrap/bootstrap-engine.js" ]; then
+          echo "🧪 Testing bootstrap engine..."
+          node -e "
+            const BootstrapEngine = require('./src/bootstrap/bootstrap-engine.js');
+            const engine = new BootstrapEngine('/tmp/test');
+            console.log('✅ Bootstrap engine loads successfully');
+            console.log('📋 Scenarios:', Object.keys(engine.scenarios).length);
+          "
+        fi
+        
+        # Test codebase analyzer
+        if [ -f "src/codebase-analysis/codebase-analyzer.js" ]; then
+          echo "🔬 Testing codebase analyzer..."
+          node -e "
+            const CodebaseAnalyzer = require('./src/codebase-analysis/codebase-analyzer.js');
+            const analyzer = new CodebaseAnalyzer();
+            console.log('✅ Codebase analyzer loads successfully');
+          "
+        fi
+        
+        echo "✅ JavaScript validation passed"
+  
+  validate-documentation:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Validate Documentation
+      run: |
+        echo "📖 Validating documentation..."
+        
+        # Check README structure
+        if [ -f "README.md" ]; then
+          grep -q "Bootstrap" README.md || { echo "⚠️ README missing Bootstrap section"; }
+          grep -q "Installation" README.md || { echo "⚠️ README missing Installation section"; }
+          grep -q "Quick Start" README.md || { echo "⚠️ README missing Quick Start section"; }
+        fi
+        
+        # Check agent definitions have required headers
+        for agent_file in $(find .claude/agents -name "*.md"); do
+          if ! grep -q "^---" "$agent_file"; then
+            echo "⚠️ $agent_file missing YAML frontmatter"
+          fi
+        done
+        
+        echo "✅ Documentation validation completed"
