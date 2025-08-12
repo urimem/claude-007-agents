@@ -624,7 +624,7 @@ Co-Authored-By: Claude <noreply@anthropic.com>
             await fs.mkdir(path.join(claudeDir, 'agents', 'universal'), { recursive: true });
             
             // Copy bootstrap orchestrator agent
-            const bootstrapAgent = path.join(__dirname, '../.claude/agents/universal/bootstrap-orchestrator.md');
+            const bootstrapAgent = path.join(__dirname, '../../.claude/agents/universal/bootstrap-orchestrator.md');
             await fs.copyFile(bootstrapAgent, path.join(claudeDir, 'agents', 'universal', 'bootstrap-orchestrator.md'));
             
             deployment.filesCreated.push('.claude/agents/universal/bootstrap-orchestrator.md');
