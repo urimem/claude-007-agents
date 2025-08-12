@@ -1,3 +1,14 @@
+## CRITICAL: COMMIT MESSAGE REQUIREMENTS
+
+⚠️ **MANDATORY FORMAT**: `type(scope): description - @agent1 @agent2`
+
+## Pre-Commit Checklist
+1. ✅ Identify contributing agents
+2. ✅ Format: `type(scope): description - @agent1 @agent2` 
+3. ✅ Include standard attribution footer
+
+---
+
 # Task Master - Enhanced Configuration Template
 
 *This template enhances existing Claude Code projects with Task Master capabilities and codebase-aware intelligence.*
@@ -213,6 +224,24 @@
 - **Configuration Templates**: {{TEMPLATE_COUNT}}
 - **Estimated Setup Time**: {{SETUP_TIME}} minutes
 - **Performance Improvement**: {{PERFORMANCE_IMPROVEMENT}}%
+
+## Commit Attribution
+
+**MANDATORY**: `type(scope): description - @agent1 @agent2`
+
+### Enhanced Commit Examples
+- `feat(codebase): implement analysis engine - @codebase-analyzer @software-engineering-expert`
+- `enhance(prd): add architectural alignment - @intelligent-prd-processor @project-analyst`
+- `optimize(performance): improve initialization speed - @performance-optimizer @system-architect`
+- `integrate(mcp): add Task Master coordination - @orchestrator @team-configurator`
+
+### Standard Footer
+All commits should include:
+```
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+```
 
 ---
 *Enhanced by Task Master Codebase-Aware Intelligence System*
