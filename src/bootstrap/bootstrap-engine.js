@@ -622,21 +622,73 @@ Co-Authored-By: Claude <noreply@anthropic.com>
      * Deploy agent system files
      */
     async deployAgentSystem(setupPlan, deployment) {
-        // Copy essential agent definitions if .claude directory doesn't exist
+        // Check if agents are already available globally or locally
+        const hasGlobalAgents = await this.checkForGlobalAgents();
+        const hasLocalAgents = await this.checkForLocalAgents();
+        
+        console.log(`  🔍 Agent availability: Global=${hasGlobalAgents}, Local=${hasLocalAgents}`);
+        
+        // If agents are already available, skip file deployment
+        if (hasGlobalAgents || hasLocalAgents) {
+            console.log('  ✅ Agents already available - skipping file deployment');
+            return;
+        }
+        
+        // Only deploy if no agents are available anywhere
+        console.log('  📁 No agents found - creating minimal agent structure');
         const claudeDir = path.join(this.projectRoot, '.claude');
         
         try {
-            await fs.access(claudeDir);
-        } catch {
-            // Create .claude directory structure
+            // Create minimal .claude directory structure
             await fs.mkdir(path.join(claudeDir, 'agents', 'universal'), { recursive: true });
             
-            // Copy bootstrap orchestrator agent
+            // Only copy bootstrap orchestrator (essential for system management)
             const bootstrapAgent = path.join(__dirname, '../../.claude/agents/universal/bootstrap-orchestrator.md');
             await fs.copyFile(bootstrapAgent, path.join(claudeDir, 'agents', 'universal', 'bootstrap-orchestrator.md'));
             
             deployment.filesCreated.push('.claude/agents/universal/bootstrap-orchestrator.md');
+            
+            console.log('  ⚠️  Minimal agent setup created - consider installing full agent system');
+            console.log('  💡 Run: cp -r .claude/agents/* ~/.claude/agents/ for global installation');
+            
+        } catch (error) {
+            console.warn(`  ⚠️  Could not create agent structure: ${error.message}`);
         }
+    }
+    
+    /**
+     * Check if agents are available globally
+     */
+    async checkForGlobalAgents() {
+        const globalPaths = [
+            path.join(process.env.HOME || process.env.USERPROFILE || '', '.claude', 'agents'),
+            path.join(process.env.HOME || process.env.USERPROFILE || '', '.local', 'share', 'claude-agents', 'agents')
+        ];
+        
+        for (const globalPath of globalPaths) {
+            try {
+                await fs.access(path.join(globalPath, 'agents.json'));
+                return true;
+            } catch {}
+        }
+        return false;
+    }
+    
+    /**
+     * Check if agents are available locally
+     */
+    async checkForLocalAgents() {
+        try {
+            await fs.access(path.join(this.projectRoot, '.claude', 'agents', 'agents.json'));
+            return true;
+        } catch {}
+        
+        try {
+            await fs.access(path.join(this.projectRoot, 'agents.json'));
+            return true;
+        } catch {}
+        
+        return false;
     }
 
     /**
