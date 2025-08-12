@@ -401,7 +401,7 @@ class Claude007BootstrapEngine {
             additional.push('project-scaffolding', 'git-initialization');
         }
         
-        if (!analysis.existingSetup.taskMaster && analysis.codebaseAnalysis.complexity >= 5) {
+        if (!analysis.existingSetup.taskMaster) {
             additional.push('task-master-initialization');
         }
         
@@ -680,7 +680,8 @@ Co-Authored-By: Claude <noreply@anthropic.com>
                         
                     case 'task-master-initialization':
                         // Initialize Task Master in project
-                        await this.initializeTaskMasterInProject(deployment.projectRoot);
+                        console.log('  📋 Executing Task Master initialization...');
+                        await this.initializeTaskMasterInProject(this.projectRoot);
                         deployment.scriptsExecuted.push('task-master-init');
                         break;
                 }
@@ -896,21 +897,45 @@ Thumbs.db
         try {
             const { execSync } = require('child_process');
             
-            // Check if task-master is available
+            // Always create basic Task Master directory structure
+            await fs.mkdir(path.join(projectRoot, '.taskmaster', 'docs'), { recursive: true });
+            await fs.mkdir(path.join(projectRoot, '.taskmaster', 'tasks'), { recursive: true });
+            
+            // Check if task-master CLI is available
+            let cliAvailable = false;
             try {
                 execSync('task-master --version', { stdio: 'ignore' });
+                cliAvailable = true;
             } catch {
-                console.log('  📋 Task Master CLI not found - skipping initialization');
+                console.log('  📋 Task Master CLI not found - creating basic structure');
                 console.log('  💡 Install with: npm install -g task-master-ai');
-                return;
             }
             
-            // Initialize Task Master
-            console.log('  📋 Initializing Task Master...');
-            execSync('task-master init', { cwd: projectRoot, stdio: 'inherit' });
-            
-            // Create basic .taskmaster directory structure
-            await fs.mkdir(path.join(projectRoot, '.taskmaster', 'docs'), { recursive: true });
+            if (cliAvailable) {
+                // Initialize Task Master with CLI
+                console.log('  📋 Initializing Task Master with CLI...');
+                execSync('task-master init', { cwd: projectRoot, stdio: 'inherit' });
+            } else {
+                // Create basic config manually
+                const basicConfig = {
+                    "models": {
+                        "main": "claude-3-5-sonnet-20241022",
+                        "research": "perplexity-llama-3.1-sonar-large-128k-online", 
+                        "fallback": "gpt-4o-mini"
+                    },
+                    "rules": ["cursor", "claude"],
+                    "project": {
+                        "name": path.basename(projectRoot),
+                        "initialized": new Date().toISOString()
+                    }
+                };
+                
+                await fs.writeFile(
+                    path.join(projectRoot, '.taskmaster', 'config.json'), 
+                    JSON.stringify(basicConfig, null, 2)
+                );
+                console.log('  ⚙️  Created basic Task Master configuration');
+            }
             
             // Create example PRD template
             const examplePRD = `# Project Requirements Document
@@ -933,10 +958,40 @@ Thumbs.db
 
 ## Notes
 [Additional notes and considerations]
+
+## Getting Started
+After editing this PRD, run:
+\`\`\`bash
+# If you have task-master CLI installed:
+task-master parse-prd .taskmaster/docs/prd.txt
+
+# Or use Claude Code:
+claude "Use @task-orchestrator to generate tasks from this PRD"
+\`\`\`
 `;
             
             await fs.writeFile(path.join(projectRoot, '.taskmaster', 'docs', 'prd.txt'), examplePRD);
             console.log('  📄 Created example PRD template at .taskmaster/docs/prd.txt');
+            
+            // Create basic tasks.json if CLI not available
+            if (!cliAvailable) {
+                const basicTasks = {
+                    "version": "1.0.0",
+                    "tasks": [],
+                    "metadata": {
+                        "created": new Date().toISOString(),
+                        "source": "bootstrap-orchestrator"
+                    }
+                };
+                
+                await fs.writeFile(
+                    path.join(projectRoot, '.taskmaster', 'tasks', 'tasks.json'), 
+                    JSON.stringify(basicTasks, null, 2)
+                );
+                console.log('  📋 Created basic tasks database');
+            }
+            
+            console.log('  ✅ Task Master structure initialized successfully');
             
         } catch (error) {
             console.warn(`  ⚠️  Task Master initialization warning: ${error.message}`);

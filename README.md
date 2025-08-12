@@ -167,8 +167,9 @@ claude "Use @software-engineering-expert to begin development"
 # Essential: Claude Code CLI (required)
 # Visit: https://docs.anthropic.com/en/docs/claude-code
 
-# Optional but recommended: Node.js for advanced features
-node --version  # v18+ recommended for Task Master integration
+# Essential: Node.js for bootstrap system and advanced features
+node --version  # v18+ REQUIRED for bootstrap engine and Task Master integration
+npm --version   # npm v6+ required for package management
 ```
 
 #### Required Packages (for enhanced features):
@@ -181,6 +182,9 @@ npm install -g @modelcontextprotocol/server-basic-memory
 
 # Context7 MCP (for live documentation)
 npm install -g @modelcontextprotocol/server-context7
+
+# Bootstrap System Dependencies (automatically handled)
+# These are included when you clone the repo - no separate installation needed
 ```
 
 #### Environment Setup:
@@ -189,6 +193,7 @@ npm install -g @modelcontextprotocol/server-context7
 export ANTHROPIC_API_KEY="your_anthropic_key_here"
 export PERPLEXITY_API_KEY="your_perplexity_key_here"  # For research features
 export OPENAI_API_KEY="your_openai_key_here"         # Optional
+export GOOGLE_API_KEY="your_gemini_key_here"         # Optional (for Zen MCP)
 
 # Or create .env file in your project directory
 echo "ANTHROPIC_API_KEY=your_key_here" > .env
@@ -213,38 +218,43 @@ ln -sf "$(pwd)/agents.json" ~/.claude/agents/
 claude "Use @code-archaeologist-time-traveler to analyze git history"
 ```
 
-### 🚀 **NEW: Task Master Portable Deployment** ⭐
-**Universal deployment that works with ANY project - no existing Claude Code setup required!**
+### 🚀 **NEW: Intelligent Bootstrap System** ⭐
+**Universal deployment that works with ANY project - automatically detects and configures optimal agent setup!**
 
 ```bash
-# One-command deployment for any project
-npx @claude-007/task-master-portable /path/to/any/project
+# Command-line bootstrap (after cloning repo)
+node src/bootstrap/bootstrap-engine.js /path/to/any/project
 
-# Or install globally and use anywhere
-npm install -g @claude-007/task-master-portable
-tm-deploy                    # Deploy to current directory
-tm-deploy /path/to/project   # Deploy to specific project
-tm-deploy --mode=standalone  # Complete setup for projects without Claude Code
-tm-deploy --prd=./requirements.txt  # Include PRD processing
+# Or use via package.json command
+npm run bootstrap /path/to/your/project
 
-# Quick installation script
-curl -sSL https://raw.githubusercontent.com/avivl/claude-007-agents/main/src/codebase-analysis/install.sh | bash
+# Or use directly in Claude Code (RECOMMENDED)
+claude "Use @bootstrap-orchestrator to analyze and setup this project"
+
+# Advanced options
+node src/bootstrap/bootstrap-engine.js --setupMCP=true --setupTaskMaster=true /path/to/project
 ```
 
-#### What the Portable Deployment Does:
+#### What the Bootstrap System Does:
 - 🔍 **Analyzes your codebase** (tech stack, architecture, complexity)
-- 🎯 **Selects optimal agents** based on your technology stack
-- ⚙️ **Creates configuration files** (CLAUDE.md, .claude/settings.json, .mcp.json)
-- 📋 **Sets up Task Master** with codebase-aware features
-- 📖 **Generates usage guide** tailored to your project
+- 🎯 **Selects optimal agents** based on your technology stack and project scenario
+- ⚙️ **Creates configuration files** (CLAUDE.md with commit attribution requirements)
+- 📋 **Sets up Task Master** with codebase-aware features (if requested)
+- 🔗 **Configures MCP servers** (optional - respects global MCP configuration)
+- ✅ **Validates complete system** readiness with comprehensive checks
+- 📖 **Generates next steps** tailored to your specific project scenario
 
-#### Works with ANY project:
-- ✅ **React/Next.js** applications → Gets @react-expert, @nextjs-expert
-- ✅ **Node.js/Express** APIs → Gets @nodejs-expert, @fastify-expert  
-- ✅ **Python/Django** projects → Gets @django-expert, @python-expert
-- ✅ **Go/Gin** applications → Gets @gin-expert, @go-expert
-- ✅ **Ruby/Rails** projects → Gets @rails-expert, @ruby-expert
-- ✅ **Any other project** → Gets @software-engineering-expert + optimal agents
+#### Works with ANY project scenario:
+- 🆕 **New/Empty Projects** → Complete system initialization with scaffolding
+- 🏗️ **Existing Projects (No Claude)** → Intelligent integration without disruption
+- 🔧 **Projects with Claude Setup** → Enhancement and upgrade of existing configuration
+- 🔄 **Partial Setups** → Completion of missing components and validation
+- ✅ **React/Next.js** → Gets @react-expert, @nextjs-expert, @typescript-cockatiel-resilience
+- ✅ **Node.js APIs** → Gets @nodejs-expert, @fastify-expert, @typescript-pino-logging  
+- ✅ **Python/Django** → Gets @django-expert, @python-hyx-resilience, @fastapi-expert
+- ✅ **Go Applications** → Gets @gin-expert, @go-zap-logging, @go-resilience-engineer
+- ✅ **Ruby/Rails** → Gets @rails-expert, @rails-api-developer
+- ✅ **Any Stack** → Gets @software-engineering-expert + optimal tech-specific agents
 
 ### Global Installation (Power Users)
 ```bash
@@ -352,43 +362,41 @@ claude "Use @code-archaeologist-time-traveler to analyze the evolution of this a
 
 </div>
 
-## 🎯 **Portable Deployment Examples**
+## 🎯 **Bootstrap System Examples**
 
-### Real-World Deployment Scenarios
+### Real-World Bootstrap Scenarios
 
 #### **Scenario 1: External React Project**
 ```bash
 # Developer inherits existing React project with no Claude Code setup
 cd /path/to/existing-react-app
 
-# One command creates complete intelligent development setup
-tm-deploy --mode=standalone
-# ✅ Creates CLAUDE.md with @react-expert, @nodejs-expert, @test-automation-expert
-# ✅ Generates .claude/settings.json with React-optimized configuration
-# ✅ Sets up .mcp.json with Task Master integration
-# ✅ Creates usage guide: CLAUDE_TASKMASTER_GUIDE.md
+# Bootstrap analyzes and sets up complete intelligent development environment
+claude "Use @bootstrap-orchestrator to analyze and setup this project"
+# 🔍 Phase 1: Detects React + Node.js stack, existing complexity level 6/10
+# 🎯 Phase 2: Selects @react-expert, @nodejs-expert, @typescript-cockatiel-resilience, @test-automation-expert
+# 🚀 Phase 3: Creates CLAUDE.md with React-optimized configuration and commit attribution
+# 🧪 Phase 4: Validates system readiness, provides React-specific next steps
 
-# Start using immediately
-claude
-"Use @react-expert to analyze this component architecture"
+# Start using immediately - agents are already configured
+claude "Use @react-expert to analyze this component architecture"
 ```
 
 #### **Scenario 2: Enterprise Django Project**
 ```bash
-# Enterprise team wants Task Master for Django project
+# Enterprise team wants comprehensive setup for Django project
 cd /path/to/django-enterprise-app
 
-# Deploy with enterprise configuration
-tm-deploy --mode=enhanced --prd=./business_requirements.txt
-# ✅ Analyzes Django/Python codebase patterns
-# ✅ Configures @django-expert, @security-specialist, @database-architect
-# ✅ Processes PRD to generate initial task list
-# ✅ Sets up enterprise-grade MCP configuration
+# Bootstrap detects enterprise complexity and configures accordingly
+claude "Use @bootstrap-orchestrator to analyze and setup this project"
+# 🔍 Phase 1: Detects Django + Python stack, high complexity (8/10), enterprise scenario
+# 🎯 Phase 2: Selects @django-expert, @security-specialist, @database-architect, @performance-optimizer
+# 🚀 Phase 3: Creates enterprise-grade CLAUDE.md with commit attribution and security requirements
+# 🧪 Phase 4: Validates system, recommends Task Master initialization for project management
 
-# Immediate productivity boost
-claude  
-"Use @django-expert to review our ORM patterns and suggest optimizations"
-"Use @security-specialist to audit authentication implementation"
+# Immediate productivity boost with proper agent coordination
+claude "Use @django-expert to review our ORM patterns and suggest optimizations"
+claude "Use @security-specialist to audit authentication implementation"
 ```
 
 #### **Scenario 3: Open Source Go Project**
@@ -396,17 +404,16 @@ claude
 # Open source Go project wants contributor-friendly setup
 cd /path/to/go-opensource-project
 
-# Minimal deployment for all contributors
-tm-deploy --mode=minimal
-# ✅ Lightweight setup with @go-expert, @gin-expert (if using Gin)
-# ✅ Creates contributor-friendly CLAUDE.md
-# ✅ Optimized for Go development patterns
-# ✅ No complex dependencies required
+# Bootstrap detects open source scenario and optimizes for contributors
+claude "Use @bootstrap-orchestrator to analyze and setup this project"
+# 🔍 Phase 1: Detects Go stack, moderate complexity (5/10), open source patterns
+# 🎯 Phase 2: Selects @gin-expert, @go-zap-logging, @go-resilience-engineer, @test-automation-expert
+# 🚀 Phase 3: Creates contributor-friendly CLAUDE.md with clear commit attribution rules
+# 🧪 Phase 4: Validates setup, provides Go-specific development guidelines
 
 # Contributors can immediately use intelligent assistance
-claude
-"Use @go-expert to explain this concurrency pattern"
-"Use @code-reviewer to check this PR before submitting"
+claude "Use @gin-expert to explain this middleware pattern"
+claude "Use @code-reviewer to check this PR before submitting"
 ```
 
 #### **Scenario 4: Full-Stack Next.js + Python API**
@@ -414,82 +421,79 @@ claude
 # Complex full-stack project with multiple technologies
 cd /path/to/fullstack-project
 
-# Auto-detects both frontend and backend
-tm-deploy --verbose
-# 🔍 Analyzes: "Next.js frontend + FastAPI backend detected"
-# ✅ Configures: @nextjs-expert, @react-expert, @fastapi-expert, @database-architect
-# ✅ Creates: Architecture-aware task management
-# ✅ Sets up: Cross-stack development workflows
+# Bootstrap intelligently detects and configures multi-stack setup
+claude "Use @bootstrap-orchestrator to analyze and setup this project"
+# 🔍 Phase 1: Detects Next.js frontend + FastAPI backend, high complexity (7/10)
+# 🎯 Phase 2: Selects @nextjs-expert, @react-expert, @fastapi-expert, @database-architect, @api-architect
+# 🚀 Phase 3: Creates full-stack CLAUDE.md with coordinated commit attribution for both stacks
+# 🧪 Phase 4: Validates cross-stack compatibility, recommends parallel development workflows
 
-# Coordinated full-stack development
-claude
-"Use @nextjs-expert and @fastapi-expert to coordinate API integration"
+# Coordinated full-stack development with proper orchestration
+claude "Use @vibe-coding-coordinator to coordinate full-stack user authentication implementation"
+claude "Use @parallel-coordinator to orchestrate @nextjs-expert and @fastapi-expert for API integration"
 ```
 
-### Deployment Modes Explained
+### Bootstrap Scenarios Explained
 
-#### **Auto Mode** (Default - Recommended)
+#### **New Project Scenario** (Empty/New Directories)
+- 🔍 **Detection**: Empty directory or minimal project structure
+- 🎯 **Configuration**: Complete system initialization with project scaffolding
+- ⚙️ **Setup**: Creates CLAUDE.md, basic project files, git initialization
+- 📋 **Task Master**: Full integration with enhanced capabilities
+- ✅ **Result**: Ready-to-develop project with complete Claude 007 ecosystem
+
+#### **Existing Project (No Claude)** (Most Common)
+- 🔍 **Detection**: Existing codebase without Claude Code setup
+- 🎯 **Configuration**: Intelligent integration based on tech stack analysis
+- ⚙️ **Setup**: Non-disruptive CLAUDE.md creation with optimal agents
+- 📋 **Task Master**: Optional integration based on project complexity
+- ✅ **Result**: Enhanced existing project with AI development assistance
+
+#### **Existing Claude Setup** (Enhancement Mode)
+- 🔍 **Detection**: Existing CLAUDE.md or .claude directory found
+- 🎯 **Configuration**: Enhancement and upgrade of current setup
+- ⚙️ **Setup**: Merges with existing configuration, adds missing components
+- 📋 **Task Master**: Upgrades to codebase-aware intelligence
+- ✅ **Result**: Enhanced existing setup with latest Claude 007 features
+
+#### **Partial Setup** (Completion Mode)
+- 🔍 **Detection**: Incomplete Claude Code configuration detected
+- 🎯 **Configuration**: Completes missing components and validates system
+- ⚙️ **Setup**: Fills gaps in agent configuration, fixes broken setups
+- 📋 **Task Master**: Adds if missing, validates if present
+- ✅ **Result**: Complete, validated, and operational Claude 007 system
+
+### Advanced Bootstrap Options
+
+#### **Command-Line Bootstrap Options**
 ```bash
-tm-deploy                    # Detects project and chooses optimal mode
-```
-- 🔍 Analyzes existing setup (Claude Code, Task Master, MCP)
-- 🎯 Selects best configuration automatically
-- ⚡ Fastest path to productivity
+# Setup MCP servers explicitly (respects global Claude MCP config by default)
+node src/bootstrap/bootstrap-engine.js --setupMCP=true /path/to/project
 
-#### **Standalone Mode** (For Fresh Projects)
-```bash
-tm-deploy --mode=standalone
-```
-- 🏗️ Complete setup from scratch
-- 📋 Creates all necessary configuration files
-- 🤖 Includes essential agents for your tech stack
-- 📖 Generates comprehensive usage guide
+# Skip Task Master integration
+node src/bootstrap/bootstrap-engine.js --setupTaskMaster=false /path/to/project
 
-#### **Enhanced Mode** (For Existing Claude Projects)
-```bash
-tm-deploy --mode=enhanced
-```
-- 🔧 Enhances existing Claude Code setup
-- 📈 Adds Task Master capabilities
-- 🧠 Integrates with existing agent configurations
-- 🚀 Upgrades to codebase-aware intelligence
-
-#### **Minimal Mode** (Lightweight)
-```bash
-tm-deploy --mode=minimal
-```
-- ⚡ Minimal footprint
-- 🎯 Essential agents only
-- 📦 No complex dependencies
-- 🚀 Quick start for simple projects
-
-### Advanced Deployment Options
-
-#### **With PRD Processing**
-```bash
-# Generate tasks from requirements document
-tm-deploy --prd=./requirements.txt
-tm-deploy --prd=./user_stories.md
-tm-deploy --prd=./project_spec.doc
+# Dry run to see what would be configured
+node src/bootstrap/bootstrap-engine.js --dryRun=true /path/to/project
 ```
 
-#### **Custom Configuration**
+#### **Via Claude Code (Recommended)**
 ```bash
-# Skip specific components
-tm-deploy --skip-mcp          # No MCP server setup
-tm-deploy --skip-claude       # No Claude Code configuration  
-tm-deploy --skip-taskmaster   # No Task Master integration
+# Standard bootstrap (auto-detects optimal configuration)
+claude "Use @bootstrap-orchestrator to analyze and setup this project"
 
-# Dry run to see what would be deployed
-tm-deploy --dry-run --verbose
+# Request specific features
+claude "Use @bootstrap-orchestrator with Task Master integration for this Django project"
+claude "Use @bootstrap-orchestrator to upgrade my existing Claude setup"
 ```
 
-#### **Multiple Projects Batch Deployment**
+#### **Multiple Projects Bootstrap**
 ```bash
-# Deploy to multiple projects
+# Bootstrap multiple projects efficiently
 for project in ~/projects/*/; do
-  echo "Deploying to $project"
-  tm-deploy "$project" --mode=auto
+  echo "Bootstrapping $project"
+  cd "$project"
+  claude "Use @bootstrap-orchestrator to analyze and setup this project"
 done
 ```
 
@@ -513,12 +517,13 @@ done
 
 | **Metric** | **Value** | **Notes** |
 |------------|-----------|------------|
-| **🤖 Specialized Agents** | 112 | Various technology domains + Task Master |
-| **📂 Categories** | 17 | Organized by specialization |
-| **🔗 MCP Integrations** | 5 | Live system connectivity + reasoning |
-| **🏗️ Frameworks Supported** | 20+ | Major web frameworks |
-| **⚡ Setup Time** | ~5 minutes | Quick installation |
+| **🤖 Specialized Agents** | 117 | Various technology domains + Task Master + Bootstrap |
+| **📂 Categories** | 18 | Organized by specialization |
+| **🔗 MCP Integrations** | 6 | Live system connectivity + reasoning + Zen MCP |
+| **🏗️ Frameworks Supported** | 25+ | Major web frameworks + Bootstrap system |
+| **⚡ Setup Time** | ~5 minutes | Quick installation + Bootstrap orchestration |
 | **🧠 Memory Integration** | Optional | Via Basic Memory MCP |
+| **🚀 Bootstrap System** | ✅ ACTIVE | Intelligent project initialization |
 
 ## 🎯 **Potential Benefits**
 
