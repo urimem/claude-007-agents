@@ -216,10 +216,39 @@ class Claude007BootstrapEngine {
     async performCodebaseAnalysis() {
         try {
             const analysis = await this.codebaseAnalyzer.analyzeCodebase(this.projectRoot);
+            const complexityString = analysis.results.complexity?.overall || 'medium';
+            let complexityNumeric = 5;
+            
+            // Convert string complexity to numeric scale (1-10)
+            switch (complexityString.toLowerCase()) {
+                case 'low':
+                case 'simple':
+                    complexityNumeric = 3;
+                    break;
+                case 'medium':
+                case 'moderate':
+                    complexityNumeric = 5;
+                    break;
+                case 'high':
+                case 'complex':
+                    complexityNumeric = 7;
+                    break;
+                case 'very high':
+                case 'very complex':
+                    complexityNumeric = 9;
+                    break;
+                default:
+                    // If already numeric, use as is
+                    if (typeof complexityString === 'number') {
+                        complexityNumeric = complexityString;
+                    }
+            }
+            
             return {
                 techStack: analysis.results.techStack?.primary || 'unknown',
                 architecture: analysis.results.architecture?.primary || 'unknown',
-                complexity: analysis.results.complexity?.overall || 5,
+                complexity: complexityNumeric,
+                complexityLabel: complexityString,
                 languages: analysis.results.languages || [],
                 frameworks: analysis.results.frameworks || []
             };
@@ -350,6 +379,10 @@ class Claude007BootstrapEngine {
         // Complexity-based additions
         if (complexity > 7) {
             specialized.push('@system-architect', '@performance-optimizer', '@database-architect');
+        }
+        
+        if (complexity > 6) {
+            specialized.push('@exponential-planner', '@session-manager');
         }
         
         if (complexity > 5) {
@@ -516,7 +549,7 @@ class Claude007BootstrapEngine {
 ## Project Analysis
 - **Tech Stack**: ${analysis.codebaseAnalysis.techStack}
 - **Architecture**: ${analysis.codebaseAnalysis.architecture}
-- **Complexity**: ${analysis.codebaseAnalysis.complexity}/10
+- **Complexity**: ${analysis.codebaseAnalysis.complexityLabel || analysis.codebaseAnalysis.complexity}/10 (level ${analysis.codebaseAnalysis.complexity})
 - **Scenario**: ${scenario}
 - **Setup Type**: ${configType}
 
