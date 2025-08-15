@@ -5,7 +5,7 @@
 
 const { TaskMasterPlugin } = require('./plugin-sdk');
 
-class Reporting&AnalyticsPlugin extends TaskMasterPlugin {
+class ReportingAnalyticsPlugin extends TaskMasterPlugin {
     constructor() {
         super({
             name: 'Reporting & Analytics',
@@ -34,4 +34,4 @@ class Reporting&AnalyticsPlugin extends TaskMasterPlugin {
     }
 }
 
-module.exports = Reporting&AnalyticsPlugin;
+module.exports = ReportingAnalyticsPlugin;
