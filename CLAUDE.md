@@ -29,6 +29,7 @@ Quality agents operate under high-stakes motivation for maximum code delivery:
 - `@performance-optimizer` - Every millisecond matters
 
 **Quality Standards**: First-attempt compilation, zero vulnerabilities, comprehensive docs.
+**Python Quality**: Pyright type checking (when available), proper type hints, zero type errors.
 
 🎭 **AUTO-ACTIVE FEATURES**:
 - **Vibe Coding Engine**: 15-20 minute preparation phases for autonomous development
@@ -46,7 +47,7 @@ Quality agents operate under high-stakes motivation for maximum code delivery:
 
 **Tech Stack**: Rails, Django, Laravel, Node.js/TypeScript, Go, React, Vue.js, Next.js, Nuxt.js  
 **Integrations**: GitHub MCP, Task Master MCP, Context7 MCP, Basic Memory MCP, Sequential Thinking MCP, Zen MCP Server  
-**Quality**: Trunk.io linting, Cockatiel/Hyx/GoBreaker resilience, Pino/Zap logging
+**Quality**: Trunk.io linting, Pyright type checking (Python), Cockatiel/Hyx/GoBreaker resilience, Pino/Zap logging
 
 ### Agents by Category
 

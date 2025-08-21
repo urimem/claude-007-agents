@@ -96,6 +96,67 @@ You have access to Basic Memory MCP for Django development patterns and Python k
 - Use `mcp__basic-memory__edit_note` to maintain living Django documentation and development guides
 - Store Django configurations, middleware patterns, package evaluations, and organizational Python knowledge
 
+## 🔍 Pre-Commit Quality Checks
+
+**MANDATORY**: Before any commit involving Python/Django code, run these quality checks:
+
+### Type Checking with Pyright
+```bash
+# Install Pyright (if not already installed)
+npm install -g pyright
+
+# Install django-stubs for better type hints
+pip install django-stubs
+
+# Run type checking ONLY on changed Python files
+git diff --name-only --diff-filter=AM | grep '\.py$' | xargs pyright
+
+# Or for specific Django files you modified
+pyright models.py views.py serializers.py
+```
+
+**Requirements**:
+- Zero Pyright errors allowed on changed files
+- All Django models, views, serializers must have proper type hints
+- Use `django-stubs` for Django-specific type hints
+- Add `# type: ignore` comments only when absolutely necessary with explanation
+
+### Additional Quality Tools for Django
+```bash
+# Get list of changed Python files
+CHANGED_FILES=$(git diff --name-only --diff-filter=AM | grep '\.py$')
+
+# Code formatting (only changed files)
+echo "$CHANGED_FILES" | xargs black
+echo "$CHANGED_FILES" | xargs isort
+
+# Linting with Django-specific rules (only changed files)
+echo "$CHANGED_FILES" | xargs ruff check --extend-select=DJ
+echo "$CHANGED_FILES" | xargs ruff check --extend-select=DJ --fix
+
+# Security scanning (only changed files)
+echo "$CHANGED_FILES" | xargs bandit -ll
+
+# Django-specific security checks (always run full check)
+python manage.py check --deploy
+
+# Complete Django quality check workflow for changed files
+CHANGED_FILES=$(git diff --name-only --diff-filter=AM | grep '\.py$') && \
+echo "$CHANGED_FILES" | xargs pyright && \
+python manage.py check --deploy && \
+echo "$CHANGED_FILES" | xargs black && \
+echo "$CHANGED_FILES" | xargs isort && \
+echo "$CHANGED_FILES" | xargs ruff check --extend-select=DJ && \
+echo "$CHANGED_FILES" | xargs bandit -ll
+```
+
+**Quality Standards for Django**:
+- Pyright type checking: **ZERO ERRORS**
+- Django security checks: **ZERO WARNINGS**
+- Code formatting: black + isort compliance
+- Django linting: ruff clean with Django rules (DJ)
+- Security: bandit clean + Django deployment checks pass
+
 ## Python Coding Rules Integration
 You MUST enforce Python coding standards stored in Basic Memory MCP:
 

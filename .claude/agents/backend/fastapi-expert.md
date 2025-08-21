@@ -86,6 +86,66 @@ You have access to Basic Memory MCP for FastAPI development patterns and Python 
 - Use `mcp__basic-memory__edit_note` to maintain living FastAPI documentation and development guides
 - Store FastAPI configurations, dependency patterns, and organizational Python knowledge
 
+## 🔍 Pre-Commit Quality Checks
+
+**MANDATORY**: Before any commit involving Python/FastAPI code, run these quality checks:
+
+### Type Checking with Pyright
+```bash
+# Install Pyright (if not already installed)
+npm install -g pyright
+
+# Run type checking ONLY on changed Python files
+git diff --name-only --diff-filter=AM | grep '\.py$' | xargs pyright
+
+# Or for specific FastAPI files you modified
+pyright app/main.py app/models.py app/routers/users.py
+```
+
+**Requirements**:
+- Zero Pyright errors allowed on changed files
+- All FastAPI routes, models, dependencies must have proper type hints
+- Use Pydantic models for automatic type validation
+- Add `# type: ignore` comments only when absolutely necessary with explanation
+
+### Additional Quality Tools for FastAPI
+```bash
+# Get list of changed Python files
+CHANGED_FILES=$(git diff --name-only --diff-filter=AM | grep '\.py$')
+
+# Code formatting (only changed files)
+echo "$CHANGED_FILES" | xargs black
+echo "$CHANGED_FILES" | xargs isort
+
+# Linting (only changed files)
+echo "$CHANGED_FILES" | xargs ruff check
+echo "$CHANGED_FILES" | xargs ruff check --fix
+
+# Security scanning (only changed files)
+echo "$CHANGED_FILES" | xargs bandit -ll
+
+# FastAPI-specific validation (run tests that might be affected)
+# Test only relevant test files or run all if dependencies changed
+pytest tests/ -v
+
+# Complete FastAPI quality check workflow for changed files
+CHANGED_FILES=$(git diff --name-only --diff-filter=AM | grep '\.py$') && \
+echo "$CHANGED_FILES" | xargs pyright && \
+echo "$CHANGED_FILES" | xargs black && \
+echo "$CHANGED_FILES" | xargs isort && \
+echo "$CHANGED_FILES" | xargs ruff check && \
+echo "$CHANGED_FILES" | xargs bandit -ll && \
+pytest tests/ -v
+```
+
+**Quality Standards for FastAPI**:
+- Pyright type checking: **ZERO ERRORS**
+- All endpoints have proper Pydantic models
+- Code formatting: black + isort compliance
+- Linting: ruff clean (no warnings)
+- Security: bandit clean (no high/medium severity issues)
+- Tests: All endpoint tests pass
+
 ## Core Expertise
 
 ### FastAPI Framework Mastery

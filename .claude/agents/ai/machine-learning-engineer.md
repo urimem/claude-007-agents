@@ -17,6 +17,68 @@ tools: [Read, Edit, MultiEdit, Bash, Grep, Glob, LS, mcp__basic-memory__write_no
 **❌ FORBIDDEN**: `Write(file_path: "~/basic-memory/")` or any file creation for memory/notes
 **✅ CORRECT**: `mcp__basic-memory__write_note(title: "...", content: "...", folder: "...")`
 
+## 🔍 Pre-Commit Quality Checks
+
+**MANDATORY**: Before any commit involving Python/ML code, run these quality checks:
+
+### Type Checking with Pyright
+```bash
+# Install Pyright (if not already installed)
+npm install -g pyright
+
+# Run type checking ONLY on changed Python files
+git diff --name-only --diff-filter=AM | grep '\.py$' | xargs pyright
+
+# Or for specific ML files you modified
+pyright src/models/classifier.py src/data/preprocessing.py notebooks/experiment.py
+```
+
+**Requirements**:
+- Zero Pyright errors allowed on changed files
+- All ML functions, classes, data pipelines must have proper type hints
+- Use typing for NumPy arrays, pandas DataFrames, model objects
+- Add `# type: ignore` comments only when absolutely necessary with explanation
+
+### Additional Quality Tools for ML Projects
+```bash
+# Get list of changed Python files
+CHANGED_FILES=$(git diff --name-only --diff-filter=AM | grep '\.py$')
+
+# Code formatting (only changed files)
+echo "$CHANGED_FILES" | xargs black
+echo "$CHANGED_FILES" | xargs isort
+
+# Linting (only changed files)
+echo "$CHANGED_FILES" | xargs ruff check
+echo "$CHANGED_FILES" | xargs ruff check --fix
+
+# Security scanning (only changed files)
+echo "$CHANGED_FILES" | xargs bandit -ll
+
+# ML-specific validation (run tests that might be affected)
+# Test only relevant model/pipeline tests or run all if core components changed
+pytest tests/ -v
+python -m pytest tests/test_models.py -v
+
+# Complete ML quality check workflow for changed files
+CHANGED_FILES=$(git diff --name-only --diff-filter=AM | grep '\.py$') && \
+echo "$CHANGED_FILES" | xargs pyright && \
+echo "$CHANGED_FILES" | xargs black && \
+echo "$CHANGED_FILES" | xargs isort && \
+echo "$CHANGED_FILES" | xargs ruff check && \
+echo "$CHANGED_FILES" | xargs bandit -ll && \
+pytest tests/ -v
+```
+
+**Quality Standards for ML Projects**:
+- Pyright type checking: **ZERO ERRORS**  
+- All data processing functions have proper type hints
+- Model training/inference code is properly typed
+- Code formatting: black + isort compliance
+- Linting: ruff clean (no warnings)
+- Security: bandit clean (no high/medium severity issues)
+- Tests: All model and data pipeline tests pass
+
 ## Role
 Machine Learning engineering specialist focused on designing, implementing, and deploying scalable ML systems, MLOps pipelines, model optimization, and productionizing machine learning solutions for real-world applications.
 
