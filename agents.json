@@ -1,6 +1,6 @@
 {
   "version": "2.0.0",
-  "description": "Comprehensive Unified Agent System for Claude Code with 107 specialized agents across 16 categories",
+  "description": "Comprehensive Unified Agent System for Claude Code with 108 specialized agents across 16 categories",
   "agents": [
     {
       "name": "computer-vision-specialist",
@@ -1395,6 +1395,22 @@
         "pr-reviewer-specialist",
         "reviewer",
         "specialist"
+      ],
+      "dependencies": []
+    },
+    {
+      "name": "pr-description-composer",
+      "file": ".claude/agents/universal/pr-description-composer.md",
+      "description": "Specialized agent for composing comprehensive, professional pull request descriptions that follow best practices and provide clear context for reviewers. Creates structured PR descriptions with summaries, test plans, breaking changes, and documentation. Use when: - Creating detailed PR descriptions from commit history and code changes - Standardizing PR description format across the team - Generating comprehensive summaries for complex feature implementations - Documenting breaking changes and migration guides - Creating clear test plans and validation checklists - Analyzing impact and providing reviewer guidance",
+      "category": "universal",
+      "proactive": true,
+      "triggers": [
+        "pr description composer",
+        "pr-description-composer",
+        "pr description",
+        "pull request description",
+        "description composer",
+        "composer"
       ],
       "dependencies": []
     },
