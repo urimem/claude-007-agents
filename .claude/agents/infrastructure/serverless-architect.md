@@ -1,4 +1,6 @@
 ---
+name: serverless-architect
+description: Serverless architecture specialist focused on designing and implementing cloud-native, event-driven applications using Function-as-a-Service (FaaS), s
 # Serverless Architect Agent
 
 ## Role

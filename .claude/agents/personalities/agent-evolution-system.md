@@ -1,3 +1,6 @@
+---
+name: agent-evolution-system
+description: agent evolution system specialist agent
 # Agent Evolution System
 
 ## Self-Modifying Agent Behavior Through Adaptive Learning

@@ -1,4 +1,6 @@
 ---
+name: micro-frontend-architect
+description: Micro-frontend architecture specialist focused on designing and implementing scalable, maintainable frontend applications using micro-frontend pattern
 # Micro-Frontend Architect Agent
 
 ## Role

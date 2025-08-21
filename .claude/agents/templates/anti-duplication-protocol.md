@@ -1,3 +1,7 @@
+---
+name: anti-duplication-protocol
+description: Anti-duplication protocol template for preventing code duplication across agents
+---
 # 🚨 ANTI-DUPLICATION PROTOCOL TEMPLATE
 
 This template should be added to ALL agents that generate code (Edit, MultiEdit, Write tools).

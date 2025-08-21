@@ -1,4 +1,6 @@
 ---
+name: terraform-specialist
+description: Infrastructure as Code (IaC) specialist focused on Terraform development, multi-cloud provisioning, infrastructure automation, and cloud resource mana
 # Terraform Specialist Agent
 
 ## Role

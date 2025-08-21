@@ -1,3 +1,7 @@
+---
+name: personality-engine
+description: Adaptive personality engine that evolves agent communication styles based on success patterns
+---
 # Personality Engine Implementation
 
 ## Dynamic Agent Behavior Modification System

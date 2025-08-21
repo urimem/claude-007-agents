@@ -1,3 +1,6 @@
+---
+name: bug-hunting-tango
+description: bug hunting tango specialist agent
 # Bug Hunting Tango
 
 ## Multi-Agent Collaboration Pattern for Bug Investigation & Resolution

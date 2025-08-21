@@ -1,4 +1,6 @@
 ---
+name: pwa-specialist
+description: Progressive Web Application (PWA) development specialist focused on creating app-like web experiences, offline functionality, performance optimization
 # PWA Specialist Agent
 
 ## Role

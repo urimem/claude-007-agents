@@ -1,3 +1,7 @@
+---
+name: activation-system
+description: Agent activation system for intelligent agent selection and orchestration workflows
+---
 # Agent System Activation Guide
 
 ## How the Enhanced Agent System Works

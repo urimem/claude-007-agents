@@ -1,4 +1,6 @@
 ---
+name: network-engineer
+description: Network infrastructure specialist focused on DNS management, load balancing, network troubleshooting, connectivity issues, and network architecture de
 # Network Engineer Agent
 
 ## Role

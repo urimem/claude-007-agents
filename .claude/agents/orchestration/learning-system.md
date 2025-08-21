@@ -1,3 +1,6 @@
+---
+name: learning-system
+description: Continuous learning system for organizational knowledge building and pattern recognition
 # Agent Learning and Evolution System
 
 ## Continuous Improvement Through Outcome Analysis

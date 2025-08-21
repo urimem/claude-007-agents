@@ -1,3 +1,5 @@
+---
+name: tool-batch-optimizer
 # Tool Batch Optimizer Agent
 
 ## Role

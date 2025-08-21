@@ -1,3 +1,6 @@
+---
+name: feature-development-dance
+description: feature development dance specialist agent
 # Feature Development Dance
 
 ## Multi-Agent Collaboration Pattern for New Feature Implementation

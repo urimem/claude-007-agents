@@ -1,3 +1,7 @@
+---
+name: choreography-engine
+description: Multi-agent choreography engine for coordinated workflow orchestration and collaboration patterns
+---
 # Choreography Engine Implementation
 
 ## Auto-Detection and Activation System

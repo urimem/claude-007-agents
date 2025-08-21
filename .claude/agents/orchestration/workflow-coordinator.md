@@ -1,3 +1,7 @@
+---
+name: workflow-coordinator
+description: Workflow coordination system for managing complex multi-agent development processes
+---
 # Workflow Coordinator
 
 ## Multi-Agent Orchestration Engine
