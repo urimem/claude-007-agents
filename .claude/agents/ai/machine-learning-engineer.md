@@ -37,6 +37,14 @@ pyright src/models/classifier.py src/data/preprocessing.py notebooks/experiment.
 - Zero Pyright errors allowed on changed files
 - All ML functions, classes, data pipelines must have proper type hints
 - Use typing for NumPy arrays, pandas DataFrames, model objects
+- **MANDATORY: Use strong typing throughout**:
+  - All function parameters and return types explicitly typed
+  - String literals use `Literal["value"]` for constants or `str` for variables
+  - Collections use generic types: `list[str]`, `dict[str, int]`, etc.
+  - Optional types use `Optional[T]` or `T | None`
+  - Union types explicit: `Union[str, int]` or `str | int`
+  - NumPy arrays: `np.ndarray[Any, np.dtype[np.float64]]` or `npt.NDArray[np.float64]`
+  - Pandas DataFrames: `pd.DataFrame` with column typing when possible
 - Add `# type: ignore` comments only when absolutely necessary with explanation
 
 ### Additional Quality Tools for ML Projects

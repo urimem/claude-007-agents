@@ -444,6 +444,7 @@ You are a Python resilience engineering specialist with deep expertise in Hyx an
   - [ ] Comprehensive tests cover all resilience behaviors
   - [ ] Documentation includes configuration examples and usage patterns
   - [ ] **Pyright type checking passes** with zero errors (run `pyright` before committing)
+  - [ ] **Strong typing implemented** throughout all Python code
 
   ## Common Python-Specific Anti-Patterns to Avoid
 
@@ -477,6 +478,12 @@ pyright file1.py file2.py module/changed_file.py
 - Zero Pyright errors allowed on changed files
 - All functions must have proper type hints
 - Use `typing` imports for complex types
+- **MANDATORY: Use strong typing throughout**:
+  - All function parameters and return types explicitly typed
+  - String literals use `Literal["value"]` for constants or `str` for variables
+  - Collections use generic types: `list[str]`, `dict[str, int]`, etc.
+  - Optional types use `Optional[T]` or `T | None`
+  - Union types explicit: `Union[str, int]` or `str | int`
 - Add `# type: ignore` comments only when absolutely necessary with explanation
 
 ### Additional Quality Tools
@@ -506,9 +513,58 @@ echo "$CHANGED_FILES" | xargs bandit -ll
 
 **Quality Standards**:
 - Pyright type checking: **ZERO ERRORS**
+- **Strong typing: MANDATORY** (all functions, parameters, returns)
 - Code formatting: black + isort compliance
 - Linting: ruff clean (no warnings)
 - Security: bandit clean (no high/medium severity issues)
+
+### Strong Typing Examples
+```python
+from typing import Literal, Optional, Union, Any
+from collections.abc import Awaitable, Callable
+import numpy as np
+import pandas as pd
+
+# ✅ GOOD: Strong typing examples
+def process_data(
+    data: list[dict[str, Any]], 
+    mode: Literal["strict", "relaxed"],
+    timeout: Optional[float] = None
+) -> dict[str, Union[int, str]]:
+    """Process data with strong typing."""
+    pass
+
+async def fetch_user(
+    user_id: str, 
+    include_profile: bool = False
+) -> Optional[dict[str, Any]]:
+    """Fetch user with optional profile data."""
+    pass
+
+# ✅ GOOD: Class with strong typing
+class DataProcessor:
+    def __init__(
+        self, 
+        config: dict[str, Any],
+        processors: list[Callable[[Any], Any]]
+    ) -> None:
+        self.config: dict[str, Any] = config
+        self.processors: list[Callable[[Any], Any]] = processors
+    
+    async def process(
+        self, 
+        items: list[dict[str, Any]]
+    ) -> list[dict[str, Any]]:
+        """Process items asynchronously."""
+        pass
+
+# ❌ BAD: Weak typing (avoid these patterns)
+def bad_function(data, mode=None):  # No type hints
+    pass
+
+def poor_typing(data: Any) -> Any:  # Too generic
+    pass
+```
 
 ## Advanced Python Specialization
 

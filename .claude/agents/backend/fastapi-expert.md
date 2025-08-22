@@ -106,6 +106,13 @@ pyright app/main.py app/models.py app/routers/users.py
 - Zero Pyright errors allowed on changed files
 - All FastAPI routes, models, dependencies must have proper type hints
 - Use Pydantic models for automatic type validation
+- **MANDATORY: Use strong typing throughout**:
+  - All function parameters and return types explicitly typed
+  - String literals use `Literal["value"]` for constants or `str` for variables
+  - Collections use generic types: `list[str]`, `dict[str, int]`, etc.
+  - Optional types use `Optional[T]` or `T | None`
+  - Union types explicit: `Union[str, int]` or `str | int`
+  - Pydantic models with strict field typing
 - Add `# type: ignore` comments only when absolutely necessary with explanation
 
 ### Additional Quality Tools for FastAPI

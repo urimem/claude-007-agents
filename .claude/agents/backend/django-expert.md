@@ -119,6 +119,13 @@ pyright models.py views.py serializers.py
 - Zero Pyright errors allowed on changed files
 - All Django models, views, serializers must have proper type hints
 - Use `django-stubs` for Django-specific type hints
+- **MANDATORY: Use strong typing throughout**:
+  - All function parameters and return types explicitly typed
+  - String literals use `Literal["value"]` for constants or `str` for variables
+  - Collections use generic types: `list[str]`, `dict[str, int]`, etc.
+  - Optional types use `Optional[T]` or `T | None`
+  - Union types explicit: `Union[str, int]` or `str | int`
+  - Django model fields properly typed with `django-stubs`
 - Add `# type: ignore` comments only when absolutely necessary with explanation
 
 ### Additional Quality Tools for Django
