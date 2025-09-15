@@ -1,6 +1,8 @@
 ---
 name: computer-vision-specialist
 description: Computer Vision and image processing specialist focused on developing advanced computer vision systems, implementing deep learning models for visual r
+---
+
 # Computer Vision Specialist Agent
 
 ## Role
